@@ -67,11 +67,18 @@ The finished app must deploy to **Vercel (free tier)** as a fully static React a
   /config
     continentConfig.js
     textConfig.js
+    dimensionDescriptions.js
   /store
     appStore.js
+  /docs
+    Header Mockup.jpeg
+    InfVisProject_Masterprompt.md
+    InfVisProject_Design_Survey.md
+    InfVisProject_Architecture_Survey.md
   theme.js
 /public
   world.topojson
+  
 index.html
 vite.config.js
 ```
@@ -576,129 +583,104 @@ export const countryRegionMap = {
 
 ---
 
-### 4.7 `textConfig.js`
+### 4.7 `dimensionDescriptions.js` and `textConfig.js`
 
-All user-facing text — descriptions, labels, tooltips, warnings — is centralized in `/src/config/textConfig.js`. Components import from this file; strings are never hardcoded in JSX or D3 code. This allows copy and descriptions to be updated without touching component files.
+User-facing text is split across two config files in `/src/config/`. Components import from these files — strings are never hardcoded in JSX or D3 code.
+
+---
+
+#### `dimensionDescriptions.js` — info panel descriptions
+
+This file is the **authoritative source** for all dimension description texts shown in floating panels and the Level 4 description panel. It is provided as a finished file and must be used as-is. Do not duplicate or inline its content elsewhere.
 
 ```js
-// /src/config/textConfig.js — structure (fill in actual copy)
+// /src/config/dimensionDescriptions.js — use exactly as provided
+export const dimensionDescriptions = [
+  { id: 'giniIndex',       description: 'Gini index measures the extent to which the distribution of income (or, in some cases, consumption expenditure) among individuals or households within an economy deviates from a perfectly equal distribution. A Lorenz curve plots the cumulative percentages of total income received against the cumulative number of recipients, starting with the poorest individual or household. The Gini index measures the area between the Lorenz curve and a hypothetical line of absolute equality, expressed as a percentage of the maximum area under the line. Thus a Gini index of 0 represents perfect equality, while an index of 100 implies perfect inequality.' },
+  { id: 'unemployment',    description: 'Percentage of total population, age group above 15, that has been registered as unemployed during the given year.' },
+  { id: 'corruption',      description: 'This index ranks countries/territories based on how corrupt their public sector is perceived to be. The Corruption Perception Index by TI is the most widely used indicator of corruption worldwide. It is scaled on a range of 0 to 100, where 0 is highly corrupt and 100 is very clean.' },
+  { id: 'lifeExpectancy',  description: 'The number of years a newborn infant would live if the current mortality rates at different ages were to stay the same throughout its life.' },
+  { id: 'happiness',       description: 'This is the national average response to the question of life evaluations asking the following "Please imagine a ladder, with steps numbered from 0 at the bottom to 10 at the top. The top of the ladder represents the best possible life for you and the bottom of the ladder represents the worst possible life for you. On which step of the ladder would you say you personally feel you stand at this time?" This measure is also referred to as Cantril life ladder. Gapminder has converted the scale of this indicator from 0 to 100 to easly communicate it in terms of percentage.' },
+  { id: 'suicideRate',     description: 'Mortality due to self-inflicted injury, per 100 000 standard population, age adjusted. This rate is calculated as if all countries had the same age composition of the population.' },
+  { id: 'literacyRate',    description: 'Adult literacy rate is the percentage of people ages 15 and above who can, with understanding, read and write a short, simple statement on their everyday life.' },
+  { id: 'inflation',       description: 'Inflation as measured by the annual growth rate of the GDP implicit deflator shows the rate of price change in the economy as a whole. The GDP implicit deflator is the ratio of GDP in current local currency to GDP in constant local currency.' },
+  { id: 'democracyIndex',  description: 'Overall polity score from the Polity5 dataset, calculated by subtracting an autocracy score from a democracy score. It is a summary measure of a country\'s democratic and free nature. -10 is the lowest value, 10 the highest.' },
+]
+```
 
-// One entry per dataset. Keys match the metricName identifiers used in dataService.js.
-export const datasetText = {
-  giniIndex: {
-    displayName: 'Gini Index',
-    shortName: 'Gini',
-    unit: 'Index (0–100)',
-    description: '...',   // 2–4 sentences explaining what this metric measures
-  },
-  unemployment: {
-    displayName: 'Unemployment Rate',
-    shortName: 'Unemployment',
-    unit: '% of labor force',
-    description: '...',
-  },
-  corruption: {
-    displayName: 'Corruption Index',
-    shortName: 'Corruption',
-    unit: 'Index number',
-    description: '...',
-  },
-  lifeExpectancy: {
-    displayName: 'Life Expectancy',
-    shortName: 'Life Expectancy',
-    unit: 'Years',
-    description: '...',
-  },
-  happiness: {
-    displayName: 'Happiness Index',
-    shortName: 'Happiness',
-    unit: 'Index (0–100)',
-    description: '...',
-  },
-  suicideRate: {
-    displayName: 'Suicide Rate',
-    shortName: 'Suicide Rate',
-    unit: 'Per 100,000 people',
-    description: '...',
-  },
-  literacyRate: {
-    displayName: 'Literacy Rate',
-    shortName: 'Literacy',
-    unit: '% of population',
-    description: '...',
-  },
-  inflation: {
-    displayName: 'Inflation',
-    shortName: 'Inflation',
-    unit: '% per year',
-    description: '...',
-  },
-  democracyIndex: {
-    displayName: 'Democracy Index',
-    shortName: 'Democracy',
-    unit: '−10 to +10',
-    description: '...',
-  },
-  gdpPerCapita: {
-    displayName: 'GDP per Capita',
-    shortName: 'GDP/capita',
-    unit: 'USD',
-    description: '...',
-  },
-  population: {
-    displayName: 'Population',
-    shortName: 'Population',
-    unit: 'People',
-    description: '...',
-  },
-  populationDensity: {
-    displayName: 'Population Density',
-    shortName: 'Density',
-    unit: 'People per km²',
-    description: '...',
-  },
+Descriptions are provided for the 9 datasets that have an info panel (the 8 star plot axes + the democracy index). The 3 hover-panel-only metrics (GDP per Capita, Population, Population Density) do not have entries here as they require no description panel.
+
+**Lookup pattern:** Convert the array to a map by `id` at startup so components can do `descriptionMap['giniIndex']` — do not iterate the array on every render.
+
+---
+
+#### `textConfig.js` — all other UI text
+
+```js
+// /src/config/textConfig.js — structure (fill in actual values)
+import { dimensionDescriptions } from './dimensionDescriptions.js'
+
+// Convert descriptions array to a keyed map for fast lookup
+export const descriptionMap = Object.fromEntries(
+  dimensionDescriptions.map(d => [d.id, d.description])
+)
+
+// Display metadata per dataset. Keys match metricName identifiers used in dataService.js.
+export const datasetMeta = {
+  giniIndex:        { displayName: 'Gini Index',           shortName: 'Gini',         unit: 'Index (0–100)' },
+  unemployment:     { displayName: 'Unemployment Rate',    shortName: 'Unemployment', unit: '% of labor force' },
+  corruption:       { displayName: 'Corruption Index',     shortName: 'Corruption',   unit: 'Index (0–100)' },
+  lifeExpectancy:   { displayName: 'Life Expectancy',      shortName: 'Life Exp.',    unit: 'Years' },
+  happiness:        { displayName: 'Happiness Index',      shortName: 'Happiness',    unit: 'Index (0–100)' },
+  suicideRate:      { displayName: 'Suicide Rate',         shortName: 'Suicide Rate', unit: 'Per 100,000' },
+  literacyRate:     { displayName: 'Literacy Rate',        shortName: 'Literacy',     unit: '% of population' },
+  inflation:        { displayName: 'Inflation',            shortName: 'Inflation',    unit: '% per year' },
+  democracyIndex:   { displayName: 'Democracy Index',      shortName: 'Democracy',    unit: '−10 to +10' },
+  gdpPerCapita:     { displayName: 'GDP per Capita',       shortName: 'GDP/capita',   unit: 'USD' },
+  population:       { displayName: 'Population',           shortName: 'Population',   unit: 'People' },
+  populationDensity:{ displayName: 'Population Density',   shortName: 'Density',      unit: 'People per km²' },
 }
 
-// All button labels and their hover tooltips
+// Button labels and hover tooltips
 export const uiLabels = {
   appTitle: 'Democracy Index',
   buttons: {
-    home: { label: 'Home', tooltip: 'Reset to world view' },
-    openCompare: { label: 'Open Compare', tooltip: 'Open split-screen comparison' },
+    home:         { label: 'Home',          tooltip: 'Reset to world view' },
+    openCompare:  { label: 'Open Compare',  tooltip: 'Open split-screen comparison' },
     closeCompare: { label: 'Close Compare', tooltip: 'Close split-screen comparison' },
-    overlay: { label: 'Overlay', tooltip: 'Overlay both views' },
-    separate: { label: 'Separate', tooltip: 'Separate overlaid views' },
+    overlay:      { label: 'Overlay',       tooltip: 'Overlay both views' },
+    separate:     { label: 'Separate',      tooltip: 'Separate overlaid views' },
   },
   search: {
     placeholder: 'Search country or region…',
   },
 }
 
-// Labels for the hover info panel fields (Levels 1–2) and the permanent country panel (Level 3)
+// Field labels for hover panels (Levels 1–2) and the country detail panel (Level 3)
 export const panelLabels = {
-  democracyScore: 'Democracy Score',
-  gdpPerCapita: 'GDP per Capita',
-  population: 'Population',
-  populationDensity: 'Pop. Density',
-  noDataWarning: 'No data available for this country and year.',
-  noDataShort: 'No data',
+  democracyScore:   'Democracy Score',
+  gdpPerCapita:     'GDP per Capita',
+  population:       'Population',
+  populationDensity:'Pop. Density',
+  noDataWarning:    'No data available for this country and year.',
+  noDataShort:      'No data',
 }
 
-// Labels for the 5-level democracy index legend (Levels 1–2)
+// Democracy index legend (Levels 1–2)
 export const legendLabels = {
   title: 'Democracy Index',
   levels: [
     { value: -10, label: 'Authoritarian' },
     { value: -5,  label: 'Hybrid' },
-    { value: 0,   label: 'Neutral' },
-    { value: 5,   label: 'Flawed Democracy' },
+    { value:  0,  label: 'Neutral' },
+    { value:  5,  label: 'Flawed Democracy' },
     { value: 10,  label: 'Full Democracy' },
   ],
   noData: 'No data',
 }
 ```
 
-**Usage rule:** Every string visible to the user must come from `textConfig.js`. The `description` fields in `datasetText` are the texts shown in the floating panel when hovering a star plot spike (Level 3) and in the description panel at Level 4. Fill in meaningful copy for each before shipping.
+**Usage rule:** Every string visible to the user comes from `dimensionDescriptions.js` or `textConfig.js`. No user-facing string is hardcoded in a component or D3 effect.
 
 ---
 
@@ -742,11 +724,10 @@ Build in this sequence to minimize blocked dependencies:
 
 ## 7. Reference Files
 
-The following files are in the same project folder as this Masterprompt and should be consulted during implementation:
-
-- **`Header Mockup.jpeg`** — Visual reference for the three header states (normal, split-screen, active overlay). Use for layout reference; do not replicate the exact styling 1:1.
-- **`InfVisProject_Design_Survey.md`** — Full feature specification source document.
-- **`InfVisProject_Architecture_Survey.md`** — Full architecture specification source document.
+- **`public/Header Mockup.jpeg`** — Visual reference for the three header states (normal, split-screen, active overlay). Use for layout reference; do not replicate the exact styling 1:1.
+- **`src/config/dimensionDescriptions.js`** — Finished file. Contains the authoritative description texts for all 9 info panels. Copy it directly into the project; do not rewrite its content.
+- **`src/docs/InfVisProject_Design_Survey.md`** — Full feature specification source document.
+- **`src/docs/InfVisProject_Architecture_Survey.md`** — Full architecture specification source document.
 
 If any detail conflicts between those documents and this Masterprompt, **this Masterprompt takes precedence**.
 
