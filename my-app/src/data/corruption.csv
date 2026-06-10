@@ -1,0 +1,2094 @@
+﻿geo,time,name,corruption_perception_index_cpi
+afg,2012,Afghanistan,8
+afg,2013,Afghanistan,8
+afg,2014,Afghanistan,12
+afg,2015,Afghanistan,11
+afg,2016,Afghanistan,15
+afg,2017,Afghanistan,15
+afg,2018,Afghanistan,16
+afg,2019,Afghanistan,16
+afg,2020,Afghanistan,19
+afg,2021,Afghanistan,16
+afg,2022,Afghanistan,24
+afg,2023,Afghanistan,20
+ago,2012,Angola,22
+ago,2013,Angola,23
+ago,2014,Angola,19
+ago,2015,Angola,15
+ago,2016,Angola,18
+ago,2017,Angola,19
+ago,2018,Angola,19
+ago,2019,Angola,26
+ago,2020,Angola,27
+ago,2021,Angola,29
+ago,2022,Angola,33
+ago,2023,Angola,33
+alb,2012,Albania,33
+alb,2013,Albania,31
+alb,2014,Albania,33
+alb,2015,Albania,36
+alb,2016,Albania,39
+alb,2017,Albania,38
+alb,2018,Albania,36
+alb,2019,Albania,35
+alb,2020,Albania,36
+alb,2021,Albania,35
+alb,2022,Albania,36
+alb,2023,Albania,37
+are,2012,UAE,68
+are,2013,UAE,69
+are,2014,UAE,70
+are,2015,UAE,70
+are,2016,UAE,66
+are,2017,UAE,71
+are,2018,UAE,70
+are,2019,UAE,71
+are,2020,UAE,71
+are,2021,UAE,69
+are,2022,UAE,67
+are,2023,UAE,68
+arg,2012,Argentina,35
+arg,2013,Argentina,34
+arg,2014,Argentina,34
+arg,2015,Argentina,32
+arg,2016,Argentina,36
+arg,2017,Argentina,39
+arg,2018,Argentina,40
+arg,2019,Argentina,45
+arg,2020,Argentina,42
+arg,2021,Argentina,38
+arg,2022,Argentina,38
+arg,2023,Argentina,37
+arm,2012,Armenia,34
+arm,2013,Armenia,36
+arm,2014,Armenia,37
+arm,2015,Armenia,35
+arm,2016,Armenia,33
+arm,2017,Armenia,35
+arm,2018,Armenia,35
+arm,2019,Armenia,42
+arm,2020,Armenia,49
+arm,2021,Armenia,49
+arm,2022,Armenia,46
+arm,2023,Armenia,47
+aus,2012,Australia,85
+aus,2013,Australia,81
+aus,2014,Australia,80
+aus,2015,Australia,79
+aus,2016,Australia,79
+aus,2017,Australia,77
+aus,2018,Australia,77
+aus,2019,Australia,77
+aus,2020,Australia,77
+aus,2021,Australia,73
+aus,2022,Australia,75
+aus,2023,Australia,75
+aut,2012,Austria,69
+aut,2013,Austria,69
+aut,2014,Austria,72
+aut,2015,Austria,76
+aut,2016,Austria,75
+aut,2017,Austria,75
+aut,2018,Austria,76
+aut,2019,Austria,77
+aut,2020,Austria,76
+aut,2021,Austria,74
+aut,2022,Austria,71
+aut,2023,Austria,71
+aze,2012,Azerbaijan,27
+aze,2013,Azerbaijan,28
+aze,2014,Azerbaijan,29
+aze,2015,Azerbaijan,29
+aze,2016,Azerbaijan,30
+aze,2017,Azerbaijan,31
+aze,2018,Azerbaijan,25
+aze,2019,Azerbaijan,30
+aze,2020,Azerbaijan,30
+aze,2021,Azerbaijan,30
+aze,2022,Azerbaijan,23
+aze,2023,Azerbaijan,23
+bdi,2012,Burundi,19
+bdi,2013,Burundi,21
+bdi,2014,Burundi,20
+bdi,2015,Burundi,21
+bdi,2016,Burundi,20
+bdi,2017,Burundi,22
+bdi,2018,Burundi,17
+bdi,2019,Burundi,19
+bdi,2020,Burundi,19
+bdi,2021,Burundi,19
+bdi,2022,Burundi,17
+bdi,2023,Burundi,20
+bel,2012,Belgium,75
+bel,2013,Belgium,75
+bel,2014,Belgium,76
+bel,2015,Belgium,77
+bel,2016,Belgium,77
+bel,2017,Belgium,75
+bel,2018,Belgium,75
+bel,2019,Belgium,75
+bel,2020,Belgium,76
+bel,2021,Belgium,73
+bel,2022,Belgium,73
+bel,2023,Belgium,73
+ben,2012,Benin,36
+ben,2013,Benin,36
+ben,2014,Benin,39
+ben,2015,Benin,37
+ben,2016,Benin,36
+ben,2017,Benin,39
+ben,2018,Benin,40
+ben,2019,Benin,41
+ben,2020,Benin,41
+ben,2021,Benin,42
+ben,2022,Benin,43
+ben,2023,Benin,43
+bfa,2012,Burkina Faso,38
+bfa,2013,Burkina Faso,38
+bfa,2014,Burkina Faso,38
+bfa,2015,Burkina Faso,38
+bfa,2016,Burkina Faso,42
+bfa,2017,Burkina Faso,42
+bfa,2018,Burkina Faso,41
+bfa,2019,Burkina Faso,40
+bfa,2020,Burkina Faso,40
+bfa,2021,Burkina Faso,42
+bfa,2022,Burkina Faso,42
+bfa,2023,Burkina Faso,41
+bgd,2012,Bangladesh,26
+bgd,2013,Bangladesh,27
+bgd,2014,Bangladesh,25
+bgd,2015,Bangladesh,25
+bgd,2016,Bangladesh,26
+bgd,2017,Bangladesh,28
+bgd,2018,Bangladesh,26
+bgd,2019,Bangladesh,26
+bgd,2020,Bangladesh,26
+bgd,2021,Bangladesh,26
+bgd,2022,Bangladesh,25
+bgd,2023,Bangladesh,24
+bgr,2012,Bulgaria,41
+bgr,2013,Bulgaria,41
+bgr,2014,Bulgaria,43
+bgr,2015,Bulgaria,41
+bgr,2016,Bulgaria,41
+bgr,2017,Bulgaria,43
+bgr,2018,Bulgaria,42
+bgr,2019,Bulgaria,43
+bgr,2020,Bulgaria,44
+bgr,2021,Bulgaria,42
+bgr,2022,Bulgaria,43
+bgr,2023,Bulgaria,45
+bhr,2012,Bahrain,51
+bhr,2013,Bahrain,48
+bhr,2014,Bahrain,49
+bhr,2015,Bahrain,51
+bhr,2016,Bahrain,43
+bhr,2017,Bahrain,36
+bhr,2018,Bahrain,36
+bhr,2019,Bahrain,42
+bhr,2020,Bahrain,42
+bhr,2021,Bahrain,42
+bhr,2022,Bahrain,44
+bhr,2023,Bahrain,42
+bhs,2012,Bahamas,71
+bhs,2013,Bahamas,71
+bhs,2014,Bahamas,71
+bhs,2016,Bahamas,66
+bhs,2017,Bahamas,65
+bhs,2018,Bahamas,65
+bhs,2019,Bahamas,64
+bhs,2020,Bahamas,63
+bhs,2021,Bahamas,64
+bhs,2022,Bahamas,64
+bhs,2023,Bahamas,64
+bih,2012,Bosnia and Herzegovina,42
+bih,2013,Bosnia and Herzegovina,42
+bih,2014,Bosnia and Herzegovina,39
+bih,2015,Bosnia and Herzegovina,38
+bih,2016,Bosnia and Herzegovina,39
+bih,2017,Bosnia and Herzegovina,38
+bih,2018,Bosnia and Herzegovina,38
+bih,2019,Bosnia and Herzegovina,36
+bih,2020,Bosnia and Herzegovina,35
+bih,2021,Bosnia and Herzegovina,35
+bih,2022,Bosnia and Herzegovina,34
+bih,2023,Bosnia and Herzegovina,35
+blr,2012,Belarus,31
+blr,2013,Belarus,29
+blr,2014,Belarus,31
+blr,2015,Belarus,32
+blr,2016,Belarus,40
+blr,2017,Belarus,44
+blr,2018,Belarus,44
+blr,2019,Belarus,45
+blr,2020,Belarus,47
+blr,2021,Belarus,41
+blr,2022,Belarus,39
+blr,2023,Belarus,37
+bol,2012,Bolivia,34
+bol,2013,Bolivia,34
+bol,2014,Bolivia,35
+bol,2015,Bolivia,34
+bol,2016,Bolivia,33
+bol,2017,Bolivia,33
+bol,2018,Bolivia,29
+bol,2019,Bolivia,31
+bol,2020,Bolivia,31
+bol,2021,Bolivia,30
+bol,2022,Bolivia,31
+bol,2023,Bolivia,29
+bra,2012,Brazil,43
+bra,2013,Brazil,42
+bra,2014,Brazil,43
+bra,2015,Brazil,38
+bra,2016,Brazil,40
+bra,2017,Brazil,37
+bra,2018,Brazil,35
+bra,2019,Brazil,35
+bra,2020,Brazil,38
+bra,2021,Brazil,38
+bra,2022,Brazil,38
+bra,2023,Brazil,36
+brb,2012,Barbados,76
+brb,2013,Barbados,75
+brb,2014,Barbados,74
+brb,2016,Barbados,61
+brb,2017,Barbados,68
+brb,2018,Barbados,68
+brb,2019,Barbados,62
+brb,2020,Barbados,64
+brb,2021,Barbados,65
+brb,2022,Barbados,65
+brb,2023,Barbados,69
+brn,2012,Brunei,55
+brn,2013,Brunei,60
+brn,2016,Brunei,58
+brn,2017,Brunei,62
+brn,2018,Brunei,63
+brn,2019,Brunei,60
+brn,2020,Brunei,60
+btn,2012,Bhutan,63
+btn,2013,Bhutan,63
+btn,2014,Bhutan,65
+btn,2015,Bhutan,65
+btn,2016,Bhutan,65
+btn,2017,Bhutan,67
+btn,2018,Bhutan,68
+btn,2019,Bhutan,68
+btn,2020,Bhutan,68
+btn,2021,Bhutan,68
+btn,2022,Bhutan,68
+btn,2023,Bhutan,68
+bwa,2012,Botswana,65
+bwa,2013,Botswana,64
+bwa,2014,Botswana,63
+bwa,2015,Botswana,63
+bwa,2016,Botswana,60
+bwa,2017,Botswana,61
+bwa,2018,Botswana,61
+bwa,2019,Botswana,61
+bwa,2020,Botswana,60
+bwa,2021,Botswana,55
+bwa,2022,Botswana,60
+bwa,2023,Botswana,59
+caf,2012,Central African Republic,26
+caf,2013,Central African Republic,25
+caf,2014,Central African Republic,24
+caf,2015,Central African Republic,24
+caf,2016,Central African Republic,20
+caf,2017,Central African Republic,23
+caf,2018,Central African Republic,26
+caf,2019,Central African Republic,25
+caf,2020,Central African Republic,26
+caf,2021,Central African Republic,24
+caf,2022,Central African Republic,24
+caf,2023,Central African Republic,24
+can,2012,Canada,84
+can,2013,Canada,81
+can,2014,Canada,81
+can,2015,Canada,83
+can,2016,Canada,82
+can,2017,Canada,82
+can,2018,Canada,81
+can,2019,Canada,77
+can,2020,Canada,77
+can,2021,Canada,74
+can,2022,Canada,74
+can,2023,Canada,76
+che,2012,Switzerland,86
+che,2013,Switzerland,85
+che,2014,Switzerland,86
+che,2015,Switzerland,86
+che,2016,Switzerland,86
+che,2017,Switzerland,85
+che,2018,Switzerland,85
+che,2019,Switzerland,85
+che,2020,Switzerland,85
+che,2021,Switzerland,84
+che,2022,Switzerland,82
+che,2023,Switzerland,82
+chl,2012,Chile,72
+chl,2013,Chile,71
+chl,2014,Chile,73
+chl,2015,Chile,70
+chl,2016,Chile,66
+chl,2017,Chile,67
+chl,2018,Chile,67
+chl,2019,Chile,67
+chl,2020,Chile,67
+chl,2021,Chile,67
+chl,2022,Chile,67
+chl,2023,Chile,66
+chn,2012,China,39
+chn,2013,China,40
+chn,2014,China,36
+chn,2015,China,37
+chn,2016,China,40
+chn,2017,China,41
+chn,2018,China,39
+chn,2019,China,41
+chn,2020,China,42
+chn,2021,China,45
+chn,2022,China,45
+chn,2023,China,42
+civ,2012,Cote d'Ivoire,29
+civ,2013,Cote d'Ivoire,27
+civ,2014,Cote d'Ivoire,32
+civ,2015,Cote d'Ivoire,32
+civ,2016,Cote d'Ivoire,34
+civ,2017,Cote d'Ivoire,36
+civ,2018,Cote d'Ivoire,35
+civ,2019,Cote d'Ivoire,35
+civ,2020,Cote d'Ivoire,36
+civ,2021,Cote d'Ivoire,36
+civ,2022,Cote d'Ivoire,37
+civ,2023,Cote d'Ivoire,40
+cmr,2012,Cameroon,26
+cmr,2013,Cameroon,25
+cmr,2014,Cameroon,27
+cmr,2015,Cameroon,27
+cmr,2016,Cameroon,26
+cmr,2017,Cameroon,25
+cmr,2018,Cameroon,25
+cmr,2019,Cameroon,25
+cmr,2020,Cameroon,25
+cmr,2021,Cameroon,27
+cmr,2022,Cameroon,26
+cmr,2023,Cameroon,27
+cod,2012,"Congo, Dem. Rep.",21
+cod,2013,"Congo, Dem. Rep.",22
+cod,2014,"Congo, Dem. Rep.",22
+cod,2015,"Congo, Dem. Rep.",22
+cod,2016,"Congo, Dem. Rep.",21
+cod,2017,"Congo, Dem. Rep.",21
+cod,2018,"Congo, Dem. Rep.",20
+cod,2019,"Congo, Dem. Rep.",18
+cod,2020,"Congo, Dem. Rep.",18
+cod,2021,"Congo, Dem. Rep.",19
+cod,2022,"Congo, Dem. Rep.",20
+cod,2023,"Congo, Dem. Rep.",20
+cog,2012,"Congo, Rep.",26
+cog,2013,"Congo, Rep.",22
+cog,2014,"Congo, Rep.",23
+cog,2015,"Congo, Rep.",23
+cog,2016,"Congo, Rep.",20
+cog,2017,"Congo, Rep.",21
+cog,2018,"Congo, Rep.",19
+cog,2019,"Congo, Rep.",19
+cog,2020,"Congo, Rep.",19
+cog,2021,"Congo, Rep.",21
+cog,2022,"Congo, Rep.",21
+cog,2023,"Congo, Rep.",22
+col,2012,Colombia,36
+col,2013,Colombia,36
+col,2014,Colombia,37
+col,2015,Colombia,37
+col,2016,Colombia,37
+col,2017,Colombia,37
+col,2018,Colombia,36
+col,2019,Colombia,37
+col,2020,Colombia,39
+col,2021,Colombia,39
+col,2022,Colombia,39
+col,2023,Colombia,40
+com,2012,Comoros,28
+com,2013,Comoros,28
+com,2014,Comoros,26
+com,2015,Comoros,26
+com,2016,Comoros,24
+com,2017,Comoros,27
+com,2018,Comoros,27
+com,2019,Comoros,25
+com,2020,Comoros,21
+com,2021,Comoros,20
+com,2022,Comoros,19
+com,2023,Comoros,20
+cpv,2012,Cape Verde,60
+cpv,2013,Cape Verde,58
+cpv,2014,Cape Verde,57
+cpv,2015,Cape Verde,55
+cpv,2016,Cape Verde,59
+cpv,2017,Cape Verde,55
+cpv,2018,Cape Verde,57
+cpv,2019,Cape Verde,58
+cpv,2020,Cape Verde,58
+cpv,2021,Cape Verde,58
+cpv,2022,Cape Verde,60
+cpv,2023,Cape Verde,64
+cri,2012,Costa Rica,54
+cri,2013,Costa Rica,53
+cri,2014,Costa Rica,54
+cri,2015,Costa Rica,55
+cri,2016,Costa Rica,58
+cri,2017,Costa Rica,59
+cri,2018,Costa Rica,56
+cri,2019,Costa Rica,56
+cri,2020,Costa Rica,57
+cri,2021,Costa Rica,58
+cri,2022,Costa Rica,54
+cri,2023,Costa Rica,55
+cub,2012,Cuba,48
+cub,2013,Cuba,46
+cub,2014,Cuba,46
+cub,2015,Cuba,47
+cub,2016,Cuba,47
+cub,2017,Cuba,47
+cub,2018,Cuba,47
+cub,2019,Cuba,48
+cub,2020,Cuba,47
+cub,2021,Cuba,46
+cub,2022,Cuba,45
+cub,2023,Cuba,42
+cyp,2012,Cyprus,66
+cyp,2013,Cyprus,63
+cyp,2014,Cyprus,63
+cyp,2015,Cyprus,61
+cyp,2016,Cyprus,55
+cyp,2017,Cyprus,57
+cyp,2018,Cyprus,59
+cyp,2019,Cyprus,58
+cyp,2020,Cyprus,57
+cyp,2021,Cyprus,53
+cyp,2022,Cyprus,52
+cyp,2023,Cyprus,53
+cze,2012,Czech Republic,49
+cze,2013,Czech Republic,48
+cze,2014,Czech Republic,51
+cze,2015,Czech Republic,56
+cze,2016,Czech Republic,55
+cze,2017,Czech Republic,57
+cze,2018,Czech Republic,59
+cze,2019,Czech Republic,56
+cze,2020,Czech Republic,54
+cze,2021,Czech Republic,54
+cze,2022,Czech Republic,56
+cze,2023,Czech Republic,57
+deu,2012,Germany,79
+deu,2013,Germany,78
+deu,2014,Germany,79
+deu,2015,Germany,81
+deu,2016,Germany,81
+deu,2017,Germany,81
+deu,2018,Germany,80
+deu,2019,Germany,80
+deu,2020,Germany,80
+deu,2021,Germany,80
+deu,2022,Germany,79
+deu,2023,Germany,78
+dji,2012,Djibouti,36
+dji,2013,Djibouti,36
+dji,2014,Djibouti,34
+dji,2015,Djibouti,34
+dji,2016,Djibouti,30
+dji,2017,Djibouti,31
+dji,2018,Djibouti,31
+dji,2019,Djibouti,30
+dji,2020,Djibouti,27
+dji,2021,Djibouti,30
+dji,2022,Djibouti,30
+dji,2023,Djibouti,30
+dma,2012,Dominica,58
+dma,2013,Dominica,58
+dma,2014,Dominica,58
+dma,2016,Dominica,59
+dma,2017,Dominica,57
+dma,2018,Dominica,57
+dma,2019,Dominica,55
+dma,2020,Dominica,55
+dma,2021,Dominica,55
+dma,2022,Dominica,55
+dma,2023,Dominica,56
+dnk,2012,Denmark,90
+dnk,2013,Denmark,91
+dnk,2014,Denmark,92
+dnk,2015,Denmark,91
+dnk,2016,Denmark,90
+dnk,2017,Denmark,88
+dnk,2018,Denmark,88
+dnk,2019,Denmark,87
+dnk,2020,Denmark,88
+dnk,2021,Denmark,88
+dnk,2022,Denmark,90
+dnk,2023,Denmark,90
+dom,2012,Dominican Republic,32
+dom,2013,Dominican Republic,29
+dom,2014,Dominican Republic,32
+dom,2015,Dominican Republic,33
+dom,2016,Dominican Republic,31
+dom,2017,Dominican Republic,29
+dom,2018,Dominican Republic,30
+dom,2019,Dominican Republic,28
+dom,2020,Dominican Republic,28
+dom,2021,Dominican Republic,30
+dom,2022,Dominican Republic,32
+dom,2023,Dominican Republic,35
+dza,2012,Algeria,34
+dza,2013,Algeria,36
+dza,2014,Algeria,36
+dza,2015,Algeria,36
+dza,2016,Algeria,34
+dza,2017,Algeria,33
+dza,2018,Algeria,35
+dza,2019,Algeria,35
+dza,2020,Algeria,36
+dza,2021,Algeria,33
+dza,2022,Algeria,33
+dza,2023,Algeria,36
+ecu,2012,Ecuador,32
+ecu,2013,Ecuador,35
+ecu,2014,Ecuador,33
+ecu,2015,Ecuador,32
+ecu,2016,Ecuador,31
+ecu,2017,Ecuador,32
+ecu,2018,Ecuador,34
+ecu,2019,Ecuador,38
+ecu,2020,Ecuador,39
+ecu,2021,Ecuador,36
+ecu,2022,Ecuador,36
+ecu,2023,Ecuador,34
+egy,2012,Egypt,32
+egy,2013,Egypt,32
+egy,2014,Egypt,37
+egy,2015,Egypt,36
+egy,2016,Egypt,34
+egy,2017,Egypt,32
+egy,2018,Egypt,35
+egy,2019,Egypt,35
+egy,2020,Egypt,33
+egy,2021,Egypt,33
+egy,2022,Egypt,30
+egy,2023,Egypt,35
+eri,2012,Eritrea,25
+eri,2013,Eritrea,20
+eri,2014,Eritrea,18
+eri,2015,Eritrea,18
+eri,2016,Eritrea,18
+eri,2017,Eritrea,20
+eri,2018,Eritrea,24
+eri,2019,Eritrea,23
+eri,2020,Eritrea,21
+eri,2021,Eritrea,22
+eri,2022,Eritrea,22
+eri,2023,Eritrea,21
+esp,2012,Spain,65
+esp,2013,Spain,59
+esp,2014,Spain,60
+esp,2015,Spain,58
+esp,2016,Spain,58
+esp,2017,Spain,57
+esp,2018,Spain,58
+esp,2019,Spain,62
+esp,2020,Spain,62
+esp,2021,Spain,61
+esp,2022,Spain,60
+esp,2023,Spain,60
+est,2012,Estonia,64
+est,2013,Estonia,68
+est,2014,Estonia,69
+est,2015,Estonia,70
+est,2016,Estonia,70
+est,2017,Estonia,71
+est,2018,Estonia,73
+est,2019,Estonia,74
+est,2020,Estonia,75
+est,2021,Estonia,74
+est,2022,Estonia,74
+est,2023,Estonia,76
+eth,2012,Ethiopia,33
+eth,2013,Ethiopia,33
+eth,2014,Ethiopia,33
+eth,2015,Ethiopia,33
+eth,2016,Ethiopia,34
+eth,2017,Ethiopia,35
+eth,2018,Ethiopia,34
+eth,2019,Ethiopia,37
+eth,2020,Ethiopia,38
+eth,2021,Ethiopia,39
+eth,2022,Ethiopia,38
+eth,2023,Ethiopia,37
+fin,2012,Finland,90
+fin,2013,Finland,89
+fin,2014,Finland,89
+fin,2015,Finland,90
+fin,2016,Finland,89
+fin,2017,Finland,85
+fin,2018,Finland,85
+fin,2019,Finland,86
+fin,2020,Finland,85
+fin,2021,Finland,88
+fin,2022,Finland,87
+fin,2023,Finland,87
+fji,2021,Fiji,55
+fji,2022,Fiji,53
+fji,2023,Fiji,52
+fra,2012,France,71
+fra,2013,France,71
+fra,2014,France,69
+fra,2015,France,70
+fra,2016,France,69
+fra,2017,France,70
+fra,2018,France,72
+fra,2019,France,69
+fra,2020,France,69
+fra,2021,France,71
+fra,2022,France,72
+fra,2023,France,71
+gab,2012,Gabon,35
+gab,2013,Gabon,34
+gab,2014,Gabon,37
+gab,2015,Gabon,34
+gab,2016,Gabon,35
+gab,2017,Gabon,32
+gab,2018,Gabon,31
+gab,2019,Gabon,31
+gab,2020,Gabon,30
+gab,2021,Gabon,31
+gab,2022,Gabon,29
+gab,2023,Gabon,28
+gbr,2012,UK,74
+gbr,2013,UK,76
+gbr,2014,UK,78
+gbr,2015,UK,81
+gbr,2016,UK,81
+gbr,2017,UK,82
+gbr,2018,UK,80
+gbr,2019,UK,77
+gbr,2020,UK,77
+gbr,2021,UK,78
+gbr,2022,UK,73
+gbr,2023,UK,71
+geo,2012,Georgia,52
+geo,2013,Georgia,49
+geo,2014,Georgia,52
+geo,2015,Georgia,52
+geo,2016,Georgia,57
+geo,2017,Georgia,56
+geo,2018,Georgia,58
+geo,2019,Georgia,56
+geo,2020,Georgia,56
+geo,2021,Georgia,55
+geo,2022,Georgia,56
+geo,2023,Georgia,53
+gha,2012,Ghana,45
+gha,2013,Ghana,46
+gha,2014,Ghana,48
+gha,2015,Ghana,47
+gha,2016,Ghana,43
+gha,2017,Ghana,40
+gha,2018,Ghana,41
+gha,2019,Ghana,41
+gha,2020,Ghana,43
+gha,2021,Ghana,43
+gha,2022,Ghana,43
+gha,2023,Ghana,43
+gin,2012,Guinea,24
+gin,2013,Guinea,24
+gin,2014,Guinea,25
+gin,2015,Guinea,25
+gin,2016,Guinea,27
+gin,2017,Guinea,27
+gin,2018,Guinea,28
+gin,2019,Guinea,29
+gin,2020,Guinea,28
+gin,2021,Guinea,25
+gin,2022,Guinea,25
+gin,2023,Guinea,26
+gmb,2012,Gambia,34
+gmb,2013,Gambia,28
+gmb,2014,Gambia,29
+gmb,2015,Gambia,28
+gmb,2016,Gambia,26
+gmb,2017,Gambia,30
+gmb,2018,Gambia,37
+gmb,2019,Gambia,37
+gmb,2020,Gambia,37
+gmb,2021,Gambia,37
+gmb,2022,Gambia,34
+gmb,2023,Gambia,37
+gnb,2012,Guinea-Bissau,25
+gnb,2013,Guinea-Bissau,19
+gnb,2014,Guinea-Bissau,19
+gnb,2015,Guinea-Bissau,17
+gnb,2016,Guinea-Bissau,16
+gnb,2017,Guinea-Bissau,17
+gnb,2018,Guinea-Bissau,16
+gnb,2019,Guinea-Bissau,18
+gnb,2020,Guinea-Bissau,19
+gnb,2021,Guinea-Bissau,21
+gnb,2022,Guinea-Bissau,21
+gnb,2023,Guinea-Bissau,22
+gnq,2012,Equatorial Guinea,20
+gnq,2013,Equatorial Guinea,19
+gnq,2017,Equatorial Guinea,17
+gnq,2018,Equatorial Guinea,16
+gnq,2019,Equatorial Guinea,16
+gnq,2020,Equatorial Guinea,16
+gnq,2021,Equatorial Guinea,17
+gnq,2022,Equatorial Guinea,17
+gnq,2023,Equatorial Guinea,17
+grc,2012,Greece,36
+grc,2013,Greece,40
+grc,2014,Greece,43
+grc,2015,Greece,46
+grc,2016,Greece,44
+grc,2017,Greece,48
+grc,2018,Greece,45
+grc,2019,Greece,48
+grc,2020,Greece,50
+grc,2021,Greece,49
+grc,2022,Greece,52
+grc,2023,Greece,49
+grd,2016,Grenada,56
+grd,2017,Grenada,52
+grd,2018,Grenada,52
+grd,2019,Grenada,53
+grd,2020,Grenada,53
+grd,2021,Grenada,53
+grd,2022,Grenada,52
+grd,2023,Grenada,53
+gtm,2012,Guatemala,33
+gtm,2013,Guatemala,29
+gtm,2014,Guatemala,32
+gtm,2015,Guatemala,28
+gtm,2016,Guatemala,28
+gtm,2017,Guatemala,28
+gtm,2018,Guatemala,27
+gtm,2019,Guatemala,26
+gtm,2020,Guatemala,25
+gtm,2021,Guatemala,25
+gtm,2022,Guatemala,24
+gtm,2023,Guatemala,23
+guy,2012,Guyana,28
+guy,2013,Guyana,27
+guy,2014,Guyana,30
+guy,2015,Guyana,29
+guy,2016,Guyana,34
+guy,2017,Guyana,38
+guy,2018,Guyana,37
+guy,2019,Guyana,40
+guy,2020,Guyana,41
+guy,2021,Guyana,39
+guy,2022,Guyana,40
+guy,2023,Guyana,40
+hnd,2012,Honduras,28
+hnd,2013,Honduras,26
+hnd,2014,Honduras,29
+hnd,2015,Honduras,31
+hnd,2016,Honduras,30
+hnd,2017,Honduras,29
+hnd,2018,Honduras,29
+hnd,2019,Honduras,26
+hnd,2020,Honduras,24
+hnd,2021,Honduras,23
+hnd,2022,Honduras,23
+hnd,2023,Honduras,23
+hrv,2012,Croatia,46
+hrv,2013,Croatia,48
+hrv,2014,Croatia,48
+hrv,2015,Croatia,51
+hrv,2016,Croatia,49
+hrv,2017,Croatia,49
+hrv,2018,Croatia,48
+hrv,2019,Croatia,47
+hrv,2020,Croatia,47
+hrv,2021,Croatia,47
+hrv,2022,Croatia,50
+hrv,2023,Croatia,50
+hti,2012,Haiti,19
+hti,2013,Haiti,19
+hti,2014,Haiti,19
+hti,2015,Haiti,17
+hti,2016,Haiti,20
+hti,2017,Haiti,22
+hti,2018,Haiti,20
+hti,2019,Haiti,18
+hti,2020,Haiti,18
+hti,2021,Haiti,20
+hti,2022,Haiti,17
+hti,2023,Haiti,17
+hun,2012,Hungary,55
+hun,2013,Hungary,54
+hun,2014,Hungary,54
+hun,2015,Hungary,51
+hun,2016,Hungary,48
+hun,2017,Hungary,45
+hun,2018,Hungary,46
+hun,2019,Hungary,44
+hun,2020,Hungary,44
+hun,2021,Hungary,43
+hun,2022,Hungary,42
+hun,2023,Hungary,42
+idn,2012,Indonesia,32
+idn,2013,Indonesia,32
+idn,2014,Indonesia,34
+idn,2015,Indonesia,36
+idn,2016,Indonesia,37
+idn,2017,Indonesia,37
+idn,2018,Indonesia,38
+idn,2019,Indonesia,40
+idn,2020,Indonesia,37
+idn,2021,Indonesia,38
+idn,2022,Indonesia,34
+idn,2023,Indonesia,34
+ind,2012,India,36
+ind,2013,India,36
+ind,2014,India,38
+ind,2015,India,38
+ind,2016,India,40
+ind,2017,India,40
+ind,2018,India,41
+ind,2019,India,41
+ind,2020,India,40
+ind,2021,India,40
+ind,2022,India,40
+ind,2023,India,39
+irl,2012,Ireland,69
+irl,2013,Ireland,72
+irl,2014,Ireland,74
+irl,2015,Ireland,75
+irl,2016,Ireland,73
+irl,2017,Ireland,74
+irl,2018,Ireland,73
+irl,2019,Ireland,74
+irl,2020,Ireland,72
+irl,2021,Ireland,74
+irl,2022,Ireland,77
+irl,2023,Ireland,77
+irn,2012,Iran,28
+irn,2013,Iran,25
+irn,2014,Iran,27
+irn,2015,Iran,27
+irn,2016,Iran,29
+irn,2017,Iran,30
+irn,2018,Iran,28
+irn,2019,Iran,26
+irn,2020,Iran,25
+irn,2021,Iran,25
+irn,2022,Iran,25
+irn,2023,Iran,24
+irq,2012,Iraq,18
+irq,2013,Iraq,16
+irq,2014,Iraq,16
+irq,2015,Iraq,16
+irq,2016,Iraq,17
+irq,2017,Iraq,18
+irq,2018,Iraq,18
+irq,2019,Iraq,20
+irq,2020,Iraq,21
+irq,2021,Iraq,23
+irq,2022,Iraq,23
+irq,2023,Iraq,23
+isl,2012,Iceland,82
+isl,2013,Iceland,78
+isl,2014,Iceland,79
+isl,2015,Iceland,79
+isl,2016,Iceland,78
+isl,2017,Iceland,77
+isl,2018,Iceland,76
+isl,2019,Iceland,78
+isl,2020,Iceland,75
+isl,2021,Iceland,74
+isl,2022,Iceland,74
+isl,2023,Iceland,72
+isr,2012,Israel,60
+isr,2013,Israel,61
+isr,2014,Israel,60
+isr,2015,Israel,61
+isr,2016,Israel,64
+isr,2017,Israel,62
+isr,2018,Israel,61
+isr,2019,Israel,60
+isr,2020,Israel,60
+isr,2021,Israel,59
+isr,2022,Israel,63
+isr,2023,Israel,62
+ita,2012,Italy,42
+ita,2013,Italy,43
+ita,2014,Italy,43
+ita,2015,Italy,44
+ita,2016,Italy,47
+ita,2017,Italy,50
+ita,2018,Italy,52
+ita,2019,Italy,53
+ita,2020,Italy,53
+ita,2021,Italy,56
+ita,2022,Italy,56
+ita,2023,Italy,56
+jam,2012,Jamaica,38
+jam,2013,Jamaica,38
+jam,2014,Jamaica,38
+jam,2015,Jamaica,41
+jam,2016,Jamaica,39
+jam,2017,Jamaica,44
+jam,2018,Jamaica,44
+jam,2019,Jamaica,43
+jam,2020,Jamaica,44
+jam,2021,Jamaica,44
+jam,2022,Jamaica,44
+jam,2023,Jamaica,44
+jor,2012,Jordan,48
+jor,2013,Jordan,45
+jor,2014,Jordan,49
+jor,2015,Jordan,53
+jor,2016,Jordan,48
+jor,2017,Jordan,48
+jor,2018,Jordan,49
+jor,2019,Jordan,48
+jor,2020,Jordan,49
+jor,2021,Jordan,49
+jor,2022,Jordan,47
+jor,2023,Jordan,46
+jpn,2012,Japan,74
+jpn,2013,Japan,74
+jpn,2014,Japan,76
+jpn,2015,Japan,75
+jpn,2016,Japan,72
+jpn,2017,Japan,73
+jpn,2018,Japan,73
+jpn,2019,Japan,73
+jpn,2020,Japan,74
+jpn,2021,Japan,73
+jpn,2022,Japan,73
+jpn,2023,Japan,73
+kaz,2012,Kazakhstan,28
+kaz,2013,Kazakhstan,26
+kaz,2014,Kazakhstan,29
+kaz,2015,Kazakhstan,28
+kaz,2016,Kazakhstan,29
+kaz,2017,Kazakhstan,31
+kaz,2018,Kazakhstan,31
+kaz,2019,Kazakhstan,34
+kaz,2020,Kazakhstan,38
+kaz,2021,Kazakhstan,37
+kaz,2022,Kazakhstan,36
+kaz,2023,Kazakhstan,39
+ken,2012,Kenya,27
+ken,2013,Kenya,27
+ken,2014,Kenya,25
+ken,2015,Kenya,25
+ken,2016,Kenya,26
+ken,2017,Kenya,28
+ken,2018,Kenya,27
+ken,2019,Kenya,28
+ken,2020,Kenya,31
+ken,2021,Kenya,30
+ken,2022,Kenya,32
+ken,2023,Kenya,31
+kgz,2012,Kyrgyz Republic,24
+kgz,2013,Kyrgyz Republic,24
+kgz,2014,Kyrgyz Republic,27
+kgz,2015,Kyrgyz Republic,28
+kgz,2016,Kyrgyz Republic,28
+kgz,2017,Kyrgyz Republic,29
+kgz,2018,Kyrgyz Republic,29
+kgz,2019,Kyrgyz Republic,30
+kgz,2020,Kyrgyz Republic,31
+kgz,2021,Kyrgyz Republic,27
+kgz,2022,Kyrgyz Republic,27
+kgz,2023,Kyrgyz Republic,26
+khm,2012,Cambodia,22
+khm,2013,Cambodia,20
+khm,2014,Cambodia,21
+khm,2015,Cambodia,21
+khm,2016,Cambodia,21
+khm,2017,Cambodia,21
+khm,2018,Cambodia,20
+khm,2019,Cambodia,20
+khm,2020,Cambodia,21
+khm,2021,Cambodia,23
+khm,2022,Cambodia,24
+khm,2023,Cambodia,22
+kor,2012,South Korea,56
+kor,2013,South Korea,55
+kor,2014,South Korea,55
+kor,2015,South Korea,54
+kor,2016,South Korea,53
+kor,2017,South Korea,54
+kor,2018,South Korea,57
+kor,2019,South Korea,59
+kor,2020,South Korea,61
+kor,2021,South Korea,62
+kor,2022,South Korea,63
+kor,2023,South Korea,63
+kwt,2012,Kuwait,44
+kwt,2013,Kuwait,43
+kwt,2014,Kuwait,44
+kwt,2015,Kuwait,49
+kwt,2016,Kuwait,41
+kwt,2017,Kuwait,39
+kwt,2018,Kuwait,41
+kwt,2019,Kuwait,40
+kwt,2020,Kuwait,42
+kwt,2021,Kuwait,43
+kwt,2022,Kuwait,42
+kwt,2023,Kuwait,46
+lao,2012,Lao,21
+lao,2013,Lao,26
+lao,2014,Lao,25
+lao,2015,Lao,25
+lao,2016,Lao,30
+lao,2017,Lao,29
+lao,2018,Lao,29
+lao,2019,Lao,29
+lao,2020,Lao,29
+lao,2021,Lao,30
+lao,2022,Lao,31
+lao,2023,Lao,28
+lbn,2012,Lebanon,30
+lbn,2013,Lebanon,28
+lbn,2014,Lebanon,27
+lbn,2015,Lebanon,28
+lbn,2016,Lebanon,28
+lbn,2017,Lebanon,28
+lbn,2018,Lebanon,28
+lbn,2019,Lebanon,28
+lbn,2020,Lebanon,25
+lbn,2021,Lebanon,24
+lbn,2022,Lebanon,24
+lbn,2023,Lebanon,24
+lbr,2012,Liberia,41
+lbr,2013,Liberia,38
+lbr,2014,Liberia,37
+lbr,2015,Liberia,37
+lbr,2016,Liberia,37
+lbr,2017,Liberia,31
+lbr,2018,Liberia,32
+lbr,2019,Liberia,28
+lbr,2020,Liberia,28
+lbr,2021,Liberia,29
+lbr,2022,Liberia,26
+lbr,2023,Liberia,25
+lby,2012,Libya,21
+lby,2013,Libya,15
+lby,2014,Libya,18
+lby,2015,Libya,16
+lby,2016,Libya,14
+lby,2017,Libya,17
+lby,2018,Libya,17
+lby,2019,Libya,18
+lby,2020,Libya,17
+lby,2021,Libya,17
+lby,2022,Libya,17
+lby,2023,Libya,18
+lca,2012,St. Lucia,71
+lca,2013,St. Lucia,71
+lca,2014,St. Lucia,71
+lca,2016,St. Lucia,60
+lca,2017,St. Lucia,55
+lca,2018,St. Lucia,55
+lca,2019,St. Lucia,55
+lca,2020,St. Lucia,56
+lca,2021,St. Lucia,56
+lca,2022,St. Lucia,55
+lca,2023,St. Lucia,55
+lka,2012,Sri Lanka,40
+lka,2013,Sri Lanka,37
+lka,2014,Sri Lanka,38
+lka,2015,Sri Lanka,37
+lka,2016,Sri Lanka,36
+lka,2017,Sri Lanka,38
+lka,2018,Sri Lanka,38
+lka,2019,Sri Lanka,38
+lka,2020,Sri Lanka,38
+lka,2021,Sri Lanka,37
+lka,2022,Sri Lanka,36
+lka,2023,Sri Lanka,34
+lso,2012,Lesotho,45
+lso,2013,Lesotho,49
+lso,2014,Lesotho,49
+lso,2015,Lesotho,44
+lso,2016,Lesotho,39
+lso,2017,Lesotho,42
+lso,2018,Lesotho,41
+lso,2019,Lesotho,40
+lso,2020,Lesotho,41
+lso,2021,Lesotho,38
+lso,2022,Lesotho,37
+lso,2023,Lesotho,39
+ltu,2012,Lithuania,54
+ltu,2013,Lithuania,57
+ltu,2014,Lithuania,58
+ltu,2015,Lithuania,59
+ltu,2016,Lithuania,59
+ltu,2017,Lithuania,59
+ltu,2018,Lithuania,59
+ltu,2019,Lithuania,60
+ltu,2020,Lithuania,60
+ltu,2021,Lithuania,61
+ltu,2022,Lithuania,62
+ltu,2023,Lithuania,61
+lux,2012,Luxembourg,80
+lux,2013,Luxembourg,80
+lux,2014,Luxembourg,82
+lux,2015,Luxembourg,85
+lux,2016,Luxembourg,81
+lux,2017,Luxembourg,82
+lux,2018,Luxembourg,81
+lux,2019,Luxembourg,80
+lux,2020,Luxembourg,80
+lux,2021,Luxembourg,81
+lux,2022,Luxembourg,77
+lux,2023,Luxembourg,78
+lva,2012,Latvia,49
+lva,2013,Latvia,53
+lva,2014,Latvia,55
+lva,2015,Latvia,56
+lva,2016,Latvia,57
+lva,2017,Latvia,58
+lva,2018,Latvia,58
+lva,2019,Latvia,56
+lva,2020,Latvia,57
+lva,2021,Latvia,59
+lva,2022,Latvia,59
+lva,2023,Latvia,60
+mar,2012,Morocco,37
+mar,2013,Morocco,37
+mar,2014,Morocco,39
+mar,2015,Morocco,36
+mar,2016,Morocco,37
+mar,2017,Morocco,40
+mar,2018,Morocco,43
+mar,2019,Morocco,41
+mar,2020,Morocco,40
+mar,2021,Morocco,39
+mar,2022,Morocco,38
+mar,2023,Morocco,38
+mda,2012,Moldova,36
+mda,2013,Moldova,35
+mda,2014,Moldova,35
+mda,2015,Moldova,33
+mda,2016,Moldova,30
+mda,2017,Moldova,31
+mda,2018,Moldova,33
+mda,2019,Moldova,32
+mda,2020,Moldova,34
+mda,2021,Moldova,36
+mda,2022,Moldova,39
+mda,2023,Moldova,42
+mdg,2012,Madagascar,32
+mdg,2013,Madagascar,28
+mdg,2014,Madagascar,28
+mdg,2015,Madagascar,28
+mdg,2016,Madagascar,26
+mdg,2017,Madagascar,24
+mdg,2018,Madagascar,25
+mdg,2019,Madagascar,24
+mdg,2020,Madagascar,25
+mdg,2021,Madagascar,26
+mdg,2022,Madagascar,26
+mdg,2023,Madagascar,25
+mdv,2016,Maldives,36
+mdv,2017,Maldives,33
+mdv,2018,Maldives,31
+mdv,2019,Maldives,29
+mdv,2020,Maldives,43
+mdv,2021,Maldives,40
+mdv,2022,Maldives,40
+mdv,2023,Maldives,39
+mex,2012,Mexico,34
+mex,2013,Mexico,34
+mex,2014,Mexico,35
+mex,2015,Mexico,31
+mex,2016,Mexico,30
+mex,2017,Mexico,29
+mex,2018,Mexico,28
+mex,2019,Mexico,29
+mex,2020,Mexico,31
+mex,2021,Mexico,31
+mex,2022,Mexico,31
+mex,2023,Mexico,31
+mkd,2012,North Macedonia,43
+mkd,2013,North Macedonia,44
+mkd,2014,North Macedonia,45
+mkd,2015,North Macedonia,42
+mkd,2016,North Macedonia,37
+mkd,2017,North Macedonia,35
+mkd,2018,North Macedonia,37
+mkd,2019,North Macedonia,35
+mkd,2020,North Macedonia,35
+mkd,2021,North Macedonia,39
+mkd,2022,North Macedonia,40
+mkd,2023,North Macedonia,42
+mli,2012,Mali,34
+mli,2013,Mali,28
+mli,2014,Mali,32
+mli,2015,Mali,35
+mli,2016,Mali,32
+mli,2017,Mali,31
+mli,2018,Mali,32
+mli,2019,Mali,29
+mli,2020,Mali,30
+mli,2021,Mali,29
+mli,2022,Mali,28
+mli,2023,Mali,28
+mlt,2012,Malta,57
+mlt,2013,Malta,56
+mlt,2014,Malta,55
+mlt,2015,Malta,60
+mlt,2016,Malta,55
+mlt,2017,Malta,56
+mlt,2018,Malta,54
+mlt,2019,Malta,54
+mlt,2020,Malta,53
+mlt,2021,Malta,54
+mlt,2022,Malta,51
+mlt,2023,Malta,51
+mmr,2012,Myanmar,15
+mmr,2013,Myanmar,21
+mmr,2014,Myanmar,21
+mmr,2015,Myanmar,22
+mmr,2016,Myanmar,28
+mmr,2017,Myanmar,30
+mmr,2018,Myanmar,29
+mmr,2019,Myanmar,29
+mmr,2020,Myanmar,28
+mmr,2021,Myanmar,28
+mmr,2022,Myanmar,23
+mmr,2023,Myanmar,20
+mne,2012,Montenegro,41
+mne,2013,Montenegro,44
+mne,2014,Montenegro,42
+mne,2015,Montenegro,44
+mne,2016,Montenegro,45
+mne,2017,Montenegro,46
+mne,2018,Montenegro,45
+mne,2019,Montenegro,45
+mne,2020,Montenegro,45
+mne,2021,Montenegro,46
+mne,2022,Montenegro,45
+mne,2023,Montenegro,46
+mng,2012,Mongolia,36
+mng,2013,Mongolia,38
+mng,2014,Mongolia,39
+mng,2015,Mongolia,39
+mng,2016,Mongolia,38
+mng,2017,Mongolia,36
+mng,2018,Mongolia,37
+mng,2019,Mongolia,35
+mng,2020,Mongolia,35
+mng,2021,Mongolia,35
+mng,2022,Mongolia,33
+mng,2023,Mongolia,33
+moz,2012,Mozambique,31
+moz,2013,Mozambique,30
+moz,2014,Mozambique,31
+moz,2015,Mozambique,31
+moz,2016,Mozambique,27
+moz,2017,Mozambique,25
+moz,2018,Mozambique,23
+moz,2019,Mozambique,26
+moz,2020,Mozambique,25
+moz,2021,Mozambique,26
+moz,2022,Mozambique,26
+moz,2023,Mozambique,25
+mrt,2012,Mauritania,31
+mrt,2013,Mauritania,30
+mrt,2014,Mauritania,30
+mrt,2015,Mauritania,31
+mrt,2016,Mauritania,27
+mrt,2017,Mauritania,28
+mrt,2018,Mauritania,27
+mrt,2019,Mauritania,28
+mrt,2020,Mauritania,29
+mrt,2021,Mauritania,28
+mrt,2022,Mauritania,30
+mrt,2023,Mauritania,30
+mus,2012,Mauritius,57
+mus,2013,Mauritius,52
+mus,2014,Mauritius,54
+mus,2015,Mauritius,53
+mus,2016,Mauritius,54
+mus,2017,Mauritius,50
+mus,2018,Mauritius,51
+mus,2019,Mauritius,52
+mus,2020,Mauritius,53
+mus,2021,Mauritius,54
+mus,2022,Mauritius,50
+mus,2023,Mauritius,51
+mwi,2012,Malawi,37
+mwi,2013,Malawi,37
+mwi,2014,Malawi,33
+mwi,2015,Malawi,31
+mwi,2016,Malawi,31
+mwi,2017,Malawi,31
+mwi,2018,Malawi,32
+mwi,2019,Malawi,31
+mwi,2020,Malawi,30
+mwi,2021,Malawi,35
+mwi,2022,Malawi,34
+mwi,2023,Malawi,34
+mys,2012,Malaysia,49
+mys,2013,Malaysia,50
+mys,2014,Malaysia,52
+mys,2015,Malaysia,50
+mys,2016,Malaysia,49
+mys,2017,Malaysia,47
+mys,2018,Malaysia,47
+mys,2019,Malaysia,53
+mys,2020,Malaysia,51
+mys,2021,Malaysia,48
+mys,2022,Malaysia,47
+mys,2023,Malaysia,50
+nam,2012,Namibia,48
+nam,2013,Namibia,48
+nam,2014,Namibia,49
+nam,2015,Namibia,53
+nam,2016,Namibia,52
+nam,2017,Namibia,51
+nam,2018,Namibia,53
+nam,2019,Namibia,52
+nam,2020,Namibia,51
+nam,2021,Namibia,49
+nam,2022,Namibia,49
+nam,2023,Namibia,49
+ner,2012,Niger,33
+ner,2013,Niger,34
+ner,2014,Niger,35
+ner,2015,Niger,34
+ner,2016,Niger,35
+ner,2017,Niger,33
+ner,2018,Niger,34
+ner,2019,Niger,32
+ner,2020,Niger,32
+ner,2021,Niger,31
+ner,2022,Niger,32
+ner,2023,Niger,32
+nga,2012,Nigeria,27
+nga,2013,Nigeria,25
+nga,2014,Nigeria,27
+nga,2015,Nigeria,26
+nga,2016,Nigeria,28
+nga,2017,Nigeria,27
+nga,2018,Nigeria,27
+nga,2019,Nigeria,26
+nga,2020,Nigeria,25
+nga,2021,Nigeria,24
+nga,2022,Nigeria,24
+nga,2023,Nigeria,25
+nic,2012,Nicaragua,29
+nic,2013,Nicaragua,28
+nic,2014,Nicaragua,28
+nic,2015,Nicaragua,27
+nic,2016,Nicaragua,26
+nic,2017,Nicaragua,26
+nic,2018,Nicaragua,25
+nic,2019,Nicaragua,22
+nic,2020,Nicaragua,22
+nic,2021,Nicaragua,20
+nic,2022,Nicaragua,19
+nic,2023,Nicaragua,17
+nld,2012,Netherlands,84
+nld,2013,Netherlands,83
+nld,2014,Netherlands,83
+nld,2015,Netherlands,84
+nld,2016,Netherlands,83
+nld,2017,Netherlands,82
+nld,2018,Netherlands,82
+nld,2019,Netherlands,82
+nld,2020,Netherlands,82
+nld,2021,Netherlands,82
+nld,2022,Netherlands,80
+nld,2023,Netherlands,79
+nor,2012,Norway,85
+nor,2013,Norway,86
+nor,2014,Norway,86
+nor,2015,Norway,88
+nor,2016,Norway,85
+nor,2017,Norway,85
+nor,2018,Norway,84
+nor,2019,Norway,84
+nor,2020,Norway,84
+nor,2021,Norway,85
+nor,2022,Norway,84
+nor,2023,Norway,84
+npl,2012,Nepal,27
+npl,2013,Nepal,31
+npl,2014,Nepal,29
+npl,2015,Nepal,27
+npl,2016,Nepal,29
+npl,2017,Nepal,31
+npl,2018,Nepal,31
+npl,2019,Nepal,34
+npl,2020,Nepal,33
+npl,2021,Nepal,33
+npl,2022,Nepal,34
+npl,2023,Nepal,35
+nzl,2012,New Zealand,90
+nzl,2013,New Zealand,91
+nzl,2014,New Zealand,91
+nzl,2015,New Zealand,91
+nzl,2016,New Zealand,90
+nzl,2017,New Zealand,89
+nzl,2018,New Zealand,87
+nzl,2019,New Zealand,87
+nzl,2020,New Zealand,88
+nzl,2021,New Zealand,88
+nzl,2022,New Zealand,87
+nzl,2023,New Zealand,85
+omn,2012,Oman,47
+omn,2013,Oman,47
+omn,2014,Oman,45
+omn,2015,Oman,45
+omn,2016,Oman,45
+omn,2017,Oman,44
+omn,2018,Oman,52
+omn,2019,Oman,52
+omn,2020,Oman,54
+omn,2021,Oman,52
+omn,2022,Oman,44
+omn,2023,Oman,43
+pak,2012,Pakistan,27
+pak,2013,Pakistan,28
+pak,2014,Pakistan,29
+pak,2015,Pakistan,30
+pak,2016,Pakistan,32
+pak,2017,Pakistan,32
+pak,2018,Pakistan,33
+pak,2019,Pakistan,32
+pak,2020,Pakistan,31
+pak,2021,Pakistan,28
+pak,2022,Pakistan,27
+pak,2023,Pakistan,29
+pan,2012,Panama,38
+pan,2013,Panama,35
+pan,2014,Panama,37
+pan,2015,Panama,39
+pan,2016,Panama,38
+pan,2017,Panama,37
+pan,2018,Panama,37
+pan,2019,Panama,36
+pan,2020,Panama,35
+pan,2021,Panama,36
+pan,2022,Panama,36
+pan,2023,Panama,35
+per,2012,Peru,38
+per,2013,Peru,38
+per,2014,Peru,38
+per,2015,Peru,36
+per,2016,Peru,35
+per,2017,Peru,37
+per,2018,Peru,35
+per,2019,Peru,36
+per,2020,Peru,38
+per,2021,Peru,36
+per,2022,Peru,36
+per,2023,Peru,33
+phl,2012,Philippines,34
+phl,2013,Philippines,36
+phl,2014,Philippines,38
+phl,2015,Philippines,35
+phl,2016,Philippines,35
+phl,2017,Philippines,34
+phl,2018,Philippines,36
+phl,2019,Philippines,34
+phl,2020,Philippines,34
+phl,2021,Philippines,33
+phl,2022,Philippines,33
+phl,2023,Philippines,34
+png,2012,Papua New Guinea,25
+png,2013,Papua New Guinea,25
+png,2014,Papua New Guinea,25
+png,2015,Papua New Guinea,25
+png,2016,Papua New Guinea,28
+png,2017,Papua New Guinea,29
+png,2018,Papua New Guinea,28
+png,2019,Papua New Guinea,28
+png,2020,Papua New Guinea,27
+png,2021,Papua New Guinea,31
+png,2022,Papua New Guinea,30
+png,2023,Papua New Guinea,29
+pol,2012,Poland,58
+pol,2013,Poland,60
+pol,2014,Poland,61
+pol,2015,Poland,63
+pol,2016,Poland,62
+pol,2017,Poland,60
+pol,2018,Poland,60
+pol,2019,Poland,58
+pol,2020,Poland,56
+pol,2021,Poland,56
+pol,2022,Poland,55
+pol,2023,Poland,54
+prk,2012,North Korea,8
+prk,2013,North Korea,8
+prk,2014,North Korea,8
+prk,2015,North Korea,8
+prk,2016,North Korea,12
+prk,2017,North Korea,17
+prk,2018,North Korea,14
+prk,2019,North Korea,17
+prk,2020,North Korea,18
+prk,2021,North Korea,16
+prk,2022,North Korea,17
+prk,2023,North Korea,17
+prt,2012,Portugal,63
+prt,2013,Portugal,62
+prt,2014,Portugal,63
+prt,2015,Portugal,64
+prt,2016,Portugal,62
+prt,2017,Portugal,63
+prt,2018,Portugal,64
+prt,2019,Portugal,62
+prt,2020,Portugal,61
+prt,2021,Portugal,62
+prt,2022,Portugal,62
+prt,2023,Portugal,61
+pry,2012,Paraguay,25
+pry,2013,Paraguay,24
+pry,2014,Paraguay,24
+pry,2015,Paraguay,27
+pry,2016,Paraguay,30
+pry,2017,Paraguay,29
+pry,2018,Paraguay,29
+pry,2019,Paraguay,28
+pry,2020,Paraguay,28
+pry,2021,Paraguay,30
+pry,2022,Paraguay,28
+pry,2023,Paraguay,28
+qat,2012,Qatar,68
+qat,2013,Qatar,68
+qat,2014,Qatar,69
+qat,2015,Qatar,71
+qat,2016,Qatar,61
+qat,2017,Qatar,63
+qat,2018,Qatar,62
+qat,2019,Qatar,62
+qat,2020,Qatar,63
+qat,2021,Qatar,63
+qat,2022,Qatar,58
+qat,2023,Qatar,58
+rou,2012,Romania,44
+rou,2013,Romania,43
+rou,2014,Romania,43
+rou,2015,Romania,46
+rou,2016,Romania,48
+rou,2017,Romania,48
+rou,2018,Romania,47
+rou,2019,Romania,44
+rou,2020,Romania,44
+rou,2021,Romania,45
+rou,2022,Romania,46
+rou,2023,Romania,46
+rus,2012,Russia,28
+rus,2013,Russia,28
+rus,2014,Russia,27
+rus,2015,Russia,29
+rus,2016,Russia,29
+rus,2017,Russia,29
+rus,2018,Russia,28
+rus,2019,Russia,28
+rus,2020,Russia,30
+rus,2021,Russia,29
+rus,2022,Russia,28
+rus,2023,Russia,26
+rwa,2012,Rwanda,53
+rwa,2013,Rwanda,53
+rwa,2014,Rwanda,49
+rwa,2015,Rwanda,54
+rwa,2016,Rwanda,54
+rwa,2017,Rwanda,55
+rwa,2018,Rwanda,56
+rwa,2019,Rwanda,53
+rwa,2020,Rwanda,54
+rwa,2021,Rwanda,53
+rwa,2022,Rwanda,51
+rwa,2023,Rwanda,53
+sau,2012,Saudi Arabia,44
+sau,2013,Saudi Arabia,46
+sau,2014,Saudi Arabia,49
+sau,2015,Saudi Arabia,52
+sau,2016,Saudi Arabia,46
+sau,2017,Saudi Arabia,49
+sau,2018,Saudi Arabia,49
+sau,2019,Saudi Arabia,53
+sau,2020,Saudi Arabia,53
+sau,2021,Saudi Arabia,53
+sau,2022,Saudi Arabia,51
+sau,2023,Saudi Arabia,52
+sdn,2012,Sudan,13
+sdn,2013,Sudan,11
+sdn,2014,Sudan,11
+sdn,2015,Sudan,12
+sdn,2016,Sudan,14
+sdn,2017,Sudan,16
+sdn,2018,Sudan,16
+sdn,2019,Sudan,16
+sdn,2020,Sudan,16
+sdn,2021,Sudan,20
+sdn,2022,Sudan,22
+sdn,2023,Sudan,20
+sen,2012,Senegal,36
+sen,2013,Senegal,41
+sen,2014,Senegal,43
+sen,2015,Senegal,44
+sen,2016,Senegal,45
+sen,2017,Senegal,45
+sen,2018,Senegal,45
+sen,2019,Senegal,45
+sen,2020,Senegal,45
+sen,2021,Senegal,43
+sen,2022,Senegal,43
+sen,2023,Senegal,43
+sgp,2012,Singapore,87
+sgp,2013,Singapore,86
+sgp,2014,Singapore,84
+sgp,2015,Singapore,85
+sgp,2016,Singapore,84
+sgp,2017,Singapore,84
+sgp,2018,Singapore,85
+sgp,2019,Singapore,85
+sgp,2020,Singapore,85
+sgp,2021,Singapore,85
+sgp,2022,Singapore,83
+sgp,2023,Singapore,83
+slb,2016,Solomon Islands,42
+slb,2017,Solomon Islands,39
+slb,2018,Solomon Islands,44
+slb,2019,Solomon Islands,42
+slb,2020,Solomon Islands,42
+slb,2021,Solomon Islands,43
+slb,2022,Solomon Islands,42
+slb,2023,Solomon Islands,43
+sle,2012,Sierra Leone,31
+sle,2013,Sierra Leone,30
+sle,2014,Sierra Leone,31
+sle,2015,Sierra Leone,29
+sle,2016,Sierra Leone,30
+sle,2017,Sierra Leone,30
+sle,2018,Sierra Leone,30
+sle,2019,Sierra Leone,33
+sle,2020,Sierra Leone,33
+sle,2021,Sierra Leone,34
+sle,2022,Sierra Leone,34
+sle,2023,Sierra Leone,35
+slv,2012,El Salvador,38
+slv,2013,El Salvador,38
+slv,2014,El Salvador,39
+slv,2015,El Salvador,39
+slv,2016,El Salvador,36
+slv,2017,El Salvador,33
+slv,2018,El Salvador,35
+slv,2019,El Salvador,34
+slv,2020,El Salvador,36
+slv,2021,El Salvador,34
+slv,2022,El Salvador,33
+slv,2023,El Salvador,31
+som,2012,Somalia,8
+som,2013,Somalia,8
+som,2014,Somalia,8
+som,2015,Somalia,8
+som,2016,Somalia,10
+som,2017,Somalia,9
+som,2018,Somalia,10
+som,2019,Somalia,9
+som,2020,Somalia,12
+som,2021,Somalia,13
+som,2022,Somalia,12
+som,2023,Somalia,11
+srb,2012,Serbia,39
+srb,2013,Serbia,42
+srb,2014,Serbia,41
+srb,2015,Serbia,40
+srb,2016,Serbia,42
+srb,2017,Serbia,41
+srb,2018,Serbia,39
+srb,2019,Serbia,39
+srb,2020,Serbia,38
+srb,2021,Serbia,38
+srb,2022,Serbia,36
+srb,2023,Serbia,36
+ssd,2013,South Sudan,14
+ssd,2014,South Sudan,15
+ssd,2015,South Sudan,15
+ssd,2016,South Sudan,11
+ssd,2017,South Sudan,12
+ssd,2018,South Sudan,13
+ssd,2019,South Sudan,12
+ssd,2020,South Sudan,12
+ssd,2021,South Sudan,11
+ssd,2022,South Sudan,13
+ssd,2023,South Sudan,13
+stp,2012,Sao Tome and Principe,42
+stp,2013,Sao Tome and Principe,42
+stp,2014,Sao Tome and Principe,42
+stp,2015,Sao Tome and Principe,42
+stp,2016,Sao Tome and Principe,46
+stp,2017,Sao Tome and Principe,46
+stp,2018,Sao Tome and Principe,46
+stp,2019,Sao Tome and Principe,46
+stp,2020,Sao Tome and Principe,47
+stp,2021,Sao Tome and Principe,45
+stp,2022,Sao Tome and Principe,45
+stp,2023,Sao Tome and Principe,45
+sur,2012,Suriname,37
+sur,2013,Suriname,36
+sur,2014,Suriname,36
+sur,2015,Suriname,36
+sur,2016,Suriname,45
+sur,2017,Suriname,41
+sur,2018,Suriname,43
+sur,2019,Suriname,44
+sur,2020,Suriname,38
+sur,2021,Suriname,39
+sur,2022,Suriname,40
+sur,2023,Suriname,40
+svk,2012,Slovak Republic,46
+svk,2013,Slovak Republic,47
+svk,2014,Slovak Republic,50
+svk,2015,Slovak Republic,51
+svk,2016,Slovak Republic,51
+svk,2017,Slovak Republic,50
+svk,2018,Slovak Republic,50
+svk,2019,Slovak Republic,50
+svk,2020,Slovak Republic,49
+svk,2021,Slovak Republic,52
+svk,2022,Slovak Republic,53
+svk,2023,Slovak Republic,54
+svn,2012,Slovenia,61
+svn,2013,Slovenia,57
+svn,2014,Slovenia,58
+svn,2015,Slovenia,60
+svn,2016,Slovenia,61
+svn,2017,Slovenia,61
+svn,2018,Slovenia,60
+svn,2019,Slovenia,60
+svn,2020,Slovenia,60
+svn,2021,Slovenia,57
+svn,2022,Slovenia,56
+svn,2023,Slovenia,56
+swe,2012,Sweden,88
+swe,2013,Sweden,89
+swe,2014,Sweden,87
+swe,2015,Sweden,89
+swe,2016,Sweden,88
+swe,2017,Sweden,84
+swe,2018,Sweden,85
+swe,2019,Sweden,85
+swe,2020,Sweden,85
+swe,2021,Sweden,85
+swe,2022,Sweden,83
+swe,2023,Sweden,82
+swz,2012,Eswatini,37
+swz,2013,Eswatini,39
+swz,2014,Eswatini,43
+swz,2017,Eswatini,39
+swz,2018,Eswatini,38
+swz,2019,Eswatini,34
+swz,2020,Eswatini,33
+swz,2021,Eswatini,32
+swz,2022,Eswatini,30
+swz,2023,Eswatini,30
+syc,2012,Seychelles,52
+syc,2013,Seychelles,54
+syc,2014,Seychelles,55
+syc,2015,Seychelles,55
+syc,2017,Seychelles,60
+syc,2018,Seychelles,66
+syc,2019,Seychelles,66
+syc,2020,Seychelles,66
+syc,2021,Seychelles,70
+syc,2022,Seychelles,70
+syc,2023,Seychelles,71
+syr,2012,Syria,26
+syr,2013,Syria,17
+syr,2014,Syria,20
+syr,2015,Syria,18
+syr,2016,Syria,13
+syr,2017,Syria,14
+syr,2018,Syria,13
+syr,2019,Syria,13
+syr,2020,Syria,14
+syr,2021,Syria,13
+syr,2022,Syria,13
+syr,2023,Syria,13
+tcd,2012,Chad,19
+tcd,2013,Chad,19
+tcd,2014,Chad,22
+tcd,2015,Chad,22
+tcd,2016,Chad,20
+tcd,2017,Chad,20
+tcd,2018,Chad,19
+tcd,2019,Chad,20
+tcd,2020,Chad,21
+tcd,2021,Chad,20
+tcd,2022,Chad,19
+tcd,2023,Chad,20
+tgo,2012,Togo,30
+tgo,2013,Togo,29
+tgo,2014,Togo,29
+tgo,2015,Togo,32
+tgo,2016,Togo,32
+tgo,2017,Togo,32
+tgo,2018,Togo,30
+tgo,2019,Togo,29
+tgo,2020,Togo,29
+tgo,2021,Togo,30
+tgo,2022,Togo,30
+tgo,2023,Togo,31
+tha,2012,Thailand,37
+tha,2013,Thailand,35
+tha,2014,Thailand,38
+tha,2015,Thailand,38
+tha,2016,Thailand,35
+tha,2017,Thailand,37
+tha,2018,Thailand,36
+tha,2019,Thailand,36
+tha,2020,Thailand,36
+tha,2021,Thailand,35
+tha,2022,Thailand,36
+tha,2023,Thailand,35
+tjk,2012,Tajikistan,22
+tjk,2013,Tajikistan,22
+tjk,2014,Tajikistan,23
+tjk,2015,Tajikistan,26
+tjk,2016,Tajikistan,25
+tjk,2017,Tajikistan,21
+tjk,2018,Tajikistan,25
+tjk,2019,Tajikistan,25
+tjk,2020,Tajikistan,25
+tjk,2021,Tajikistan,25
+tjk,2022,Tajikistan,24
+tjk,2023,Tajikistan,20
+tkm,2012,Turkmenistan,17
+tkm,2013,Turkmenistan,17
+tkm,2014,Turkmenistan,17
+tkm,2015,Turkmenistan,18
+tkm,2016,Turkmenistan,22
+tkm,2017,Turkmenistan,19
+tkm,2018,Turkmenistan,20
+tkm,2019,Turkmenistan,19
+tkm,2020,Turkmenistan,19
+tkm,2021,Turkmenistan,19
+tkm,2022,Turkmenistan,19
+tkm,2023,Turkmenistan,18
+tls,2012,Timor-Leste,33
+tls,2013,Timor-Leste,30
+tls,2014,Timor-Leste,28
+tls,2015,Timor-Leste,28
+tls,2016,Timor-Leste,35
+tls,2017,Timor-Leste,38
+tls,2018,Timor-Leste,35
+tls,2019,Timor-Leste,38
+tls,2020,Timor-Leste,40
+tls,2021,Timor-Leste,41
+tls,2022,Timor-Leste,42
+tls,2023,Timor-Leste,43
+tto,2012,Trinidad and Tobago,39
+tto,2013,Trinidad and Tobago,38
+tto,2014,Trinidad and Tobago,38
+tto,2015,Trinidad and Tobago,39
+tto,2016,Trinidad and Tobago,35
+tto,2017,Trinidad and Tobago,41
+tto,2018,Trinidad and Tobago,41
+tto,2019,Trinidad and Tobago,40
+tto,2020,Trinidad and Tobago,40
+tto,2021,Trinidad and Tobago,41
+tto,2022,Trinidad and Tobago,42
+tto,2023,Trinidad and Tobago,42
+tun,2012,Tunisia,41
+tun,2013,Tunisia,41
+tun,2014,Tunisia,40
+tun,2015,Tunisia,38
+tun,2016,Tunisia,41
+tun,2017,Tunisia,42
+tun,2018,Tunisia,43
+tun,2019,Tunisia,43
+tun,2020,Tunisia,44
+tun,2021,Tunisia,44
+tun,2022,Tunisia,40
+tun,2023,Tunisia,40
+tur,2012,Turkey,49
+tur,2013,Turkey,50
+tur,2014,Turkey,45
+tur,2015,Turkey,42
+tur,2016,Turkey,41
+tur,2017,Turkey,40
+tur,2018,Turkey,41
+tur,2019,Turkey,39
+tur,2020,Turkey,40
+tur,2021,Turkey,38
+tur,2022,Turkey,36
+tur,2023,Turkey,34
+tza,2012,Tanzania,35
+tza,2013,Tanzania,33
+tza,2014,Tanzania,31
+tza,2015,Tanzania,30
+tza,2016,Tanzania,32
+tza,2017,Tanzania,36
+tza,2018,Tanzania,36
+tza,2019,Tanzania,37
+tza,2020,Tanzania,38
+tza,2021,Tanzania,39
+tza,2022,Tanzania,38
+tza,2023,Tanzania,40
+uga,2012,Uganda,29
+uga,2013,Uganda,26
+uga,2014,Uganda,26
+uga,2015,Uganda,25
+uga,2016,Uganda,25
+uga,2017,Uganda,26
+uga,2018,Uganda,26
+uga,2019,Uganda,28
+uga,2020,Uganda,27
+uga,2021,Uganda,27
+uga,2022,Uganda,26
+uga,2023,Uganda,26
+ukr,2012,Ukraine,26
+ukr,2013,Ukraine,25
+ukr,2014,Ukraine,26
+ukr,2015,Ukraine,27
+ukr,2016,Ukraine,29
+ukr,2017,Ukraine,30
+ukr,2018,Ukraine,32
+ukr,2019,Ukraine,30
+ukr,2020,Ukraine,33
+ukr,2021,Ukraine,32
+ukr,2022,Ukraine,33
+ukr,2023,Ukraine,36
+ury,2012,Uruguay,72
+ury,2013,Uruguay,73
+ury,2014,Uruguay,73
+ury,2015,Uruguay,74
+ury,2016,Uruguay,71
+ury,2017,Uruguay,70
+ury,2018,Uruguay,70
+ury,2019,Uruguay,71
+ury,2020,Uruguay,71
+ury,2021,Uruguay,73
+ury,2022,Uruguay,74
+ury,2023,Uruguay,73
+usa,2012,USA,73
+usa,2013,USA,73
+usa,2014,USA,74
+usa,2015,USA,76
+usa,2016,USA,74
+usa,2017,USA,75
+usa,2018,USA,71
+usa,2019,USA,69
+usa,2020,USA,67
+usa,2021,USA,67
+usa,2022,USA,69
+usa,2023,USA,69
+uzb,2012,Uzbekistan,17
+uzb,2013,Uzbekistan,17
+uzb,2014,Uzbekistan,18
+uzb,2015,Uzbekistan,19
+uzb,2016,Uzbekistan,21
+uzb,2017,Uzbekistan,22
+uzb,2018,Uzbekistan,23
+uzb,2019,Uzbekistan,25
+uzb,2020,Uzbekistan,26
+uzb,2021,Uzbekistan,28
+uzb,2022,Uzbekistan,31
+uzb,2023,Uzbekistan,33
+vct,2012,St. Vincent and the Grenadines,62
+vct,2013,St. Vincent and the Grenadines,62
+vct,2014,St. Vincent and the Grenadines,62
+vct,2016,St. Vincent and the Grenadines,60
+vct,2017,St. Vincent and the Grenadines,58
+vct,2018,St. Vincent and the Grenadines,58
+vct,2019,St. Vincent and the Grenadines,59
+vct,2020,St. Vincent and the Grenadines,59
+vct,2021,St. Vincent and the Grenadines,59
+vct,2022,St. Vincent and the Grenadines,60
+vct,2023,St. Vincent and the Grenadines,60
+ven,2012,Venezuela,19
+ven,2013,Venezuela,20
+ven,2014,Venezuela,19
+ven,2015,Venezuela,17
+ven,2016,Venezuela,17
+ven,2017,Venezuela,18
+ven,2018,Venezuela,18
+ven,2019,Venezuela,16
+ven,2020,Venezuela,15
+ven,2021,Venezuela,14
+ven,2022,Venezuela,14
+ven,2023,Venezuela,13
+vnm,2012,Vietnam,31
+vnm,2013,Vietnam,31
+vnm,2014,Vietnam,31
+vnm,2015,Vietnam,31
+vnm,2016,Vietnam,33
+vnm,2017,Vietnam,35
+vnm,2018,Vietnam,33
+vnm,2019,Vietnam,37
+vnm,2020,Vietnam,36
+vnm,2021,Vietnam,39
+vnm,2022,Vietnam,42
+vnm,2023,Vietnam,41
+vut,2017,Vanuatu,43
+vut,2018,Vanuatu,46
+vut,2019,Vanuatu,46
+vut,2020,Vanuatu,43
+vut,2021,Vanuatu,45
+vut,2022,Vanuatu,48
+vut,2023,Vanuatu,48
+yem,2012,Yemen,23
+yem,2013,Yemen,18
+yem,2014,Yemen,19
+yem,2015,Yemen,18
+yem,2016,Yemen,14
+yem,2017,Yemen,16
+yem,2018,Yemen,14
+yem,2019,Yemen,15
+yem,2020,Yemen,15
+yem,2021,Yemen,16
+yem,2022,Yemen,16
+yem,2023,Yemen,16
+zaf,2012,South Africa,43
+zaf,2013,South Africa,42
+zaf,2014,South Africa,44
+zaf,2015,South Africa,44
+zaf,2016,South Africa,45
+zaf,2017,South Africa,43
+zaf,2018,South Africa,43
+zaf,2019,South Africa,44
+zaf,2020,South Africa,44
+zaf,2021,South Africa,44
+zaf,2022,South Africa,43
+zaf,2023,South Africa,41
+zmb,2012,Zambia,37
+zmb,2013,Zambia,38
+zmb,2014,Zambia,38
+zmb,2015,Zambia,38
+zmb,2016,Zambia,38
+zmb,2017,Zambia,37
+zmb,2018,Zambia,35
+zmb,2019,Zambia,34
+zmb,2020,Zambia,33
+zmb,2021,Zambia,33
+zmb,2022,Zambia,33
+zmb,2023,Zambia,37
+zwe,2012,Zimbabwe,20
+zwe,2013,Zimbabwe,21
+zwe,2014,Zimbabwe,21
+zwe,2015,Zimbabwe,21
+zwe,2016,Zimbabwe,22
+zwe,2017,Zimbabwe,22
+zwe,2018,Zimbabwe,22
+zwe,2019,Zimbabwe,24
+zwe,2020,Zimbabwe,24
+zwe,2021,Zimbabwe,23
+zwe,2022,Zimbabwe,23
+zwe,2023,Zimbabwe,24

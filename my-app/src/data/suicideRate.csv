@@ -1,0 +1,4049 @@
+﻿geo,time,name,suicide_per_100000_people
+afg,2000,Afghanistan,4.35615
+afg,2001,Afghanistan,4.38303
+afg,2002,Afghanistan,4.255
+afg,2003,Afghanistan,4.23829
+afg,2004,Afghanistan,4.23198
+afg,2005,Afghanistan,4.15528
+afg,2006,Afghanistan,4.01697
+afg,2007,Afghanistan,3.95192
+afg,2008,Afghanistan,3.86412
+afg,2009,Afghanistan,3.66025
+afg,2010,Afghanistan,3.58878
+afg,2011,Afghanistan,3.68337
+afg,2012,Afghanistan,3.63912
+afg,2013,Afghanistan,3.61291
+afg,2014,Afghanistan,3.54102
+afg,2015,Afghanistan,3.46069
+afg,2016,Afghanistan,3.46679
+afg,2017,Afghanistan,3.55563
+afg,2018,Afghanistan,3.55774
+afg,2019,Afghanistan,3.52831
+afg,2020,Afghanistan,3.49391
+afg,2021,Afghanistan,3.59542
+ago,2000,Angola,9.11515
+ago,2001,Angola,8.47953
+ago,2002,Angola,8.23169
+ago,2003,Angola,8.8836
+ago,2004,Angola,8.91894
+ago,2005,Angola,8.32302
+ago,2006,Angola,8.58974
+ago,2007,Angola,7.99588
+ago,2008,Angola,7.50081
+ago,2009,Angola,7.24214
+ago,2010,Angola,6.89468
+ago,2011,Angola,6.95112
+ago,2012,Angola,6.79033
+ago,2013,Angola,6.87989
+ago,2014,Angola,6.36027
+ago,2015,Angola,6.55582
+ago,2016,Angola,6.48586
+ago,2017,Angola,6.4693
+ago,2018,Angola,7.15116
+ago,2019,Angola,7.52046
+ago,2020,Angola,7.40921
+ago,2021,Angola,8.11378
+alb,2000,Albania,4.7805
+alb,2001,Albania,4.19208
+alb,2002,Albania,4.28382
+alb,2003,Albania,4.46889
+alb,2004,Albania,4.44481
+alb,2005,Albania,6.79668
+alb,2006,Albania,6.88227
+alb,2007,Albania,7.02967
+alb,2008,Albania,7.09477
+alb,2009,Albania,7.01951
+alb,2010,Albania,6.76582
+alb,2011,Albania,6.91202
+alb,2012,Albania,4.49102
+alb,2013,Albania,4.4986
+alb,2014,Albania,4.25204
+alb,2015,Albania,4.13076
+alb,2016,Albania,4.02533
+alb,2017,Albania,3.91351
+alb,2018,Albania,3.82535
+alb,2019,Albania,3.78342
+alb,2020,Albania,3.35507
+alb,2021,Albania,2.7547
+are,2000,UAE,2.44955
+are,2001,UAE,2.40854
+are,2002,UAE,2.27181
+are,2003,UAE,2.17363
+are,2004,UAE,2.16884
+are,2005,UAE,2.20869
+are,2006,UAE,2.20056
+are,2007,UAE,1.96796
+are,2008,UAE,2.13211
+are,2009,UAE,2.35056
+are,2010,UAE,2.54456
+are,2011,UAE,2.62402
+are,2012,UAE,2.67193
+are,2013,UAE,2.59969
+are,2014,UAE,2.46072
+are,2015,UAE,2.4676
+are,2016,UAE,2.37987
+are,2017,UAE,2.48125
+are,2018,UAE,2.51452
+are,2019,UAE,2.46284
+are,2020,UAE,2.37788
+are,2021,UAE,1.70659
+arg,2000,Argentina,9.16712
+arg,2001,Argentina,10.33128
+arg,2002,Argentina,10.31487
+arg,2003,Argentina,9.73933
+arg,2004,Argentina,8.74717
+arg,2005,Argentina,8.64306
+arg,2006,Argentina,8.61028
+arg,2007,Argentina,8.30691
+arg,2008,Argentina,8.66866
+arg,2009,Argentina,8.43997
+arg,2010,Argentina,8.54167
+arg,2011,Argentina,8.62889
+arg,2012,Argentina,9.28402
+arg,2013,Argentina,8.80696
+arg,2014,Argentina,9.52593
+arg,2015,Argentina,8.77289
+arg,2016,Argentina,8.40539
+arg,2017,Argentina,9.02866
+arg,2018,Argentina,9.32674
+arg,2019,Argentina,9.27967
+arg,2020,Argentina,8.1218
+arg,2021,Argentina,7.93811
+arm,2000,Armenia,3.54505
+arm,2001,Armenia,3.20517
+arm,2002,Armenia,3.60602
+arm,2003,Armenia,2.81176
+arm,2004,Armenia,3.92253
+arm,2005,Armenia,4.24662
+arm,2006,Armenia,6.03607
+arm,2007,Armenia,5.98469
+arm,2008,Armenia,4.83262
+arm,2009,Armenia,4.74026
+arm,2010,Armenia,6.8827
+arm,2011,Armenia,6.72146
+arm,2012,Armenia,7.56367
+arm,2013,Armenia,6.46843
+arm,2014,Armenia,6.3587
+arm,2015,Armenia,6.11294
+arm,2016,Armenia,6.00463
+arm,2017,Armenia,3.20991
+arm,2018,Armenia,2.32262
+arm,2019,Armenia,2.69734
+arm,2020,Armenia,2.17875
+arm,2021,Armenia,2.45847
+atg,2000,Antigua and Barbuda,2.04436
+atg,2001,Antigua and Barbuda,2.01303
+atg,2002,Antigua and Barbuda,1.38015
+atg,2003,Antigua and Barbuda,1.33483
+atg,2004,Antigua and Barbuda,1.81229
+atg,2005,Antigua and Barbuda,1.33919
+atg,2006,Antigua and Barbuda,0.46941
+atg,2007,Antigua and Barbuda,0.37551
+atg,2008,Antigua and Barbuda,0.28539
+atg,2009,Antigua and Barbuda,
+atg,2010,Antigua and Barbuda,
+atg,2011,Antigua and Barbuda,
+atg,2012,Antigua and Barbuda,
+atg,2013,Antigua and Barbuda,
+atg,2014,Antigua and Barbuda,0.46742
+atg,2015,Antigua and Barbuda,0.46916
+atg,2016,Antigua and Barbuda,0.58012
+atg,2017,Antigua and Barbuda,
+atg,2018,Antigua and Barbuda,
+atg,2019,Antigua and Barbuda,
+atg,2020,Antigua and Barbuda,0.77336
+atg,2021,Antigua and Barbuda,1.45599
+aus,2000,Australia,12.82553
+aus,2001,Australia,13.03573
+aus,2002,Australia,12.15223
+aus,2003,Australia,11.07803
+aus,2004,Australia,10.78504
+aus,2005,Australia,11.66995
+aus,2006,Australia,11.21219
+aus,2007,Australia,11.49788
+aus,2008,Australia,12.1038
+aus,2009,Australia,11.64501
+aus,2010,Australia,12.13409
+aus,2011,Australia,11.56907
+aus,2012,Australia,12.15989
+aus,2013,Australia,11.92302
+aus,2014,Australia,13.093
+aus,2015,Australia,13.64481
+aus,2016,Australia,12.5032
+aus,2017,Australia,13.89943
+aus,2018,Australia,13.40378
+aus,2019,Australia,13.98477
+aus,2020,Australia,13.03076
+aus,2021,Australia,13.0757
+aut,2000,Austria,19.75339
+aut,2001,Austria,18.50805
+aut,2002,Austria,19.41328
+aut,2003,Austria,17.98956
+aut,2004,Austria,17.38307
+aut,2005,Austria,17.22405
+aut,2006,Austria,16.27586
+aut,2007,Austria,15.97507
+aut,2008,Austria,15.72352
+aut,2009,Austria,15.8401
+aut,2010,Austria,16.05188
+aut,2011,Austria,16.26019
+aut,2012,Austria,16.16859
+aut,2013,Austria,16.09023
+aut,2014,Austria,16.58685
+aut,2015,Austria,16.06662
+aut,2016,Austria,15.63208
+aut,2017,Austria,15.49871
+aut,2018,Austria,15.70386
+aut,2019,Austria,14.58398
+aut,2020,Austria,13.99738
+aut,2021,Austria,14.51307
+aze,2000,Azerbaijan,2.47562
+aze,2001,Azerbaijan,2.4963
+aze,2002,Azerbaijan,2.58371
+aze,2003,Azerbaijan,2.79872
+aze,2004,Azerbaijan,2.82595
+aze,2005,Azerbaijan,3.19253
+aze,2006,Azerbaijan,3.15153
+aze,2007,Azerbaijan,2.97173
+aze,2008,Azerbaijan,3.01757
+aze,2009,Azerbaijan,2.79799
+aze,2010,Azerbaijan,2.7629
+aze,2011,Azerbaijan,2.72642
+aze,2012,Azerbaijan,2.49316
+aze,2013,Azerbaijan,2.25876
+aze,2014,Azerbaijan,2.12818
+aze,2015,Azerbaijan,1.99577
+aze,2016,Azerbaijan,1.90638
+aze,2017,Azerbaijan,1.88532
+aze,2018,Azerbaijan,1.79525
+aze,2019,Azerbaijan,1.83292
+aze,2020,Azerbaijan,3.23114
+aze,2021,Azerbaijan,1.55886
+bdi,2000,Burundi,10.9303
+bdi,2001,Burundi,10.31957
+bdi,2002,Burundi,9.82127
+bdi,2003,Burundi,9.36143
+bdi,2004,Burundi,9.02145
+bdi,2005,Burundi,8.41991
+bdi,2006,Burundi,8.14947
+bdi,2007,Burundi,7.66903
+bdi,2008,Burundi,7.23824
+bdi,2009,Burundi,7.28705
+bdi,2010,Burundi,7.31448
+bdi,2011,Burundi,7.20615
+bdi,2012,Burundi,7.07416
+bdi,2013,Burundi,7.04441
+bdi,2014,Burundi,7.07799
+bdi,2015,Burundi,6.88431
+bdi,2016,Burundi,6.98255
+bdi,2017,Burundi,6.97722
+bdi,2018,Burundi,6.93862
+bdi,2019,Burundi,6.88138
+bdi,2020,Burundi,6.67431
+bdi,2021,Burundi,7.65168
+bel,2000,Belgium,22.06645
+bel,2001,Belgium,22.25492
+bel,2002,Belgium,20.96137
+bel,2003,Belgium,21.44371
+bel,2004,Belgium,20.31948
+bel,2005,Belgium,20.66397
+bel,2006,Belgium,20.28559
+bel,2007,Belgium,18.73565
+bel,2008,Belgium,20.23714
+bel,2009,Belgium,20.56384
+bel,2010,Belgium,20.52935
+bel,2011,Belgium,21.21335
+bel,2012,Belgium,20.89961
+bel,2013,Belgium,19.61949
+bel,2014,Belgium,19.41666
+bel,2015,Belgium,18.60678
+bel,2016,Belgium,19.21829
+bel,2017,Belgium,18.40323
+bel,2018,Belgium,18.57659
+bel,2019,Belgium,18.1104
+bel,2020,Belgium,16.88794
+bel,2021,Belgium,18.36102
+ben,2000,Benin,6.69739
+ben,2001,Benin,6.62124
+ben,2002,Benin,6.84801
+ben,2003,Benin,6.76671
+ben,2004,Benin,6.79441
+ben,2005,Benin,6.76492
+ben,2006,Benin,6.74913
+ben,2007,Benin,6.77424
+ben,2008,Benin,7.01397
+ben,2009,Benin,7.24243
+ben,2010,Benin,7.36828
+ben,2011,Benin,7.43514
+ben,2012,Benin,7.42161
+ben,2013,Benin,7.33748
+ben,2014,Benin,7.29418
+ben,2015,Benin,7.39121
+ben,2016,Benin,7.31965
+ben,2017,Benin,7.2571
+ben,2018,Benin,7.20569
+ben,2019,Benin,7.22707
+ben,2020,Benin,6.89355
+ben,2021,Benin,7.12388
+bfa,2000,Burkina Faso,9.03834
+bfa,2001,Burkina Faso,9.12591
+bfa,2002,Burkina Faso,8.85036
+bfa,2003,Burkina Faso,8.7698
+bfa,2004,Burkina Faso,8.68672
+bfa,2005,Burkina Faso,8.57446
+bfa,2006,Burkina Faso,8.56656
+bfa,2007,Burkina Faso,8.47183
+bfa,2008,Burkina Faso,8.57294
+bfa,2009,Burkina Faso,8.65043
+bfa,2010,Burkina Faso,8.69207
+bfa,2011,Burkina Faso,8.54921
+bfa,2012,Burkina Faso,8.94587
+bfa,2013,Burkina Faso,9.0009
+bfa,2014,Burkina Faso,8.86105
+bfa,2015,Burkina Faso,8.84057
+bfa,2016,Burkina Faso,8.82963
+bfa,2017,Burkina Faso,8.7624
+bfa,2018,Burkina Faso,8.64182
+bfa,2019,Burkina Faso,8.44706
+bfa,2020,Burkina Faso,8.30069
+bfa,2021,Burkina Faso,8.49869
+bgd,2000,Bangladesh,4.80534
+bgd,2001,Bangladesh,4.66727
+bgd,2002,Bangladesh,4.56558
+bgd,2003,Bangladesh,4.39039
+bgd,2004,Bangladesh,4.11511
+bgd,2005,Bangladesh,4.23275
+bgd,2006,Bangladesh,4.29861
+bgd,2007,Bangladesh,4.10106
+bgd,2008,Bangladesh,3.94317
+bgd,2009,Bangladesh,3.91014
+bgd,2010,Bangladesh,3.72001
+bgd,2011,Bangladesh,3.28984
+bgd,2012,Bangladesh,3.11671
+bgd,2013,Bangladesh,3.02204
+bgd,2014,Bangladesh,3.00749
+bgd,2015,Bangladesh,2.96653
+bgd,2016,Bangladesh,2.98126
+bgd,2017,Bangladesh,3.08578
+bgd,2018,Bangladesh,3.05875
+bgd,2019,Bangladesh,3.08083
+bgd,2020,Bangladesh,2.80967
+bgd,2021,Bangladesh,2.81182
+bgr,2000,Bulgaria,18.22021
+bgr,2001,Bulgaria,17.30853
+bgr,2002,Bulgaria,17.32648
+bgr,2003,Bulgaria,14.9748
+bgr,2004,Bulgaria,14.17071
+bgr,2005,Bulgaria,13.2427
+bgr,2006,Bulgaria,13.29684
+bgr,2007,Bulgaria,12.37329
+bgr,2008,Bulgaria,13.05868
+bgr,2009,Bulgaria,12.30299
+bgr,2010,Bulgaria,12.39917
+bgr,2011,Bulgaria,11.06691
+bgr,2012,Bulgaria,12.63208
+bgr,2013,Bulgaria,10.57558
+bgr,2014,Bulgaria,10.56602
+bgr,2015,Bulgaria,9.95401
+bgr,2016,Bulgaria,9.71233
+bgr,2017,Bulgaria,10.3488
+bgr,2018,Bulgaria,9.72825
+bgr,2019,Bulgaria,9.02124
+bgr,2020,Bulgaria,10.03017
+bgr,2021,Bulgaria,9.5109
+bhr,2000,Bahrain,10.84957
+bhr,2001,Bahrain,10.99441
+bhr,2002,Bahrain,10.25483
+bhr,2003,Bahrain,10.4627
+bhr,2004,Bahrain,10.17487
+bhr,2005,Bahrain,9.48312
+bhr,2006,Bahrain,7.44923
+bhr,2007,Bahrain,7.14905
+bhr,2008,Bahrain,6.7899
+bhr,2009,Bahrain,6.00112
+bhr,2010,Bahrain,5.60263
+bhr,2011,Bahrain,5.54955
+bhr,2012,Bahrain,5.78617
+bhr,2013,Bahrain,5.58608
+bhr,2014,Bahrain,5.61656
+bhr,2015,Bahrain,5.27012
+bhr,2016,Bahrain,5.82355
+bhr,2017,Bahrain,6.00125
+bhr,2018,Bahrain,5.97147
+bhr,2019,Bahrain,5.37217
+bhr,2020,Bahrain,5.47822
+bhr,2021,Bahrain,4.65901
+bhs,2000,Bahamas,3.50048
+bhs,2001,Bahamas,3.26657
+bhs,2002,Bahamas,3.03577
+bhs,2003,Bahamas,3.26934
+bhs,2004,Bahamas,3.43084
+bhs,2005,Bahamas,3.13026
+bhs,2006,Bahamas,3.34811
+bhs,2007,Bahamas,3.2337
+bhs,2008,Bahamas,3.29789
+bhs,2009,Bahamas,3.48192
+bhs,2010,Bahamas,3.83368
+bhs,2011,Bahamas,3.80774
+bhs,2012,Bahamas,3.58825
+bhs,2013,Bahamas,3.40142
+bhs,2014,Bahamas,3.58804
+bhs,2015,Bahamas,3.42045
+bhs,2016,Bahamas,3.65062
+bhs,2017,Bahamas,3.64566
+bhs,2018,Bahamas,3.44933
+bhs,2019,Bahamas,3.60855
+bhs,2020,Bahamas,3.10471
+bhs,2021,Bahamas,3.25253
+bih,2000,Bosnia and Herzegovina,10.98351
+bih,2001,Bosnia and Herzegovina,10.81049
+bih,2002,Bosnia and Herzegovina,10.83387
+bih,2003,Bosnia and Herzegovina,10.57336
+bih,2004,Bosnia and Herzegovina,10.45641
+bih,2005,Bosnia and Herzegovina,10.83119
+bih,2006,Bosnia and Herzegovina,10.69204
+bih,2007,Bosnia and Herzegovina,11.47947
+bih,2008,Bosnia and Herzegovina,10.78334
+bih,2009,Bosnia and Herzegovina,10.73002
+bih,2010,Bosnia and Herzegovina,10.46903
+bih,2011,Bosnia and Herzegovina,10.52957
+bih,2012,Bosnia and Herzegovina,10.26167
+bih,2013,Bosnia and Herzegovina,10.53006
+bih,2014,Bosnia and Herzegovina,10.39695
+bih,2015,Bosnia and Herzegovina,10.62754
+bih,2016,Bosnia and Herzegovina,10.52472
+bih,2017,Bosnia and Herzegovina,10.50516
+bih,2018,Bosnia and Herzegovina,10.40443
+bih,2019,Bosnia and Herzegovina,10.90849
+bih,2020,Bosnia and Herzegovina,9.76505
+bih,2021,Bosnia and Herzegovina,8.97169
+blr,2000,Belarus,39.50342
+blr,2001,Belarus,39.31091
+blr,2002,Belarus,40.31967
+blr,2003,Belarus,40.28691
+blr,2004,Belarus,40.36923
+blr,2005,Belarus,40.51841
+blr,2006,Belarus,37.47523
+blr,2007,Belarus,34.04988
+blr,2008,Belarus,36.28929
+blr,2009,Belarus,36.37466
+blr,2010,Belarus,34.16435
+blr,2011,Belarus,34.48311
+blr,2012,Belarus,28.49462
+blr,2013,Belarus,25.51476
+blr,2014,Belarus,23.6081
+blr,2015,Belarus,21.91611
+blr,2016,Belarus,20.88461
+blr,2017,Belarus,18.95358
+blr,2018,Belarus,18.66783
+blr,2019,Belarus,17.52073
+blr,2020,Belarus,16.27145
+blr,2021,Belarus,15.61154
+blz,2000,Belize,6.64297
+blz,2001,Belize,5.53174
+blz,2002,Belize,5.31765
+blz,2003,Belize,5.53023
+blz,2004,Belize,6.18588
+blz,2005,Belize,4.91739
+blz,2006,Belize,5.00569
+blz,2007,Belize,4.58535
+blz,2008,Belize,4.61415
+blz,2009,Belize,5.87301
+blz,2010,Belize,6.44526
+blz,2011,Belize,6.74998
+blz,2012,Belize,6.45533
+blz,2013,Belize,6.2561
+blz,2014,Belize,5.8434
+blz,2015,Belize,5.71498
+blz,2016,Belize,5.44839
+blz,2017,Belize,6.25002
+blz,2018,Belize,5.5768
+blz,2019,Belize,5.02205
+blz,2020,Belize,3.70021
+blz,2021,Belize,4.17652
+bol,2000,Bolivia,6.54238
+bol,2001,Bolivia,6.47186
+bol,2002,Bolivia,6.48055
+bol,2003,Bolivia,6.40855
+bol,2004,Bolivia,6.36538
+bol,2005,Bolivia,6.32857
+bol,2006,Bolivia,6.10119
+bol,2007,Bolivia,6.12492
+bol,2008,Bolivia,6.00492
+bol,2009,Bolivia,5.94043
+bol,2010,Bolivia,5.75778
+bol,2011,Bolivia,5.68198
+bol,2012,Bolivia,5.43155
+bol,2013,Bolivia,5.41439
+bol,2014,Bolivia,5.49088
+bol,2015,Bolivia,5.5943
+bol,2016,Bolivia,5.58206
+bol,2017,Bolivia,5.53512
+bol,2018,Bolivia,5.40646
+bol,2019,Bolivia,5.3483
+bol,2020,Bolivia,4.791
+bol,2021,Bolivia,4.19678
+bra,2000,Brazil,4.22831
+bra,2001,Brazil,4.70076
+bra,2002,Brazil,4.64604
+bra,2003,Brazil,4.65462
+bra,2004,Brazil,4.74457
+bra,2005,Brazil,4.98688
+bra,2006,Brazil,4.97019
+bra,2007,Brazil,5.17613
+bra,2008,Brazil,5.4103
+bra,2009,Brazil,5.41602
+bra,2010,Brazil,5.24882
+bra,2011,Brazil,5.47578
+bra,2012,Brazil,5.63524
+bra,2013,Brazil,5.79022
+bra,2014,Brazil,5.84628
+bra,2015,Brazil,6.10835
+bra,2016,Brazil,6.24754
+bra,2017,Brazil,6.88701
+bra,2018,Brazil,6.67905
+bra,2019,Brazil,6.70782
+bra,2020,Brazil,6.93194
+bra,2021,Brazil,7.59403
+brb,2000,Barbados,5.20142
+brb,2001,Barbados,4.71741
+brb,2002,Barbados,4.36062
+brb,2003,Barbados,4.91889
+brb,2004,Barbados,5.10222
+brb,2005,Barbados,5.12489
+brb,2006,Barbados,4.89508
+brb,2007,Barbados,4.38778
+brb,2008,Barbados,4.58142
+brb,2009,Barbados,4.31583
+brb,2010,Barbados,4.37445
+brb,2011,Barbados,4.28669
+brb,2012,Barbados,3.90596
+brb,2013,Barbados,4.13398
+brb,2014,Barbados,4.29346
+brb,2015,Barbados,4.04665
+brb,2016,Barbados,4.45293
+brb,2017,Barbados,3.90486
+brb,2018,Barbados,4.13796
+brb,2019,Barbados,4.79828
+brb,2020,Barbados,4.1366
+brb,2021,Barbados,3.5031
+brn,2000,Brunei,1.53023
+brn,2001,Brunei,1.10143
+brn,2002,Brunei,1.33427
+brn,2003,Brunei,1.36425
+brn,2004,Brunei,1.68911
+brn,2005,Brunei,1.79899
+brn,2006,Brunei,2.32517
+brn,2007,Brunei,1.99033
+brn,2008,Brunei,1.63862
+brn,2009,Brunei,1.32494
+brn,2010,Brunei,1.05052
+brn,2011,Brunei,1.42276
+brn,2012,Brunei,1.61254
+brn,2013,Brunei,1.31008
+brn,2014,Brunei,1.32003
+brn,2015,Brunei,1.37039
+brn,2016,Brunei,2.03629
+brn,2017,Brunei,2.47783
+brn,2018,Brunei,2.72247
+brn,2019,Brunei,2.49215
+brn,2020,Brunei,2.93366
+brn,2021,Brunei,3.04717
+btn,2000,Bhutan,5.70257
+btn,2001,Bhutan,5.76235
+btn,2002,Bhutan,5.63214
+btn,2003,Bhutan,5.93237
+btn,2004,Bhutan,5.88079
+btn,2005,Bhutan,5.82788
+btn,2006,Bhutan,5.78661
+btn,2007,Bhutan,5.65076
+btn,2008,Bhutan,5.56103
+btn,2009,Bhutan,5.39225
+btn,2010,Bhutan,5.15422
+btn,2011,Bhutan,5.09801
+btn,2012,Bhutan,5.18101
+btn,2013,Bhutan,5.33471
+btn,2014,Bhutan,5.43903
+btn,2015,Bhutan,5.30101
+btn,2016,Bhutan,5.24362
+btn,2017,Bhutan,5.33831
+btn,2018,Bhutan,5.01739
+btn,2019,Bhutan,4.84207
+btn,2020,Bhutan,5.07683
+btn,2021,Bhutan,4.90384
+bwa,2000,Botswana,12.08191
+bwa,2001,Botswana,11.75553
+bwa,2002,Botswana,12.04675
+bwa,2003,Botswana,11.1562
+bwa,2004,Botswana,9.9265
+bwa,2005,Botswana,9.37772
+bwa,2006,Botswana,9.06527
+bwa,2007,Botswana,11.48459
+bwa,2008,Botswana,15.11223
+bwa,2009,Botswana,16.68243
+bwa,2010,Botswana,16.46464
+bwa,2011,Botswana,15.36643
+bwa,2012,Botswana,15.03075
+bwa,2013,Botswana,14.09657
+bwa,2014,Botswana,12.80985
+bwa,2015,Botswana,11.06238
+bwa,2016,Botswana,11.01005
+bwa,2017,Botswana,10.76394
+bwa,2018,Botswana,9.8158
+bwa,2019,Botswana,8.98617
+bwa,2020,Botswana,8.90835
+bwa,2021,Botswana,8.35228
+caf,2000,Central African Republic,12.60821
+caf,2001,Central African Republic,12.01677
+caf,2002,Central African Republic,12.2038
+caf,2003,Central African Republic,11.32143
+caf,2004,Central African Republic,11.43077
+caf,2005,Central African Republic,10.74745
+caf,2006,Central African Republic,11.29942
+caf,2007,Central African Republic,11.01706
+caf,2008,Central African Republic,10.4394
+caf,2009,Central African Republic,10.65996
+caf,2010,Central African Republic,10.23942
+caf,2011,Central African Republic,11.44522
+caf,2012,Central African Republic,9.98758
+caf,2013,Central African Republic,10.46069
+caf,2014,Central African Republic,11.23381
+caf,2015,Central African Republic,10.47412
+caf,2016,Central African Republic,10.44016
+caf,2017,Central African Republic,11.0735
+caf,2018,Central African Republic,10.33212
+caf,2019,Central African Republic,9.45452
+caf,2020,Central African Republic,9.72903
+caf,2021,Central African Republic,9.18932
+can,2000,Canada,12.45292
+can,2001,Canada,12.78265
+can,2002,Canada,12.44839
+can,2003,Canada,13.09065
+can,2004,Canada,12.39094
+can,2005,Canada,12.86833
+can,2006,Canada,11.85839
+can,2007,Canada,12.17983
+can,2008,Canada,12.34484
+can,2009,Canada,12.83161
+can,2010,Canada,12.89314
+can,2011,Canada,12.02242
+can,2012,Canada,12.59646
+can,2013,Canada,12.85595
+can,2014,Canada,13.37575
+can,2015,Canada,13.42697
+can,2016,Canada,11.48604
+can,2017,Canada,11.82108
+can,2018,Canada,12.55595
+can,2019,Canada,12.68958
+can,2020,Canada,11.64402
+can,2021,Canada,9.44161
+che,2000,Switzerland,20.35451
+che,2001,Switzerland,19.7061
+che,2002,Switzerland,21.06964
+che,2003,Switzerland,18.70046
+che,2004,Switzerland,18.5527
+che,2005,Switzerland,18.97447
+che,2006,Switzerland,18.84826
+che,2007,Switzerland,19.46768
+che,2008,Switzerland,18.64478
+che,2009,Switzerland,15.90666
+che,2010,Switzerland,14.4912
+che,2011,Switzerland,14.66158
+che,2012,Switzerland,14.74814
+che,2013,Switzerland,15.10083
+che,2014,Switzerland,14.78048
+che,2015,Switzerland,15.04932
+che,2016,Switzerland,14.16106
+che,2017,Switzerland,14.40023
+che,2018,Switzerland,14.25457
+che,2019,Switzerland,14.22617
+che,2020,Switzerland,13.69128
+che,2021,Switzerland,14.02486
+chl,2000,Chile,10.64218
+chl,2001,Chile,10.60289
+chl,2002,Chile,9.84325
+chl,2003,Chile,9.83697
+chl,2004,Chile,10.26033
+chl,2005,Chile,9.76216
+chl,2006,Chile,10.11738
+chl,2007,Chile,11.04426
+chl,2008,Chile,12.29636
+chl,2009,Chile,12.75519
+chl,2010,Chile,11.71632
+chl,2011,Chile,11.78649
+chl,2012,Chile,10.6187
+chl,2013,Chile,9.9488
+chl,2014,Chile,10.13178
+chl,2015,Chile,10.32085
+chl,2016,Chile,10.29992
+chl,2017,Chile,10.05989
+chl,2018,Chile,9.52065
+chl,2019,Chile,9.76857
+chl,2020,Chile,8.25715
+chl,2021,Chile,7.69217
+chn,2000,China,15.48632
+chn,2001,China,15.13916
+chn,2002,China,14.92854
+chn,2003,China,15.01799
+chn,2004,China,15.00788
+chn,2005,China,14.22575
+chn,2006,China,13.01763
+chn,2007,China,12.17913
+chn,2008,China,11.60985
+chn,2009,China,11.10194
+chn,2010,China,10.5835
+chn,2011,China,9.97236
+chn,2012,China,9.40869
+chn,2013,China,9.07104
+chn,2014,China,8.85845
+chn,2015,China,8.68894
+chn,2016,China,8.64643
+chn,2017,China,8.6151
+chn,2018,China,8.70276
+chn,2019,China,8.74995
+chn,2020,China,8.82397
+chn,2021,China,8.94544
+civ,2000,Cote d'Ivoire,5.91792
+civ,2001,Cote d'Ivoire,5.83787
+civ,2002,Cote d'Ivoire,5.7075
+civ,2003,Cote d'Ivoire,5.64901
+civ,2004,Cote d'Ivoire,5.14748
+civ,2005,Cote d'Ivoire,5.17689
+civ,2006,Cote d'Ivoire,5.28979
+civ,2007,Cote d'Ivoire,5.48377
+civ,2008,Cote d'Ivoire,5.81245
+civ,2009,Cote d'Ivoire,6.68005
+civ,2010,Cote d'Ivoire,7.93357
+civ,2011,Cote d'Ivoire,8.49556
+civ,2012,Cote d'Ivoire,8.79113
+civ,2013,Cote d'Ivoire,8.92128
+civ,2014,Cote d'Ivoire,8.60057
+civ,2015,Cote d'Ivoire,8.05554
+civ,2016,Cote d'Ivoire,7.81853
+civ,2017,Cote d'Ivoire,7.68194
+civ,2018,Cote d'Ivoire,7.71251
+civ,2019,Cote d'Ivoire,7.75285
+civ,2020,Cote d'Ivoire,7.2953
+civ,2021,Cote d'Ivoire,7.39131
+cmr,2000,Cameroon,7.28897
+cmr,2001,Cameroon,7.89021
+cmr,2002,Cameroon,7.79093
+cmr,2003,Cameroon,7.87401
+cmr,2004,Cameroon,7.71486
+cmr,2005,Cameroon,7.8678
+cmr,2006,Cameroon,7.867
+cmr,2007,Cameroon,7.9478
+cmr,2008,Cameroon,8.0165
+cmr,2009,Cameroon,8.03975
+cmr,2010,Cameroon,8.11856
+cmr,2011,Cameroon,8.17724
+cmr,2012,Cameroon,8.31613
+cmr,2013,Cameroon,8.511
+cmr,2014,Cameroon,8.6441
+cmr,2015,Cameroon,8.4498
+cmr,2016,Cameroon,8.34884
+cmr,2017,Cameroon,8.19617
+cmr,2018,Cameroon,8.1412
+cmr,2019,Cameroon,8.22396
+cmr,2020,Cameroon,7.90893
+cmr,2021,Cameroon,8.49675
+cod,2000,"Congo, Dem. Rep.",7.75583
+cod,2001,"Congo, Dem. Rep.",7.80216
+cod,2002,"Congo, Dem. Rep.",7.8738
+cod,2003,"Congo, Dem. Rep.",8.05852
+cod,2004,"Congo, Dem. Rep.",8.02687
+cod,2005,"Congo, Dem. Rep.",7.99442
+cod,2006,"Congo, Dem. Rep.",7.94341
+cod,2007,"Congo, Dem. Rep.",8.12491
+cod,2008,"Congo, Dem. Rep.",8.21169
+cod,2009,"Congo, Dem. Rep.",8.04038
+cod,2010,"Congo, Dem. Rep.",8.08097
+cod,2011,"Congo, Dem. Rep.",8.0762
+cod,2012,"Congo, Dem. Rep.",8.08455
+cod,2013,"Congo, Dem. Rep.",8.1264
+cod,2014,"Congo, Dem. Rep.",8.1914
+cod,2015,"Congo, Dem. Rep.",8.20353
+cod,2016,"Congo, Dem. Rep.",8.37074
+cod,2017,"Congo, Dem. Rep.",8.60365
+cod,2018,"Congo, Dem. Rep.",8.67577
+cod,2019,"Congo, Dem. Rep.",8.32886
+cod,2020,"Congo, Dem. Rep.",8.15426
+cod,2021,"Congo, Dem. Rep.",8.76967
+cog,2000,"Congo, Rep.",12.04382
+cog,2001,"Congo, Rep.",10.6501
+cog,2002,"Congo, Rep.",9.59354
+cog,2003,"Congo, Rep.",8.9539
+cog,2004,"Congo, Rep.",9.18856
+cog,2005,"Congo, Rep.",8.94982
+cog,2006,"Congo, Rep.",8.10855
+cog,2007,"Congo, Rep.",8.13012
+cog,2008,"Congo, Rep.",7.99058
+cog,2009,"Congo, Rep.",8.25703
+cog,2010,"Congo, Rep.",8.02551
+cog,2011,"Congo, Rep.",7.74188
+cog,2012,"Congo, Rep.",8.05718
+cog,2013,"Congo, Rep.",7.62115
+cog,2014,"Congo, Rep.",7.27611
+cog,2015,"Congo, Rep.",6.71016
+cog,2016,"Congo, Rep.",6.57815
+cog,2017,"Congo, Rep.",6.57299
+cog,2018,"Congo, Rep.",6.61644
+cog,2019,"Congo, Rep.",7.05151
+cog,2020,"Congo, Rep.",6.55757
+cog,2021,"Congo, Rep.",6.7126
+col,2000,Colombia,5.1185
+col,2001,Colombia,5.02459
+col,2002,Colombia,4.72015
+col,2003,Colombia,4.63194
+col,2004,Colombia,4.56627
+col,2005,Colombia,4.22417
+col,2006,Colombia,4.24292
+col,2007,Colombia,4.1761
+col,2008,Colombia,4.22404
+col,2009,Colombia,4.09505
+col,2010,Colombia,3.89283
+col,2011,Colombia,3.74925
+col,2012,Colombia,3.81836
+col,2013,Colombia,3.72119
+col,2014,Colombia,3.79913
+col,2015,Colombia,4.1312
+col,2016,Colombia,4.30647
+col,2017,Colombia,4.6226
+col,2018,Colombia,5.03076
+col,2019,Colombia,5.10852
+col,2020,Colombia,4.81499
+col,2021,Colombia,4.96183
+com,2000,Comoros,6.88526
+com,2001,Comoros,6.70412
+com,2002,Comoros,6.50053
+com,2003,Comoros,6.18856
+com,2004,Comoros,6.13142
+com,2005,Comoros,5.88422
+com,2006,Comoros,5.96602
+com,2007,Comoros,5.85995
+com,2008,Comoros,5.98458
+com,2009,Comoros,5.78481
+com,2010,Comoros,6.34741
+com,2011,Comoros,5.99174
+com,2012,Comoros,6.1397
+com,2013,Comoros,6.13728
+com,2014,Comoros,6.41728
+com,2015,Comoros,6.3745
+com,2016,Comoros,6.39468
+com,2017,Comoros,6.27122
+com,2018,Comoros,6.24889
+com,2019,Comoros,6.17941
+com,2020,Comoros,6.20777
+com,2021,Comoros,5.9983
+cpv,2000,Cape Verde,12.24005
+cpv,2001,Cape Verde,12.25566
+cpv,2002,Cape Verde,12.45635
+cpv,2003,Cape Verde,12.49133
+cpv,2004,Cape Verde,12.58231
+cpv,2005,Cape Verde,13.39105
+cpv,2006,Cape Verde,13.09577
+cpv,2007,Cape Verde,13.39163
+cpv,2008,Cape Verde,13.78902
+cpv,2009,Cape Verde,14.20845
+cpv,2010,Cape Verde,14.5957
+cpv,2011,Cape Verde,14.69084
+cpv,2012,Cape Verde,14.90113
+cpv,2013,Cape Verde,15.16346
+cpv,2014,Cape Verde,15.0981
+cpv,2015,Cape Verde,15.03121
+cpv,2016,Cape Verde,14.7188
+cpv,2017,Cape Verde,14.80315
+cpv,2018,Cape Verde,14.45384
+cpv,2019,Cape Verde,14.56408
+cpv,2020,Cape Verde,13.68752
+cpv,2021,Cape Verde,14.89953
+cri,2000,Costa Rica,5.96664
+cri,2001,Costa Rica,4.85734
+cri,2002,Costa Rica,6.5299
+cri,2003,Costa Rica,7.35533
+cri,2004,Costa Rica,7.62569
+cri,2005,Costa Rica,6.22886
+cri,2006,Costa Rica,7.94791
+cri,2007,Costa Rica,5.49687
+cri,2008,Costa Rica,5.35632
+cri,2009,Costa Rica,5.51308
+cri,2010,Costa Rica,6.51661
+cri,2011,Costa Rica,6.52225
+cri,2012,Costa Rica,6.22302
+cri,2013,Costa Rica,6.40485
+cri,2014,Costa Rica,5.35708
+cri,2015,Costa Rica,6.37212
+cri,2016,Costa Rica,6.82578
+cri,2017,Costa Rica,5.57746
+cri,2018,Costa Rica,7.52575
+cri,2019,Costa Rica,7.05556
+cri,2020,Costa Rica,6.36211
+cri,2021,Costa Rica,8.06209
+cub,2000,Cuba,17.27067
+cub,2001,Cuba,15.29657
+cub,2002,Cuba,14.74646
+cub,2003,Cuba,13.8135
+cub,2004,Cuba,13.95721
+cub,2005,Cuba,12.99461
+cub,2006,Cuba,12.74371
+cub,2007,Cuba,12.20633
+cub,2008,Cuba,12.85188
+cub,2009,Cuba,13.69175
+cub,2010,Cuba,14.36125
+cub,2011,Cuba,14.05083
+cub,2012,Cuba,13.74272
+cub,2013,Cuba,13.91141
+cub,2014,Cuba,13.42389
+cub,2015,Cuba,14.08077
+cub,2016,Cuba,13.3864
+cub,2017,Cuba,14.60222
+cub,2018,Cuba,14.07864
+cub,2019,Cuba,13.78525
+cub,2020,Cuba,14.6127
+cub,2021,Cuba,13.79297
+cyp,2000,Cyprus,1.92492
+cyp,2001,Cyprus,1.99216
+cyp,2002,Cyprus,2.0621
+cyp,2003,Cyprus,2.08412
+cyp,2004,Cyprus,0.89168
+cyp,2005,Cyprus,2.35992
+cyp,2006,Cyprus,3.31114
+cyp,2007,Cyprus,3.02343
+cyp,2008,Cyprus,5.98115
+cyp,2009,Cyprus,4.48803
+cyp,2010,Cyprus,5.21246
+cyp,2011,Cyprus,4.37319
+cyp,2012,Cyprus,5.73526
+cyp,2013,Cyprus,6.01158
+cyp,2014,Cyprus,5.70003
+cyp,2015,Cyprus,4.94825
+cyp,2016,Cyprus,5.06436
+cyp,2017,Cyprus,4.40648
+cyp,2018,Cyprus,5.56308
+cyp,2019,Cyprus,4.49963
+cyp,2020,Cyprus,3.86485
+cyp,2021,Cyprus,3.02316
+cze,2000,Czech Republic,16.33129
+cze,2001,Czech Republic,16.1834
+cze,2002,Czech Republic,15.36888
+cze,2003,Czech Republic,17.08558
+cze,2004,Czech Republic,16.44484
+cze,2005,Czech Republic,15.88425
+cze,2006,Czech Republic,14.56391
+cze,2007,Czech Republic,14.26369
+cze,2008,Czech Republic,14.24037
+cze,2009,Czech Republic,15.00882
+cze,2010,Czech Republic,15.09947
+cze,2011,Czech Republic,16.09259
+cze,2012,Czech Republic,16.69981
+cze,2013,Czech Republic,15.65171
+cze,2014,Czech Republic,14.82154
+cze,2015,Czech Republic,13.53684
+cze,2016,Czech Republic,13.03289
+cze,2017,Czech Republic,13.91021
+cze,2018,Czech Republic,13.58777
+cze,2019,Czech Republic,12.22676
+cze,2020,Czech Republic,12.72753
+cze,2021,Czech Republic,13.3261
+deu,2000,Germany,14.42063
+deu,2001,Germany,14.46762
+deu,2002,Germany,14.5597
+deu,2003,Germany,14.36668
+deu,2004,Germany,13.98991
+deu,2005,Germany,13.28291
+deu,2006,Germany,12.78166
+deu,2007,Germany,12.37956
+deu,2008,Germany,12.51751
+deu,2009,Germany,12.73967
+deu,2010,Germany,13.23492
+deu,2011,Germany,13.24051
+deu,2012,Germany,12.91978
+deu,2013,Germany,13.4792
+deu,2014,Germany,13.43862
+deu,2015,Germany,13.30158
+deu,2016,Germany,12.98511
+deu,2017,Germany,12.53278
+deu,2018,Germany,12.81935
+deu,2019,Germany,12.48549
+deu,2020,Germany,12.86718
+deu,2021,Germany,12.90286
+dji,2000,Djibouti,5.2827
+dji,2001,Djibouti,5.53074
+dji,2002,Djibouti,5.98745
+dji,2003,Djibouti,6.42788
+dji,2004,Djibouti,6.58411
+dji,2005,Djibouti,6.43302
+dji,2006,Djibouti,6.21098
+dji,2007,Djibouti,6.44785
+dji,2008,Djibouti,5.97821
+dji,2009,Djibouti,6.37678
+dji,2010,Djibouti,6.31128
+dji,2011,Djibouti,6.50062
+dji,2012,Djibouti,6.75974
+dji,2013,Djibouti,6.95293
+dji,2014,Djibouti,7.5928
+dji,2015,Djibouti,7.46982
+dji,2016,Djibouti,7.85839
+dji,2017,Djibouti,8.09011
+dji,2018,Djibouti,8.21103
+dji,2019,Djibouti,8.02438
+dji,2020,Djibouti,7.88643
+dji,2021,Djibouti,7.96391
+dnk,2000,Denmark,15.54266
+dnk,2001,Denmark,15.77997
+dnk,2002,Denmark,14.96765
+dnk,2003,Denmark,13.6841
+dnk,2004,Denmark,14.37172
+dnk,2005,Denmark,14.70183
+dnk,2006,Denmark,14.67629
+dnk,2007,Denmark,12.73878
+dnk,2008,Denmark,13.05614
+dnk,2009,Denmark,12.71011
+dnk,2010,Denmark,11.69273
+dnk,2011,Denmark,12.43442
+dnk,2012,Denmark,12.84222
+dnk,2013,Denmark,12.06392
+dnk,2014,Denmark,11.96759
+dnk,2015,Denmark,11.02614
+dnk,2016,Denmark,10.81534
+dnk,2017,Denmark,11.17538
+dnk,2018,Denmark,11.20116
+dnk,2019,Denmark,11.41673
+dnk,2020,Denmark,10.89756
+dnk,2021,Denmark,10.45853
+dom,2000,Dominican Republic,4.13842
+dom,2001,Dominican Republic,3.988
+dom,2002,Dominican Republic,3.8925
+dom,2003,Dominican Republic,3.93223
+dom,2004,Dominican Republic,4.09626
+dom,2005,Dominican Republic,4.33779
+dom,2006,Dominican Republic,4.26687
+dom,2007,Dominican Republic,4.20929
+dom,2008,Dominican Republic,4.2389
+dom,2009,Dominican Republic,4.26762
+dom,2010,Dominican Republic,4.18051
+dom,2011,Dominican Republic,4.23988
+dom,2012,Dominican Republic,4.91477
+dom,2013,Dominican Republic,5.29863
+dom,2014,Dominican Republic,6.17769
+dom,2015,Dominican Republic,6.43386
+dom,2016,Dominican Republic,6.30167
+dom,2017,Dominican Republic,6.69561
+dom,2018,Dominican Republic,6.22488
+dom,2019,Dominican Republic,5.82971
+dom,2020,Dominican Republic,4.18059
+dom,2021,Dominican Republic,4.19752
+dza,2000,Algeria,4.18385
+dza,2001,Algeria,3.96391
+dza,2002,Algeria,3.90528
+dza,2003,Algeria,3.61819
+dza,2004,Algeria,3.42989
+dza,2005,Algeria,3.32939
+dza,2006,Algeria,3.18608
+dza,2007,Algeria,3.04119
+dza,2008,Algeria,2.89893
+dza,2009,Algeria,2.73738
+dza,2010,Algeria,2.61397
+dza,2011,Algeria,2.54403
+dza,2012,Algeria,2.36058
+dza,2013,Algeria,2.30824
+dza,2014,Algeria,2.25687
+dza,2015,Algeria,2.16641
+dza,2016,Algeria,2.05819
+dza,2017,Algeria,2.04169
+dza,2018,Algeria,2.0651
+dza,2019,Algeria,2.04704
+dza,2020,Algeria,1.7078
+dza,2021,Algeria,2.18144
+ecu,2000,Ecuador,5.55363
+ecu,2001,Ecuador,5.68612
+ecu,2002,Ecuador,5.44818
+ecu,2003,Ecuador,6.17132
+ecu,2004,Ecuador,6.93972
+ecu,2005,Ecuador,8.34281
+ecu,2006,Ecuador,7.75214
+ecu,2007,Ecuador,8.4769
+ecu,2008,Ecuador,8.21725
+ecu,2009,Ecuador,8.51268
+ecu,2010,Ecuador,7.98604
+ecu,2011,Ecuador,8.2468
+ecu,2012,Ecuador,8.17757
+ecu,2013,Ecuador,5.86651
+ecu,2014,Ecuador,6.59375
+ecu,2015,Ecuador,8.38176
+ecu,2016,Ecuador,8.8261
+ecu,2017,Ecuador,8.94836
+ecu,2018,Ecuador,8.47194
+ecu,2019,Ecuador,8.52041
+ecu,2020,Ecuador,7.59058
+ecu,2021,Ecuador,7.55903
+egy,2000,Egypt,0.9123
+egy,2001,Egypt,0.94194
+egy,2002,Egypt,0.95667
+egy,2003,Egypt,0.94514
+egy,2004,Egypt,0.94703
+egy,2005,Egypt,0.93826
+egy,2006,Egypt,0.92167
+egy,2007,Egypt,0.90092
+egy,2008,Egypt,0.90497
+egy,2009,Egypt,0.91633
+egy,2010,Egypt,0.93253
+egy,2011,Egypt,0.98708
+egy,2012,Egypt,1.04281
+egy,2013,Egypt,1.03928
+egy,2014,Egypt,0.97721
+egy,2015,Egypt,0.96905
+egy,2016,Egypt,0.94387
+egy,2017,Egypt,0.8905
+egy,2018,Egypt,0.8878
+egy,2019,Egypt,0.90855
+egy,2020,Egypt,0.78511
+egy,2021,Egypt,0.62968
+eri,2000,Eritrea,14.25839
+eri,2001,Eritrea,13.53204
+eri,2002,Eritrea,13.60187
+eri,2003,Eritrea,12.78038
+eri,2004,Eritrea,12.95307
+eri,2005,Eritrea,13.05618
+eri,2006,Eritrea,13.11047
+eri,2007,Eritrea,12.99917
+eri,2008,Eritrea,13.1801
+eri,2009,Eritrea,13.65288
+eri,2010,Eritrea,13.53885
+eri,2011,Eritrea,13.35941
+eri,2012,Eritrea,13.14359
+eri,2013,Eritrea,13.3606
+eri,2014,Eritrea,13.06611
+eri,2015,Eritrea,13.03929
+eri,2016,Eritrea,12.92557
+eri,2017,Eritrea,13.05044
+eri,2018,Eritrea,13.17851
+eri,2019,Eritrea,13.00138
+eri,2020,Eritrea,12.87004
+eri,2021,Eritrea,13.22532
+esp,2000,Spain,8.55059
+esp,2001,Spain,8.01921
+esp,2002,Spain,8.32951
+esp,2003,Spain,8.47114
+esp,2004,Spain,8.46393
+esp,2005,Spain,8.01394
+esp,2006,Spain,7.51773
+esp,2007,Spain,7.38466
+esp,2008,Spain,7.78349
+esp,2009,Spain,7.64115
+esp,2010,Spain,7.01394
+esp,2011,Spain,7.10121
+esp,2012,Spain,7.74195
+esp,2013,Spain,8.50057
+esp,2014,Spain,8.59512
+esp,2015,Spain,7.9663
+esp,2016,Spain,7.90032
+esp,2017,Spain,8.11662
+esp,2018,Spain,7.79132
+esp,2019,Spain,8.09842
+esp,2020,Spain,8.62427
+esp,2021,Spain,8.71558
+est,2000,Estonia,29.27199
+est,2001,Estonia,30.18285
+est,2002,Estonia,28.20872
+est,2003,Estonia,26.5525
+est,2004,Estonia,25.5467
+est,2005,Estonia,22.54202
+est,2006,Estonia,20.88112
+est,2007,Estonia,21.57974
+est,2008,Estonia,19.64838
+est,2009,Estonia,22.09618
+est,2010,Estonia,18.28701
+est,2011,Estonia,17.58982
+est,2012,Estonia,19.44204
+est,2013,Estonia,18.14727
+est,2014,Estonia,19.22522
+est,2015,Estonia,15.72634
+est,2016,Estonia,15.04698
+est,2017,Estonia,17.88733
+est,2018,Estonia,15.7828
+est,2019,Estonia,15.61
+est,2020,Estonia,17.53942
+est,2021,Estonia,14.9382
+eth,2000,Ethiopia,7.25995
+eth,2001,Ethiopia,7.11921
+eth,2002,Ethiopia,6.88513
+eth,2003,Ethiopia,6.67325
+eth,2004,Ethiopia,6.46498
+eth,2005,Ethiopia,6.22979
+eth,2006,Ethiopia,6.03425
+eth,2007,Ethiopia,5.90089
+eth,2008,Ethiopia,5.79379
+eth,2009,Ethiopia,5.66867
+eth,2010,Ethiopia,5.56935
+eth,2011,Ethiopia,5.5353
+eth,2012,Ethiopia,5.43828
+eth,2013,Ethiopia,5.07589
+eth,2014,Ethiopia,4.99789
+eth,2015,Ethiopia,5.20544
+eth,2016,Ethiopia,5.32901
+eth,2017,Ethiopia,5.36654
+eth,2018,Ethiopia,5.55282
+eth,2019,Ethiopia,5.67306
+eth,2020,Ethiopia,5.67605
+eth,2021,Ethiopia,6.06812
+fin,2000,Finland,24.13205
+fin,2001,Finland,24.30542
+fin,2002,Finland,22.16437
+fin,2003,Finland,21.85381
+fin,2004,Finland,21.31424
+fin,2005,Finland,19.95885
+fin,2006,Finland,21.1038
+fin,2007,Finland,19.67572
+fin,2008,Finland,20.55969
+fin,2009,Finland,20.32926
+fin,2010,Finland,18.62935
+fin,2011,Finland,17.73648
+fin,2012,Finland,16.85444
+fin,2013,Finland,17.20118
+fin,2014,Finland,15.52453
+fin,2015,Finland,14.08667
+fin,2016,Finland,15.28915
+fin,2017,Finland,15.7142
+fin,2018,Finland,15.67292
+fin,2019,Finland,14.37568
+fin,2020,Finland,14.13805
+fin,2021,Finland,14.57026
+fji,2000,Fiji,10.4718
+fji,2001,Fiji,10.15221
+fji,2002,Fiji,9.93481
+fji,2003,Fiji,9.6317
+fji,2004,Fiji,9.21966
+fji,2005,Fiji,9.49302
+fji,2006,Fiji,9.14473
+fji,2007,Fiji,9.28304
+fji,2008,Fiji,9.43765
+fji,2009,Fiji,9.67186
+fji,2010,Fiji,9.69125
+fji,2011,Fiji,9.83894
+fji,2012,Fiji,9.97176
+fji,2013,Fiji,10.0161
+fji,2014,Fiji,9.73382
+fji,2015,Fiji,9.40249
+fji,2016,Fiji,9.36657
+fji,2017,Fiji,9.62857
+fji,2018,Fiji,9.55056
+fji,2019,Fiji,9.44895
+fji,2020,Fiji,9.41553
+fji,2021,Fiji,8.26638
+fra,2000,France,20.31598
+fra,2001,France,19.57477
+fra,2002,France,19.89597
+fra,2003,France,20.17817
+fra,2004,France,19.53027
+fra,2005,France,19.17332
+fra,2006,France,18.45781
+fra,2007,France,18.03096
+fra,2008,France,18.26131
+fra,2009,France,18.42889
+fra,2010,France,18.22902
+fra,2011,France,18.04467
+fra,2012,France,17.13303
+fra,2013,France,16.98259
+fra,2014,France,15.66243
+fra,2015,France,15.57142
+fra,2016,France,14.62787
+fra,2017,France,14.77871
+fra,2018,France,15.17084
+fra,2019,France,15.04709
+fra,2020,France,16.25226
+fra,2021,France,16.58226
+fsm,2000,"Micronesia, Fed. Sts.",21.46408
+fsm,2001,"Micronesia, Fed. Sts.",21.24975
+fsm,2002,"Micronesia, Fed. Sts.",20.80843
+fsm,2003,"Micronesia, Fed. Sts.",20.68179
+fsm,2004,"Micronesia, Fed. Sts.",21.89443
+fsm,2005,"Micronesia, Fed. Sts.",22.51853
+fsm,2006,"Micronesia, Fed. Sts.",22.30576
+fsm,2007,"Micronesia, Fed. Sts.",21.96402
+fsm,2008,"Micronesia, Fed. Sts.",21.94841
+fsm,2009,"Micronesia, Fed. Sts.",21.86309
+fsm,2010,"Micronesia, Fed. Sts.",21.83946
+fsm,2011,"Micronesia, Fed. Sts.",22.26473
+fsm,2012,"Micronesia, Fed. Sts.",22.31812
+fsm,2013,"Micronesia, Fed. Sts.",21.99852
+fsm,2014,"Micronesia, Fed. Sts.",20.04666
+fsm,2015,"Micronesia, Fed. Sts.",20.40291
+fsm,2016,"Micronesia, Fed. Sts.",20.29236
+fsm,2017,"Micronesia, Fed. Sts.",20.38948
+fsm,2018,"Micronesia, Fed. Sts.",20.45729
+fsm,2019,"Micronesia, Fed. Sts.",20.52312
+fsm,2020,"Micronesia, Fed. Sts.",19.12179
+fsm,2021,"Micronesia, Fed. Sts.",19.76217
+gab,2000,Gabon,9.2709
+gab,2001,Gabon,8.85306
+gab,2002,Gabon,8.46702
+gab,2003,Gabon,8.36248
+gab,2004,Gabon,8.15643
+gab,2005,Gabon,9.03606
+gab,2006,Gabon,9.20004
+gab,2007,Gabon,8.64142
+gab,2008,Gabon,8.75282
+gab,2009,Gabon,9.1818
+gab,2010,Gabon,9.12335
+gab,2011,Gabon,9.18342
+gab,2012,Gabon,8.88221
+gab,2013,Gabon,8.8181
+gab,2014,Gabon,9.84697
+gab,2015,Gabon,9.69019
+gab,2016,Gabon,9.4206
+gab,2017,Gabon,9.27929
+gab,2018,Gabon,9.25182
+gab,2019,Gabon,8.85584
+gab,2020,Gabon,7.42438
+gab,2021,Gabon,7.29744
+gbr,2000,UK,8.50554
+gbr,2001,UK,8.23348
+gbr,2002,UK,8.2725
+gbr,2003,UK,7.98613
+gbr,2004,UK,8.20447
+gbr,2005,UK,7.89911
+gbr,2006,UK,7.82666
+gbr,2007,UK,7.54235
+gbr,2008,UK,8.04813
+gbr,2009,UK,7.94318
+gbr,2010,UK,7.79764
+gbr,2011,UK,8.33251
+gbr,2012,UK,8.26811
+gbr,2013,UK,8.73821
+gbr,2014,UK,8.45223
+gbr,2015,UK,8.6211
+gbr,2016,UK,8.25014
+gbr,2017,UK,7.97743
+gbr,2018,UK,9.15679
+gbr,2019,UK,9.39161
+gbr,2020,UK,8.90109
+gbr,2021,UK,9.54807
+geo,2000,Georgia,3.03096
+geo,2001,Georgia,2.49115
+geo,2002,Georgia,3.5286
+geo,2003,Georgia,2.85111
+geo,2004,Georgia,4.77241
+geo,2005,Georgia,2.1577
+geo,2006,Georgia,1.77706
+geo,2007,Georgia,2.5641
+geo,2008,Georgia,3.48635
+geo,2009,Georgia,4.88562
+geo,2010,Georgia,3.21217
+geo,2011,Georgia,2.59294
+geo,2012,Georgia,2.68288
+geo,2013,Georgia,4.04231
+geo,2014,Georgia,5.45763
+geo,2015,Georgia,5.57732
+geo,2016,Georgia,4.55327
+geo,2017,Georgia,4.349
+geo,2018,Georgia,6.99743
+geo,2019,Georgia,7.33209
+geo,2020,Georgia,5.7398
+geo,2021,Georgia,5.09907
+gha,2000,Ghana,3.40864
+gha,2001,Ghana,3.65752
+gha,2002,Ghana,3.87809
+gha,2003,Ghana,4.13882
+gha,2004,Ghana,4.38076
+gha,2005,Ghana,4.46527
+gha,2006,Ghana,4.54906
+gha,2007,Ghana,4.48774
+gha,2008,Ghana,4.80323
+gha,2009,Ghana,5.14943
+gha,2010,Ghana,5.19652
+gha,2011,Ghana,5.36389
+gha,2012,Ghana,5.37225
+gha,2013,Ghana,5.43474
+gha,2014,Ghana,5.45957
+gha,2015,Ghana,5.48241
+gha,2016,Ghana,5.48078
+gha,2017,Ghana,5.5282
+gha,2018,Ghana,5.34212
+gha,2019,Ghana,5.28584
+gha,2020,Ghana,5.07626
+gha,2021,Ghana,5.31674
+gin,2000,Guinea,4.15065
+gin,2001,Guinea,4.2402
+gin,2002,Guinea,4.4245
+gin,2003,Guinea,4.49533
+gin,2004,Guinea,4.54754
+gin,2005,Guinea,4.45833
+gin,2006,Guinea,4.66118
+gin,2007,Guinea,4.77808
+gin,2008,Guinea,4.83999
+gin,2009,Guinea,4.87487
+gin,2010,Guinea,5.15134
+gin,2011,Guinea,5.09544
+gin,2012,Guinea,5.11379
+gin,2013,Guinea,5.11499
+gin,2014,Guinea,5.09051
+gin,2015,Guinea,5.03897
+gin,2016,Guinea,4.96412
+gin,2017,Guinea,4.99781
+gin,2018,Guinea,4.97705
+gin,2019,Guinea,5.01974
+gin,2020,Guinea,5.0269
+gin,2021,Guinea,4.81861
+gmb,2000,Gambia,4.65647
+gmb,2001,Gambia,4.72232
+gmb,2002,Gambia,4.93097
+gmb,2003,Gambia,5.00039
+gmb,2004,Gambia,5.00012
+gmb,2005,Gambia,4.85004
+gmb,2006,Gambia,4.65589
+gmb,2007,Gambia,4.63742
+gmb,2008,Gambia,4.69011
+gmb,2009,Gambia,4.67535
+gmb,2010,Gambia,4.50707
+gmb,2011,Gambia,4.76419
+gmb,2012,Gambia,4.83096
+gmb,2013,Gambia,4.84553
+gmb,2014,Gambia,4.86774
+gmb,2015,Gambia,4.90057
+gmb,2016,Gambia,4.88378
+gmb,2017,Gambia,4.91429
+gmb,2018,Gambia,4.90718
+gmb,2019,Gambia,5.01773
+gmb,2020,Gambia,4.888
+gmb,2021,Gambia,4.81185
+gnb,2000,Guinea-Bissau,8.25013
+gnb,2001,Guinea-Bissau,8.1913
+gnb,2002,Guinea-Bissau,7.76514
+gnb,2003,Guinea-Bissau,7.32662
+gnb,2004,Guinea-Bissau,7.5073
+gnb,2005,Guinea-Bissau,7.38542
+gnb,2006,Guinea-Bissau,7.35256
+gnb,2007,Guinea-Bissau,7.26766
+gnb,2008,Guinea-Bissau,7.30077
+gnb,2009,Guinea-Bissau,7.26995
+gnb,2010,Guinea-Bissau,7.20604
+gnb,2011,Guinea-Bissau,7.16803
+gnb,2012,Guinea-Bissau,7.01653
+gnb,2013,Guinea-Bissau,7.03011
+gnb,2014,Guinea-Bissau,7.11114
+gnb,2015,Guinea-Bissau,7.15146
+gnb,2016,Guinea-Bissau,7.15256
+gnb,2017,Guinea-Bissau,7.17573
+gnb,2018,Guinea-Bissau,7.09957
+gnb,2019,Guinea-Bissau,7.37828
+gnb,2020,Guinea-Bissau,7.75487
+gnb,2021,Guinea-Bissau,7.66672
+gnq,2000,Equatorial Guinea,9.50653
+gnq,2001,Equatorial Guinea,8.42566
+gnq,2002,Equatorial Guinea,7.79946
+gnq,2003,Equatorial Guinea,7.73325
+gnq,2004,Equatorial Guinea,7.30724
+gnq,2005,Equatorial Guinea,7.11833
+gnq,2006,Equatorial Guinea,6.69104
+gnq,2007,Equatorial Guinea,6.40294
+gnq,2008,Equatorial Guinea,6.6496
+gnq,2009,Equatorial Guinea,6.66982
+gnq,2010,Equatorial Guinea,6.68472
+gnq,2011,Equatorial Guinea,6.85549
+gnq,2012,Equatorial Guinea,6.76247
+gnq,2013,Equatorial Guinea,6.2021
+gnq,2014,Equatorial Guinea,6.13239
+gnq,2015,Equatorial Guinea,6.54682
+gnq,2016,Equatorial Guinea,7.08937
+gnq,2017,Equatorial Guinea,7.23484
+gnq,2018,Equatorial Guinea,7.5904
+gnq,2019,Equatorial Guinea,7.71436
+gnq,2020,Equatorial Guinea,7.40743
+gnq,2021,Equatorial Guinea,7.03379
+grc,2000,Greece,3.39333
+grc,2001,Greece,2.95487
+grc,2002,Greece,2.85711
+grc,2003,Greece,3.2972
+grc,2004,Greece,3.1012
+grc,2005,Greece,3.51439
+grc,2006,Greece,3.47555
+grc,2007,Greece,2.91315
+grc,2008,Greece,3.30634
+grc,2009,Greece,3.48544
+grc,2010,Greece,3.39642
+grc,2011,Greece,4.30582
+grc,2012,Greece,4.6951
+grc,2013,Greece,4.92821
+grc,2014,Greece,5.29706
+grc,2015,Greece,4.93624
+grc,2016,Greece,4.5958
+grc,2017,Greece,4.9974
+grc,2018,Greece,5.39442
+grc,2019,Greece,5.0763
+grc,2020,Greece,4.42128
+grc,2021,Greece,4.68187
+grd,2000,Grenada,2.16832
+grd,2001,Grenada,0.34306
+grd,2002,Grenada,3.71817
+grd,2003,Grenada,2.84946
+grd,2004,Grenada,5.6155
+grd,2005,Grenada,4.07475
+grd,2006,Grenada,6.34072
+grd,2007,Grenada,2.21173
+grd,2008,Grenada,3.40525
+grd,2009,Grenada,1.43721
+grd,2010,Grenada,1.53784
+grd,2011,Grenada,1.73632
+grd,2012,Grenada,1.87399
+grd,2013,Grenada,1.37703
+grd,2014,Grenada,0.5953
+grd,2015,Grenada,0.64032
+grd,2016,Grenada,0.85185
+grd,2017,Grenada,0.46767
+grd,2018,Grenada,0.08482
+grd,2019,Grenada,1.01043
+grd,2020,Grenada,1.07611
+grd,2021,Grenada,1.29933
+gtm,2000,Guatemala,9.31754
+gtm,2001,Guatemala,9.82424
+gtm,2002,Guatemala,9.43203
+gtm,2003,Guatemala,9.52819
+gtm,2004,Guatemala,9.59026
+gtm,2005,Guatemala,9.024
+gtm,2006,Guatemala,8.76577
+gtm,2007,Guatemala,6.67842
+gtm,2008,Guatemala,6.63717
+gtm,2009,Guatemala,6.25131
+gtm,2010,Guatemala,5.72732
+gtm,2011,Guatemala,4.80351
+gtm,2012,Guatemala,4.59779
+gtm,2013,Guatemala,4.92547
+gtm,2014,Guatemala,5.09492
+gtm,2015,Guatemala,5.45676
+gtm,2016,Guatemala,5.55241
+gtm,2017,Guatemala,5.92351
+gtm,2018,Guatemala,5.6133
+gtm,2019,Guatemala,5.88081
+gtm,2020,Guatemala,5.07649
+gtm,2021,Guatemala,4.93708
+guy,2000,Guyana,26.73652
+guy,2001,Guyana,29.74205
+guy,2002,Guyana,29.03842
+guy,2003,Guyana,28.77535
+guy,2004,Guyana,27.42772
+guy,2005,Guyana,26.71512
+guy,2006,Guyana,26.93126
+guy,2007,Guyana,26.87388
+guy,2008,Guyana,26.29669
+guy,2009,Guyana,28.46454
+guy,2010,Guyana,28.76764
+guy,2011,Guyana,29.10793
+guy,2012,Guyana,30.78425
+guy,2013,Guyana,33.31514
+guy,2014,Guyana,33.63714
+guy,2015,Guyana,33.24269
+guy,2016,Guyana,34.25037
+guy,2017,Guyana,32.0139
+guy,2018,Guyana,29.04904
+guy,2019,Guyana,27.63678
+guy,2020,Guyana,29.53009
+guy,2021,Guyana,24.7829
+hnd,2000,Honduras,3.30932
+hnd,2001,Honduras,3.33127
+hnd,2002,Honduras,3.36437
+hnd,2003,Honduras,3.41431
+hnd,2004,Honduras,3.33727
+hnd,2005,Honduras,3.36501
+hnd,2006,Honduras,3.28957
+hnd,2007,Honduras,3.29051
+hnd,2008,Honduras,3.15781
+hnd,2009,Honduras,3.07002
+hnd,2010,Honduras,3.02535
+hnd,2011,Honduras,2.91401
+hnd,2012,Honduras,5.41184
+hnd,2013,Honduras,5.32902
+hnd,2014,Honduras,5.63647
+hnd,2015,Honduras,6.50331
+hnd,2016,Honduras,2.93374
+hnd,2017,Honduras,3.00207
+hnd,2018,Honduras,3.02048
+hnd,2019,Honduras,3.05047
+hnd,2020,Honduras,2.92278
+hnd,2021,Honduras,2.97347
+hrv,2000,Croatia,20.48619
+hrv,2001,Croatia,19.56753
+hrv,2002,Croatia,19.3732
+hrv,2003,Croatia,19.64328
+hrv,2004,Croatia,19.94916
+hrv,2005,Croatia,20.02136
+hrv,2006,Croatia,18.21881
+hrv,2007,Croatia,17.74121
+hrv,2008,Croatia,18.17778
+hrv,2009,Croatia,18.13606
+hrv,2010,Croatia,18.03196
+hrv,2011,Croatia,16.31171
+hrv,2012,Croatia,18.25789
+hrv,2013,Croatia,16.33877
+hrv,2014,Croatia,17.03359
+hrv,2015,Croatia,17.36524
+hrv,2016,Croatia,16.18941
+hrv,2017,Croatia,15.48488
+hrv,2018,Croatia,16.76124
+hrv,2019,Croatia,14.90735
+hrv,2020,Croatia,14.66505
+hrv,2021,Croatia,15.68231
+hti,2000,Haiti,8.29851
+hti,2001,Haiti,8.05067
+hti,2002,Haiti,8.09059
+hti,2003,Haiti,8.07797
+hti,2004,Haiti,7.81945
+hti,2005,Haiti,7.88518
+hti,2006,Haiti,7.74374
+hti,2007,Haiti,7.82857
+hti,2008,Haiti,7.77522
+hti,2009,Haiti,7.91632
+hti,2010,Haiti,7.88018
+hti,2011,Haiti,7.83591
+hti,2012,Haiti,8.0995
+hti,2013,Haiti,8.15118
+hti,2014,Haiti,8.08037
+hti,2015,Haiti,8.12927
+hti,2016,Haiti,7.87751
+hti,2017,Haiti,8.03652
+hti,2018,Haiti,8.44156
+hti,2019,Haiti,8.59588
+hti,2020,Haiti,7.8924
+hti,2021,Haiti,7.81419
+hun,2000,Hungary,33.25955
+hun,2001,Hungary,29.70375
+hun,2002,Hungary,28.52005
+hun,2003,Hungary,27.99245
+hun,2004,Hungary,27.45538
+hun,2005,Hungary,26.35011
+hun,2006,Hungary,24.92857
+hun,2007,Hungary,24.94953
+hun,2008,Hungary,25.34425
+hun,2009,Hungary,25.29546
+hun,2010,Hungary,25.55878
+hun,2011,Hungary,25.23176
+hun,2012,Hungary,25.03962
+hun,2013,Hungary,22.29974
+hun,2014,Hungary,20.59593
+hun,2015,Hungary,20.00866
+hun,2016,Hungary,18.81508
+hun,2017,Hungary,17.41688
+hun,2018,Hungary,17.75372
+hun,2019,Hungary,16.65305
+hun,2020,Hungary,18.2193
+hun,2021,Hungary,16.45273
+idn,2000,Indonesia,2.15073
+idn,2001,Indonesia,2.15688
+idn,2002,Indonesia,2.13892
+idn,2003,Indonesia,2.09256
+idn,2004,Indonesia,2.03343
+idn,2005,Indonesia,1.99752
+idn,2006,Indonesia,1.95872
+idn,2007,Indonesia,1.93755
+idn,2008,Indonesia,1.90274
+idn,2009,Indonesia,1.85721
+idn,2010,Indonesia,1.81948
+idn,2011,Indonesia,1.76444
+idn,2012,Indonesia,1.73812
+idn,2013,Indonesia,1.67092
+idn,2014,Indonesia,1.62009
+idn,2015,Indonesia,1.60126
+idn,2016,Indonesia,1.59463
+idn,2017,Indonesia,1.5864
+idn,2018,Indonesia,1.58481
+idn,2019,Indonesia,1.59538
+idn,2020,Indonesia,1.38052
+idn,2021,Indonesia,1.20441
+ind,2000,India,15.92825
+ind,2001,India,15.09715
+ind,2002,India,15.13863
+ind,2003,India,15.02607
+ind,2004,India,15.40209
+ind,2005,India,15.67832
+ind,2006,India,15.85648
+ind,2007,India,15.85695
+ind,2008,India,15.796
+ind,2009,India,15.68411
+ind,2010,India,15.90145
+ind,2011,India,15.8515
+ind,2012,India,15.88392
+ind,2013,India,15.68177
+ind,2014,India,15.12361
+ind,2015,India,14.63077
+ind,2016,India,14.62498
+ind,2017,India,14.86996
+ind,2018,India,14.31066
+ind,2019,India,13.97581
+ind,2020,India,13.01168
+ind,2021,India,12.55596
+irl,2000,Ireland,12.44777
+irl,2001,Ireland,12.91592
+irl,2002,Ireland,11.97068
+irl,2003,Ireland,11.96402
+irl,2004,Ireland,11.63941
+irl,2005,Ireland,11.88746
+irl,2006,Ireland,11.11525
+irl,2007,Ireland,11.37269
+irl,2008,Ireland,12.14848
+irl,2009,Ireland,14.03496
+irl,2010,Ireland,12.08278
+irl,2011,Ireland,12.71167
+irl,2012,Ireland,12.37385
+irl,2013,Ireland,11.11957
+irl,2014,Ireland,10.88164
+irl,2015,Ireland,9.43213
+irl,2016,Ireland,9.63231
+irl,2017,Ireland,8.47365
+irl,2018,Ireland,9.28607
+irl,2019,Ireland,8.06805
+irl,2020,Ireland,8.61922
+irl,2021,Ireland,8.54697
+irn,2000,Iran,6.03132
+irn,2001,Iran,5.87381
+irn,2002,Iran,5.68971
+irn,2003,Iran,5.09924
+irn,2004,Iran,5.20131
+irn,2005,Iran,4.91784
+irn,2006,Iran,4.82758
+irn,2007,Iran,5.4107
+irn,2008,Iran,5.27992
+irn,2009,Iran,5.09509
+irn,2010,Iran,4.95862
+irn,2011,Iran,4.84257
+irn,2012,Iran,4.51781
+irn,2013,Iran,4.68493
+irn,2014,Iran,4.92606
+irn,2015,Iran,4.66372
+irn,2016,Iran,4.72463
+irn,2017,Iran,4.49977
+irn,2018,Iran,4.32845
+irn,2019,Iran,4.26941
+irn,2020,Iran,3.39861
+irn,2021,Iran,4.07296
+irq,2000,Iraq,4.1287
+irq,2001,Iraq,4.0571
+irq,2002,Iraq,3.99225
+irq,2003,Iraq,3.87104
+irq,2004,Iraq,3.85979
+irq,2005,Iraq,3.75662
+irq,2006,Iraq,3.6321
+irq,2007,Iraq,3.56408
+irq,2008,Iraq,3.57634
+irq,2009,Iraq,3.59247
+irq,2010,Iraq,3.5685
+irq,2011,Iraq,3.58092
+irq,2012,Iraq,3.51282
+irq,2013,Iraq,3.47893
+irq,2014,Iraq,3.26378
+irq,2015,Iraq,3.33941
+irq,2016,Iraq,3.30774
+irq,2017,Iraq,3.31044
+irq,2018,Iraq,3.27872
+irq,2019,Iraq,3.24821
+irq,2020,Iraq,2.85882
+irq,2021,Iraq,2.97457
+isl,2000,Iceland,13.3022
+isl,2001,Iceland,12.81535
+isl,2002,Iceland,12.15693
+isl,2003,Iceland,12.45397
+isl,2004,Iceland,12.49465
+isl,2005,Iceland,11.74926
+isl,2006,Iceland,12.73474
+isl,2007,Iceland,15.46237
+isl,2008,Iceland,15.79153
+isl,2009,Iceland,14.54155
+isl,2010,Iceland,12.93827
+isl,2011,Iceland,11.53047
+isl,2012,Iceland,13.51987
+isl,2013,Iceland,13.88397
+isl,2014,Iceland,15.54124
+isl,2015,Iceland,13.97098
+isl,2016,Iceland,11.80661
+isl,2017,Iceland,10.94813
+isl,2018,Iceland,9.35885
+isl,2019,Iceland,11.97822
+isl,2020,Iceland,12.93643
+isl,2021,Iceland,11.90903
+isr,2000,Israel,6.83097
+isr,2001,Israel,6.44898
+isr,2002,Israel,5.70146
+isr,2003,Israel,6.38388
+isr,2004,Israel,6.05875
+isr,2005,Israel,6.93011
+isr,2006,Israel,5.57961
+isr,2007,Israel,5.26767
+isr,2008,Israel,5.28849
+isr,2009,Israel,5.97566
+isr,2010,Israel,6.71163
+isr,2011,Israel,5.62561
+isr,2012,Israel,6.02593
+isr,2013,Israel,5.0944
+isr,2014,Israel,4.97681
+isr,2015,Israel,4.50715
+isr,2016,Israel,5.13065
+isr,2017,Israel,5.07023
+isr,2018,Israel,5.35702
+isr,2019,Israel,5.02806
+isr,2020,Israel,5.07892
+isr,2021,Israel,4.36692
+ita,2000,Italy,7.67099
+ita,2001,Italy,7.49081
+ita,2002,Italy,7.56616
+ita,2003,Italy,7.45377
+ita,2004,Italy,7.21857
+ita,2005,Italy,6.76471
+ita,2006,Italy,6.77013
+ita,2007,Italy,6.7484
+ita,2008,Italy,6.99131
+ita,2009,Italy,7.09689
+ita,2010,Italy,6.99936
+ita,2011,Italy,7.46356
+ita,2012,Italy,7.6461
+ita,2013,Italy,7.60343
+ita,2014,Italy,7.30192
+ita,2015,Italy,7.19882
+ita,2016,Italy,6.61627
+ita,2017,Italy,7.05931
+ita,2018,Italy,6.8916
+ita,2019,Italy,6.77386
+ita,2020,Italy,6.77354
+ita,2021,Italy,6.99128
+jam,2000,Jamaica,1.03848
+jam,2001,Jamaica,1.04382
+jam,2002,Jamaica,0.97136
+jam,2003,Jamaica,0.87941
+jam,2004,Jamaica,0.79307
+jam,2005,Jamaica,1.52516
+jam,2006,Jamaica,0.74105
+jam,2007,Jamaica,2.67385
+jam,2008,Jamaica,2.64725
+jam,2009,Jamaica,1.71429
+jam,2010,Jamaica,1.00952
+jam,2011,Jamaica,1.50751
+jam,2012,Jamaica,1.03973
+jam,2013,Jamaica,1.03996
+jam,2014,Jamaica,1.04036
+jam,2015,Jamaica,1.62994
+jam,2016,Jamaica,1.60517
+jam,2017,Jamaica,1.68279
+jam,2018,Jamaica,1.64708
+jam,2019,Jamaica,1.68756
+jam,2020,Jamaica,1.5558
+jam,2021,Jamaica,1.69309
+jor,2000,Jordan,2.19692
+jor,2001,Jordan,2.07182
+jor,2002,Jordan,2.00886
+jor,2003,Jordan,1.90306
+jor,2004,Jordan,1.87994
+jor,2005,Jordan,1.69817
+jor,2006,Jordan,1.43626
+jor,2007,Jordan,1.19562
+jor,2008,Jordan,1.15632
+jor,2009,Jordan,1.0531
+jor,2010,Jordan,0.98157
+jor,2011,Jordan,0.88333
+jor,2012,Jordan,0.86937
+jor,2013,Jordan,0.83907
+jor,2014,Jordan,0.82786
+jor,2015,Jordan,0.8008
+jor,2016,Jordan,0.82302
+jor,2017,Jordan,0.789
+jor,2018,Jordan,0.76084
+jor,2019,Jordan,0.76609
+jor,2020,Jordan,0.66113
+jor,2021,Jordan,0.60397
+jpn,2000,Japan,24.11656
+jpn,2001,Japan,23.40088
+jpn,2002,Japan,24.05374
+jpn,2003,Japan,25.80502
+jpn,2004,Japan,24.31267
+jpn,2005,Japan,24.55621
+jpn,2006,Japan,24.09354
+jpn,2007,Japan,25.18944
+jpn,2008,Japan,24.61537
+jpn,2009,Japan,25.12402
+jpn,2010,Japan,24.30885
+jpn,2011,Japan,23.51967
+jpn,2012,Japan,21.8026
+jpn,2013,Japan,21.54294
+jpn,2014,Japan,20.23438
+jpn,2015,Japan,19.30353
+jpn,2016,Japan,17.67081
+jpn,2017,Japan,17.18637
+jpn,2018,Japan,16.87458
+jpn,2019,Japan,16.46701
+jpn,2020,Japan,17.15891
+jpn,2021,Japan,17.43069
+kaz,2000,Kazakhstan,33.38664
+kaz,2001,Kazakhstan,33.80271
+kaz,2002,Kazakhstan,33.10754
+kaz,2003,Kazakhstan,34.81899
+kaz,2004,Kazakhstan,37.15552
+kaz,2005,Kazakhstan,36.01421
+kaz,2006,Kazakhstan,34.7599
+kaz,2007,Kazakhstan,34.78676
+kaz,2008,Kazakhstan,32.25034
+kaz,2009,Kazakhstan,28.79662
+kaz,2010,Kazakhstan,28.05307
+kaz,2011,Kazakhstan,26.57325
+kaz,2012,Kazakhstan,25.34302
+kaz,2013,Kazakhstan,24.64273
+kaz,2014,Kazakhstan,22.3735
+kaz,2015,Kazakhstan,21.597
+kaz,2016,Kazakhstan,19.94293
+kaz,2017,Kazakhstan,18.87167
+kaz,2018,Kazakhstan,18.55992
+kaz,2019,Kazakhstan,18.79648
+kaz,2020,Kazakhstan,16.98852
+kaz,2021,Kazakhstan,14.5977
+ken,2000,Kenya,4.54403
+ken,2001,Kenya,4.46448
+ken,2002,Kenya,4.74532
+ken,2003,Kenya,4.64424
+ken,2004,Kenya,4.73375
+ken,2005,Kenya,4.87323
+ken,2006,Kenya,5.01128
+ken,2007,Kenya,5.3267
+ken,2008,Kenya,5.47977
+ken,2009,Kenya,5.63032
+ken,2010,Kenya,5.88479
+ken,2011,Kenya,5.67291
+ken,2012,Kenya,5.24311
+ken,2013,Kenya,5.18634
+ken,2014,Kenya,4.70949
+ken,2015,Kenya,5.05755
+ken,2016,Kenya,4.97695
+ken,2017,Kenya,5.68998
+ken,2018,Kenya,6.52881
+ken,2019,Kenya,6.45365
+ken,2020,Kenya,5.59437
+ken,2021,Kenya,4.58158
+kgz,2000,Kyrgyz Republic,13.44558
+kgz,2001,Kyrgyz Republic,13.03667
+kgz,2002,Kyrgyz Republic,13.31831
+kgz,2003,Kyrgyz Republic,12.71773
+kgz,2004,Kyrgyz Republic,12.3214
+kgz,2005,Kyrgyz Republic,12.46127
+kgz,2006,Kyrgyz Republic,12.17201
+kgz,2007,Kyrgyz Republic,11.92012
+kgz,2008,Kyrgyz Republic,11.57743
+kgz,2009,Kyrgyz Republic,11.41565
+kgz,2010,Kyrgyz Republic,11.32188
+kgz,2011,Kyrgyz Republic,11.4672
+kgz,2012,Kyrgyz Republic,11.23081
+kgz,2013,Kyrgyz Republic,10.44516
+kgz,2014,Kyrgyz Republic,10.11166
+kgz,2015,Kyrgyz Republic,10.02129
+kgz,2016,Kyrgyz Republic,9.04868
+kgz,2017,Kyrgyz Republic,9.07566
+kgz,2018,Kyrgyz Republic,8.82454
+kgz,2019,Kyrgyz Republic,8.59989
+kgz,2020,Kyrgyz Republic,6.93339
+kgz,2021,Kyrgyz Republic,6.80154
+khm,2000,Cambodia,4.08647
+khm,2001,Cambodia,4.19611
+khm,2002,Cambodia,3.90372
+khm,2003,Cambodia,3.98017
+khm,2004,Cambodia,4.13978
+khm,2005,Cambodia,4.29602
+khm,2006,Cambodia,4.36865
+khm,2007,Cambodia,4.54371
+khm,2008,Cambodia,4.54641
+khm,2009,Cambodia,4.49409
+khm,2010,Cambodia,4.55577
+khm,2011,Cambodia,4.47787
+khm,2012,Cambodia,4.55109
+khm,2013,Cambodia,4.47434
+khm,2014,Cambodia,4.43712
+khm,2015,Cambodia,4.44556
+khm,2016,Cambodia,4.45115
+khm,2017,Cambodia,4.44295
+khm,2018,Cambodia,4.44374
+khm,2019,Cambodia,4.46227
+khm,2020,Cambodia,4.33209
+khm,2021,Cambodia,4.49979
+kir,2000,Kiribati,19.07996
+kir,2001,Kiribati,18.97331
+kir,2002,Kiribati,18.85192
+kir,2003,Kiribati,18.22001
+kir,2004,Kiribati,18.29708
+kir,2005,Kiribati,19.30058
+kir,2006,Kiribati,18.56333
+kir,2007,Kiribati,20.04052
+kir,2008,Kiribati,20.67286
+kir,2009,Kiribati,20.41029
+kir,2010,Kiribati,20.35242
+kir,2011,Kiribati,20.96387
+kir,2012,Kiribati,20.4666
+kir,2013,Kiribati,20.97559
+kir,2014,Kiribati,20.41069
+kir,2015,Kiribati,20.26919
+kir,2016,Kiribati,20.71162
+kir,2017,Kiribati,19.63335
+kir,2018,Kiribati,19.12485
+kir,2019,Kiribati,19.80322
+kir,2020,Kiribati,18.60214
+kir,2021,Kiribati,17.46706
+kor,2000,South Korea,15.06061
+kor,2001,South Korea,16.13849
+kor,2002,South Korea,19.55961
+kor,2003,South Korea,24.89728
+kor,2004,South Korea,26.20925
+kor,2005,South Korea,27.5784
+kor,2006,South Korea,24.45415
+kor,2007,South Korea,27.55385
+kor,2008,South Korea,29.28994
+kor,2009,South Korea,35.11739
+kor,2010,South Korea,34.91559
+kor,2011,South Korea,35.49158
+kor,2012,South Korea,31.01331
+kor,2013,South Korea,31.2071
+kor,2014,South Korea,29.35107
+kor,2015,South Korea,28.22538
+kor,2016,South Korea,27.05891
+kor,2017,South Korea,25.60603
+kor,2018,South Korea,28.28214
+kor,2019,South Korea,28.44276
+kor,2020,South Korea,27.15565
+kor,2021,South Korea,27.5297
+kwt,2000,Kuwait,3.18976
+kwt,2001,Kuwait,3.73381
+kwt,2002,Kuwait,4.52096
+kwt,2003,Kuwait,4.0115
+kwt,2004,Kuwait,3.79749
+kwt,2005,Kuwait,3.40938
+kwt,2006,Kuwait,2.77227
+kwt,2007,Kuwait,1.51671
+kwt,2008,Kuwait,1.56862
+kwt,2009,Kuwait,1.44382
+kwt,2010,Kuwait,1.34186
+kwt,2011,Kuwait,1.12794
+kwt,2012,Kuwait,1.32096
+kwt,2013,Kuwait,1.35431
+kwt,2014,Kuwait,1.44191
+kwt,2015,Kuwait,1.91362
+kwt,2016,Kuwait,1.84543
+kwt,2017,Kuwait,1.89997
+kwt,2018,Kuwait,1.81291
+kwt,2019,Kuwait,1.89963
+kwt,2020,Kuwait,2.19277
+kwt,2021,Kuwait,2.30511
+lao,2000,Lao,5.70002
+lao,2001,Lao,5.66562
+lao,2002,Lao,5.42914
+lao,2003,Lao,5.09066
+lao,2004,Lao,4.98093
+lao,2005,Lao,5.21331
+lao,2006,Lao,5.09114
+lao,2007,Lao,4.84629
+lao,2008,Lao,5.14924
+lao,2009,Lao,4.99949
+lao,2010,Lao,4.95592
+lao,2011,Lao,4.87394
+lao,2012,Lao,4.80878
+lao,2013,Lao,4.74933
+lao,2014,Lao,4.77934
+lao,2015,Lao,4.68867
+lao,2016,Lao,4.63148
+lao,2017,Lao,4.5775
+lao,2018,Lao,4.57256
+lao,2019,Lao,4.55274
+lao,2020,Lao,3.96366
+lao,2021,Lao,4.57814
+lbn,2000,Lebanon,0.94389
+lbn,2001,Lebanon,0.91104
+lbn,2002,Lebanon,0.88597
+lbn,2003,Lebanon,0.87477
+lbn,2004,Lebanon,0.86348
+lbn,2005,Lebanon,0.86506
+lbn,2006,Lebanon,0.86011
+lbn,2007,Lebanon,0.8509
+lbn,2008,Lebanon,0.84901
+lbn,2009,Lebanon,0.84198
+lbn,2010,Lebanon,0.83513
+lbn,2011,Lebanon,0.84316
+lbn,2012,Lebanon,0.84812
+lbn,2013,Lebanon,0.85214
+lbn,2014,Lebanon,0.83294
+lbn,2015,Lebanon,0.81188
+lbn,2016,Lebanon,0.75896
+lbn,2017,Lebanon,0.74275
+lbn,2018,Lebanon,0.69677
+lbn,2019,Lebanon,0.69501
+lbn,2020,Lebanon,0.79036
+lbn,2021,Lebanon,0.70191
+lbr,2000,Liberia,5.10193
+lbr,2001,Liberia,4.98547
+lbr,2002,Liberia,5.21139
+lbr,2003,Liberia,4.87203
+lbr,2004,Liberia,5.22903
+lbr,2005,Liberia,4.9542
+lbr,2006,Liberia,5.07396
+lbr,2007,Liberia,5.07413
+lbr,2008,Liberia,5.18836
+lbr,2009,Liberia,5.48844
+lbr,2010,Liberia,5.79656
+lbr,2011,Liberia,6.13353
+lbr,2012,Liberia,6.02234
+lbr,2013,Liberia,5.87555
+lbr,2014,Liberia,5.75231
+lbr,2015,Liberia,5.79848
+lbr,2016,Liberia,5.82739
+lbr,2017,Liberia,5.95319
+lbr,2018,Liberia,5.87288
+lbr,2019,Liberia,5.87271
+lbr,2020,Liberia,5.88944
+lbr,2021,Liberia,5.96626
+lby,2000,Libya,4.63144
+lby,2001,Libya,5.27797
+lby,2002,Libya,4.82143
+lby,2003,Libya,4.91389
+lby,2004,Libya,4.46868
+lby,2005,Libya,4.27791
+lby,2006,Libya,3.63584
+lby,2007,Libya,4.13919
+lby,2008,Libya,4.65787
+lby,2009,Libya,5.13278
+lby,2010,Libya,5.22098
+lby,2011,Libya,6.55494
+lby,2012,Libya,4.36312
+lby,2013,Libya,3.83447
+lby,2014,Libya,5.74654
+lby,2015,Libya,5.91996
+lby,2016,Libya,5.61871
+lby,2017,Libya,6.28815
+lby,2018,Libya,6.4872
+lby,2019,Libya,5.94651
+lby,2020,Libya,4.96354
+lby,2021,Libya,5.0049
+lca,2000,St. Lucia,7.28107
+lca,2001,St. Lucia,7.31416
+lca,2002,St. Lucia,6.76336
+lca,2003,St. Lucia,7.10064
+lca,2004,St. Lucia,6.61529
+lca,2005,St. Lucia,6.68321
+lca,2006,St. Lucia,6.88706
+lca,2007,St. Lucia,6.46219
+lca,2008,St. Lucia,6.50933
+lca,2009,St. Lucia,6.67189
+lca,2010,St. Lucia,7.55759
+lca,2011,St. Lucia,6.86995
+lca,2012,St. Lucia,8.19965
+lca,2013,St. Lucia,7.3899
+lca,2014,St. Lucia,7.44044
+lca,2015,St. Lucia,7.71562
+lca,2016,St. Lucia,7.44038
+lca,2017,St. Lucia,7.10668
+lca,2018,St. Lucia,6.93358
+lca,2019,St. Lucia,7.22977
+lca,2020,St. Lucia,7.33712
+lca,2021,St. Lucia,5.26623
+lka,2000,Sri Lanka,38.89828
+lka,2001,Sri Lanka,33.75726
+lka,2002,Sri Lanka,29.9527
+lka,2003,Sri Lanka,28.1905
+lka,2004,Sri Lanka,25.17738
+lka,2005,Sri Lanka,25.40251
+lka,2006,Sri Lanka,24.14022
+lka,2007,Sri Lanka,22.03011
+lka,2008,Sri Lanka,21.22991
+lka,2009,Sri Lanka,18.99176
+lka,2010,Sri Lanka,17.33741
+lka,2011,Sri Lanka,18.15215
+lka,2012,Sri Lanka,17.08322
+lka,2013,Sri Lanka,16.00481
+lka,2014,Sri Lanka,15.02821
+lka,2015,Sri Lanka,14.79542
+lka,2016,Sri Lanka,15.10393
+lka,2017,Sri Lanka,15.19743
+lka,2018,Sri Lanka,15.4559
+lka,2019,Sri Lanka,15.94353
+lka,2020,Sri Lanka,12.4353
+lka,2021,Sri Lanka,14.74318
+lso,2000,Lesotho,12.67766
+lso,2001,Lesotho,11.43311
+lso,2002,Lesotho,12.62254
+lso,2003,Lesotho,14.76835
+lso,2004,Lesotho,15.533
+lso,2005,Lesotho,17.15904
+lso,2006,Lesotho,19.01457
+lso,2007,Lesotho,21.38585
+lso,2008,Lesotho,16.41876
+lso,2009,Lesotho,15.8151
+lso,2010,Lesotho,25.99457
+lso,2011,Lesotho,27.34052
+lso,2012,Lesotho,21.71384
+lso,2013,Lesotho,24.13548
+lso,2014,Lesotho,27.95616
+lso,2015,Lesotho,27.87277
+lso,2016,Lesotho,26.72669
+lso,2017,Lesotho,26.06679
+lso,2018,Lesotho,27.88441
+lso,2019,Lesotho,28.76971
+lso,2020,Lesotho,33.37877
+lso,2021,Lesotho,28.66132
+ltu,2000,Lithuania,50.40488
+ltu,2001,Lithuania,47.386
+ltu,2002,Lithuania,47.57504
+ltu,2003,Lithuania,45.7027
+ltu,2004,Lithuania,43.82399
+ltu,2005,Lithuania,43.2113
+ltu,2006,Lithuania,35.40331
+ltu,2007,Lithuania,34.50852
+ltu,2008,Lithuania,38.15835
+ltu,2009,Lithuania,39.25703
+ltu,2010,Lithuania,37.47441
+ltu,2011,Lithuania,38.31856
+ltu,2012,Lithuania,35.08015
+ltu,2013,Lithuania,40.76936
+ltu,2014,Lithuania,35.50723
+ltu,2015,Lithuania,34.49336
+ltu,2016,Lithuania,32.33963
+ltu,2017,Lithuania,29.52678
+ltu,2018,Lithuania,27.40435
+ltu,2019,Lithuania,26.32802
+ltu,2020,Lithuania,24.51666
+ltu,2021,Lithuania,22.12234
+lux,2000,Luxembourg,15.0642
+lux,2001,Luxembourg,15.77208
+lux,2002,Luxembourg,15.14166
+lux,2003,Luxembourg,15.05935
+lux,2004,Luxembourg,11.56676
+lux,2005,Luxembourg,12.86431
+lux,2006,Luxembourg,14.13839
+lux,2007,Luxembourg,13.45985
+lux,2008,Luxembourg,13.02526
+lux,2009,Luxembourg,11.02429
+lux,2010,Luxembourg,11.68707
+lux,2011,Luxembourg,11.99006
+lux,2012,Luxembourg,11.29294
+lux,2013,Luxembourg,11.27582
+lux,2014,Luxembourg,12.57068
+lux,2015,Luxembourg,12.34262
+lux,2016,Luxembourg,10.22213
+lux,2017,Luxembourg,9.955
+lux,2018,Luxembourg,10.07447
+lux,2019,Luxembourg,11.15993
+lux,2020,Luxembourg,9.68683
+lux,2021,Luxembourg,8.22451
+lva,2000,Latvia,34.82475
+lva,2001,Latvia,32.29328
+lva,2002,Latvia,31.60169
+lva,2003,Latvia,29.36922
+lva,2004,Latvia,26.96057
+lva,2005,Latvia,26.72268
+lva,2006,Latvia,23.2163
+lva,2007,Latvia,20.95137
+lva,2008,Latvia,26.53947
+lva,2009,Latvia,26.42033
+lva,2010,Latvia,22.72206
+lva,2011,Latvia,22.77686
+lva,2012,Latvia,23.62347
+lva,2013,Latvia,20.75467
+lva,2014,Latvia,20.91631
+lva,2015,Latvia,21.67794
+lva,2016,Latvia,21.04376
+lva,2017,Latvia,21.03604
+lva,2018,Latvia,18.05919
+lva,2019,Latvia,17.16161
+lva,2020,Latvia,18.00622
+lva,2021,Latvia,15.20641
+mar,2000,Morocco,4.51196
+mar,2001,Morocco,4.32454
+mar,2002,Morocco,4.27914
+mar,2003,Morocco,4.46339
+mar,2004,Morocco,4.3466
+mar,2005,Morocco,4.3886
+mar,2006,Morocco,4.25095
+mar,2007,Morocco,3.94132
+mar,2008,Morocco,3.95662
+mar,2009,Morocco,4.05889
+mar,2010,Morocco,3.99806
+mar,2011,Morocco,3.96639
+mar,2012,Morocco,3.88718
+mar,2013,Morocco,3.80357
+mar,2014,Morocco,3.68292
+mar,2015,Morocco,3.56739
+mar,2016,Morocco,3.46054
+mar,2017,Morocco,3.31578
+mar,2018,Morocco,3.24597
+mar,2019,Morocco,3.2159
+mar,2020,Morocco,2.90119
+mar,2021,Morocco,2.91303
+mda,2000,Moldova,19.1606
+mda,2001,Moldova,21.15954
+mda,2002,Moldova,19.84562
+mda,2003,Moldova,20.86923
+mda,2004,Moldova,20.53984
+mda,2005,Moldova,21.73711
+mda,2006,Moldova,21.81001
+mda,2007,Moldova,19.15313
+mda,2008,Moldova,20.93022
+mda,2009,Moldova,21.25054
+mda,2010,Moldova,21.8059
+mda,2011,Moldova,15.49002
+mda,2012,Moldova,16.70908
+mda,2013,Moldova,15.99261
+mda,2014,Moldova,16.17504
+mda,2015,Moldova,14.8717
+mda,2016,Moldova,14.76423
+mda,2017,Moldova,13.55233
+mda,2018,Moldova,13.07096
+mda,2019,Moldova,12.68467
+mda,2020,Moldova,11.61623
+mda,2021,Moldova,14.14252
+mdg,2000,Madagascar,5.8102
+mdg,2001,Madagascar,5.86413
+mdg,2002,Madagascar,5.99668
+mdg,2003,Madagascar,5.99355
+mdg,2004,Madagascar,6.10799
+mdg,2005,Madagascar,6.19731
+mdg,2006,Madagascar,6.17696
+mdg,2007,Madagascar,6.04434
+mdg,2008,Madagascar,5.98241
+mdg,2009,Madagascar,5.91925
+mdg,2010,Madagascar,5.94367
+mdg,2011,Madagascar,5.95194
+mdg,2012,Madagascar,5.81206
+mdg,2013,Madagascar,5.81881
+mdg,2014,Madagascar,5.92155
+mdg,2015,Madagascar,5.79989
+mdg,2016,Madagascar,5.89052
+mdg,2017,Madagascar,5.88353
+mdg,2018,Madagascar,5.91633
+mdg,2019,Madagascar,5.95713
+mdg,2020,Madagascar,6.30069
+mdg,2021,Madagascar,6.09028
+mdv,2000,Maldives,2.91572
+mdv,2001,Maldives,2.86675
+mdv,2002,Maldives,2.79848
+mdv,2003,Maldives,2.7954
+mdv,2004,Maldives,2.33781
+mdv,2005,Maldives,2.44964
+mdv,2006,Maldives,2.64479
+mdv,2007,Maldives,2.65446
+mdv,2008,Maldives,2.78058
+mdv,2009,Maldives,2.77505
+mdv,2010,Maldives,2.71265
+mdv,2011,Maldives,2.71652
+mdv,2012,Maldives,2.76682
+mdv,2013,Maldives,2.59403
+mdv,2014,Maldives,2.67245
+mdv,2015,Maldives,2.52868
+mdv,2016,Maldives,2.6189
+mdv,2017,Maldives,2.39659
+mdv,2018,Maldives,2.04242
+mdv,2019,Maldives,2.51266
+mdv,2020,Maldives,1.93177
+mdv,2021,Maldives,1.46855
+mex,2000,Mexico,3.70327
+mex,2001,Mexico,3.95287
+mex,2002,Mexico,4.00473
+mex,2003,Mexico,4.10963
+mex,2004,Mexico,4.11297
+mex,2005,Mexico,4.24198
+mex,2006,Mexico,4.06369
+mex,2007,Mexico,4.11636
+mex,2008,Mexico,4.40103
+mex,2009,Mexico,4.66245
+mex,2010,Mexico,4.48942
+mex,2011,Mexico,5.25541
+mex,2012,Mexico,4.87101
+mex,2013,Mexico,5.212
+mex,2014,Mexico,5.6623
+mex,2015,Mexico,5.61447
+mex,2016,Mexico,5.51418
+mex,2017,Mexico,5.6711
+mex,2018,Mexico,5.80491
+mex,2019,Mexico,6.15305
+mex,2020,Mexico,6.35756
+mex,2021,Mexico,6.95021
+mkd,2000,North Macedonia,7.44519
+mkd,2001,North Macedonia,9.9584
+mkd,2002,North Macedonia,7.74422
+mkd,2003,North Macedonia,7.1859
+mkd,2004,North Macedonia,8.50982
+mkd,2005,North Macedonia,6.84288
+mkd,2006,North Macedonia,7.79518
+mkd,2007,North Macedonia,7.4204
+mkd,2008,North Macedonia,7.41848
+mkd,2009,North Macedonia,7.70915
+mkd,2010,North Macedonia,5.67794
+mkd,2011,North Macedonia,5.9738
+mkd,2012,North Macedonia,8.06239
+mkd,2013,North Macedonia,7.73339
+mkd,2014,North Macedonia,6.36082
+mkd,2015,North Macedonia,5.40863
+mkd,2016,North Macedonia,5.87543
+mkd,2017,North Macedonia,5.32349
+mkd,2018,North Macedonia,5.45782
+mkd,2019,North Macedonia,5.01671
+mkd,2020,North Macedonia,5.21406
+mkd,2021,North Macedonia,5.78062
+mli,2000,Mali,4.03012
+mli,2001,Mali,4.09237
+mli,2002,Mali,4.06795
+mli,2003,Mali,3.9856
+mli,2004,Mali,3.95741
+mli,2005,Mali,3.92852
+mli,2006,Mali,3.94227
+mli,2007,Mali,4.05937
+mli,2008,Mali,4.12896
+mli,2009,Mali,4.18868
+mli,2010,Mali,4.14051
+mli,2011,Mali,4.13769
+mli,2012,Mali,4.23385
+mli,2013,Mali,4.22939
+mli,2014,Mali,4.20213
+mli,2015,Mali,4.24772
+mli,2016,Mali,4.20898
+mli,2017,Mali,4.19735
+mli,2018,Mali,4.12485
+mli,2019,Mali,4.03248
+mli,2020,Mali,4.05298
+mli,2021,Mali,4.15653
+mlt,2000,Malta,6.79623
+mlt,2001,Malta,7.27655
+mlt,2002,Malta,5.61955
+mlt,2003,Malta,5.42751
+mlt,2004,Malta,5.65892
+mlt,2005,Malta,5.50232
+mlt,2006,Malta,6.3761
+mlt,2007,Malta,5.45529
+mlt,2008,Malta,6.38159
+mlt,2009,Malta,7.05912
+mlt,2010,Malta,7.61123
+mlt,2011,Malta,7.06012
+mlt,2012,Malta,6.06015
+mlt,2013,Malta,7.06222
+mlt,2014,Malta,7.05488
+mlt,2015,Malta,7.02705
+mlt,2016,Malta,6.00854
+mlt,2017,Malta,5.18167
+mlt,2018,Malta,5.00605
+mlt,2019,Malta,5.94768
+mlt,2020,Malta,5.68855
+mlt,2021,Malta,6.46708
+mmr,2000,Myanmar,3.93345
+mmr,2001,Myanmar,3.86758
+mmr,2002,Myanmar,3.87943
+mmr,2003,Myanmar,3.82949
+mmr,2004,Myanmar,3.84268
+mmr,2005,Myanmar,3.79453
+mmr,2006,Myanmar,3.74821
+mmr,2007,Myanmar,3.64069
+mmr,2008,Myanmar,3.52723
+mmr,2009,Myanmar,3.37726
+mmr,2010,Myanmar,3.28665
+mmr,2011,Myanmar,3.22997
+mmr,2012,Myanmar,3.19228
+mmr,2013,Myanmar,3.14169
+mmr,2014,Myanmar,3.1393
+mmr,2015,Myanmar,3.1212
+mmr,2016,Myanmar,3.10042
+mmr,2017,Myanmar,3.04358
+mmr,2018,Myanmar,3.0535
+mmr,2019,Myanmar,3.06289
+mmr,2020,Myanmar,2.89326
+mmr,2021,Myanmar,2.89401
+mne,2000,Montenegro,16.14034
+mne,2001,Montenegro,15.50965
+mne,2002,Montenegro,15.92822
+mne,2003,Montenegro,15.57341
+mne,2004,Montenegro,15.81339
+mne,2005,Montenegro,15.73073
+mne,2006,Montenegro,15.6866
+mne,2007,Montenegro,14.70522
+mne,2008,Montenegro,14.39695
+mne,2009,Montenegro,14.38059
+mne,2010,Montenegro,13.88874
+mne,2011,Montenegro,14.21247
+mne,2012,Montenegro,13.80622
+mne,2013,Montenegro,13.19941
+mne,2014,Montenegro,13.09046
+mne,2015,Montenegro,12.95542
+mne,2016,Montenegro,12.71647
+mne,2017,Montenegro,13.32827
+mne,2018,Montenegro,13.53986
+mne,2019,Montenegro,14.131
+mne,2020,Montenegro,15.19571
+mne,2021,Montenegro,11.30898
+mng,2000,Mongolia,16.24362
+mng,2001,Mongolia,16.20293
+mng,2002,Mongolia,15.79672
+mng,2003,Mongolia,17.1376
+mng,2004,Mongolia,17.68401
+mng,2005,Mongolia,18.23755
+mng,2006,Mongolia,18.10361
+mng,2007,Mongolia,18.12202
+mng,2008,Mongolia,18.50017
+mng,2009,Mongolia,18.97503
+mng,2010,Mongolia,19.92252
+mng,2011,Mongolia,22.16592
+mng,2012,Mongolia,21.19126
+mng,2013,Mongolia,19.42509
+mng,2014,Mongolia,18.29529
+mng,2015,Mongolia,18.62585
+mng,2016,Mongolia,18.4824
+mng,2017,Mongolia,17.89559
+mng,2018,Mongolia,17.14657
+mng,2019,Mongolia,17.32934
+mng,2020,Mongolia,18.83673
+mng,2021,Mongolia,18.49847
+moz,2000,Mozambique,6.5014
+moz,2001,Mozambique,6.27612
+moz,2002,Mozambique,6.35734
+moz,2003,Mozambique,6.26354
+moz,2004,Mozambique,6.28278
+moz,2005,Mozambique,6.45021
+moz,2006,Mozambique,6.87594
+moz,2007,Mozambique,7.5819
+moz,2008,Mozambique,8.12136
+moz,2009,Mozambique,8.60645
+moz,2010,Mozambique,9.09861
+moz,2011,Mozambique,9.34193
+moz,2012,Mozambique,9.29657
+moz,2013,Mozambique,9.83586
+moz,2014,Mozambique,10.65095
+moz,2015,Mozambique,10.93427
+moz,2016,Mozambique,11.91953
+moz,2017,Mozambique,12.47961
+moz,2018,Mozambique,12.46407
+moz,2019,Mozambique,11.59363
+moz,2020,Mozambique,10.79211
+moz,2021,Mozambique,10.60589
+mrt,2000,Mauritania,2.73414
+mrt,2001,Mauritania,2.76211
+mrt,2002,Mauritania,2.7282
+mrt,2003,Mauritania,2.66945
+mrt,2004,Mauritania,2.68132
+mrt,2005,Mauritania,2.63939
+mrt,2006,Mauritania,2.65504
+mrt,2007,Mauritania,2.52659
+mrt,2008,Mauritania,2.50116
+mrt,2009,Mauritania,2.59425
+mrt,2010,Mauritania,2.62934
+mrt,2011,Mauritania,2.64307
+mrt,2012,Mauritania,2.80884
+mrt,2013,Mauritania,2.8138
+mrt,2014,Mauritania,2.77928
+mrt,2015,Mauritania,2.72537
+mrt,2016,Mauritania,2.75425
+mrt,2017,Mauritania,2.76289
+mrt,2018,Mauritania,2.75073
+mrt,2019,Mauritania,2.7497
+mrt,2020,Mauritania,2.67444
+mrt,2021,Mauritania,2.70782
+mus,2000,Mauritius,12.13652
+mus,2001,Mauritius,10.19024
+mus,2002,Mauritius,11.57241
+mus,2003,Mauritius,7.86258
+mus,2004,Mauritius,8.4228
+mus,2005,Mauritius,9.20918
+mus,2006,Mauritius,9.74297
+mus,2007,Mauritius,10.67822
+mus,2008,Mauritius,6.9779
+mus,2009,Mauritius,9.49376
+mus,2010,Mauritius,7.90704
+mus,2011,Mauritius,9.62241
+mus,2012,Mauritius,9.95467
+mus,2013,Mauritius,8.48474
+mus,2014,Mauritius,10.5352
+mus,2015,Mauritius,8.35834
+mus,2016,Mauritius,8.33394
+mus,2017,Mauritius,9.45738
+mus,2018,Mauritius,8.97651
+mus,2019,Mauritius,9.76227
+mus,2020,Mauritius,11.40563
+mus,2021,Mauritius,10.52019
+mwi,2000,Malawi,7.49018
+mwi,2001,Malawi,7.32472
+mwi,2002,Malawi,7.28033
+mwi,2003,Malawi,7.62285
+mwi,2004,Malawi,7.33395
+mwi,2005,Malawi,7.50441
+mwi,2006,Malawi,7.75426
+mwi,2007,Malawi,7.53846
+mwi,2008,Malawi,6.89672
+mwi,2009,Malawi,6.777
+mwi,2010,Malawi,6.60035
+mwi,2011,Malawi,6.55134
+mwi,2012,Malawi,6.47455
+mwi,2013,Malawi,6.43828
+mwi,2014,Malawi,6.36457
+mwi,2015,Malawi,6.49302
+mwi,2016,Malawi,6.62969
+mwi,2017,Malawi,6.85283
+mwi,2018,Malawi,6.96398
+mwi,2019,Malawi,7.265
+mwi,2020,Malawi,7.06831
+mwi,2021,Malawi,7.56846
+mys,2000,Malaysia,4.40479
+mys,2001,Malaysia,4.24652
+mys,2002,Malaysia,4.19379
+mys,2003,Malaysia,4.37
+mys,2004,Malaysia,4.3729
+mys,2005,Malaysia,4.27961
+mys,2006,Malaysia,4.17195
+mys,2007,Malaysia,4.12271
+mys,2008,Malaysia,4.27854
+mys,2009,Malaysia,4.38871
+mys,2010,Malaysia,4.37965
+mys,2011,Malaysia,4.36273
+mys,2012,Malaysia,4.18383
+mys,2013,Malaysia,4.12231
+mys,2014,Malaysia,4.29978
+mys,2015,Malaysia,4.78968
+mys,2016,Malaysia,4.89433
+mys,2017,Malaysia,5.06245
+mys,2018,Malaysia,5.23726
+mys,2019,Malaysia,5.35123
+mys,2020,Malaysia,4.2624
+mys,2021,Malaysia,5.65403
+nam,2000,Namibia,9.71476
+nam,2001,Namibia,9.76891
+nam,2002,Namibia,10.35765
+nam,2003,Namibia,10.56929
+nam,2004,Namibia,10.45009
+nam,2005,Namibia,10.344
+nam,2006,Namibia,9.95185
+nam,2007,Namibia,9.46106
+nam,2008,Namibia,9.20793
+nam,2009,Namibia,8.60731
+nam,2010,Namibia,8.50303
+nam,2011,Namibia,8.99648
+nam,2012,Namibia,8.77899
+nam,2013,Namibia,8.9114
+nam,2014,Namibia,9.62436
+nam,2015,Namibia,9.51883
+nam,2016,Namibia,8.01852
+nam,2017,Namibia,8.87481
+nam,2018,Namibia,8.27959
+nam,2019,Namibia,8.29863
+nam,2020,Namibia,8.36008
+nam,2021,Namibia,8.58905
+ner,2000,Niger,3.87437
+ner,2001,Niger,3.98391
+ner,2002,Niger,3.9145
+ner,2003,Niger,3.99644
+ner,2004,Niger,3.89726
+ner,2005,Niger,4.05004
+ner,2006,Niger,4.00665
+ner,2007,Niger,4.10093
+ner,2008,Niger,3.95808
+ner,2009,Niger,4.06219
+ner,2010,Niger,4.13454
+ner,2011,Niger,4.27352
+ner,2012,Niger,4.40495
+ner,2013,Niger,4.48351
+ner,2014,Niger,4.52197
+ner,2015,Niger,4.51543
+ner,2016,Niger,4.49207
+ner,2017,Niger,4.4995
+ner,2018,Niger,4.51222
+ner,2019,Niger,4.54444
+ner,2020,Niger,4.33445
+ner,2021,Niger,4.476
+nga,2000,Nigeria,5.27441
+nga,2001,Nigeria,5.37127
+nga,2002,Nigeria,5.21205
+nga,2003,Nigeria,5.17918
+nga,2004,Nigeria,5.25833
+nga,2005,Nigeria,5.07689
+nga,2006,Nigeria,5.19516
+nga,2007,Nigeria,5.19221
+nga,2008,Nigeria,5.12899
+nga,2009,Nigeria,5.20091
+nga,2010,Nigeria,5.07549
+nga,2011,Nigeria,4.93606
+nga,2012,Nigeria,4.80876
+nga,2013,Nigeria,4.67057
+nga,2014,Nigeria,4.62194
+nga,2015,Nigeria,4.45754
+nga,2016,Nigeria,4.42833
+nga,2017,Nigeria,4.35548
+nga,2018,Nigeria,4.43682
+nga,2019,Nigeria,4.40652
+nga,2020,Nigeria,4.55586
+nga,2021,Nigeria,4.99334
+nic,2000,Nicaragua,7.58793
+nic,2001,Nicaragua,6.61419
+nic,2002,Nicaragua,6.47199
+nic,2003,Nicaragua,6.9726
+nic,2004,Nicaragua,6.55791
+nic,2005,Nicaragua,6.22637
+nic,2006,Nicaragua,5.53554
+nic,2007,Nicaragua,5.85924
+nic,2008,Nicaragua,5.9338
+nic,2009,Nicaragua,5.81908
+nic,2010,Nicaragua,5.44997
+nic,2011,Nicaragua,6.19658
+nic,2012,Nicaragua,5.05056
+nic,2013,Nicaragua,5.75493
+nic,2014,Nicaragua,5.17952
+nic,2015,Nicaragua,4.72137
+nic,2016,Nicaragua,4.84826
+nic,2017,Nicaragua,4.97558
+nic,2018,Nicaragua,5.27495
+nic,2019,Nicaragua,4.6513
+nic,2020,Nicaragua,3.64802
+nic,2021,Nicaragua,4.24405
+nld,2000,Netherlands,9.52017
+nld,2001,Netherlands,9.54865
+nld,2002,Netherlands,9.96007
+nld,2003,Netherlands,9.55124
+nld,2004,Netherlands,9.64783
+nld,2005,Netherlands,9.78626
+nld,2006,Netherlands,9.58047
+nld,2007,Netherlands,8.44638
+nld,2008,Netherlands,8.96719
+nld,2009,Netherlands,9.41683
+nld,2010,Netherlands,9.8338
+nld,2011,Netherlands,10.07376
+nld,2012,Netherlands,10.72222
+nld,2013,Netherlands,11.82571
+nld,2014,Netherlands,11.62603
+nld,2015,Netherlands,11.78067
+nld,2016,Netherlands,11.83357
+nld,2017,Netherlands,11.92674
+nld,2018,Netherlands,11.27898
+nld,2019,Netherlands,11.04973
+nld,2020,Netherlands,11.0635
+nld,2021,Netherlands,11.50394
+nor,2000,Norway,12.8306
+nor,2001,Norway,12.79765
+nor,2002,Norway,11.44342
+nor,2003,Norway,11.57316
+nor,2004,Norway,12.09697
+nor,2005,Norway,12.11945
+nor,2006,Norway,12.0002
+nor,2007,Norway,10.91227
+nor,2008,Norway,11.09834
+nor,2009,Norway,12.51781
+nor,2010,Norway,11.83676
+nor,2011,Norway,13.00432
+nor,2012,Norway,10.98259
+nor,2013,Norway,11.43241
+nor,2014,Norway,11.21858
+nor,2015,Norway,11.92389
+nor,2016,Norway,12.22729
+nor,2017,Norway,11.7468
+nor,2018,Norway,13.3477
+nor,2019,Norway,12.57468
+nor,2020,Norway,12.52131
+nor,2021,Norway,13.18888
+npl,2000,Nepal,9.91652
+npl,2001,Nepal,9.63566
+npl,2002,Nepal,9.48113
+npl,2003,Nepal,9.44918
+npl,2004,Nepal,9.40889
+npl,2005,Nepal,9.52778
+npl,2006,Nepal,9.63619
+npl,2007,Nepal,9.57065
+npl,2008,Nepal,9.31709
+npl,2009,Nepal,9.66769
+npl,2010,Nepal,10.08013
+npl,2011,Nepal,10.41773
+npl,2012,Nepal,10.23671
+npl,2013,Nepal,10.64692
+npl,2014,Nepal,10.64528
+npl,2015,Nepal,10.63209
+npl,2016,Nepal,10.35958
+npl,2017,Nepal,10.58115
+npl,2018,Nepal,10.5975
+npl,2019,Nepal,10.55694
+npl,2020,Nepal,9.80303
+npl,2021,Nepal,10.13987
+nzl,2000,New Zealand,12.55887
+nzl,2001,New Zealand,13.85446
+nzl,2002,New Zealand,12.39253
+nzl,2003,New Zealand,13.70136
+nzl,2004,New Zealand,12.69654
+nzl,2005,New Zealand,12.9851
+nzl,2006,New Zealand,13.1615
+nzl,2007,New Zealand,12.27085
+nzl,2008,New Zealand,12.35442
+nzl,2009,New Zealand,11.45687
+nzl,2010,New Zealand,12.54098
+nzl,2011,New Zealand,11.38828
+nzl,2012,New Zealand,12.62726
+nzl,2013,New Zealand,12.09812
+nzl,2014,New Zealand,11.68981
+nzl,2015,New Zealand,11.94135
+nzl,2016,New Zealand,12.46966
+nzl,2017,New Zealand,12.83187
+nzl,2018,New Zealand,11.73025
+nzl,2019,New Zealand,11.81099
+nzl,2020,New Zealand,11.34768
+nzl,2021,New Zealand,11.92408
+omn,2000,Oman,2.33135
+omn,2001,Oman,2.3258
+omn,2002,Oman,2.12461
+omn,2003,Oman,2.16427
+omn,2004,Oman,2.03754
+omn,2005,Oman,2.02879
+omn,2006,Oman,1.9782
+omn,2007,Oman,1.76286
+omn,2008,Oman,1.65562
+omn,2009,Oman,1.02303
+omn,2010,Oman,1.81458
+omn,2011,Oman,1.95312
+omn,2012,Oman,2.04768
+omn,2013,Oman,1.94972
+omn,2014,Oman,2.0441
+omn,2015,Oman,1.68874
+omn,2016,Oman,1.81415
+omn,2017,Oman,1.91201
+omn,2018,Oman,2.04916
+omn,2019,Oman,2.00213
+omn,2020,Oman,1.20818
+omn,2021,Oman,0.90892
+pak,2000,Pakistan,6.94797
+pak,2001,Pakistan,6.87361
+pak,2002,Pakistan,6.97881
+pak,2003,Pakistan,6.80361
+pak,2004,Pakistan,6.97934
+pak,2005,Pakistan,7.03046
+pak,2006,Pakistan,7.00611
+pak,2007,Pakistan,6.85945
+pak,2008,Pakistan,6.86471
+pak,2009,Pakistan,6.75686
+pak,2010,Pakistan,6.33866
+pak,2011,Pakistan,6.25616
+pak,2012,Pakistan,6.4326
+pak,2013,Pakistan,5.82132
+pak,2014,Pakistan,6.33436
+pak,2015,Pakistan,6.40597
+pak,2016,Pakistan,6.38881
+pak,2017,Pakistan,6.37343
+pak,2018,Pakistan,6.2223
+pak,2019,Pakistan,6.08986
+pak,2020,Pakistan,5.43162
+pak,2021,Pakistan,5.63959
+pan,2000,Panama,4.66208
+pan,2001,Panama,5.0416
+pan,2002,Panama,4.90596
+pan,2003,Panama,5.67756
+pan,2004,Panama,5.53658
+pan,2005,Panama,4.79333
+pan,2006,Panama,5.44672
+pan,2007,Panama,4.83024
+pan,2008,Panama,5.22334
+pan,2009,Panama,4.79764
+pan,2010,Panama,3.93727
+pan,2011,Panama,3.90154
+pan,2012,Panama,3.55103
+pan,2013,Panama,3.39861
+pan,2014,Panama,4.0473
+pan,2015,Panama,2.75822
+pan,2016,Panama,3.0949
+pan,2017,Panama,3.02988
+pan,2018,Panama,2.84992
+pan,2019,Panama,2.55067
+pan,2020,Panama,2.44702
+pan,2021,Panama,3.28997
+per,2000,Peru,1.03733
+per,2001,Peru,1.20244
+per,2002,Peru,1.39534
+per,2003,Peru,1.27476
+per,2004,Peru,1.08392
+per,2005,Peru,0.77221
+per,2006,Peru,1.02384
+per,2007,Peru,1.56932
+per,2008,Peru,1.49525
+per,2009,Peru,0.60125
+per,2010,Peru,1.09394
+per,2011,Peru,2.13877
+per,2012,Peru,2.56605
+per,2013,Peru,1.29757
+per,2014,Peru,1.54291
+per,2015,Peru,0.96303
+per,2016,Peru,1.42041
+per,2017,Peru,1.40996
+per,2018,Peru,1.80437
+per,2019,Peru,2.19134
+per,2020,Peru,1.49976
+per,2021,Peru,1.5378
+phl,2000,Philippines,2.01074
+phl,2001,Philippines,1.72849
+phl,2002,Philippines,1.95617
+phl,2003,Philippines,2.23925
+phl,2004,Philippines,2.18514
+phl,2005,Philippines,2.39777
+phl,2006,Philippines,2.4431
+phl,2007,Philippines,2.33894
+phl,2008,Philippines,2.47649
+phl,2009,Philippines,2.81715
+phl,2010,Philippines,2.84764
+phl,2011,Philippines,3.17376
+phl,2012,Philippines,2.9162
+phl,2013,Philippines,2.81049
+phl,2014,Philippines,2.71519
+phl,2015,Philippines,3.14923
+phl,2016,Philippines,3.21507
+phl,2017,Philippines,3.25668
+phl,2018,Philippines,3.61263
+phl,2019,Philippines,3.04222
+phl,2020,Philippines,3.17072
+phl,2021,Philippines,3.49261
+png,2000,Papua New Guinea,1.73179
+png,2001,Papua New Guinea,1.67571
+png,2002,Papua New Guinea,1.73091
+png,2003,Papua New Guinea,1.65439
+png,2004,Papua New Guinea,1.65601
+png,2005,Papua New Guinea,1.6758
+png,2006,Papua New Guinea,1.68643
+png,2007,Papua New Guinea,1.65152
+png,2008,Papua New Guinea,1.62644
+png,2009,Papua New Guinea,1.62614
+png,2010,Papua New Guinea,1.70535
+png,2011,Papua New Guinea,1.73348
+png,2012,Papua New Guinea,1.7029
+png,2013,Papua New Guinea,1.74766
+png,2014,Papua New Guinea,1.9402
+png,2015,Papua New Guinea,1.98613
+png,2016,Papua New Guinea,1.99529
+png,2017,Papua New Guinea,1.92225
+png,2018,Papua New Guinea,1.98186
+png,2019,Papua New Guinea,2.07129
+png,2020,Papua New Guinea,1.6947
+png,2021,Papua New Guinea,1.81787
+pol,2000,Poland,17.02595
+pol,2001,Poland,17.24147
+pol,2002,Poland,17.38252
+pol,2003,Poland,17.09533
+pol,2004,Poland,17.66739
+pol,2005,Poland,17.79853
+pol,2006,Poland,17.16361
+pol,2007,Poland,15.77165
+pol,2008,Poland,17.11567
+pol,2009,Poland,19.23083
+pol,2010,Poland,18.65998
+pol,2011,Poland,18.07941
+pol,2012,Poland,18.5716
+pol,2013,Poland,18.24518
+pol,2014,Poland,17.37237
+pol,2015,Poland,15.8459
+pol,2016,Poland,13.81248
+pol,2017,Poland,13.25213
+pol,2018,Poland,13.473
+pol,2019,Poland,13.70163
+pol,2020,Poland,13.87548
+pol,2021,Poland,13.66797
+prk,2000,North Korea,8.54955
+prk,2001,North Korea,8.45139
+prk,2002,North Korea,8.50497
+prk,2003,North Korea,8.33119
+prk,2004,North Korea,8.24693
+prk,2005,North Korea,8.19445
+prk,2006,North Korea,8.27582
+prk,2007,North Korea,8.62205
+prk,2008,North Korea,9.1993
+prk,2009,North Korea,9.39625
+prk,2010,North Korea,9.81529
+prk,2011,North Korea,10.00569
+prk,2012,North Korea,9.96371
+prk,2013,North Korea,10.1524
+prk,2014,North Korea,10.28412
+prk,2015,North Korea,10.67795
+prk,2016,North Korea,10.69523
+prk,2017,North Korea,10.23987
+prk,2018,North Korea,9.84442
+prk,2019,North Korea,10.05149
+prk,2020,North Korea,9.28807
+prk,2021,North Korea,9.3083
+prt,2000,Portugal,7.4978
+prt,2001,Portugal,8.70696
+prt,2002,Portugal,12.32572
+prt,2003,Portugal,11.77992
+prt,2004,Portugal,10.54658
+prt,2005,Portugal,11.31183
+prt,2006,Portugal,11.39157
+prt,2007,Portugal,12.61327
+prt,2008,Portugal,13.03143
+prt,2009,Portugal,13.01322
+prt,2010,Portugal,13.57589
+prt,2011,Portugal,12.27264
+prt,2012,Portugal,13.50088
+prt,2013,Portugal,12.50468
+prt,2014,Portugal,14.23242
+prt,2015,Portugal,13.24754
+prt,2016,Portugal,11.37794
+prt,2017,Portugal,12.09575
+prt,2018,Portugal,11.83395
+prt,2019,Portugal,12.65944
+prt,2020,Portugal,12.08416
+prt,2021,Portugal,11.51811
+pry,2000,Paraguay,3.29878
+pry,2001,Paraguay,3.20099
+pry,2002,Paraguay,3.83222
+pry,2003,Paraguay,3.66317
+pry,2004,Paraguay,4.53353
+pry,2005,Paraguay,4.58453
+pry,2006,Paraguay,4.54866
+pry,2007,Paraguay,4.27049
+pry,2008,Paraguay,3.85899
+pry,2009,Paraguay,4.97128
+pry,2010,Paraguay,4.15494
+pry,2011,Paraguay,5.31104
+pry,2012,Paraguay,5.33195
+pry,2013,Paraguay,5.58307
+pry,2014,Paraguay,6.8054
+pry,2015,Paraguay,6.54087
+pry,2016,Paraguay,5.7792
+pry,2017,Paraguay,6.23522
+pry,2018,Paraguay,7.39451
+pry,2019,Paraguay,7.92623
+pry,2020,Paraguay,6.28132
+pry,2021,Paraguay,6.35506
+pse,2000,Palestine,0.63085
+pse,2001,Palestine,0.63751
+pse,2002,Palestine,0.6619
+pse,2003,Palestine,0.63688
+pse,2004,Palestine,0.636
+pse,2005,Palestine,0.62506
+pse,2006,Palestine,0.58588
+pse,2007,Palestine,0.62861
+pse,2008,Palestine,0.59343
+pse,2009,Palestine,0.5506
+pse,2010,Palestine,0.52978
+pse,2011,Palestine,0.56972
+pse,2012,Palestine,0.66882
+pse,2013,Palestine,0.79776
+pse,2014,Palestine,0.92073
+pse,2015,Palestine,0.76045
+pse,2016,Palestine,0.64855
+pse,2017,Palestine,0.66039
+pse,2018,Palestine,0.68364
+pse,2019,Palestine,0.6561
+pse,2020,Palestine,0.64413
+pse,2021,Palestine,0.65115
+qat,2000,Qatar,13.18396
+qat,2001,Qatar,13.52316
+qat,2002,Qatar,13.27372
+qat,2003,Qatar,11.76252
+qat,2004,Qatar,10.79742
+qat,2005,Qatar,9.89612
+qat,2006,Qatar,9.44602
+qat,2007,Qatar,10.51667
+qat,2008,Qatar,10.20267
+qat,2009,Qatar,9.95335
+qat,2010,Qatar,9.46976
+qat,2011,Qatar,8.77523
+qat,2012,Qatar,8.1192
+qat,2013,Qatar,7.69091
+qat,2014,Qatar,7.61045
+qat,2015,Qatar,7.54283
+qat,2016,Qatar,7.68714
+qat,2017,Qatar,7.47676
+qat,2018,Qatar,7.28354
+qat,2019,Qatar,6.96413
+qat,2020,Qatar,5.27944
+qat,2021,Qatar,4.69762
+rou,2000,Romania,12.8063
+rou,2001,Romania,12.1529
+rou,2002,Romania,14.10143
+rou,2003,Romania,13.43663
+rou,2004,Romania,12.66141
+rou,2005,Romania,12.1903
+rou,2006,Romania,12.81709
+rou,2007,Romania,11.48586
+rou,2008,Romania,11.69771
+rou,2009,Romania,12.20532
+rou,2010,Romania,13.2047
+rou,2011,Romania,12.11823
+rou,2012,Romania,12.59581
+rou,2013,Romania,12.23396
+rou,2014,Romania,11.32713
+rou,2015,Romania,11.5165
+rou,2016,Romania,10.30511
+rou,2017,Romania,10.09983
+rou,2018,Romania,10.22121
+rou,2019,Romania,9.17093
+rou,2020,Romania,9.74429
+rou,2021,Romania,9.62397
+rus,2000,Russia,53.05821
+rus,2001,Russia,51.79269
+rus,2002,Russia,50.71784
+rus,2003,Russia,49.34872
+rus,2004,Russia,47.43951
+rus,2005,Russia,45.16576
+rus,2006,Russia,41.4382
+rus,2007,Russia,39.63375
+rus,2008,Russia,38.38922
+rus,2009,Russia,36.84133
+rus,2010,Russia,35.78193
+rus,2011,Russia,34.61356
+rus,2012,Russia,33.60477
+rus,2013,Russia,32.83412
+rus,2014,Russia,32.61443
+rus,2015,Russia,31.12448
+rus,2016,Russia,30.19818
+rus,2017,Russia,27.29849
+rus,2018,Russia,25.89874
+rus,2019,Russia,24.46898
+rus,2020,Russia,21.01111
+rus,2021,Russia,21.37479
+rwa,2000,Rwanda,13.46159
+rwa,2001,Rwanda,12.0059
+rwa,2002,Rwanda,10.9872
+rwa,2003,Rwanda,9.76146
+rwa,2004,Rwanda,8.64269
+rwa,2005,Rwanda,8.19518
+rwa,2006,Rwanda,7.94097
+rwa,2007,Rwanda,8.01257
+rwa,2008,Rwanda,7.91676
+rwa,2009,Rwanda,7.66386
+rwa,2010,Rwanda,7.62389
+rwa,2011,Rwanda,7.6057
+rwa,2012,Rwanda,7.63695
+rwa,2013,Rwanda,7.61582
+rwa,2014,Rwanda,7.75758
+rwa,2015,Rwanda,7.83679
+rwa,2016,Rwanda,7.9366
+rwa,2017,Rwanda,8.11099
+rwa,2018,Rwanda,8.12024
+rwa,2019,Rwanda,8.2857
+rwa,2020,Rwanda,7.8869
+rwa,2021,Rwanda,8.67783
+sau,2000,Saudi Arabia,2.30418
+sau,2001,Saudi Arabia,2.39506
+sau,2002,Saudi Arabia,2.44968
+sau,2003,Saudi Arabia,2.38147
+sau,2004,Saudi Arabia,2.27514
+sau,2005,Saudi Arabia,2.17244
+sau,2006,Saudi Arabia,2.06175
+sau,2007,Saudi Arabia,1.91167
+sau,2008,Saudi Arabia,1.75182
+sau,2009,Saudi Arabia,1.58724
+sau,2010,Saudi Arabia,1.38063
+sau,2011,Saudi Arabia,1.14865
+sau,2012,Saudi Arabia,0.97551
+sau,2013,Saudi Arabia,0.92749
+sau,2014,Saudi Arabia,0.96489
+sau,2015,Saudi Arabia,0.9012
+sau,2016,Saudi Arabia,0.91392
+sau,2017,Saudi Arabia,1.02754
+sau,2018,Saudi Arabia,1.10082
+sau,2019,Saudi Arabia,1.08913
+sau,2020,Saudi Arabia,1.05838
+sau,2021,Saudi Arabia,0.94924
+sdn,2000,Sudan,4.00908
+sdn,2001,Sudan,3.95949
+sdn,2002,Sudan,3.88395
+sdn,2003,Sudan,3.78584
+sdn,2004,Sudan,3.70746
+sdn,2005,Sudan,3.63869
+sdn,2006,Sudan,3.55777
+sdn,2007,Sudan,3.52218
+sdn,2008,Sudan,3.55182
+sdn,2009,Sudan,3.77582
+sdn,2010,Sudan,3.49129
+sdn,2011,Sudan,3.6738
+sdn,2012,Sudan,3.51074
+sdn,2013,Sudan,3.68342
+sdn,2014,Sudan,3.5479
+sdn,2015,Sudan,3.50001
+sdn,2016,Sudan,3.44658
+sdn,2017,Sudan,3.47157
+sdn,2018,Sudan,3.52787
+sdn,2019,Sudan,3.39211
+sdn,2020,Sudan,3.04151
+sdn,2021,Sudan,3.16001
+sen,2000,Senegal,7.09045
+sen,2001,Senegal,6.52992
+sen,2002,Senegal,6.39267
+sen,2003,Senegal,6.76238
+sen,2004,Senegal,6.76745
+sen,2005,Senegal,6.734
+sen,2006,Senegal,6.64564
+sen,2007,Senegal,6.60515
+sen,2008,Senegal,6.96313
+sen,2009,Senegal,6.99158
+sen,2010,Senegal,6.79878
+sen,2011,Senegal,6.83831
+sen,2012,Senegal,7.00537
+sen,2013,Senegal,7.03675
+sen,2014,Senegal,7.19155
+sen,2015,Senegal,7.02461
+sen,2016,Senegal,7.05244
+sen,2017,Senegal,7.0026
+sen,2018,Senegal,6.92184
+sen,2019,Senegal,6.9848
+sen,2020,Senegal,6.84283
+sen,2021,Senegal,6.75828
+sgp,2000,Singapore,12.1858
+sgp,2001,Singapore,11.31307
+sgp,2002,Singapore,12.31037
+sgp,2003,Singapore,11.9478
+sgp,2004,Singapore,11.34592
+sgp,2005,Singapore,10.91403
+sgp,2006,Singapore,11.02241
+sgp,2007,Singapore,10.41417
+sgp,2008,Singapore,9.80875
+sgp,2009,Singapore,10.27142
+sgp,2010,Singapore,9.37521
+sgp,2011,Singapore,8.77787
+sgp,2012,Singapore,10.56658
+sgp,2013,Singapore,9.82747
+sgp,2014,Singapore,9.4332
+sgp,2015,Singapore,8.7172
+sgp,2016,Singapore,8.44327
+sgp,2017,Singapore,8.4233
+sgp,2018,Singapore,8.90328
+sgp,2019,Singapore,8.42156
+sgp,2020,Singapore,8.93807
+sgp,2021,Singapore,8.09778
+slb,2000,Solomon Islands,17.40241
+slb,2001,Solomon Islands,16.76361
+slb,2002,Solomon Islands,17.47898
+slb,2003,Solomon Islands,18.53177
+slb,2004,Solomon Islands,16.6956
+slb,2005,Solomon Islands,17.43873
+slb,2006,Solomon Islands,17.601
+slb,2007,Solomon Islands,19.98336
+slb,2008,Solomon Islands,21.07332
+slb,2009,Solomon Islands,20.97567
+slb,2010,Solomon Islands,20.81399
+slb,2011,Solomon Islands,20.8558
+slb,2012,Solomon Islands,20.81111
+slb,2013,Solomon Islands,20.6249
+slb,2014,Solomon Islands,20.57858
+slb,2015,Solomon Islands,20.52389
+slb,2016,Solomon Islands,20.44922
+slb,2017,Solomon Islands,20.48707
+slb,2018,Solomon Islands,20.58612
+slb,2019,Solomon Islands,20.42853
+slb,2020,Solomon Islands,19.53711
+slb,2021,Solomon Islands,19.59543
+sle,2000,Sierra Leone,4.63393
+sle,2001,Sierra Leone,4.71338
+sle,2002,Sierra Leone,5.03681
+sle,2003,Sierra Leone,5.17056
+sle,2004,Sierra Leone,5.30409
+sle,2005,Sierra Leone,5.39622
+sle,2006,Sierra Leone,5.37348
+sle,2007,Sierra Leone,5.65506
+sle,2008,Sierra Leone,5.77702
+sle,2009,Sierra Leone,5.84951
+sle,2010,Sierra Leone,5.96108
+sle,2011,Sierra Leone,5.80419
+sle,2012,Sierra Leone,5.85931
+sle,2013,Sierra Leone,5.67825
+sle,2014,Sierra Leone,5.48408
+sle,2015,Sierra Leone,5.53488
+sle,2016,Sierra Leone,5.8791
+sle,2017,Sierra Leone,6.03288
+sle,2018,Sierra Leone,6.16413
+sle,2019,Sierra Leone,6.14359
+sle,2020,Sierra Leone,5.40479
+sle,2021,Sierra Leone,6.1385
+slv,2000,El Salvador,7.68272
+slv,2001,El Salvador,7.52004
+slv,2002,El Salvador,6.77642
+slv,2003,El Salvador,7.14549
+slv,2004,El Salvador,8.08247
+slv,2005,El Salvador,9.35483
+slv,2006,El Salvador,9.5497
+slv,2007,El Salvador,8.94747
+slv,2008,El Salvador,8.18559
+slv,2009,El Salvador,9.62112
+slv,2010,El Salvador,8.18308
+slv,2011,El Salvador,8.91389
+slv,2012,El Salvador,6.856
+slv,2013,El Salvador,6.75198
+slv,2014,El Salvador,8.24119
+slv,2015,El Salvador,11.86312
+slv,2016,El Salvador,10.17144
+slv,2017,El Salvador,8.50328
+slv,2018,El Salvador,7.30615
+slv,2019,El Salvador,7.79919
+slv,2020,El Salvador,7.43992
+slv,2021,El Salvador,7.6348
+som,2000,Somalia,8.56162
+som,2001,Somalia,8.59019
+som,2002,Somalia,8.56196
+som,2003,Somalia,8.48477
+som,2004,Somalia,8.53916
+som,2005,Somalia,8.44746
+som,2006,Somalia,8.36532
+som,2007,Somalia,8.21681
+som,2008,Somalia,8.34589
+som,2009,Somalia,8.43132
+som,2010,Somalia,7.80312
+som,2011,Somalia,6.85993
+som,2012,Somalia,7.56505
+som,2013,Somalia,8.11147
+som,2014,Somalia,8.05274
+som,2015,Somalia,8.00352
+som,2016,Somalia,7.96969
+som,2017,Somalia,7.96728
+som,2018,Somalia,7.94606
+som,2019,Somalia,7.92055
+som,2020,Somalia,8.03942
+som,2021,Somalia,7.96023
+srb,2000,Serbia,24.97489
+srb,2001,Serbia,23.32517
+srb,2002,Serbia,24.23363
+srb,2003,Serbia,22.71729
+srb,2004,Serbia,22.84065
+srb,2005,Serbia,21.92896
+srb,2006,Serbia,21.13201
+srb,2007,Serbia,20.23571
+srb,2008,Serbia,19.23797
+srb,2009,Serbia,20.94279
+srb,2010,Serbia,18.58695
+srb,2011,Serbia,19.30329
+srb,2012,Serbia,19.44123
+srb,2013,Serbia,19.03695
+srb,2014,Serbia,18.0868
+srb,2015,Serbia,17.11738
+srb,2016,Serbia,15.95949
+srb,2017,Serbia,16.25666
+srb,2018,Serbia,15.59923
+srb,2019,Serbia,15.74739
+srb,2020,Serbia,15.60946
+srb,2021,Serbia,15.14375
+ssd,2000,South Sudan,5.10583
+ssd,2001,South Sudan,4.76104
+ssd,2002,South Sudan,4.59214
+ssd,2003,South Sudan,4.69771
+ssd,2004,South Sudan,4.79515
+ssd,2005,South Sudan,4.75273
+ssd,2006,South Sudan,4.87234
+ssd,2007,South Sudan,4.89393
+ssd,2008,South Sudan,4.86889
+ssd,2009,South Sudan,4.96172
+ssd,2010,South Sudan,4.86777
+ssd,2011,South Sudan,4.85719
+ssd,2012,South Sudan,4.92556
+ssd,2013,South Sudan,5.15097
+ssd,2014,South Sudan,5.28185
+ssd,2015,South Sudan,5.58979
+ssd,2016,South Sudan,5.71744
+ssd,2017,South Sudan,5.90938
+ssd,2018,South Sudan,6.65402
+ssd,2019,South Sudan,7.24597
+ssd,2020,South Sudan,7.62659
+ssd,2021,South Sudan,7.88784
+stp,2000,Sao Tome and Principe,0.90799
+stp,2001,Sao Tome and Principe,0.91686
+stp,2002,Sao Tome and Principe,0.92227
+stp,2003,Sao Tome and Principe,0.89817
+stp,2004,Sao Tome and Principe,0.89551
+stp,2005,Sao Tome and Principe,0.8415
+stp,2006,Sao Tome and Principe,0.89779
+stp,2007,Sao Tome and Principe,0.87055
+stp,2008,Sao Tome and Principe,0.84204
+stp,2009,Sao Tome and Principe,0.84936
+stp,2010,Sao Tome and Principe,0.85257
+stp,2011,Sao Tome and Principe,0.81616
+stp,2012,Sao Tome and Principe,0.82287
+stp,2013,Sao Tome and Principe,0.83065
+stp,2014,Sao Tome and Principe,0.84762
+stp,2015,Sao Tome and Principe,0.8534
+stp,2016,Sao Tome and Principe,0.84635
+stp,2017,Sao Tome and Principe,0.84968
+stp,2018,Sao Tome and Principe,0.84107
+stp,2019,Sao Tome and Principe,0.86906
+stp,2020,Sao Tome and Principe,0.8251
+stp,2021,Sao Tome and Principe,0.85778
+sur,2000,Suriname,20.90049
+sur,2001,Suriname,22.60005
+sur,2002,Suriname,22.97566
+sur,2003,Suriname,23.29933
+sur,2004,Suriname,22.5287
+sur,2005,Suriname,22.6521
+sur,2006,Suriname,22.85019
+sur,2007,Suriname,23.05498
+sur,2008,Suriname,23.42341
+sur,2009,Suriname,22.74816
+sur,2010,Suriname,24.32262
+sur,2011,Suriname,23.8966
+sur,2012,Suriname,24.59099
+sur,2013,Suriname,24.30851
+sur,2014,Suriname,24.51474
+sur,2015,Suriname,26.12608
+sur,2016,Suriname,26.47199
+sur,2017,Suriname,25.8517
+sur,2018,Suriname,26.49866
+sur,2019,Suriname,26.32407
+sur,2020,Suriname,28.46851
+sur,2021,Suriname,22.26341
+svk,2000,Slovak Republic,14.28097
+svk,2001,Slovak Republic,13.94573
+svk,2002,Slovak Republic,14.71895
+svk,2003,Slovak Republic,15.17401
+svk,2004,Slovak Republic,13.99933
+svk,2005,Slovak Republic,13.81827
+svk,2006,Slovak Republic,14.74574
+svk,2007,Slovak Republic,14.22444
+svk,2008,Slovak Republic,12.84474
+svk,2009,Slovak Republic,13.19024
+svk,2010,Slovak Republic,13.74374
+svk,2011,Slovak Republic,12.27515
+svk,2012,Slovak Republic,12.65851
+svk,2013,Slovak Republic,12.33667
+svk,2014,Slovak Republic,12.97105
+svk,2015,Slovak Republic,11.20828
+svk,2016,Slovak Republic,9.49179
+svk,2017,Slovak Republic,9.13623
+svk,2018,Slovak Republic,10.22546
+svk,2019,Slovak Republic,9.01833
+svk,2020,Slovak Republic,9.36396
+svk,2021,Slovak Republic,9.91209
+svn,2000,Slovenia,31.93393
+svn,2001,Slovenia,30.65137
+svn,2002,Slovenia,29.10168
+svn,2003,Slovenia,29.65234
+svn,2004,Slovenia,28.56948
+svn,2005,Slovenia,26.94539
+svn,2006,Slovenia,28.2137
+svn,2007,Slovenia,23.03115
+svn,2008,Slovenia,20.46595
+svn,2009,Slovenia,22.23203
+svn,2010,Slovenia,20.58065
+svn,2011,Slovenia,21.67015
+svn,2012,Slovenia,21.75835
+svn,2013,Slovenia,22.16662
+svn,2014,Slovenia,19.53672
+svn,2015,Slovenia,20.99574
+svn,2016,Slovenia,18.8064
+svn,2017,Slovenia,20.42722
+svn,2018,Slovenia,17.39916
+svn,2019,Slovenia,19.34061
+svn,2020,Slovenia,17.73742
+svn,2021,Slovenia,18.85039
+swe,2000,Sweden,14.87415
+swe,2001,Sweden,15.94538
+swe,2002,Sweden,15.56698
+swe,2003,Sweden,14.48526
+swe,2004,Sweden,14.77314
+swe,2005,Sweden,15.72979
+swe,2006,Sweden,15.18824
+swe,2007,Sweden,14.63955
+swe,2008,Sweden,15.06096
+swe,2009,Sweden,15.69179
+swe,2010,Sweden,14.61155
+swe,2011,Sweden,14.0704
+swe,2012,Sweden,14.86043
+swe,2013,Sweden,15.77555
+swe,2014,Sweden,14.84044
+swe,2015,Sweden,15.14755
+swe,2016,Sweden,14.02348
+swe,2017,Sweden,14.4717
+swe,2018,Sweden,14.62831
+swe,2019,Sweden,14.59669
+swe,2020,Sweden,13.36228
+swe,2021,Sweden,13.84039
+swz,2000,Eswatini,12.531
+swz,2001,Eswatini,13.91475
+swz,2002,Eswatini,15.36489
+swz,2003,Eswatini,16.37946
+swz,2004,Eswatini,16.97239
+swz,2005,Eswatini,17.39755
+swz,2006,Eswatini,18.03951
+swz,2007,Eswatini,18.67448
+swz,2008,Eswatini,19.48466
+swz,2009,Eswatini,19.07793
+swz,2010,Eswatini,27.77101
+swz,2011,Eswatini,19.31415
+swz,2012,Eswatini,20.43069
+swz,2013,Eswatini,21.52755
+swz,2014,Eswatini,22.78172
+swz,2015,Eswatini,24.36616
+swz,2016,Eswatini,25.83757
+swz,2017,Eswatini,28.86874
+swz,2018,Eswatini,29.8537
+swz,2019,Eswatini,28.12621
+swz,2020,Eswatini,23.83279
+swz,2021,Eswatini,27.22724
+syc,2000,Seychelles,8.91436
+syc,2001,Seychelles,9.10093
+syc,2002,Seychelles,8.34649
+syc,2003,Seychelles,8.56808
+syc,2004,Seychelles,8.90733
+syc,2005,Seychelles,7.94454
+syc,2006,Seychelles,7.76957
+syc,2007,Seychelles,7.16924
+syc,2008,Seychelles,7.4058
+syc,2009,Seychelles,7.04274
+syc,2010,Seychelles,7.3042
+syc,2011,Seychelles,7.44434
+syc,2012,Seychelles,7.28318
+syc,2013,Seychelles,7.37936
+syc,2014,Seychelles,7.65627
+syc,2015,Seychelles,7.59679
+syc,2016,Seychelles,7.85785
+syc,2017,Seychelles,7.81958
+syc,2018,Seychelles,7.90273
+syc,2019,Seychelles,7.95874
+syc,2020,Seychelles,6.61203
+syc,2021,Seychelles,4.26616
+syr,2000,Syria,1.03937
+syr,2001,Syria,0.97692
+syr,2002,Syria,0.94035
+syr,2003,Syria,0.82777
+syr,2004,Syria,0.79117
+syr,2005,Syria,0.74507
+syr,2006,Syria,0.69714
+syr,2007,Syria,0.6402
+syr,2008,Syria,0.61533
+syr,2009,Syria,0.58829
+syr,2010,Syria,0.59097
+syr,2011,Syria,0.59693
+syr,2012,Syria,0.61393
+syr,2013,Syria,0.64219
+syr,2014,Syria,0.60806
+syr,2015,Syria,0.61046
+syr,2016,Syria,0.58126
+syr,2017,Syria,0.59586
+syr,2018,Syria,0.62167
+syr,2019,Syria,0.61586
+syr,2020,Syria,0.57465
+syr,2021,Syria,0.58686
+tcd,2000,Chad,5.2996
+tcd,2001,Chad,5.23687
+tcd,2002,Chad,5.2492
+tcd,2003,Chad,5.04953
+tcd,2004,Chad,5.15971
+tcd,2005,Chad,5.3415
+tcd,2006,Chad,5.38075
+tcd,2007,Chad,5.40166
+tcd,2008,Chad,5.42757
+tcd,2009,Chad,5.51176
+tcd,2010,Chad,5.55698
+tcd,2011,Chad,5.48288
+tcd,2012,Chad,5.42288
+tcd,2013,Chad,5.35191
+tcd,2014,Chad,5.25757
+tcd,2015,Chad,5.14003
+tcd,2016,Chad,5.09091
+tcd,2017,Chad,5.12781
+tcd,2018,Chad,5.20704
+tcd,2019,Chad,5.26066
+tcd,2020,Chad,5.23237
+tcd,2021,Chad,5.21
+tgo,2000,Togo,8.32628
+tgo,2001,Togo,8.5001
+tgo,2002,Togo,8.65928
+tgo,2003,Togo,8.83705
+tgo,2004,Togo,8.78316
+tgo,2005,Togo,8.93965
+tgo,2006,Togo,9.02702
+tgo,2007,Togo,8.99465
+tgo,2008,Togo,9.33305
+tgo,2009,Togo,9.53902
+tgo,2010,Togo,9.63334
+tgo,2011,Togo,9.69205
+tgo,2012,Togo,9.68363
+tgo,2013,Togo,9.71723
+tgo,2014,Togo,9.77963
+tgo,2015,Togo,9.80746
+tgo,2016,Togo,9.97514
+tgo,2017,Togo,9.84298
+tgo,2018,Togo,9.80454
+tgo,2019,Togo,9.77121
+tgo,2020,Togo,9.37861
+tgo,2021,Togo,9.3404
+tha,2000,Thailand,11.488
+tha,2001,Thailand,11.54767
+tha,2002,Thailand,11.82967
+tha,2003,Thailand,11.48658
+tha,2004,Thailand,10.84935
+tha,2005,Thailand,9.31288
+tha,2006,Thailand,9.30568
+tha,2007,Thailand,9.35422
+tha,2008,Thailand,9.14727
+tha,2009,Thailand,8.87469
+tha,2010,Thailand,8.9335
+tha,2011,Thailand,9.18231
+tha,2012,Thailand,9.3586
+tha,2013,Thailand,9.5644
+tha,2014,Thailand,10.44576
+tha,2015,Thailand,11.06685
+tha,2016,Thailand,11.87246
+tha,2017,Thailand,12.19865
+tha,2018,Thailand,12.76035
+tha,2019,Thailand,13.55011
+tha,2020,Thailand,15.45787
+tha,2021,Thailand,16.58879
+tjk,2000,Tajikistan,3.66687
+tjk,2001,Tajikistan,3.40427
+tjk,2002,Tajikistan,3.22589
+tjk,2003,Tajikistan,3.03342
+tjk,2004,Tajikistan,2.99552
+tjk,2005,Tajikistan,2.99727
+tjk,2006,Tajikistan,2.95131
+tjk,2007,Tajikistan,2.93997
+tjk,2008,Tajikistan,2.89461
+tjk,2009,Tajikistan,2.87053
+tjk,2010,Tajikistan,2.85031
+tjk,2011,Tajikistan,2.84604
+tjk,2012,Tajikistan,2.8633
+tjk,2013,Tajikistan,2.86644
+tjk,2014,Tajikistan,2.87435
+tjk,2015,Tajikistan,2.84359
+tjk,2016,Tajikistan,2.8075
+tjk,2017,Tajikistan,2.70203
+tjk,2018,Tajikistan,2.66715
+tjk,2019,Tajikistan,2.6116
+tjk,2020,Tajikistan,2.21628
+tjk,2021,Tajikistan,2.43202
+tkm,2000,Turkmenistan,10.35787
+tkm,2001,Turkmenistan,10.38191
+tkm,2002,Turkmenistan,10.82013
+tkm,2003,Turkmenistan,10.46559
+tkm,2004,Turkmenistan,10.92981
+tkm,2005,Turkmenistan,11.56626
+tkm,2006,Turkmenistan,11.53189
+tkm,2007,Turkmenistan,10.42422
+tkm,2008,Turkmenistan,9.53603
+tkm,2009,Turkmenistan,8.03385
+tkm,2010,Turkmenistan,7.51435
+tkm,2011,Turkmenistan,7.40285
+tkm,2012,Turkmenistan,7.27351
+tkm,2013,Turkmenistan,7.16154
+tkm,2014,Turkmenistan,7.4246
+tkm,2015,Turkmenistan,7.54551
+tkm,2016,Turkmenistan,7.30407
+tkm,2017,Turkmenistan,7.10914
+tkm,2018,Turkmenistan,6.98993
+tkm,2019,Turkmenistan,6.90403
+tkm,2020,Turkmenistan,6.51634
+tkm,2021,Turkmenistan,6.83115
+tls,2000,Timor-Leste,3.28607
+tls,2001,Timor-Leste,3.21994
+tls,2002,Timor-Leste,2.7975
+tls,2003,Timor-Leste,3.09171
+tls,2004,Timor-Leste,2.89377
+tls,2005,Timor-Leste,2.98182
+tls,2006,Timor-Leste,2.91761
+tls,2007,Timor-Leste,3.14501
+tls,2008,Timor-Leste,3.19219
+tls,2009,Timor-Leste,3.88987
+tls,2010,Timor-Leste,3.78439
+tls,2011,Timor-Leste,3.81512
+tls,2012,Timor-Leste,3.61549
+tls,2013,Timor-Leste,3.61741
+tls,2014,Timor-Leste,3.70857
+tls,2015,Timor-Leste,3.54252
+tls,2016,Timor-Leste,3.65698
+tls,2017,Timor-Leste,3.52326
+tls,2018,Timor-Leste,3.63043
+tls,2019,Timor-Leste,3.80772
+tls,2020,Timor-Leste,3.20412
+tls,2021,Timor-Leste,3.55903
+ton,2000,Tonga,5.11516
+ton,2001,Tonga,5.06004
+ton,2002,Tonga,4.95804
+ton,2003,Tonga,4.95468
+ton,2004,Tonga,4.91276
+ton,2005,Tonga,4.80565
+ton,2006,Tonga,4.72906
+ton,2007,Tonga,4.83965
+ton,2008,Tonga,4.45395
+ton,2009,Tonga,4.68825
+ton,2010,Tonga,5.10591
+ton,2011,Tonga,5.00553
+ton,2012,Tonga,4.94763
+ton,2013,Tonga,4.9599
+ton,2014,Tonga,5.04118
+ton,2015,Tonga,5.02503
+ton,2016,Tonga,4.38102
+ton,2017,Tonga,4.73783
+ton,2018,Tonga,4.72266
+ton,2019,Tonga,4.64865
+ton,2020,Tonga,4.64757
+ton,2021,Tonga,4.73476
+tto,2000,Trinidad and Tobago,15.61088
+tto,2001,Trinidad and Tobago,15.07696
+tto,2002,Trinidad and Tobago,14.32751
+tto,2003,Trinidad and Tobago,12.59251
+tto,2004,Trinidad and Tobago,13.03064
+tto,2005,Trinidad and Tobago,11.48526
+tto,2006,Trinidad and Tobago,11.05945
+tto,2007,Trinidad and Tobago,11.23728
+tto,2008,Trinidad and Tobago,12.93911
+tto,2009,Trinidad and Tobago,11.67594
+tto,2010,Trinidad and Tobago,11.7463
+tto,2011,Trinidad and Tobago,11.20395
+tto,2012,Trinidad and Tobago,10.08981
+tto,2013,Trinidad and Tobago,11.60371
+tto,2014,Trinidad and Tobago,11.70799
+tto,2015,Trinidad and Tobago,11.83903
+tto,2016,Trinidad and Tobago,13.06255
+tto,2017,Trinidad and Tobago,13.516
+tto,2018,Trinidad and Tobago,13.65924
+tto,2019,Trinidad and Tobago,13.76243
+tto,2020,Trinidad and Tobago,14.05101
+tto,2021,Trinidad and Tobago,13.34411
+tun,2000,Tunisia,2.99553
+tun,2001,Tunisia,3.02414
+tun,2002,Tunisia,3.0451
+tun,2003,Tunisia,2.99454
+tun,2004,Tunisia,3.07527
+tun,2005,Tunisia,3.05492
+tun,2006,Tunisia,3.0125
+tun,2007,Tunisia,2.95516
+tun,2008,Tunisia,2.87171
+tun,2009,Tunisia,2.95224
+tun,2010,Tunisia,3.06351
+tun,2011,Tunisia,2.72345
+tun,2012,Tunisia,2.60473
+tun,2013,Tunisia,2.60581
+tun,2014,Tunisia,2.54872
+tun,2015,Tunisia,2.59409
+tun,2016,Tunisia,2.53196
+tun,2017,Tunisia,2.63763
+tun,2018,Tunisia,2.67142
+tun,2019,Tunisia,2.58281
+tun,2020,Tunisia,1.89499
+tun,2021,Tunisia,1.84108
+tur,2000,Turkey,2.88209
+tur,2001,Turkey,2.66008
+tur,2002,Turkey,2.57856
+tur,2003,Turkey,2.72641
+tur,2004,Turkey,2.79122
+tur,2005,Turkey,2.845
+tur,2006,Turkey,2.90954
+tur,2007,Turkey,2.86908
+tur,2008,Turkey,2.90489
+tur,2009,Turkey,3.08322
+tur,2010,Turkey,3.10232
+tur,2011,Turkey,3.10776
+tur,2012,Turkey,3.18388
+tur,2013,Turkey,3.08527
+tur,2014,Turkey,3.22181
+tur,2015,Turkey,3.19375
+tur,2016,Turkey,3.34938
+tur,2017,Turkey,3.35897
+tur,2018,Turkey,3.38267
+tur,2019,Turkey,3.53792
+tur,2020,Turkey,2.98326
+tur,2021,Turkey,2.68963
+tza,2000,Tanzania,5.38798
+tza,2001,Tanzania,5.23941
+tza,2002,Tanzania,4.98607
+tza,2003,Tanzania,4.8447
+tza,2004,Tanzania,4.63491
+tza,2005,Tanzania,4.61453
+tza,2006,Tanzania,4.58091
+tza,2007,Tanzania,4.51246
+tza,2008,Tanzania,4.46405
+tza,2009,Tanzania,4.41181
+tza,2010,Tanzania,4.3606
+tza,2011,Tanzania,4.2616
+tza,2012,Tanzania,4.11078
+tza,2013,Tanzania,4.01842
+tza,2014,Tanzania,3.95943
+tza,2015,Tanzania,4.02719
+tza,2016,Tanzania,4.13232
+tza,2017,Tanzania,3.77211
+tza,2018,Tanzania,4.2486
+tza,2019,Tanzania,4.48201
+tza,2020,Tanzania,4.37459
+tza,2021,Tanzania,5.10475
+uga,2000,Uganda,6.8407
+uga,2001,Uganda,7.05842
+uga,2002,Uganda,6.89893
+uga,2003,Uganda,6.84252
+uga,2004,Uganda,6.62858
+uga,2005,Uganda,6.29803
+uga,2006,Uganda,6.01793
+uga,2007,Uganda,5.62921
+uga,2008,Uganda,5.4968
+uga,2009,Uganda,5.30005
+uga,2010,Uganda,5.25097
+uga,2011,Uganda,5.32576
+uga,2012,Uganda,5.13244
+uga,2013,Uganda,4.9804
+uga,2014,Uganda,4.7738
+uga,2015,Uganda,4.5942
+uga,2016,Uganda,4.59982
+uga,2017,Uganda,4.49874
+uga,2018,Uganda,4.7375
+uga,2019,Uganda,5.13934
+uga,2020,Uganda,4.92631
+uga,2021,Uganda,5.498
+ukr,2000,Ukraine,36.0638
+ukr,2001,Ukraine,33.33294
+ukr,2002,Ukraine,32.48522
+ukr,2003,Ukraine,31.25677
+ukr,2004,Ukraine,29.78368
+ukr,2005,Ukraine,30.66804
+ukr,2006,Ukraine,28.68635
+ukr,2007,Ukraine,29.07975
+ukr,2008,Ukraine,28.40204
+ukr,2009,Ukraine,26.02403
+ukr,2010,Ukraine,24.74637
+ukr,2011,Ukraine,23.91006
+ukr,2012,Ukraine,24.29951
+ukr,2013,Ukraine,24.08658
+ukr,2014,Ukraine,25.49807
+ukr,2015,Ukraine,22.41221
+ukr,2016,Ukraine,21.34309
+ukr,2017,Ukraine,21.81332
+ukr,2018,Ukraine,23.52519
+ukr,2019,Ukraine,23.29315
+ukr,2020,Ukraine,22.11994
+ukr,2021,Ukraine,21.2133
+ury,2000,Uruguay,16.35352
+ury,2001,Uruguay,14.70045
+ury,2002,Uruguay,20.17076
+ury,2003,Uruguay,15.86947
+ury,2004,Uruguay,15.51202
+ury,2005,Uruguay,14.97091
+ury,2006,Uruguay,15.71476
+ury,2007,Uruguay,17.61313
+ury,2008,Uruguay,15.20431
+ury,2009,Uruguay,15.10594
+ury,2010,Uruguay,16.08079
+ury,2011,Uruguay,16.88841
+ury,2012,Uruguay,17.95451
+ury,2013,Uruguay,15.99094
+ury,2014,Uruguay,17.58193
+ury,2015,Uruguay,18.73129
+ury,2016,Uruguay,21.27741
+ury,2017,Uruguay,20.98869
+ury,2018,Uruguay,23.22348
+ury,2019,Uruguay,23.39972
+ury,2020,Uruguay,22.76936
+ury,2021,Uruguay,24.75191
+usa,2000,USA,11.16949
+usa,2001,USA,11.54827
+usa,2002,USA,11.86803
+usa,2003,USA,11.76274
+usa,2004,USA,11.92313
+usa,2005,USA,11.82548
+usa,2006,USA,11.96196
+usa,2007,USA,12.30993
+usa,2008,USA,12.64782
+usa,2009,USA,12.81935
+usa,2010,USA,13.19888
+usa,2011,USA,13.44278
+usa,2012,USA,13.66573
+usa,2013,USA,13.69739
+usa,2014,USA,14.09547
+usa,2015,USA,14.41543
+usa,2016,USA,14.62768
+usa,2017,USA,15.19367
+usa,2018,USA,15.43839
+usa,2019,USA,15.10978
+usa,2020,USA,14.95539
+usa,2021,USA,15.63139
+uzb,2000,Uzbekistan,14.93896
+uzb,2001,Uzbekistan,14.63954
+uzb,2002,Uzbekistan,14.48929
+uzb,2003,Uzbekistan,13.60696
+uzb,2004,Uzbekistan,12.99641
+uzb,2005,Uzbekistan,13.60773
+uzb,2006,Uzbekistan,12.89942
+uzb,2007,Uzbekistan,12.46597
+uzb,2008,Uzbekistan,12.08099
+uzb,2009,Uzbekistan,11.58948
+uzb,2010,Uzbekistan,11.26862
+uzb,2011,Uzbekistan,11.10294
+uzb,2012,Uzbekistan,11.49873
+uzb,2013,Uzbekistan,11.41575
+uzb,2014,Uzbekistan,11.64799
+uzb,2015,Uzbekistan,12.25373
+uzb,2016,Uzbekistan,12.321
+uzb,2017,Uzbekistan,11.68589
+uzb,2018,Uzbekistan,10.72278
+uzb,2019,Uzbekistan,10.13994
+uzb,2020,Uzbekistan,8.57769
+uzb,2021,Uzbekistan,8.34328
+vct,2000,St. Vincent and the Grenadines,5.68775
+vct,2001,St. Vincent and the Grenadines,5.00772
+vct,2002,St. Vincent and the Grenadines,6.25888
+vct,2003,St. Vincent and the Grenadines,5.63113
+vct,2004,St. Vincent and the Grenadines,5.12796
+vct,2005,St. Vincent and the Grenadines,9.95496
+vct,2006,St. Vincent and the Grenadines,6.19952
+vct,2007,St. Vincent and the Grenadines,8.44643
+vct,2008,St. Vincent and the Grenadines,4.30999
+vct,2009,St. Vincent and the Grenadines,2.66296
+vct,2010,St. Vincent and the Grenadines,3.143
+vct,2011,St. Vincent and the Grenadines,5.7054
+vct,2012,St. Vincent and the Grenadines,5.5991
+vct,2013,St. Vincent and the Grenadines,3.90791
+vct,2014,St. Vincent and the Grenadines,1.23586
+vct,2015,St. Vincent and the Grenadines,2.63591
+vct,2016,St. Vincent and the Grenadines,0.51349
+vct,2017,St. Vincent and the Grenadines,
+vct,2018,St. Vincent and the Grenadines,
+vct,2019,St. Vincent and the Grenadines,0.31733
+vct,2020,St. Vincent and the Grenadines,0.31574
+vct,2021,St. Vincent and the Grenadines,0.40885
+ven,2000,Venezuela,6.60273
+ven,2001,Venezuela,6.79336
+ven,2002,Venezuela,6.46814
+ven,2003,Venezuela,6.81973
+ven,2004,Venezuela,6.30082
+ven,2005,Venezuela,5.93934
+ven,2006,Venezuela,5.92768
+ven,2007,Venezuela,5.80853
+ven,2008,Venezuela,5.96943
+ven,2009,Venezuela,5.94241
+ven,2010,Venezuela,6.04574
+ven,2011,Venezuela,6.23055
+ven,2012,Venezuela,6.1816
+ven,2013,Venezuela,5.90103
+ven,2014,Venezuela,5.67129
+ven,2015,Venezuela,6.12156
+ven,2016,Venezuela,10.49116
+ven,2017,Venezuela,8.06986
+ven,2018,Venezuela,7.44927
+ven,2019,Venezuela,7.17318
+ven,2020,Venezuela,7.32795
+ven,2021,Venezuela,8.6286
+vnm,2000,Vietnam,5.83393
+vnm,2001,Vietnam,5.88468
+vnm,2002,Vietnam,5.93661
+vnm,2003,Vietnam,5.92656
+vnm,2004,Vietnam,6.01949
+vnm,2005,Vietnam,6.1202
+vnm,2006,Vietnam,6.21767
+vnm,2007,Vietnam,6.4307
+vnm,2008,Vietnam,6.64656
+vnm,2009,Vietnam,6.82401
+vnm,2010,Vietnam,7.02543
+vnm,2011,Vietnam,7.10574
+vnm,2012,Vietnam,7.2187
+vnm,2013,Vietnam,7.32346
+vnm,2014,Vietnam,7.48169
+vnm,2015,Vietnam,7.63707
+vnm,2016,Vietnam,7.60317
+vnm,2017,Vietnam,7.4709
+vnm,2018,Vietnam,7.46774
+vnm,2019,Vietnam,7.5327
+vnm,2020,Vietnam,6.83413
+vnm,2021,Vietnam,7.29977
+vut,2000,Vanuatu,17.35038
+vut,2001,Vanuatu,17.28019
+vut,2002,Vanuatu,17.21848
+vut,2003,Vanuatu,17.20046
+vut,2004,Vanuatu,17.02496
+vut,2005,Vanuatu,16.91109
+vut,2006,Vanuatu,17.43786
+vut,2007,Vanuatu,17.29628
+vut,2008,Vanuatu,17.06835
+vut,2009,Vanuatu,17.24357
+vut,2010,Vanuatu,16.92154
+vut,2011,Vanuatu,17.11311
+vut,2012,Vanuatu,17.22586
+vut,2013,Vanuatu,16.9732
+vut,2014,Vanuatu,16.44325
+vut,2015,Vanuatu,16.38968
+vut,2016,Vanuatu,16.19634
+vut,2017,Vanuatu,16.1926
+vut,2018,Vanuatu,16.15189
+vut,2019,Vanuatu,16.14624
+vut,2020,Vanuatu,15.33878
+vut,2021,Vanuatu,15.72844
+wsm,2000,Samoa,11.99567
+wsm,2001,Samoa,11.78158
+wsm,2002,Samoa,11.57705
+wsm,2003,Samoa,11.27683
+wsm,2004,Samoa,10.72258
+wsm,2005,Samoa,10.99423
+wsm,2006,Samoa,10.9988
+wsm,2007,Samoa,10.96182
+wsm,2008,Samoa,11.13823
+wsm,2009,Samoa,9.41768
+wsm,2010,Samoa,11.43225
+wsm,2011,Samoa,11.77292
+wsm,2012,Samoa,11.88414
+wsm,2013,Samoa,11.24864
+wsm,2014,Samoa,12.72858
+wsm,2015,Samoa,13.02345
+wsm,2016,Samoa,13.28815
+wsm,2017,Samoa,13.1126
+wsm,2018,Samoa,12.97878
+wsm,2019,Samoa,12.90103
+wsm,2020,Samoa,11.97106
+wsm,2021,Samoa,11.99624
+yem,2000,Yemen,5.82139
+yem,2001,Yemen,5.80351
+yem,2002,Yemen,5.71998
+yem,2003,Yemen,5.45207
+yem,2004,Yemen,5.14777
+yem,2005,Yemen,5.29749
+yem,2006,Yemen,5.01825
+yem,2007,Yemen,5.48046
+yem,2008,Yemen,5.47452
+yem,2009,Yemen,5.32235
+yem,2010,Yemen,5.17014
+yem,2011,Yemen,4.97581
+yem,2012,Yemen,4.88272
+yem,2013,Yemen,4.83012
+yem,2014,Yemen,4.84423
+yem,2015,Yemen,4.70619
+yem,2016,Yemen,4.86431
+yem,2017,Yemen,4.73069
+yem,2018,Yemen,4.57719
+yem,2019,Yemen,4.32991
+yem,2020,Yemen,3.93434
+yem,2021,Yemen,4.21206
+zaf,2000,South Africa,13.13252
+zaf,2001,South Africa,13.24567
+zaf,2002,South Africa,14.59887
+zaf,2003,South Africa,15.75987
+zaf,2004,South Africa,16.07498
+zaf,2005,South Africa,15.63631
+zaf,2006,South Africa,16.0996
+zaf,2007,South Africa,15.96085
+zaf,2008,South Africa,16.84226
+zaf,2009,South Africa,16.40786
+zaf,2010,South Africa,18.77949
+zaf,2011,South Africa,17.29479
+zaf,2012,South Africa,18.18049
+zaf,2013,South Africa,18.69734
+zaf,2014,South Africa,20.07204
+zaf,2015,South Africa,20.74465
+zaf,2016,South Africa,19.58416
+zaf,2017,South Africa,18.18689
+zaf,2018,South Africa,19.15265
+zaf,2019,South Africa,20.14031
+zaf,2020,South Africa,21.09958
+zaf,2021,South Africa,22.2958
+zmb,2000,Zambia,6.83814
+zmb,2001,Zambia,6.62811
+zmb,2002,Zambia,6.73618
+zmb,2003,Zambia,6.00324
+zmb,2004,Zambia,6.25438
+zmb,2005,Zambia,6.00339
+zmb,2006,Zambia,6.34241
+zmb,2007,Zambia,6.2141
+zmb,2008,Zambia,6.10809
+zmb,2009,Zambia,5.86049
+zmb,2010,Zambia,6.00275
+zmb,2011,Zambia,5.89317
+zmb,2012,Zambia,5.76236
+zmb,2013,Zambia,5.7991
+zmb,2014,Zambia,5.64977
+zmb,2015,Zambia,5.70469
+zmb,2016,Zambia,5.53026
+zmb,2017,Zambia,5.6357
+zmb,2018,Zambia,5.51735
+zmb,2019,Zambia,5.75766
+zmb,2020,Zambia,6.00485
+zmb,2021,Zambia,7.12591
+zwe,2000,Zimbabwe,12.34936
+zwe,2001,Zimbabwe,13.17091
+zwe,2002,Zimbabwe,13.98509
+zwe,2003,Zimbabwe,14.50857
+zwe,2004,Zimbabwe,14.4131
+zwe,2005,Zimbabwe,13.80665
+zwe,2006,Zimbabwe,13.64041
+zwe,2007,Zimbabwe,13.20617
+zwe,2008,Zimbabwe,13.55515
+zwe,2009,Zimbabwe,12.36363
+zwe,2010,Zimbabwe,13.56081
+zwe,2011,Zimbabwe,14.26713
+zwe,2012,Zimbabwe,14.20988
+zwe,2013,Zimbabwe,14.28075
+zwe,2014,Zimbabwe,14.05916
+zwe,2015,Zimbabwe,14.48262
+zwe,2016,Zimbabwe,15.0832
+zwe,2017,Zimbabwe,15.12277
+zwe,2018,Zimbabwe,16.11169
+zwe,2019,Zimbabwe,15.83853
+zwe,2020,Zimbabwe,15.50532
+zwe,2021,Zimbabwe,17.34344

@@ -1,0 +1,1103 @@
+﻿geo,time,name,se_adt_litr_zs
+afg,1979,Afghanistan,18.16
+afg,2011,Afghanistan,31.45
+afg,2015,Afghanistan,33.75
+afg,2020,Afghanistan,36.01497
+afg,2021,Afghanistan,37.27
+ago,2001,Angola,67.41
+ago,2014,Angola,66.03
+ago,2015,Angola,66.24
+ago,2023,Angola,68.18
+alb,2001,Albania,98.71
+alb,2008,Albania,95.94
+alb,2011,Albania,96.85
+alb,2012,Albania,97.25
+alb,2017,Albania,98.81
+alb,2023,Albania,97.68
+are,1975,UAE,53.51
+are,1985,UAE,71.24
+are,2005,UAE,90.03
+are,2019,UAE,97.78
+are,2021,UAE,98.13
+are,2022,UAE,98.29
+are,2023,UAE,98.06
+are,2024,UAE,98.81
+arg,1980,Argentina,93.91
+arg,1991,Argentina,96.04
+arg,2001,Argentina,97.19
+arg,2020,Argentina,99.14
+arm,1989,Armenia,98.75
+arm,2001,Armenia,99.4
+arm,2011,Armenia,99.74
+arm,2016,Armenia,99.74
+arm,2017,Armenia,99.74
+arm,2018,Armenia,100
+arm,2019,Armenia,100
+arm,2020,Armenia,99.79
+arm,2022,Armenia,99.82
+arm,2023,Armenia,99.84
+atg,2001,Antigua and Barbuda,98.95
+aze,1999,Azerbaijan,98.79
+aze,2007,Azerbaijan,99.59
+aze,2009,Azerbaijan,99.76
+aze,2010,Azerbaijan,99.77
+aze,2011,Azerbaijan,99.78
+aze,2012,Azerbaijan,99.78
+aze,2013,Azerbaijan,99.79
+aze,2014,Azerbaijan,99.79
+aze,2015,Azerbaijan,99.79
+aze,2016,Azerbaijan,99.79
+aze,2017,Azerbaijan,99.79
+aze,2019,Azerbaijan,99.8
+aze,2023,Azerbaijan,99.78
+bdi,1979,Burundi,22.51
+bdi,1990,Burundi,37.38
+bdi,2000,Burundi,59.3
+bdi,2008,Burundi,48.08
+bdi,2014,Burundi,61.29
+bdi,2016,Burundi,65.69
+bdi,2017,Burundi,68.38
+bdi,2020,Burundi,71.33748
+ben,1979,Benin,16.48
+ben,1992,Benin,27.25
+ben,2002,Benin,34.66
+ben,2011,Benin,44.68812
+ben,2013,Benin,45.08
+ben,2017,Benin,38.87
+ben,2019,Benin,49
+ben,2021,Benin,43.83
+ben,2022,Benin,51.38
+bfa,1975,Burkina Faso,8.83
+bfa,1991,Burkina Faso,13.57
+bfa,1996,Burkina Faso,12.85
+bfa,2003,Burkina Faso,21.82
+bfa,2005,Burkina Faso,23.52
+bfa,2006,Burkina Faso,22.47
+bfa,2007,Burkina Faso,27.88
+bfa,2014,Burkina Faso,34.6
+bfa,2018,Burkina Faso,39.35
+bfa,2019,Burkina Faso,29.66
+bfa,2021,Burkina Faso,36.97
+bfa,2022,Burkina Faso,40.92
+bfa,2023,Burkina Faso,41.56709
+bgd,1981,Bangladesh,29.23
+bgd,1991,Bangladesh,35.32
+bgd,2001,Bangladesh,47.49
+bgd,2011,Bangladesh,58.77
+bgd,2012,Bangladesh,57.86
+bgd,2013,Bangladesh,61.02
+bgd,2014,Bangladesh,61.09
+bgd,2015,Bangladesh,65.14
+bgd,2016,Bangladesh,72.76
+bgd,2017,Bangladesh,72.89
+bgd,2018,Bangladesh,73.91
+bgd,2019,Bangladesh,74.68
+bgd,2020,Bangladesh,74.91
+bgd,2021,Bangladesh,76.36
+bgd,2022,Bangladesh,79
+bgr,2001,Bulgaria,98.2
+bgr,2011,Bulgaria,98.35
+bhr,1981,Bahrain,69.75
+bhr,1991,Bahrain,84.01
+bhr,2001,Bahrain,86.55
+bhr,2022,Bahrain,97.87
+bhr,2023,Bahrain,97.85
+bhr,2024,Bahrain,97.82
+bih,1991,Bosnia and Herzegovina,89.06
+bih,2000,Bosnia and Herzegovina,96.66
+bih,2013,Bosnia and Herzegovina,96.99
+blr,1989,Belarus,97.88
+blr,1999,Belarus,99.59
+blr,2009,Belarus,99.62
+blr,2019,Belarus,99.87
+blz,1991,Belize,70.3
+blz,2000,Belize,76.9
+blz,2015,Belize,90.92
+blz,2022,Belize,87.88
+bol,1976,Bolivia,63.21
+bol,1992,Bolivia,79.99
+bol,2001,Bolivia,86.72
+bol,2007,Bolivia,90.29
+bol,2008,Bolivia,90.7
+bol,2009,Bolivia,91.17
+bol,2011,Bolivia,92.23
+bol,2012,Bolivia,94.46
+bol,2015,Bolivia,92.46
+bol,2020,Bolivia,93.85
+bol,2023,Bolivia,95.55
+bol,2024,Bolivia,96.73
+bra,1980,Brazil,74.59
+bra,2000,Brazil,86.37
+bra,2004,Brazil,88.62
+bra,2006,Brazil,89.62
+bra,2007,Brazil,90.01
+bra,2008,Brazil,90.04
+bra,2009,Brazil,90.3
+bra,2010,Brazil,90.38
+bra,2011,Brazil,91.41
+bra,2012,Brazil,91.34
+bra,2013,Brazil,91.48
+bra,2014,Brazil,91.73
+bra,2015,Brazil,92.05
+bra,2016,Brazil,92.81
+bra,2017,Brazil,93.08
+bra,2018,Brazil,93.23
+bra,2019,Brazil,93.89263
+bra,2020,Brazil,94.74441
+bra,2021,Brazil,94.77262
+bra,2022,Brazil,94.37687
+bra,2023,Brazil,94.57255
+bra,2024,Brazil,94.74
+brb,1970,Barbados,99.27
+brn,1981,Brunei,77.74
+brn,1991,Brunei,87.8
+brn,2001,Brunei,92.67
+brn,2011,Brunei,96.09
+btn,2005,Bhutan,52.81
+btn,2012,Bhutan,55.32
+btn,2017,Bhutan,66.56
+btn,2022,Bhutan,64.91
+bwa,1991,Botswana,68.58
+bwa,2003,Botswana,81.19
+caf,1975,Central African Republic,18.24
+caf,1988,Central African Republic,33.62
+caf,2000,Central African Republic,50.65
+caf,2019,Central African Republic,42.44
+chl,1982,Chile,91.13
+chl,1992,Chile,94.29
+chl,2002,Chile,95.72
+chl,2011,Chile,96.7
+chl,2013,Chile,96.27
+chl,2015,Chile,96.87
+chl,2017,Chile,96.4
+chn,1982,China,65.51
+chn,1990,China,77.79
+chn,2000,China,90.92
+chn,2010,China,95.12
+chn,2020,China,96.74
+civ,1988,Cote d'Ivoire,34.14
+civ,1998,Cote d'Ivoire,36.35
+civ,2000,Cote d'Ivoire,48.74
+civ,2014,Cote d'Ivoire,43.91
+civ,2016,Cote d'Ivoire,50.04
+civ,2019,Cote d'Ivoire,56.95924
+civ,2021,Cote d'Ivoire,50
+cmr,1976,Cameroon,41.22
+cmr,2000,Cameroon,68.41
+cmr,2007,Cameroon,70.68
+cmr,2010,Cameroon,71.19
+cmr,2018,Cameroon,72.55
+cod,2001,"Congo, Dem. Rep.",67.17
+cod,2012,"Congo, Dem. Rep.",75.02
+cod,2016,"Congo, Dem. Rep.",77.04
+cod,2018,"Congo, Dem. Rep.",73.55
+cod,2020,"Congo, Dem. Rep.",65.68287
+cod,2023,"Congo, Dem. Rep.",68.5
+cog,1984,"Congo, Rep.",59.62
+cog,2005,"Congo, Rep.",76.11
+col,1993,Colombia,91.06
+col,1996,Colombia,91.21
+col,2004,Colombia,92.8
+col,2005,Colombia,92.85
+col,2006,Colombia,92.3
+col,2007,Colombia,92.65
+col,2008,Colombia,93.38
+col,2009,Colombia,93.24
+col,2010,Colombia,93.37
+col,2011,Colombia,93.58
+col,2014,Colombia,94.19
+col,2015,Colombia,94.25
+col,2016,Colombia,94.65
+col,2017,Colombia,94.88739
+col,2018,Colombia,95.09
+col,2019,Colombia,95.25
+col,2020,Colombia,95.64
+col,2021,Colombia,95.66065
+col,2022,Colombia,95.31031
+col,2023,Colombia,95.45663
+col,2024,Colombia,95.34
+com,1980,Comoros,47.92
+com,2000,Comoros,68.25
+com,2014,Comoros,73.6495
+com,2021,Comoros,75.6202
+cpv,1990,Cape Verde,62.8
+cpv,2009,Cape Verde,82.21896
+cpv,2012,Cape Verde,85.33
+cpv,2015,Cape Verde,86.79
+cpv,2024,Cape Verde,88.47
+cri,1984,Costa Rica,92.63
+cri,2000,Costa Rica,94.87
+cri,2011,Costa Rica,97.41
+cub,1981,Cuba,97.85
+cub,2002,Cuba,99.8
+cub,2012,Cuba,99.67
+cub,2019,Cuba,97.65
+cyp,1992,Cyprus,94.36
+cyp,2001,Cyprus,96.8
+cyp,2011,Cyprus,98.68
+dom,1981,Dominican Republic,73.06
+dom,2002,Dominican Republic,87
+dom,2007,Dominican Republic,88.24
+dom,2010,Dominican Republic,89.54
+dom,2011,Dominican Republic,90.11
+dom,2012,Dominican Republic,90.16
+dom,2013,Dominican Republic,90.86
+dom,2014,Dominican Republic,91.76
+dom,2015,Dominican Republic,91.99
+dom,2016,Dominican Republic,93.78
+dom,2017,Dominican Republic,93.23322
+dom,2018,Dominican Republic,93.43606
+dom,2019,Dominican Republic,93.67269
+dom,2020,Dominican Republic,93.69264
+dom,2021,Dominican Republic,93.73097
+dom,2022,Dominican Republic,93.70224
+dom,2023,Dominican Republic,94.31238
+dom,2024,Dominican Republic,94.03
+dza,1987,Algeria,49.63
+dza,2002,Algeria,69.87
+dza,2006,Algeria,72.65
+dza,2008,Algeria,75.14
+ecu,1982,Ecuador,83.55
+ecu,1990,Ecuador,88.3
+ecu,2001,Ecuador,90.98
+ecu,2007,Ecuador,92.1
+ecu,2008,Ecuador,92.39
+ecu,2009,Ecuador,92.25
+ecu,2010,Ecuador,91.85
+ecu,2011,Ecuador,91.59
+ecu,2012,Ecuador,92.06
+ecu,2013,Ecuador,93.29
+ecu,2014,Ecuador,94.22
+ecu,2015,Ecuador,94.46
+ecu,2016,Ecuador,94.35
+ecu,2017,Ecuador,92.83
+ecu,2020,Ecuador,93.63
+ecu,2021,Ecuador,94.48
+ecu,2022,Ecuador,96.26
+ecu,2024,Ecuador,93.49
+egy,1976,Egypt,38.2
+egy,1986,Egypt,44.42
+egy,1996,Egypt,55.59
+egy,2005,Egypt,67.33
+egy,2006,Egypt,66.37
+egy,2010,Egypt,72.05
+egy,2012,Egypt,73.87
+egy,2013,Egypt,72.44
+egy,2017,Egypt,71.17
+egy,2021,Egypt,82.08039
+egy,2022,Egypt,79.45316
+eri,2002,Eritrea,52.51
+eri,2008,Eritrea,64.66
+esp,1981,Spain,92.81
+esp,1991,Spain,96.49
+esp,2004,Spain,97.17
+esp,2005,Spain,97.75
+esp,2006,Spain,97.75
+esp,2007,Spain,97.94
+esp,2008,Spain,97.63
+esp,2009,Spain,97.68
+esp,2010,Spain,97.75
+esp,2011,Spain,97.78
+esp,2012,Spain,97.89
+esp,2013,Spain,98.08
+esp,2014,Spain,98.09
+esp,2015,Spain,98.14
+esp,2016,Spain,98.25
+esp,2018,Spain,98.44
+esp,2020,Spain,98.59
+esp,2021,Spain,99.7
+est,1989,Estonia,99.73
+est,2000,Estonia,99.77
+est,2011,Estonia,99.89
+eth,1994,Ethiopia,27.01
+eth,2004,Ethiopia,35.9
+eth,2007,Ethiopia,39
+eth,2013,Ethiopia,48.35497
+eth,2016,Ethiopia,47.49
+eth,2019,Ethiopia,55.05
+eth,2021,Ethiopia,54.88537
+eth,2022,Ethiopia,60.46
+gab,1993,Gabon,72.23
+gab,2021,Gabon,88.86
+geo,2002,Georgia,99.65
+geo,2014,Georgia,99.59
+geo,2017,Georgia,99.36
+geo,2018,Georgia,99.65
+geo,2019,Georgia,99.87572
+geo,2020,Georgia,99.89307
+geo,2021,Georgia,99.91808
+geo,2022,Georgia,99.57
+geo,2023,Georgia,99.56
+geo,2024,Georgia,99.68
+gha,2000,Ghana,57.9
+gha,2010,Ghana,71.5
+gha,2015,Ghana,60.1981
+gha,2017,Ghana,64.49
+gha,2021,Ghana,76.49
+gin,1996,Guinea,20.55
+gin,2003,Guinea,29.7
+gin,2010,Guinea,25.31
+gin,2014,Guinea,32
+gin,2018,Guinea,39.62
+gmb,2000,Gambia,36.82
+gmb,2015,Gambia,50.78
+gmb,2018,Gambia,53.16
+gmb,2021,Gambia,51.64
+gnb,1979,Guinea-Bissau,19.96
+gnb,2000,Guinea-Bissau,41.36
+gnb,2019,Guinea-Bissau,54.88
+gnb,2022,Guinea-Bissau,63.93
+gnq,2000,Equatorial Guinea,88.31
+grc,1981,Greece,90.51
+grc,1991,Greece,92.61
+grc,2001,Greece,95.99
+grc,2009,Greece,93.91
+grd,1970,Grenada,97.79
+gtm,1994,Guatemala,64.21
+gtm,2002,Guatemala,69.1
+gtm,2012,Guatemala,78.26
+gtm,2013,Guatemala,77.04
+gtm,2014,Guatemala,81.29
+gtm,2015,Guatemala,80.2
+gtm,2018,Guatemala,80.81
+gtm,2022,Guatemala,83.03
+gtm,2023,Guatemala,83.01958
+gtm,2024,Guatemala,82.11
+guy,2020,Guyana,85.64
+hnd,2001,Honduras,80.01
+hnd,2007,Honduras,83.59
+hnd,2010,Honduras,84.76
+hnd,2011,Honduras,85.12
+hnd,2012,Honduras,85.36
+hnd,2013,Honduras,85.46
+hnd,2014,Honduras,87.2
+hnd,2015,Honduras,87.91
+hnd,2016,Honduras,88.99
+hnd,2018,Honduras,87.21
+hnd,2019,Honduras,88.51
+hnd,2022,Honduras,88.21928
+hnd,2023,Honduras,87.09
+hnd,2024,Honduras,88.25
+hrv,1991,Croatia,96.7
+hrv,2001,Croatia,98.15
+hti,1982,Haiti,34.73
+hti,2003,Haiti,58.74
+hti,2012,Haiti,73.95333
+hti,2017,Haiti,68.01
+hun,1980,Hungary,98.86
+idn,1980,Indonesia,67.31
+idn,1990,Indonesia,81.52
+idn,2004,Indonesia,90.38
+idn,2006,Indonesia,91.98
+idn,2008,Indonesia,92.19
+idn,2009,Indonesia,92.58
+idn,2010,Indonesia,92.32
+idn,2011,Indonesia,92.81
+idn,2014,Indonesia,95.12
+idn,2015,Indonesia,95.22
+idn,2016,Indonesia,95.38
+idn,2018,Indonesia,95.66
+idn,2020,Indonesia,96
+ind,1981,India,40.76
+ind,1991,India,48.22
+ind,2001,India,61.01
+ind,2006,India,62.75
+ind,2010,India,68.32582
+ind,2011,India,69.3
+ind,2012,India,69.82793
+ind,2018,India,73.68835
+ind,2019,India,74.89386
+ind,2020,India,75.52706
+ind,2021,India,76.05966
+ind,2022,India,76.32
+ind,2023,India,81.7
+ind,2024,India,78.16253
+irn,1976,Iran,36.52
+irn,1986,Iran,52.32
+irn,1991,Iran,65.53
+irn,1996,Iran,73.06
+irn,2002,Iran,77
+irn,2005,Iran,82.44
+irn,2006,Iran,82.33
+irn,2008,Iran,82.96
+irn,2009,Iran,83.22224
+irn,2010,Iran,83.66467
+irn,2011,Iran,83.52
+irn,2012,Iran,83.63
+irn,2013,Iran,84.63
+irn,2014,Iran,84.71
+irn,2015,Iran,85.28343
+irn,2016,Iran,85.54
+irn,2017,Iran,85.94679
+irn,2018,Iran,86.86884
+irn,2019,Iran,87.37883
+irn,2020,Iran,87.90283
+irn,2021,Iran,88.45559
+irn,2022,Iran,88.59423
+irn,2023,Iran,88.91682
+irq,2000,Iraq,74.05
+irq,2012,Iraq,77.2
+irq,2014,Iraq,82.2
+irq,2016,Iraq,83.3
+irq,2017,Iraq,85.6
+irq,2021,Iraq,84.06489
+isr,1983,Israel,91.75
+ita,1981,Italy,96.46
+ita,2001,Italy,98.42
+ita,2011,Italy,98.85
+ita,2019,Italy,99.35
+jam,1999,Jamaica,79.92
+jor,1979,Jordan,66.8
+jor,2003,Jordan,89.89
+jor,2005,Jordan,91.13
+jor,2007,Jordan,92.2
+jor,2010,Jordan,92.55
+jor,2011,Jordan,95.9
+jor,2012,Jordan,97.89
+jor,2018,Jordan,95.43
+jor,2023,Jordan,94.85
+jor,2024,Jordan,94.44
+kaz,1989,Kazakhstan,97.53
+kaz,1999,Kazakhstan,99.51
+kaz,2009,Kazakhstan,99.73
+ken,2000,Kenya,82.23
+kgz,1999,Kyrgyz Republic,98.7
+kgz,2009,Kyrgyz Republic,99.24
+khm,1998,Cambodia,67.34
+khm,2004,Cambodia,73.61
+khm,2008,Cambodia,76.87
+khm,2009,Cambodia,76.14
+khm,2013,Cambodia,79.65
+khm,2014,Cambodia,78.06
+khm,2015,Cambodia,80.53
+khm,2019,Cambodia,87.66
+khm,2020,Cambodia,82.55104
+khm,2021,Cambodia,71.93
+kir,2018,Kiribati,97.96
+kir,2020,Kiribati,98.60798
+kor,2008,South Korea,97.97
+kwt,1975,Kuwait,59.56
+kwt,1980,Kuwait,67.52
+kwt,1985,Kuwait,74.49
+kwt,1995,Kuwait,78.4
+kwt,2005,Kuwait,93.27
+kwt,2006,Kuwait,93.28
+kwt,2007,Kuwait,93.66
+kwt,2008,Kuwait,93.9
+kwt,2010,Kuwait,94.47
+kwt,2012,Kuwait,95.51
+kwt,2013,Kuwait,95.59
+kwt,2015,Kuwait,95.69
+kwt,2017,Kuwait,96.04
+kwt,2018,Kuwait,96.06
+kwt,2020,Kuwait,96.46
+lao,1995,Lao,60.25
+lao,2000,Lao,69.58
+lao,2001,Lao,68.73
+lao,2005,Lao,72.7
+lao,2015,Lao,84.66
+lao,2017,Lao,73.72
+lao,2023,Lao,75.64
+lbn,2007,Lebanon,89.61
+lbn,2009,Lebanon,91.18
+lbn,2018,Lebanon,92.67
+lbn,2019,Lebanon,92.00997
+lbr,1984,Liberia,32.11
+lbr,2010,Liberia,59.40303
+lby,1984,Libya,60.16
+lka,1981,Sri Lanka,86.78
+lka,2001,Sri Lanka,90.68
+lka,2006,Sri Lanka,90.81
+lka,2008,Sri Lanka,90.56
+lka,2010,Sri Lanka,91.18
+lka,2014,Sri Lanka,92.53466
+lka,2015,Sri Lanka,92.55378
+lka,2016,Sri Lanka,92.39
+lka,2017,Sri Lanka,91.9
+lka,2018,Sri Lanka,91.71
+lka,2019,Sri Lanka,92.25
+lka,2020,Sri Lanka,92.38
+lka,2021,Sri Lanka,92.43
+lka,2022,Sri Lanka,92.49
+lka,2023,Sri Lanka,92.66
+lka,2024,Sri Lanka,92.74
+lso,2000,Lesotho,86.25
+lso,2006,Lesotho,66.1
+lso,2016,Lesotho,97.27
+lso,2018,Lesotho,86.24
+lso,2019,Lesotho,92.39617
+lso,2024,Lesotho,90.45
+ltu,1989,Lithuania,98.44
+ltu,2001,Lithuania,99.65
+ltu,2011,Lithuania,99.82
+lva,1989,Latvia,99.45
+lva,2000,Latvia,99.75
+lva,2011,Latvia,99.9
+mar,1982,Morocco,30.26
+mar,1994,Morocco,41.59
+mar,2004,Morocco,52.31
+mar,2008,Morocco,55.15
+mar,2009,Morocco,56.08
+mar,2011,Morocco,67.08
+mar,2012,Morocco,69.16
+mar,2014,Morocco,64.26
+mda,1989,Moldova,96.38
+mda,2000,Moldova,96.65
+mda,2014,Moldova,99.36
+mdg,2000,Madagascar,70.69
+mdg,2012,Madagascar,71.57
+mdg,2018,Madagascar,76.68
+mdg,2021,Madagascar,74.69
+mdv,1977,Maldives,82.3
+mdv,1985,Maldives,92.23
+mdv,1990,Maldives,96.02
+mdv,1995,Maldives,96.33
+mdv,2000,Maldives,96.33
+mdv,2006,Maldives,98.4
+mdv,2014,Maldives,98.61
+mdv,2016,Maldives,97.73
+mdv,2017,Maldives,94.51
+mdv,2019,Maldives,98.21
+mex,1980,Mexico,82.99
+mex,1990,Mexico,87.56
+mex,2000,Mexico,90.54
+mex,2002,Mexico,90.27
+mex,2004,Mexico,90.95
+mex,2005,Mexico,91.63
+mex,2006,Mexico,91.73
+mex,2007,Mexico,92.8
+mex,2008,Mexico,92.93
+mex,2009,Mexico,93.44
+mex,2010,Mexico,93.07
+mex,2011,Mexico,93.52
+mex,2012,Mexico,94.23
+mex,2013,Mexico,93.96
+mex,2014,Mexico,94.56
+mex,2015,Mexico,94.47
+mex,2016,Mexico,94.86
+mex,2017,Mexico,94.97
+mex,2018,Mexico,95.38
+mex,2019,Mexico,95.38894
+mex,2020,Mexico,95.25
+mex,2021,Mexico,95.6891
+mex,2022,Mexico,95.12
+mex,2023,Mexico,95.83469
+mex,2024,Mexico,95.55
+mhl,2011,Marshall Islands,98.27
+mhl,2019,Marshall Islands,98.18
+mhl,2021,Marshall Islands,95.76293
+mkd,1994,North Macedonia,94.06
+mkd,2002,North Macedonia,96.13
+mli,1976,Mali,9.43
+mli,1998,Mali,19.04
+mli,2003,Mali,24
+mli,2006,Mali,26.18
+mli,2010,Mali,31.1
+mli,2011,Mali,30.62
+mli,2015,Mali,33.07
+mli,2018,Mali,35.47
+mli,2024,Mali,35.63
+mlt,1985,Malta,86.93
+mlt,1995,Malta,87.87
+mlt,2005,Malta,92.36
+mlt,2011,Malta,93.31
+mmr,1983,Myanmar,78.57
+mmr,2000,Myanmar,89.94
+mmr,2014,Myanmar,90.36
+mmr,2016,Myanmar,84.78
+mmr,2018,Myanmar,95.81429
+mmr,2019,Myanmar,89.07
+mmr,2020,Myanmar,93.5274
+mne,1981,Montenegro,89.64
+mne,1991,Montenegro,93.46
+mne,2003,Montenegro,97.77
+mne,2011,Montenegro,98.44
+mne,2018,Montenegro,98.53
+mng,2000,Mongolia,97.77
+mng,2010,Mongolia,98.26
+mng,2018,Mongolia,96.9
+mng,2019,Mongolia,98.46
+mng,2020,Mongolia,99.18
+mng,2021,Mongolia,99.21436
+mng,2022,Mongolia,98.73
+mng,2023,Mongolia,98.64
+mng,2024,Mongolia,98.64
+moz,1980,Mozambique,27
+moz,1997,Mozambique,38.71
+moz,2003,Mozambique,48.16
+moz,2009,Mozambique,50.58
+moz,2015,Mozambique,56.04
+moz,2017,Mozambique,60.66
+moz,2020,Mozambique,59.78
+moz,2022,Mozambique,61.66534
+mrt,2000,Mauritania,51.21
+mrt,2013,Mauritania,62.07
+mrt,2015,Mauritania,65.11
+mrt,2020,Mauritania,59.53
+mus,1990,Mauritius,79.87
+mus,2000,Mauritius,84.3
+mus,2011,Mauritius,89.25
+mus,2012,Mauritius,91.77
+mus,2013,Mauritius,91.49
+mus,2014,Mauritius,92.47
+mus,2015,Mauritius,92.71
+mus,2016,Mauritius,93.16
+mus,2021,Mauritius,92.98002
+mus,2023,Mauritius,94.28778
+mwi,1987,Malawi,48.54
+mwi,1998,Malawi,64.13
+mwi,2017,Malawi,72.82668
+mwi,2018,Malawi,76.72
+mwi,2020,Malawi,70.15
+mys,1980,Malaysia,69.52
+mys,1991,Malaysia,82.92
+mys,2000,Malaysia,88.69
+mys,2010,Malaysia,93.12
+mys,2016,Malaysia,94.88
+mys,2017,Malaysia,95.08
+mys,2018,Malaysia,94.85
+mys,2019,Malaysia,94.97
+mys,2022,Malaysia,95.77
+nam,1991,Namibia,75.82
+nam,2001,Namibia,84.94
+nam,2011,Namibia,88.27
+nam,2016,Namibia,88.1305
+nam,2018,Namibia,88.28324
+nam,2023,Namibia,87.64
+ner,2001,Niger,14.38
+ner,2005,Niger,28.67
+ner,2012,Niger,30.56
+ner,2014,Niger,29.04371
+ner,2018,Niger,33.05
+ner,2022,Niger,35.61
+nga,1991,Nigeria,55.45
+nga,2003,Nigeria,54.77
+nga,2006,Nigeria,70.2
+nga,2016,Nigeria,58.22
+nga,2021,Nigeria,63.16
+nga,2024,Nigeria,70.41
+nic,2001,Nicaragua,76.68
+nic,2005,Nicaragua,78
+nic,2012,Nicaragua,85.61057
+nic,2014,Nicaragua,87.32718
+npl,1981,Nepal,20.57
+npl,1991,Nepal,32.98
+npl,2001,Nepal,48.61
+npl,2008,Nepal,55.56007
+npl,2011,Nepal,59.63
+npl,2016,Nepal,65.5
+npl,2017,Nepal,66.86539
+npl,2019,Nepal,68.71
+nru,2021,Nauru,94.63379
+nru,2023,Nauru,96.59
+omn,2003,Oman,66.1
+omn,2008,Oman,86.62
+omn,2010,Oman,86.94
+omn,2015,Oman,93.04
+omn,2017,Oman,95.58
+omn,2018,Oman,95.65
+omn,2020,Oman,96.9
+omn,2022,Oman,97.34
+pak,1981,Pakistan,25.73
+pak,1998,Pakistan,42.7
+pak,2005,Pakistan,49.87
+pak,2006,Pakistan,54.15
+pak,2007,Pakistan,52.14
+pak,2008,Pakistan,55.53
+pak,2009,Pakistan,54.89
+pak,2010,Pakistan,55.38
+pak,2011,Pakistan,54.74
+pak,2012,Pakistan,56.76
+pak,2013,Pakistan,55.59
+pak,2014,Pakistan,56.98
+pak,2017,Pakistan,59.13
+pak,2018,Pakistan,57.01
+pak,2019,Pakistan,58
+pak,2021,Pakistan,58.86
+pan,1980,Panama,88.07
+pan,1990,Panama,88.78
+pan,2000,Panama,91.9
+pan,2010,Panama,94.09
+pan,2018,Panama,95.41
+pan,2019,Panama,95.74
+pan,2021,Panama,96.21191
+pan,2023,Panama,96.08939
+pan,2024,Panama,96.22765
+per,1981,Peru,81.92
+per,1993,Peru,87.15
+per,2004,Peru,87.67
+per,2005,Peru,87.91
+per,2006,Peru,88.7
+per,2007,Peru,89.59
+per,2012,Peru,93.84
+per,2014,Peru,93.71
+per,2015,Peru,94.16
+per,2016,Peru,94.17
+per,2017,Peru,94.15
+per,2018,Peru,94.41
+per,2020,Peru,94.5
+per,2024,Peru,93.66
+phl,1980,Philippines,83.32
+phl,1990,Philippines,93.57
+phl,1994,Philippines,93.92
+phl,2000,Philippines,92.6
+phl,2003,Philippines,92.59
+phl,2008,Philippines,95.42
+phl,2010,Philippines,97.09
+phl,2013,Philippines,96.4
+phl,2015,Philippines,98.18
+phl,2019,Philippines,96.28
+phl,2020,Philippines,98.47
+plw,1980,Palau,91.92
+plw,2013,Palau,99.5
+plw,2015,Palau,96.59
+plw,2020,Palau,99.84481
+png,2000,Papua New Guinea,57.34
+png,2010,Papua New Guinea,68.96891
+png,2017,Papua New Guinea,70.06
+png,2022,Papua New Guinea,87.00469
+pol,1978,Poland,98.74
+prk,2008,North Korea,100
+prt,1981,Portugal,79.44
+prt,1991,Portugal,87.95
+prt,2011,Portugal,94.48
+pry,1982,Paraguay,78.46
+pry,1992,Paraguay,90.27
+pry,2007,Paraguay,94.56
+pry,2008,Paraguay,93.29
+pry,2009,Paraguay,93.75
+pry,2010,Paraguay,93.87
+pry,2012,Paraguay,94.2
+pry,2013,Paraguay,95.06
+pry,2014,Paraguay,95.03
+pry,2015,Paraguay,95.55
+pry,2016,Paraguay,94.65
+pry,2018,Paraguay,94.02
+pry,2019,Paraguay,93.21
+pry,2020,Paraguay,94.54
+pry,2024,Paraguay,94.86
+pse,1997,Palestine,86.08
+pse,2004,Palestine,92.48
+pse,2006,Palestine,93.45
+pse,2007,Palestine,93.76
+pse,2008,Palestine,94.01
+pse,2009,Palestine,94.43
+pse,2010,Palestine,94.72
+pse,2011,Palestine,95.03
+pse,2012,Palestine,95.67
+pse,2013,Palestine,96.05
+pse,2014,Palestine,96.21
+pse,2015,Palestine,96.48
+pse,2016,Palestine,96.72
+pse,2017,Palestine,96.92
+pse,2018,Palestine,97.22
+pse,2019,Palestine,97.38
+pse,2020,Palestine,97.51
+pse,2021,Palestine,97.684
+pse,2022,Palestine,97.84
+pse,2024,Palestine,97.93895
+qat,1986,Qatar,75.64
+qat,1997,Qatar,83.26
+qat,2004,Qatar,88.96
+qat,2007,Qatar,93.08
+qat,2008,Qatar,93.99
+qat,2009,Qatar,94.72
+qat,2010,Qatar,96.28
+qat,2011,Qatar,96.41
+qat,2012,Qatar,96.68
+qat,2013,Qatar,97.48
+qat,2014,Qatar,97.75
+rou,1992,Romania,96.71
+rou,2002,Romania,97.3
+rou,2011,Romania,98.6
+rou,2021,Romania,99.16
+rus,1989,Russia,97.99
+rus,2002,Russia,99.44
+rus,2010,Russia,99.68
+rus,2021,Russia,99.93
+rwa,1978,Rwanda,38.24
+rwa,1991,Rwanda,57.85
+rwa,2000,Rwanda,64.89
+rwa,2012,Rwanda,68.33
+rwa,2014,Rwanda,70.8
+rwa,2018,Rwanda,73.22
+rwa,2020,Rwanda,80.05
+rwa,2022,Rwanda,78.76
+sau,1992,Saudi Arabia,70.82
+sau,2000,Saudi Arabia,79.35
+sau,2004,Saudi Arabia,82.86
+sau,2013,Saudi Arabia,94.43
+sau,2017,Saudi Arabia,95.33
+sau,2020,Saudi Arabia,97.59
+sau,2024,Saudi Arabia,97.93
+sdn,2000,Sudan,61.35
+sdn,2008,Sudan,53.52
+sen,1988,Senegal,26.87
+sen,2002,Senegal,39.28
+sen,2006,Senegal,41.89
+sen,2009,Senegal,48.04
+sen,2011,Senegal,51.81
+sen,2013,Senegal,43.53
+sen,2015,Senegal,43.59
+sen,2016,Senegal,46.1
+sen,2017,Senegal,51.9
+sen,2018,Senegal,46.61
+sen,2019,Senegal,46.83
+sen,2023,Senegal,50.36
+sgp,1980,Singapore,82.91
+sgp,1990,Singapore,89.1
+sgp,2000,Singapore,92.55
+sgp,2010,Singapore,95.86
+sgp,2011,Singapore,96.19
+sgp,2012,Singapore,96.37
+sgp,2013,Singapore,96.55
+sgp,2014,Singapore,96.72
+sgp,2015,Singapore,96.83
+sgp,2016,Singapore,97.05
+sgp,2017,Singapore,97.2
+sgp,2018,Singapore,97.34
+sgp,2019,Singapore,97.48
+sgp,2020,Singapore,97.13
+sgp,2021,Singapore,97.65
+slb,1999,Solomon Islands,76.6
+sle,2004,Sierra Leone,34.83
+sle,2014,Sierra Leone,44.36989
+sle,2015,Sierra Leone,49.4
+sle,2017,Sierra Leone,44.83
+sle,2018,Sierra Leone,48.81437
+sle,2019,Sierra Leone,43.58
+slv,1992,El Salvador,74.14
+slv,2006,El Salvador,83.56
+slv,2007,El Salvador,82.03
+slv,2008,El Salvador,83.95
+slv,2009,El Salvador,84.1
+slv,2010,El Salvador,84.49
+slv,2011,El Salvador,85.49
+slv,2012,El Salvador,85.46246
+slv,2013,El Salvador,86.77
+slv,2014,El Salvador,87.41253
+slv,2015,El Salvador,87.97
+slv,2016,El Salvador,88.14
+slv,2017,El Salvador,88.48
+slv,2018,El Salvador,89.01
+slv,2019,El Salvador,89.14
+slv,2020,El Salvador,89.98
+slv,2021,El Salvador,89.05865
+slv,2022,El Salvador,89.35372
+slv,2023,El Salvador,89.85
+slv,2024,El Salvador,89.77
+smr,2022,San Marino,99.91
+som,2019,Somalia,63.65794
+som,2022,Somalia,54.12
+srb,2003,Serbia,96.4
+srb,2011,Serbia,97.96
+srb,2016,Serbia,98.84
+srb,2019,Serbia,99.48
+srb,2022,Serbia,99.34
+ssd,2008,South Sudan,26.83
+stp,1981,Sao Tome and Principe,57.32
+stp,1991,Sao Tome and Principe,73.24
+stp,2001,Sao Tome and Principe,84.91
+stp,2012,Sao Tome and Principe,90.14
+stp,2019,Sao Tome and Principe,87.44
+sur,2004,Suriname,89.6
+sur,2008,Suriname,94.62
+sur,2010,Suriname,94.68
+sur,2012,Suriname,92.87
+svn,1991,Slovenia,99.52
+swz,1976,Eswatini,55.33
+swz,1986,Eswatini,67.24
+swz,2000,Eswatini,81.66
+swz,2022,Eswatini,90.75
+syc,1987,Seychelles,84.23
+syc,1994,Seychelles,87.81
+syc,2002,Seychelles,91.84
+syc,2010,Seychelles,93.95
+syr,1981,Syria,55.65
+syr,2002,Syria,82.89
+syr,2004,Syria,80.84
+syr,2021,Syria,94.42
+tcd,1993,Chad,10.89
+tcd,2000,Chad,25.65
+tcd,2004,Chad,28.38
+tcd,2016,Chad,22.31
+tcd,2019,Chad,30.63
+tgo,2000,Togo,53.18
+tgo,2006,Togo,56.89
+tgo,2009,Togo,57.09
+tgo,2010,Togo,57.2
+tgo,2011,Togo,60.41
+tgo,2015,Togo,63.75
+tgo,2017,Togo,60.9537
+tgo,2019,Togo,66.54
+tgo,2022,Togo,72.6
+tha,1980,Thailand,87.98
+tha,2000,Thailand,92.65
+tha,2005,Thailand,93.51
+tha,2010,Thailand,96.43
+tha,2013,Thailand,93.7
+tha,2015,Thailand,92.87
+tha,2016,Thailand,91.98
+tha,2018,Thailand,93.77
+tha,2019,Thailand,91.27
+tha,2022,Thailand,91.1
+tjk,1989,Tajikistan,97.69
+tjk,2000,Tajikistan,99.45
+tjk,2003,Tajikistan,97.35024
+tjk,2007,Tajikistan,98.02931
+tjk,2009,Tajikistan,99.72987
+tkm,1995,Turkmenistan,98.78
+tkm,2022,Turkmenistan,99.9
+tls,2001,Timor-Leste,37.6
+tls,2007,Timor-Leste,50.6
+tls,2010,Timor-Leste,58.31
+tls,2015,Timor-Leste,64.45
+tls,2016,Timor-Leste,65.78
+tls,2022,Timor-Leste,69.4
+ton,1976,Tonga,99.59
+ton,1996,Tonga,98.91
+ton,2006,Tonga,99.02
+ton,2011,Tonga,99.39
+ton,2016,Tonga,97.15
+ton,2019,Tonga,91.05
+ton,2023,Tonga,99.48
+tto,1980,Trinidad and Tobago,94.97
+tto,1990,Trinidad and Tobago,96.94
+tun,1984,Tunisia,48.19
+tun,2004,Tunisia,74.3
+tun,2007,Tunisia,77.19
+tun,2008,Tunisia,77.71
+tun,2010,Tunisia,79.13
+tun,2011,Tunisia,79.65
+tun,2012,Tunisia,80.22
+tun,2014,Tunisia,79.04
+tun,2018,Tunisia,79.48
+tun,2019,Tunisia,80.55
+tun,2021,Tunisia,83.68
+tun,2023,Tunisia,86.25
+tur,1975,Turkey,61.63
+tur,1980,Turkey,65.69
+tur,1985,Turkey,75.97
+tur,1990,Turkey,79.23
+tur,2004,Turkey,87.37
+tur,2005,Turkey,88.23
+tur,2006,Turkey,88.12
+tur,2007,Turkey,88.66
+tur,2009,Turkey,90.82
+tur,2010,Turkey,92.66
+tur,2011,Turkey,94.11
+tur,2012,Turkey,94.92
+tur,2013,Turkey,95.26
+tur,2014,Turkey,95.44
+tur,2015,Turkey,95.6
+tur,2016,Turkey,95.86
+tur,2017,Turkey,96.15
+tur,2019,Turkey,96.74
+tur,2021,Turkey,97.26
+tuv,2022,Tuvalu,100
+tza,1988,Tanzania,59.11
+tza,2002,Tanzania,69.43
+tza,2012,Tanzania,78.1
+tza,2014,Tanzania,79.89494
+tza,2015,Tanzania,77.89
+tza,2020,Tanzania,82.2361
+tza,2022,Tanzania,78.21
+uga,1991,Uganda,56.11
+uga,2002,Uganda,68.14
+uga,2006,Uganda,71.37
+uga,2010,Uganda,73.21
+uga,2012,Uganda,70.2
+uga,2014,Uganda,68.51
+uga,2016,Uganda,69.1
+uga,2021,Uganda,79.04765
+uga,2023,Uganda,80.51
+uga,2024,Uganda,77.04
+ukr,2001,Ukraine,99.43
+ury,1975,Uruguay,93.86
+ury,1985,Uruguay,95.38
+ury,1996,Uruguay,96.78
+ury,2006,Uruguay,97.79
+ury,2007,Uruguay,97.86
+ury,2008,Uruguay,98.16
+ury,2009,Uruguay,98.26
+ury,2010,Uruguay,98.07
+ury,2011,Uruguay,98.34
+ury,2012,Uruguay,98.4
+ury,2013,Uruguay,98.36
+ury,2014,Uruguay,98.44
+ury,2015,Uruguay,98.52
+ury,2016,Uruguay,98.56
+ury,2017,Uruguay,98.62
+ury,2018,Uruguay,98.7
+ury,2019,Uruguay,98.77
+ury,2020,Uruguay,98.95962
+ury,2022,Uruguay,98.85
+ury,2023,Uruguay,98.82549
+ury,2024,Uruguay,98.91
+uzb,2000,Uzbekistan,98.64
+uzb,2013,Uzbekistan,99.99
+uzb,2014,Uzbekistan,99.98
+uzb,2015,Uzbekistan,99.98
+uzb,2016,Uzbekistan,99.99
+uzb,2018,Uzbekistan,99.99
+uzb,2019,Uzbekistan,100
+uzb,2021,Uzbekistan,100
+uzb,2022,Uzbekistan,100
+vct,1970,St. Vincent and the Grenadines,95.63
+ven,1981,Venezuela,84.73
+ven,1990,Venezuela,89.83
+ven,2001,Venezuela,92.98
+ven,2005,Venezuela,94.3707
+ven,2006,Venezuela,94.66207
+ven,2007,Venezuela,95.15
+ven,2008,Venezuela,95.3117
+ven,2009,Venezuela,95.51
+ven,2010,Venezuela,95.39242
+ven,2011,Venezuela,94.77
+ven,2012,Venezuela,95.98719
+ven,2015,Venezuela,96.61
+ven,2016,Venezuela,97.13
+ven,2017,Venezuela,97.18372
+vnm,1979,Vietnam,83.83
+vnm,1989,Vietnam,87.6
+vnm,1999,Vietnam,90.28
+vnm,2000,Vietnam,90.16
+vnm,2009,Vietnam,93.52
+vnm,2019,Vietnam,95.75
+vnm,2022,Vietnam,96.13
+vut,1979,Vanuatu,52.87
+vut,1999,Vanuatu,74
+vut,2019,Vanuatu,92.47445
+vut,2020,Vanuatu,89.7931
+vut,2023,Vanuatu,87.96
+wsm,1991,Samoa,97.94
+wsm,2011,Samoa,98.97
+wsm,2016,Samoa,99.4
+wsm,2017,Samoa,99.70719
+wsm,2019,Samoa,97.99
+yem,1994,Yemen,37.09
+zaf,1980,South Africa,76.2
+zaf,1996,South Africa,82.4
+zaf,2007,South Africa,88.72
+zaf,2009,South Africa,92.89
+zaf,2010,South Africa,92.88
+zaf,2011,South Africa,93.1
+zaf,2012,South Africa,93.73
+zaf,2014,South Africa,94.14
+zaf,2015,South Africa,94.37
+zaf,2016,South Africa,91.74
+zaf,2019,South Africa,95.02
+zaf,2021,South Africa,90
+zaf,2024,South Africa,91.15
+zmb,1990,Zambia,65
+zmb,1999,Zambia,68
+zmb,2002,Zambia,69.15
+zmb,2010,Zambia,83.14
+zmb,2018,Zambia,71.13
+zmb,2020,Zambia,81.75301
+zmb,2021,Zambia,79.94946
+zmb,2022,Zambia,79.98415
+zmb,2024,Zambia,71.77
+zwe,1982,Zimbabwe,77.79
+zwe,1992,Zimbabwe,83.51
+zwe,2019,Zimbabwe,93.23
