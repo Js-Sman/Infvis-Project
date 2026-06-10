@@ -75,7 +75,7 @@ const MapView = forwardRef(function MapView(
   const [focusedCountry, setFocusedCountry] = useState(null)
   const [hoveredTarget, setHoveredTarget] = useState(null) // { type, name, mouseX, mouseY }
   const [activeDimension, setActiveDimension] = useState(null)
-  const [dims, setDims] = useState({ w: 800, h: 600 })
+  const [dims, setDims] = useState({ w: 0, h: 0 })
   const [lineBrush, setLineBrush] = useState(null)
   const [lineHoverYear, setLineHoverYear] = useState(null)
 
@@ -140,8 +140,9 @@ const MapView = forwardRef(function MapView(
     const pathGen = d3.geoPath(projection)
     pathGenRef.current = pathGen
 
-    // Fetch TopoJSON
-    fetch('/world.topojson')
+    const controller = new AbortController()
+
+    fetch('/world.topojson', { signal: controller.signal })
       .then((r) => r.json())
       .then((topo) => {
         topoRef.current = topo
@@ -171,9 +172,6 @@ const MapView = forwardRef(function MapView(
         // Continent zones group (used at L1)
         const gZones = gMap.append('g').attr('class', 'zones')
 
-        // Star plot group (React renders SVG into this via foreignObject trick —
-        // actually we render StarPlot as a React SVG element overlaid via absolute position)
-
         buildZones(gZones, countries, w, h)
         buildCountries(gCountries, countries)
 
@@ -184,9 +182,13 @@ const MapView = forwardRef(function MapView(
         zoomBehaviorRef.current = zoom
         svg.call(zoom)
 
-        // Render initial state
         renderLevel(ZOOM_LEVEL.WORLD)
       })
+      .catch((err) => {
+        if (err.name !== 'AbortError') console.error('TopoJSON load failed', err)
+      })
+
+    return () => controller.abort()
   }, [dims])
 
   // ─── Build sub-region zones for L1 ─────────────────────────────────────────
@@ -393,19 +395,27 @@ const MapView = forwardRef(function MapView(
     const gCountries = d3.select(svgRef.current).select('.countries')
 
     if (level === ZOOM_LEVEL.WORLD) {
+      gZones.style('pointer-events', 'all')
       gZones.transition().duration(300).attr('opacity', 1)
       gCountries.transition().duration(300).attr('opacity', 0)
+      // Reset any per-country opacity/fill overrides left from L2 fade
+      d3.selectAll('.country')
+        .attr('opacity', 1)
+        .attr('stroke', colors.countryStroke)
+        .attr('stroke-width', 0.4)
       setFocusedCountry(null)
       setHoveredTarget(null)
       updateZoneFills()
     } else if (level === ZOOM_LEVEL.CONTINENT) {
-      gZones.transition().duration(300).attr('opacity', 0.3)
+      gZones.style('pointer-events', 'none')
+      gZones.transition().duration(300).attr('opacity', 0)
       gCountries.transition().duration(300).attr('opacity', 1)
       setHoveredTarget(null)
       updateChoropleth()
       applyFocusedRegionFade()
     } else if (level === ZOOM_LEVEL.COUNTRY) {
-      gZones.transition().duration(300).attr('opacity', 0.1)
+      gZones.style('pointer-events', 'none')
+      gZones.transition().duration(300).attr('opacity', 0)
       gCountries.transition().duration(300).attr('opacity', 1)
       updateChoropleth()
       applyFocusedRegionFade()
@@ -453,10 +463,19 @@ const MapView = forwardRef(function MapView(
     d3.selectAll('.country').each(function () {
       const name = d3.select(this).attr('data-name')
       const inRegion = regionCountries.has(name)
-      d3.select(this)
-        .transition().duration(300)
-        .attr('opacity', inRegion ? 1 : 0.12)
-        .attr('stroke', inRegion ? colors.countryStroke : colors.fadedStroke)
+      const sel = d3.select(this).transition().duration(300)
+      if (inRegion) {
+        sel
+          .attr('opacity', 1)
+          .attr('stroke', colors.countryStroke)
+          .attr('stroke-width', 0.4)
+      } else {
+        sel
+          .attr('fill', colors.noData)
+          .attr('opacity', 0.45)
+          .attr('stroke', colors.fadedStroke)
+          .attr('stroke-width', 0.3)
+      }
     })
   }
 

@@ -58,10 +58,12 @@ function findYearColumn(headers) {
   return null
 }
 
-// Find the value column name (everything that's not country/year)
+// Find the value column name (everything that's not country/year/geo-code)
 function findValueColumn(headers, countryCol, yearCol) {
-  const skip = new Set([countryCol, yearCol].filter(Boolean))
-  return headers.find((h) => !skip.has(h)) || headers[headers.length - 1]
+  const skip = new Set([countryCol, yearCol, 'geo', 'Geo', 'code', 'Code', 'iso', 'ISO'].filter(Boolean))
+  const candidates = headers.filter((h) => !skip.has(h))
+  // Value column is last in Gapminder long-format files (geo,time,name,<value>)
+  return candidates[candidates.length - 1] || headers[headers.length - 1]
 }
 
 // Parse raw CSV text → { [countryName]: [{year, value}] }
