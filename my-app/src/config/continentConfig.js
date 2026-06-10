@@ -112,6 +112,8 @@ export const countryRegionMap = {
   'Malawi':               'south-africa',
 
   // West Europe
+  'Greenland':            'west-europe',
+  'Iceland':              'west-europe',
   'UK':                   'west-europe',
   'France':               'west-europe',
   'Germany':              'west-europe',

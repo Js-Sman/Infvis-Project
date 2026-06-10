@@ -233,6 +233,9 @@ const MapView = forwardRef(function MapView(
           .style('cursor', 'pointer')
           .on('mouseover', function (event) {
             if (zoomLevelRef.current !== ZOOM_LEVEL.WORLD) return
+            // Dim all other zones, keep this one full opacity
+            d3.selectAll('.zone').transition('fade').duration(150).attr('opacity', 0.25)
+            d3.select(this.parentNode).transition('fade').duration(150).attr('opacity', 1)
             d3.selectAll(`.zone-path-${id}`).attr('stroke', colors.hoverStroke).attr('stroke-width', 1.5)
             const cache = datasetCacheRef.current
             const year = currentYearRef.current
@@ -257,6 +260,8 @@ const MapView = forwardRef(function MapView(
           })
           .on('mouseout', function () {
             if (zoomLevelRef.current !== ZOOM_LEVEL.WORLD) return
+            // Restore all zones to full opacity
+            d3.selectAll('.zone').transition('fade').duration(150).attr('opacity', 1)
             d3.selectAll(`.zone-path-${id}`).attr('stroke', colors.continentStroke).attr('stroke-width', 0.8)
             setHoveredTarget(null)
           })
@@ -311,7 +316,19 @@ const MapView = forwardRef(function MapView(
         .on('mouseover', function (event) {
           if (zoomLevelRef.current !== ZOOM_LEVEL.CONTINENT) return
           if (!inDataset) return
-          d3.select(this).attr('stroke', colors.hoverStroke).attr('stroke-width', 1.2)
+          // Highlight this country's stroke — opacity stays at 1
+          d3.select(this)
+            .attr('stroke', colors.hoverStroke)
+            .attr('stroke-width', 1.2)
+          // Temporarily dim all other in-region countries (out-of-region already permanently dim)
+          const regionId = focusedRegionRef.current
+          const inRegionSet = new Set(regionId ? (regionCountriesMap[regionId] || []) : [])
+          d3.selectAll('.country').each(function () {
+            const n = d3.select(this).attr('data-name')
+            if (n !== name && inRegionSet.has(n)) {
+              d3.select(this).transition('fade').duration(150).attr('opacity', 0.3)
+            }
+          })
           const cache = datasetCacheRef.current
           const year = currentYearRef.current
           setHoveredTarget({
@@ -331,7 +348,19 @@ const MapView = forwardRef(function MapView(
         })
         .on('mouseout', function () {
           if (zoomLevelRef.current !== ZOOM_LEVEL.CONTINENT) return
-          d3.select(this).attr('stroke', colors.countryStroke).attr('stroke-width', 0.4)
+          // Remove stroke highlight
+          d3.select(this)
+            .attr('stroke', colors.countryStroke)
+            .attr('stroke-width', 0.4)
+          // Restore all in-region countries to full opacity
+          const regionId = focusedRegionRef.current
+          const inRegionSet = new Set(regionId ? (regionCountriesMap[regionId] || []) : [])
+          d3.selectAll('.country').each(function () {
+            const n = d3.select(this).attr('data-name')
+            if (inRegionSet.has(n)) {
+              d3.select(this).transition('fade').duration(150).attr('opacity', 1)
+            }
+          })
           setHoveredTarget(null)
         })
         .on('click', function (event) {
@@ -349,6 +378,15 @@ const MapView = forwardRef(function MapView(
 
     if (gMapRef.current) {
       gMapRef.current.attr('transform', transform)
+    }
+
+    // event.sourceEvent is null for programmatic transitions (zoomToRegion, zoomToCountry,
+    // resetToWorld). During those animations k starts low and would trigger wrong level
+    // changes, undoing the fade that was already applied. Only run level logic for real
+    // user-initiated scroll/drag events.
+    if (!event.sourceEvent) {
+      updateChoropleth()
+      return
     }
 
     const currentLevel = zoomLevelRef.current
@@ -397,8 +435,10 @@ const MapView = forwardRef(function MapView(
     if (level === ZOOM_LEVEL.WORLD) {
       gZones.style('pointer-events', 'all')
       gZones.transition().duration(300).attr('opacity', 1)
+      // Reset individual zone opacities that may have been dimmed during hover
+      d3.selectAll('.zone').transition().duration(300).attr('opacity', 1)
       gCountries.transition().duration(300).attr('opacity', 0)
-      // Reset any per-country opacity/fill overrides left from L2 fade
+      // Reset any per-country opacity overrides left from L2 fade
       d3.selectAll('.country')
         .attr('opacity', 1)
         .attr('stroke', colors.countryStroke)
@@ -408,8 +448,13 @@ const MapView = forwardRef(function MapView(
       updateZoneFills()
     } else if (level === ZOOM_LEVEL.CONTINENT) {
       gZones.style('pointer-events', 'none')
-      gZones.transition().duration(300).attr('opacity', 0)
-      gCountries.transition().duration(300).attr('opacity', 1)
+      // Zones: non-selected are already dimmed by zoomToRegion's pre-fade.
+      // Fade the group out mid-way through the zoom so the selected zone
+      // stays visible as context while countries fade in beneath it.
+      gZones.transition().delay(250).duration(400).attr('opacity', 0)
+      // Countries: start appearing slightly after the pre-fade completes,
+      // so both layers are never fully opaque at the same time.
+      gCountries.transition().delay(150).duration(500).attr('opacity', 1)
       setHoveredTarget(null)
       updateChoropleth()
       applyFocusedRegionFade()
@@ -431,12 +476,13 @@ const MapView = forwardRef(function MapView(
       const avg = computeRegionAverage('democracyIndex', id, year, cache)
       const fill = avg != null ? getDemocracyColorFull(avg) : colors.noData
       d3.selectAll(`.zone-path-${id}`)
-        .transition().duration(animation.colorTransition)
+        .transition('choropleth').duration(animation.colorTransition)
         .attr('fill', fill)
     })
   }
 
   // ─── Update country choropleth fills ──────────────────────────────────────
+  // Uses named transition 'choropleth' so it never interrupts the 'fade' opacity transitions.
   function updateChoropleth() {
     const cache = datasetCacheRef.current
     const year = currentYearRef.current
@@ -449,12 +495,13 @@ const MapView = forwardRef(function MapView(
       }
       const val = getCountryValue('democracyIndex', name, year, cache)
       d3.select(this)
-        .transition().duration(animation.colorTransition)
+        .transition('choropleth').duration(animation.colorTransition)
         .attr('fill', val != null ? getDemocracyColorFull(val) : colors.noData)
     })
   }
 
   // ─── Fade out countries not in focused region ──────────────────────────────
+  // Uses named transition 'fade' so it runs concurrently with 'choropleth' fill transitions.
   function applyFocusedRegionFade() {
     const regionId = focusedRegionRef.current
     if (!regionId) return
@@ -463,19 +510,11 @@ const MapView = forwardRef(function MapView(
     d3.selectAll('.country').each(function () {
       const name = d3.select(this).attr('data-name')
       const inRegion = regionCountries.has(name)
-      const sel = d3.select(this).transition().duration(300)
-      if (inRegion) {
-        sel
-          .attr('opacity', 1)
-          .attr('stroke', colors.countryStroke)
-          .attr('stroke-width', 0.4)
-      } else {
-        sel
-          .attr('fill', colors.noData)
-          .attr('opacity', 0.45)
-          .attr('stroke', colors.fadedStroke)
-          .attr('stroke-width', 0.3)
-      }
+      // In-region: full opacity — hover handler dims siblings temporarily
+      // Out-of-region: near-invisible permanently at L2
+      d3.select(this)
+        .transition('fade').duration(300)
+        .attr('opacity', inRegion ? 1 : 0.12)
     })
   }
 
@@ -489,6 +528,15 @@ const MapView = forwardRef(function MapView(
 
     setFocusedRegion(regionId)
     focusedRegionRef.current = regionId
+
+    // Immediately dim non-selected zones so the user sees the selection before
+    // the zoom animation even starts. Selected zone stays at full opacity.
+    subRegions.forEach(({ id: rid }) => {
+      d3.select(svgRef.current)
+        .select(`.zone-${rid}`)
+        .transition().duration(150)
+        .attr('opacity', rid === regionId ? 1 : 0.1)
+    })
 
     const regionCountries = new Set(regionCountriesMap[regionId] || [])
     const feats = countries.features.filter((f) => regionCountries.has(resolveCountryName(f)))
