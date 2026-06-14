@@ -93,6 +93,7 @@ const MapView = forwardRef(function MapView(
   const [lineHoverYear, setLineHoverYear] = useState(null)
 
   const lastMousePosRef = useRef({ x: 0, y: 0 })
+  const isCenteringRef = useRef(false)
 
   const zoomLevelRef = useRef(zoomLevel)
   zoomLevelRef.current = zoomLevel
@@ -190,9 +191,10 @@ const MapView = forwardRef(function MapView(
         buildZones(gZones, countries, w, h)
         buildCountries(gCountries, countries)
 
-        // Zoom behavior
+        // Zoom behavior — filter blocks all user input while a centering animation runs
         const zoom = d3.zoom()
           .scaleExtent([1, 60])
+          .filter((event) => !isCenteringRef.current && (!event.ctrlKey || event.type === 'wheel') && !event.button)
           .on('zoom', handleZoom)
         zoomBehaviorRef.current = zoom
         svg.call(zoom)
@@ -459,7 +461,17 @@ const MapView = forwardRef(function MapView(
       if (effectiveCountry) {
         const cThreshold = getCountryThreshold(effectiveCountry)
         if (k >= cThreshold) {
-          // Commit the focused country before renderLevel reads focusedCountryRef
+          // Trigger the same centering animation as a click — find the feature and
+          // call zoomToCountry so the country arrives at screen center before the
+          // StarPlot renders. zoomToCountry handles updateZoomLevel + renderLevel.
+          const feat = countriesGeoRef.current?.features.find(
+            (f) => resolveCountryName(f) === effectiveCountry
+          )
+          if (feat) {
+            zoomToCountry(effectiveCountry, feat)
+            return
+          }
+          // Fallback: feature not found, at least switch the level
           if (effectiveCountry !== currentCountry) {
             setFocusedCountry(effectiveCountry)
             focusedCountryRef.current = effectiveCountry
@@ -502,6 +514,10 @@ const MapView = forwardRef(function MapView(
       setHoveredTarget(null)
       updateZoneFills()
     } else if (level === ZOOM_LEVEL.CONTINENT) {
+      // Clear focused country so the next scroll-in re-detects from cursor position
+      setFocusedCountry(null)
+      focusedCountryRef.current = null
+      setFocused(null)
       gZones.style('pointer-events', 'none')
       gCountries.style('pointer-events', null)  // restore hover interactivity from L3
       // Zones: non-selected are already dimmed by zoomToRegion's pre-fade.
@@ -696,9 +712,11 @@ const MapView = forwardRef(function MapView(
       transform = d3.zoomIdentity.translate(tx, ty).scale(scale)
     }
 
+    isCenteringRef.current = true
     svg.transition()
       .duration(animation.zoomDuration)
       .call(zoomBehaviorRef.current.transform, transform)
+      .on('end', () => { isCenteringRef.current = false })
 
     updateZoomLevel(ZOOM_LEVEL.COUNTRY)
     renderLevel(ZOOM_LEVEL.COUNTRY)
