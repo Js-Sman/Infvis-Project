@@ -6,15 +6,16 @@ export default function StarAxis({ angle, radius, label, normalizedValue, color,
   const outerX = Math.cos(rad) * radius
   const outerY = Math.sin(rad) * radius
 
-  // Label position slightly beyond the outer ring
-  const labelDist = radius + 18
+  // Scale label distance, font sizes, and stroke proportionally with radius.
+  // sqrt keeps fonts from growing too aggressively on large screens.
+  const scale = Math.sqrt(radius / 120)
+  const labelDist = radius * 1.15
   const labelX = Math.cos(rad) * labelDist
   const labelY = Math.sin(rad) * labelDist
-
-  // Value label (percentage) on the axis line at 60% mark
-  const valueDist = radius * 0.65
-  const valueX = Math.cos(rad) * valueDist
-  const valueY = Math.sin(rad) * valueDist
+  const labelFontSize = Math.round(13 * scale)
+  const valueFontSize = Math.round(12 * scale)
+  const valueDy = Math.round(15 * scale)
+  const axisStrokeWidth = Math.max(1, radius / 120)
 
   const textAnchor = Math.abs(Math.cos(rad)) < 0.1 ? 'middle' : Math.cos(rad) > 0 ? 'start' : 'end'
 
@@ -26,7 +27,7 @@ export default function StarAxis({ angle, radius, label, normalizedValue, color,
         x2={outerX}
         y2={outerY}
         stroke={colors.starPlotAxisLine}
-        strokeWidth={1}
+        strokeWidth={axisStrokeWidth}
       />
       {/* Outer label */}
       <text
@@ -35,27 +36,26 @@ export default function StarAxis({ angle, radius, label, normalizedValue, color,
         textAnchor={textAnchor}
         dominantBaseline="middle"
         fill={missing ? colors.starPlotMissingDot : colors.starPlotLabel}
-        fontSize={11}
+        fontSize={labelFontSize}
         fontFamily={typography.fontSans}
-        style={{ userSelect: 'none' }}
+        style={{ fontWeight: 'bold' }}
       >
         {label}
       </text>
-      {/* Normalized % value */}
-      {normalizedValue != null && (
-        <text
-          x={valueX}
-          y={valueY}
-          textAnchor="middle"
-          dominantBaseline="middle"
-          fill={missing ? colors.starPlotMissingDot : color}
-          fontSize={10}
-          fontFamily={typography.fontMono}
-          style={{ userSelect: 'none' }}
-        >
-          {Math.round(normalizedValue)}%
-        </text>
-      )}
+      {/* Normalized % value — or "(no data)" when value is missing */}
+      <text
+        x={labelX}
+        y={labelY}
+        dy={valueDy}
+        textAnchor={textAnchor}
+        dominantBaseline="middle"
+        fill={missing ? colors.starPlotMissingDot : color}
+        fontSize={valueFontSize}
+        fontFamily={typography.fontMono}
+        style={{ userSelect: 'none' }}
+      >
+        {normalizedValue != null ? `${Math.round(normalizedValue)}%` : '(no data)'}
+      </text>
     </g>
   )
 }

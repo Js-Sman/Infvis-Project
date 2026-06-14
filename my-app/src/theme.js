@@ -31,10 +31,11 @@ export const colors = {
 
   starPlotPolygon: 'rgba(255,255,255,0.12)',
   starPlotStroke: 'rgba(255,255,255,0.5)',
-  starPlotGrid: 'rgba(255,255,255,0.1)',
-  starPlotAxisLine: 'rgba(255,255,255,0.2)',
+  starPlotGrid: 'rgba(255,255,255,0.25)',
+  starPlotAxisLine: 'rgba(255,255,255,0.40)',
   starPlotLabel: '#d1d5db',
   starPlotMissingDot: '#6b7280',
+  starPlotBackground: 'rgba(12,16,30,0.50)',
 
   lineChart: {
     line: '#60a5fa',

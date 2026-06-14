@@ -17,6 +17,19 @@ import StarPlot from '../starplot/StarPlot.jsx'
 import LineChart from '../linechart/LineChart.jsx'
 import LegendPanel from '../ui/LegendPanel.jsx'
 
+// Custom zoom overrides for countries/regions whose auto-computed bounds are unreliable.
+// Russia wraps near the antimeridian — pathGen.bounds() returns a map-wide bounding box.
+// center: [longitude, latitude]; scale: D3 zoom k value applied to the transform.
+const CUSTOM_REGION_ZOOM = {
+  // east-europe includes Russia; skip its full extent and focus on the European core + western Russia
+  'east-europe': { center: [52, 55], scale: 2.0 },
+}
+
+const CUSTOM_COUNTRY_ZOOM = {
+  // Russia spans ~160° of longitude; center on the Ural/western Siberia area
+  'Russia': { center: [92, 62], scale: 2.2 },
+}
+
 // Maps TopoJSON country names to Gapminder dataset names
 const TOPO_TO_GAPMINDER = {
   'Bosnia and Herz.':         'Bosnia and Herzegovina',
@@ -78,6 +91,8 @@ const MapView = forwardRef(function MapView(
   const [dims, setDims] = useState({ w: 0, h: 0 })
   const [lineBrush, setLineBrush] = useState(null)
   const [lineHoverYear, setLineHoverYear] = useState(null)
+
+  const lastMousePosRef = useRef({ x: 0, y: 0 })
 
   const zoomLevelRef = useRef(zoomLevel)
   zoomLevelRef.current = zoomLevel
@@ -181,6 +196,11 @@ const MapView = forwardRef(function MapView(
           .on('zoom', handleZoom)
         zoomBehaviorRef.current = zoom
         svg.call(zoom)
+
+        // Track cursor position so we can re-apply hover state after programmatic zooms
+        svg.on('mousemove.track', (event) => {
+          lastMousePosRef.current = { x: event.clientX, y: event.clientY }
+        })
 
         renderLevel(ZOOM_LEVEL.WORLD)
       })
@@ -397,9 +417,24 @@ const MapView = forwardRef(function MapView(
     let targetLevel = currentLevel
 
     if (currentLevel === ZOOM_LEVEL.WORLD) {
-      // Check if over a region with sufficient zoom
-      if (currentRegion) {
-        const threshold = CONTINENT_THRESHOLDS[currentRegion] || 2
+      // When scrolling without a prior click, focusedRegion is null — detect the
+      // zone under the cursor so scroll-zoom from L1 works from a cold start.
+      let effectiveRegion = currentRegion
+      if (!effectiveRegion) {
+        const { x, y } = lastMousePosRef.current
+        const el = document.elementFromPoint(x, y)
+        const groupEl = el?.closest?.('[data-region]')
+        if (groupEl) {
+          const detected = groupEl.getAttribute('data-region')
+          if (detected) {
+            effectiveRegion = detected
+            setFocusedRegion(detected)
+            focusedRegionRef.current = detected
+          }
+        }
+      }
+      if (effectiveRegion) {
+        const threshold = CONTINENT_THRESHOLDS[effectiveRegion] || 2
         if (k >= threshold) targetLevel = ZOOM_LEVEL.CONTINENT
       }
     } else if (currentLevel === ZOOM_LEVEL.CONTINENT) {
@@ -408,10 +443,30 @@ const MapView = forwardRef(function MapView(
       if (k < threshold) {
         targetLevel = ZOOM_LEVEL.WORLD
       }
-      // Zoom in to country
-      if (currentCountry) {
-        const cThreshold = getCountryThreshold(currentCountry)
-        if (k >= cThreshold) targetLevel = ZOOM_LEVEL.COUNTRY
+      // Zoom in to country.
+      // When scrolling (not clicking), focusedCountry is null — detect the country
+      // currently under the cursor so scroll-zoom into L3 works without a prior click.
+      let effectiveCountry = currentCountry
+      if (!effectiveCountry) {
+        const { x, y } = lastMousePosRef.current
+        const el = document.elementFromPoint(x, y)
+        const pathEl = el?.closest?.('path.country') ?? (el?.classList?.contains('country') ? el : null)
+        if (pathEl) {
+          const name = pathEl.getAttribute('data-name')
+          if (name && countryRegionMap[name]) effectiveCountry = name
+        }
+      }
+      if (effectiveCountry) {
+        const cThreshold = getCountryThreshold(effectiveCountry)
+        if (k >= cThreshold) {
+          // Commit the focused country before renderLevel reads focusedCountryRef
+          if (effectiveCountry !== currentCountry) {
+            setFocusedCountry(effectiveCountry)
+            focusedCountryRef.current = effectiveCountry
+            setFocused(effectiveCountry)
+          }
+          targetLevel = ZOOM_LEVEL.COUNTRY
+        }
       }
     } else if (currentLevel === ZOOM_LEVEL.COUNTRY) {
       const cThreshold = currentCountry ? getCountryThreshold(currentCountry) : 4
@@ -448,6 +503,7 @@ const MapView = forwardRef(function MapView(
       updateZoneFills()
     } else if (level === ZOOM_LEVEL.CONTINENT) {
       gZones.style('pointer-events', 'none')
+      gCountries.style('pointer-events', null)  // restore hover interactivity from L3
       // Zones: non-selected are already dimmed by zoomToRegion's pre-fade.
       // Fade the group out mid-way through the zoom so the selected zone
       // stays visible as context while countries fade in beneath it.
@@ -460,10 +516,12 @@ const MapView = forwardRef(function MapView(
       applyFocusedRegionFade()
     } else if (level === ZOOM_LEVEL.COUNTRY) {
       gZones.style('pointer-events', 'none')
+      gCountries.style('pointer-events', 'none')  // no hover/cursor on countries at L3
       gZones.transition().duration(300).attr('opacity', 0)
       gCountries.transition().duration(300).attr('opacity', 1)
+      setHoveredTarget(null)
       updateChoropleth()
-      applyFocusedRegionFade()
+      applyFocusedCountryFade()
     }
   }
 
@@ -518,6 +576,21 @@ const MapView = forwardRef(function MapView(
     })
   }
 
+  // ─── Fade out all countries except the focused one (L3) ──────────────────
+  function applyFocusedCountryFade() {
+    const country = focusedCountryRef.current
+    d3.selectAll('.country').each(function () {
+      const name = d3.select(this).attr('data-name')
+      // Reset any hover stroke that was left over from the L2 mouseover handler
+      d3.select(this)
+        .attr('stroke', colors.countryStroke)
+        .attr('stroke-width', 0.4)
+      d3.select(this)
+        .transition('fade').duration(300)
+        .attr('opacity', name === country ? 1 : 0.12)
+    })
+  }
+
   // ─── Zoom to continent (L1 → L2) ──────────────────────────────────────────
   function zoomToRegion(regionId) {
     const countries = countriesGeoRef.current
@@ -543,15 +616,56 @@ const MapView = forwardRef(function MapView(
     if (!feats.length) return
 
     const collection = { type: 'FeatureCollection', features: feats }
-    const [[x0, y0], [x1, y1]] = pathGen.bounds(collection)
-    const scale = Math.min(8, 0.85 / Math.max((x1 - x0) / w, (y1 - y0) / h))
-    const tx = (w - scale * (x0 + x1)) / 2
-    const ty = (h - scale * (y0 + y1)) / 2
-    const transform = d3.zoomIdentity.translate(tx, ty).scale(scale)
+    let transform
+    const customRegion = CUSTOM_REGION_ZOOM[regionId]
+    if (customRegion) {
+      const [px, py] = projection(customRegion.center)
+      const s = customRegion.scale
+      transform = d3.zoomIdentity.translate(w / 2 - s * px, h / 2 - s * py).scale(s)
+    } else {
+      const [[x0, y0], [x1, y1]] = pathGen.bounds(collection)
+      const scale = Math.min(8, 0.85 / Math.max((x1 - x0) / w, (y1 - y0) / h))
+      const tx = (w - scale * (x0 + x1)) / 2
+      const ty = (h - scale * (y0 + y1)) / 2
+      transform = d3.zoomIdentity.translate(tx, ty).scale(scale)
+    }
 
-    svg.transition()
-      .duration(animation.zoomDuration)
-      .call(zoomBehaviorRef.current.transform, transform)
+    const zoomT = svg.transition().duration(animation.zoomDuration)
+    zoomT.call(zoomBehaviorRef.current.transform, transform)
+    zoomT.on('end', () => {
+      if (zoomLevelRef.current !== ZOOM_LEVEL.CONTINENT) return
+      const { x, y } = lastMousePosRef.current
+      const el = document.elementFromPoint(x, y)
+      if (!el) return
+      const pathEl = el.closest?.('path.country') ?? (el.classList?.contains('country') ? el : null)
+      if (!pathEl) return
+      const name = pathEl.getAttribute('data-name')
+      if (!name || !countryRegionMap[name]) return
+      const rId = focusedRegionRef.current
+      const inRegionSet = new Set(rId ? (regionCountriesMap[rId] || []) : [])
+      if (!inRegionSet.has(name)) return
+      d3.select(pathEl)
+        .attr('stroke', colors.hoverStroke)
+        .attr('stroke-width', 1.2)
+      d3.selectAll('.country').each(function () {
+        const n = d3.select(this).attr('data-name')
+        if (n !== name && inRegionSet.has(n)) {
+          d3.select(this).transition('fade').duration(150).attr('opacity', 0.3)
+        }
+      })
+      const cache = datasetCacheRef.current
+      const year = currentYearRef.current
+      setHoveredTarget({
+        type: 'country',
+        name,
+        democracyIndex: getCountryValue('democracyIndex', name, year, cache),
+        gdpPerCapita:   getCountryValue('gdpPerCapita',   name, year, cache),
+        population:     getCountryValue('population',     name, year, cache),
+        populationDensity: getCountryValue('populationDensity', name, year, cache),
+        mouseX: x,
+        mouseY: y,
+      })
+    })
 
     updateZoomLevel(ZOOM_LEVEL.CONTINENT)
     renderLevel(ZOOM_LEVEL.CONTINENT)
@@ -567,11 +681,20 @@ const MapView = forwardRef(function MapView(
     focusedCountryRef.current = name
     setFocused(name)
 
-    const [[x0, y0], [x1, y1]] = pathGen.bounds(feat)
-    const scale = Math.min(60, 0.7 / Math.max((x1 - x0) / w, (y1 - y0) / h))
-    const tx = (w - scale * (x0 + x1)) / 2
-    const ty = (h - scale * (y0 + y1)) / 2
-    const transform = d3.zoomIdentity.translate(tx, ty).scale(scale)
+    let transform
+    const customCountry = CUSTOM_COUNTRY_ZOOM[name]
+    if (customCountry) {
+      const projection = projectionRef.current
+      const [px, py] = projection(customCountry.center)
+      const s = customCountry.scale
+      transform = d3.zoomIdentity.translate(w / 2 - s * px, h / 2 - s * py).scale(s)
+    } else {
+      const [[x0, y0], [x1, y1]] = pathGen.bounds(feat)
+      const scale = Math.min(60, 0.7 / Math.max((x1 - x0) / w, (y1 - y0) / h))
+      const tx = (w - scale * (x0 + x1)) / 2
+      const ty = (h - scale * (y0 + y1)) / 2
+      transform = d3.zoomIdentity.translate(tx, ty).scale(scale)
+    }
 
     svg.transition()
       .duration(animation.zoomDuration)
@@ -653,6 +776,9 @@ const MapView = forwardRef(function MapView(
   // ─── Star plot SVG position: centered in the container ───────────────────
   const starCx = dims.w / 2
   const starCy = dims.h / 2
+  // Radius = quarter of container height so diameter fills half the screen,
+  // but never smaller than the original 120px default.
+  const starRadius = Math.max(120, Math.floor(dims.h / 4))
 
   // ─── Compute country silhouette path (Level 4 background) ────────────────
   const [silhouettePath, setSilhouettePath] = useState('')
@@ -702,6 +828,7 @@ const MapView = forwardRef(function MapView(
             countryName={focusedCountry}
             cx={starCx}
             cy={starCy}
+            radius={starRadius}
             onDimensionClick={(dim) => {
               setActiveDimension(dim)
               updateZoomLevel(ZOOM_LEVEL.DATA)

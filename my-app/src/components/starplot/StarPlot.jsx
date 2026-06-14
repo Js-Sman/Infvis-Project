@@ -26,14 +26,17 @@ function angleToPoint(angle, r) {
   return { x: Math.cos(rad) * r, y: Math.sin(rad) * r }
 }
 
-export default function StarPlot({ countryName, cx, cy, onDimensionClick }) {
+export default function StarPlot({ countryName, cx, cy, radius, onDimensionClick }) {
   const currentYear = useAppStore((s) => s.currentYear)
   const datasetCache = useAppStore((s) => s.datasetCache)
 
   const [hoveredAxis, setHoveredAxis] = useState(null)
   const [hoverPos, setHoverPos] = useState({ x: 0, y: 0 })
 
-  const R = layout.starPlotRadius
+  const R = radius ?? layout.starPlotRadius
+  // Scale dot radius and polygon stroke proportionally (sqrt keeps it from growing too fast)
+  const dotR = Math.round(6 * Math.sqrt(R / 120))
+  const polyStrokeWidth = Math.max(1.5, 1.5 * R / 120)
 
   // Compute normalized values for all axes
   const axisValues = AXES.map((axis) => {
@@ -63,6 +66,13 @@ export default function StarPlot({ countryName, cx, cy, onDimensionClick }) {
   return (
     <>
       <g transform={`translate(${cx},${cy})`}>
+        {/* Background disc — covers axes + label ring */}
+        <circle
+          r={R + 180}
+          fill={colors.starPlotBackground}
+          stroke="none"
+        />
+
         {/* Reference rings */}
         {REFERENCE_RINGS.map((frac) => (
           <circle
@@ -93,7 +103,7 @@ export default function StarPlot({ countryName, cx, cy, onDimensionClick }) {
           points={polygonPoints}
           fill={colors.starPlotPolygon}
           stroke={colors.starPlotStroke}
-          strokeWidth={1.5}
+          strokeWidth={polyStrokeWidth}
           strokeLinejoin="round"
         />
 
@@ -103,6 +113,7 @@ export default function StarPlot({ countryName, cx, cy, onDimensionClick }) {
             key={axis.id}
             cx={dotPositions[i].x}
             cy={dotPositions[i].y}
+            r={dotR}
             color={colors.starPlotAxes[axis.colorKey]}
             missing={axis.missing}
             onClick={() => onDimensionClick?.(axis.id)}
