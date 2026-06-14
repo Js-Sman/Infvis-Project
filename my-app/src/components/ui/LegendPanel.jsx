@@ -26,21 +26,21 @@ function DemocracyLegend() {
         zIndex: 100,
         background: colors.ui.panel,
         border: `1px solid ${colors.ui.panelBorder}`,
-        borderRadius: 8,
-        padding: '10px 14px',
+        borderRadius: 10,
+        padding: '14px 18px',
         boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
-        minWidth: 170,
+        minWidth: 220,
       }}
     >
       <div
         style={{
           fontFamily: typography.fontSans,
-          fontSize: 11,
+          fontSize: 12,
           fontWeight: 700,
           color: colors.ui.textMuted,
           textTransform: 'uppercase',
           letterSpacing: '0.08em',
-          marginBottom: 10,
+          marginBottom: 12,
         }}
       >
         {legendLabels.title}
@@ -49,37 +49,37 @@ function DemocracyLegend() {
       {/* Gradient bar */}
       <div
         style={{
-          height: 10,
-          borderRadius: 5,
+          height: 12,
+          borderRadius: 6,
           background: `linear-gradient(to right, ${colors.democracyScale.low}, ${colors.democracyScale.mid}, ${colors.democracyScale.high})`,
-          marginBottom: 6,
+          marginBottom: 10,
         }}
       />
 
       {/* Discrete level labels */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
         {legendLabels.levels.map(({ value, label }) => (
-          <div key={value} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <div key={value} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <div
               style={{
-                width: 12,
-                height: 12,
+                width: 14,
+                height: 14,
                 borderRadius: 3,
                 flexShrink: 0,
                 background: getDemocracyColorFull(value),
               }}
             />
-            <span style={{ fontFamily: typography.fontSans, fontSize: 12, color: colors.ui.text }}>
+            <span style={{ fontFamily: typography.fontSans, fontSize: 13, color: colors.ui.text }}>
               {label}
             </span>
-            <span style={{ fontFamily: typography.fontMono, fontSize: 11, color: colors.ui.textDim, marginLeft: 'auto' }}>
+            <span style={{ fontFamily: typography.fontMono, fontSize: 12, color: colors.ui.textDim, marginLeft: 'auto' }}>
               {value > 0 ? '+' : ''}{value}
             </span>
           </div>
         ))}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 2 }}>
-          <div style={{ width: 12, height: 12, borderRadius: 3, flexShrink: 0, background: colors.noData }} />
-          <span style={{ fontFamily: typography.fontSans, fontSize: 12, color: colors.ui.textMuted }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 2 }}>
+          <div style={{ width: 14, height: 14, borderRadius: 3, flexShrink: 0, background: colors.noData }} />
+          <span style={{ fontFamily: typography.fontSans, fontSize: 13, color: colors.ui.textMuted }}>
             {legendLabels.noData}
           </span>
         </div>
@@ -105,32 +105,32 @@ function CountryDetailPanel({ data }) {
         zIndex: 100,
         background: colors.ui.panel,
         border: `1px solid ${colors.ui.panelBorder}`,
-        borderRadius: 8,
-        padding: '10px 14px',
+        borderRadius: 10,
+        padding: '14px 18px',
         boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
-        minWidth: 200,
+        minWidth: 240,
       }}
     >
       <div
         style={{
           fontFamily: typography.fontSans,
-          fontSize: 13,
+          fontSize: 15,
           fontWeight: 700,
           color: colors.ui.text,
           borderBottom: `1px solid ${colors.ui.panelBorder}`,
-          paddingBottom: 6,
-          marginBottom: 8,
+          paddingBottom: 8,
+          marginBottom: 10,
         }}
       >
         {data.countryName}
       </div>
       {rows.map(({ label, value, highlight }) => (
-        <div key={label} style={{ display: 'flex', justifyContent: 'space-between', gap: 12, marginBottom: 4 }}>
-          <span style={{ fontFamily: typography.fontSans, fontSize: 12, color: colors.ui.textMuted }}>{label}</span>
+        <div key={label} style={{ display: 'flex', justifyContent: 'space-between', gap: 14, marginBottom: 6 }}>
+          <span style={{ fontFamily: typography.fontSans, fontSize: 13, color: colors.ui.textMuted }}>{label}</span>
           <span
             style={{
               fontFamily: typography.fontMono,
-              fontSize: 12,
+              fontSize: 13,
               color: highlight ? colors.ui.accent : colors.ui.text,
               fontWeight: highlight ? 700 : 400,
             }}

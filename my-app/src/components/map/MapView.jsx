@@ -237,9 +237,6 @@ const MapView = forwardRef(function MapView(
 
       const merged = { type: 'GeometryCollection', geometries: feats.map((f) => f.geometry) }
 
-      // Compute centroid for label
-      const centroid = pathGen.centroid({ type: 'Feature', geometry: { type: 'GeometryCollection', geometries: feats.map((f) => f.geometry) } })
-
       const zoneGroup = gZones.append('g')
         .attr('class', `zone zone-${id}`)
         .attr('data-region', id)
@@ -297,20 +294,6 @@ const MapView = forwardRef(function MapView(
           })
       })
 
-      // Zone label
-      if (centroid && centroid.every(isFinite)) {
-        zoneGroup.append('text')
-          .attr('class', `zone-label zone-label-${id}`)
-          .attr('x', centroid[0])
-          .attr('y', centroid[1])
-          .attr('text-anchor', 'middle')
-          .attr('dominant-baseline', 'middle')
-          .attr('fill', 'rgba(255,255,255,0.7)')
-          .attr('font-size', 10)
-          .attr('font-family', typography.fontSans)
-          .attr('pointer-events', 'none')
-          .text(name)
-      }
     })
   }
 

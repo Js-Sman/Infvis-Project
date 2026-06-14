@@ -1,6 +1,13 @@
 // Normalization utilities. Global min/max are computed once per metric and cached.
 const globalRangeCache = {}
 
+// Manual range overrides for metrics with extreme outliers that would crush the scale.
+// Values outside this range get clamped to 0 or 100 by normalizeValue.
+const MANUAL_RANGES = {
+  inflation:         { min: -20,  max: 50   },  // Venezuela 225k% hyperinflation excluded
+  populationDensity: { min: 0,    max: 500  },  // Monaco/Singapore city-state outliers excluded
+}
+
 export function computeGlobalRange(metricData) {
   let min = Infinity
   let max = -Infinity
@@ -17,6 +24,7 @@ export function computeGlobalRange(metricData) {
 }
 
 export function getOrComputeRange(metricName, metricData) {
+  if (MANUAL_RANGES[metricName]) return MANUAL_RANGES[metricName]
   if (!globalRangeCache[metricName]) {
     globalRangeCache[metricName] = computeGlobalRange(metricData)
   }

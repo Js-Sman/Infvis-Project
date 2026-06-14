@@ -5,14 +5,14 @@ import PlaybackControls from './PlaybackControls.jsx'
 
 const MIN_YEAR = 1900
 const MAX_YEAR = 2018
-const SPEED_LEVELS = [0.5, 1, 2, 4, 8]
+const SPEED_LEVELS = [1, 2, 4, 8, 16]
 
 export default function Timeline({ hidden }) {
   const currentYear = useAppStore((s) => s.currentYear)
   const setCurrentYear = useAppStore((s) => s.setCurrentYear)
 
   const [playing, setPlaying] = useState(false)
-  const [speedIdx, setSpeedIdx] = useState(1) // default 1x
+  const [speedIdx, setSpeedIdx] = useState(2) // default 4x
   const [brushRange, setBrushRange] = useState(null) // [start, end] or null
   const [draggingBrush, setDraggingBrush] = useState(null) // 'start'|'end'|'range'
 
@@ -159,7 +159,7 @@ export default function Timeline({ hidden }) {
           </>
         )}
 
-        {/* Main slider */}
+        {/* Main slider — native thumb hidden; visual thumb below */}
         <input
           ref={sliderRef}
           type="range"
@@ -175,6 +175,25 @@ export default function Timeline({ hidden }) {
             WebkitAppearance: 'none',
             background: 'transparent',
             cursor: 'pointer',
+          }}
+        />
+
+        {/* Animated visual thumb */}
+        <div
+          style={{
+            position: 'absolute',
+            left: `${yearToFrac(currentYear) * 100}%`,
+            top: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: 16,
+            height: 16,
+            borderRadius: '50%',
+            background: colors.ui.accent,
+            border: `2px solid ${colors.ui.header}`,
+            boxShadow: `0 0 0 2px ${colors.ui.accent}44`,
+            pointerEvents: 'none',
+            zIndex: 3,
+            transition: 'left 0.18s linear',
           }}
         />
       </div>
@@ -210,10 +229,11 @@ export default function Timeline({ hidden }) {
           width: 16px;
           height: 16px;
           border-radius: 50%;
-          background: ${colors.ui.accent};
+          background: transparent;
           cursor: pointer;
-          border: 2px solid ${colors.ui.header};
-          box-shadow: 0 0 0 2px ${colors.ui.accent}44;
+          border: none;
+          box-shadow: none;
+          margin-top: -6px;
         }
         input[type=range]::-webkit-slider-runnable-track {
           height: 4px;

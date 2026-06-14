@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 
 const useAppStore = create((set) => ({
-  currentYear: 2000,
+  currentYear: 2018,
   splitScreenActive: false,
   overlayActive: false,
   focusedCountryLeft: null,
@@ -9,7 +9,10 @@ const useAppStore = create((set) => ({
   selectedDimension: null,
   datasetCache: {},
 
-  setCurrentYear: (year) => set({ currentYear: year }),
+  setCurrentYear: (yearOrUpdater) =>
+    set((s) => ({
+      currentYear: typeof yearOrUpdater === 'function' ? yearOrUpdater(s.currentYear) : yearOrUpdater,
+    })),
   setSplitScreenActive: (active) =>
     set((s) => ({
       splitScreenActive: active,

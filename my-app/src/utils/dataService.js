@@ -35,6 +35,15 @@ const YEAR_RANGES = {
 
 const KNOWN_COUNTRIES = new Set(Object.keys(countryRegionMap))
 
+// Gapminder CSVs use slightly different names for a few countries.
+// Map CSV name → the canonical name used in countryRegionMap.
+const CSV_NAME_FIX = {
+  'Congo, Dem. Rep.': 'Congo (Dem. Rep.)',
+  'Congo, Rep.':      'Congo (Rep.)',
+  "Cote d'Ivoire":   "Côte d'Ivoire",
+  'Lao':              'Laos',
+}
+
 // Detect format: wide (year columns) vs long (country/year/value)
 function detectFormat(headers) {
   return headers.some((h) => /^\d{4}$/.test(h)) ? 'wide' : 'long'
@@ -79,7 +88,8 @@ function parseCsv(rawText, metricName) {
   if (format === 'wide') {
     const yearCols = headers.filter((h) => /^\d{4}$/.test(h))
     for (const row of rows) {
-      const country = row[countryCol]?.trim()
+      const rawName = row[countryCol]?.trim()
+      const country = CSV_NAME_FIX[rawName] ?? rawName
       if (!country || !KNOWN_COUNTRIES.has(country)) continue
       const entries = []
       for (const yc of yearCols) {
@@ -95,12 +105,13 @@ function parseCsv(rawText, metricName) {
     const yearCol = findYearColumn(headers)
     const valueCol = findValueColumn(headers, countryCol, yearCol)
     for (const row of rows) {
-      const country = row[countryCol]?.trim()
+      const rawName = row[countryCol]?.trim()
+      const country = CSV_NAME_FIX[rawName] ?? rawName
       if (!country || !KNOWN_COUNTRIES.has(country)) continue
       const yr = parseInt(row[yearCol], 10)
       if (isNaN(yr) || yr < minYear || yr > maxYear) continue
-      const raw = row[valueCol]
-      const value = raw != null && raw !== '' ? parseFloat(raw) : null
+      const rawVal = row[valueCol]
+      const value = rawVal != null && rawVal !== '' ? parseFloat(rawVal) : null
       if (!result[country]) result[country] = []
       result[country].push({ year: yr, value: isNaN(value) ? null : value })
     }
@@ -138,24 +149,22 @@ export function getCountryValue(metricName, countryName, year, datasetCache) {
   if (!entries || entries.length === 0) return null
 
   const exact = entries.find((e) => e.year === year)
-  if (exact) return exact.value
+  if (exact) return exact.value  // may be null if CSV had no value for this year
 
   // Linear interpolation between nearest surrounding points
   const before = entries.filter((e) => e.year < year && e.value != null)
   const after  = entries.filter((e) => e.year > year && e.value != null)
-  if (!before.length || !after.length) {
-    // Use nearest available
-    const nearest = entries.reduce((a, b) =>
-      Math.abs(b.year - year) < Math.abs(a.year - year) ? b : a
-    )
-    return nearest.value
-  }
+
+  // Year is before this country's first data point — no data, show as missing
+  if (!before.length) return null
+
+  // Year is after this country's last data point — use last known value
+  if (!after.length) return before[before.length - 1].value
 
   const prev = before[before.length - 1]
   const next = after[0]
   const t = (year - prev.year) / (next.year - prev.year)
-  const interpolated = prev.value + t * (next.value - prev.value)
-  return interpolated
+  return prev.value + t * (next.value - prev.value)
 }
 
 // Normalize a raw value to 0–100 using global range
