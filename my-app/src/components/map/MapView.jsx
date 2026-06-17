@@ -98,6 +98,7 @@ const MapView = forwardRef(function MapView(
 
   const lastMousePosRef = useRef({ x: 0, y: 0 })
   const isCenteringRef = useRef(false)
+  const pendingBackNavRef = useRef(null) // country name to navigate to after D3 re-init
 
   const zoomLevelRef = useRef(zoomLevel)
   zoomLevelRef.current = zoomLevel
@@ -207,6 +208,24 @@ const MapView = forwardRef(function MapView(
         svg.on('mousemove.track', (event) => {
           lastMousePosRef.current = { x: event.clientX, y: event.clientY }
         })
+
+        // If the user clicked ← Back in L4, navigate to the stored country
+        // instead of resetting to world view. The D3 re-init was triggered by
+        // the Timeline resize; by the time this callback runs, all paths exist.
+        if (pendingBackNavRef.current) {
+          const backCountry = pendingBackNavRef.current
+          pendingBackNavRef.current = null
+          const backFeat = countries.features.find((f) => resolveCountryName(f) === backCountry)
+          if (backFeat) {
+            const regionId = countryRegionMap[backCountry]
+            if (regionId) {
+              setFocusedRegion(regionId)
+              focusedRegionRef.current = regionId
+            }
+            zoomToCountry(backCountry, backFeat)
+            return
+          }
+        }
 
         renderLevel(ZOOM_LEVEL.WORLD)
       })
@@ -823,6 +842,7 @@ const MapView = forwardRef(function MapView(
               l4CountryRef.current = focusedCountry
               setL4Country(focusedCountry)
               setActiveDimension(dim)
+              setStarHover(null)
               updateZoomLevel(ZOOM_LEVEL.DATA)
             }}
             onHover={(id, x, y) => setStarHover({ id, x, y })}
@@ -859,19 +879,36 @@ const MapView = forwardRef(function MapView(
                 setActiveDimension(null)
                 setL4Country(null)
                 setTitleHover(null)
-                if (country && countriesGeoRef.current) {
-                  const feat = countriesGeoRef.current.features.find(
+                setStarHover(null)
+
+                if (!country) {
+                  resetToWorld()
+                  return
+                }
+
+                // Go to world first (same as Home button). The Timeline reappearing
+                // will resize the container → D3 re-init fires. The pendingBackNavRef
+                // is read at the end of that re-init to navigate to the country once
+                // all paths are rebuilt.
+                pendingBackNavRef.current = country
+                resetToWorld()
+
+                // Fallback: if no resize/re-init fires (rare edge case), navigate
+                // directly after the reset animation completes.
+                setTimeout(() => {
+                  if (!pendingBackNavRef.current) return // already handled by re-init
+                  pendingBackNavRef.current = null
+                  const feat = countriesGeoRef.current?.features.find(
                     (f) => resolveCountryName(f) === country
                   )
-                  if (feat) {
-                    // zoomToCountry re-establishes L3 (sets focusedCountry,
-                    // calls renderLevel, re-applies the zoom transform)
-                    zoomToCountry(country, feat)
-                    return
+                  if (!feat) return
+                  const regionId = countryRegionMap[country]
+                  if (regionId) {
+                    setFocusedRegion(regionId)
+                    focusedRegionRef.current = regionId
                   }
-                }
-                // Fallback: just reset to world
-                resetToWorld()
+                  zoomToCountry(country, feat)
+                }, animation.zoomDuration + 100)
               }}
               style={{
                 background: 'none',
