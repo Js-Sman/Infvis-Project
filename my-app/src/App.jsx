@@ -47,6 +47,7 @@ export default function App() {
         searchTargetRight={searchTargetRight}
         onSearchConsumedLeft={() => setSearchTargetLeft(null)}
         onSearchConsumedRight={() => setSearchTargetRight(null)}
+        onLeftZoomLevelChange={setLeftZoomLevel}
       />
 
       <Timeline hidden={hideTimeline} />

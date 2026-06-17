@@ -4,7 +4,7 @@ import { colors, layout, typography } from '../../theme.js'
 // Renders a floating panel positioned to the LEFT of the cursor.
 // `x` and `y` are viewport coordinates (from mousemove events).
 // `children` is the panel content.
-export default function FloatingPanel({ x, y, children, visible }) {
+export default function FloatingPanel({ x, y, children, visible, maxWidth }) {
   const ref = useRef(null)
 
   if (!visible) return null
@@ -23,7 +23,7 @@ export default function FloatingPanel({ x, y, children, visible }) {
         zIndex: 1000,
         pointerEvents: 'none',
         fontFamily: typography.fontSans,
-        maxWidth: layout.floatingPanelWidth,
+        maxWidth: maxWidth ?? layout.floatingPanelWidth,
         minWidth: 160,
       }}
     >

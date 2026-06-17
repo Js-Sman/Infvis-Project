@@ -10,6 +10,7 @@ const MARGIN = { top: 32, right: 40, bottom: 52, left: 64 }
 export default function LineChart({
   countryName,
   dimension,
+  lineColor,        // optional override for the main line color
   width,
   height,
   syncBrush,        // [start,end] | null — incoming brush from sibling
@@ -133,7 +134,8 @@ export default function LineChart({
       })
     }
 
-    drawLine(series, colors.lineChart.line, colors.lineChart.dashLine)
+    const mainColor = lineColor || colors.lineChart.line
+    drawLine(series, mainColor, mainColor)
     if (overlaySeries.length) {
       drawLine(overlaySeries, overlayData.color || '#f472b6', '#c97abf')
     }
@@ -216,7 +218,7 @@ export default function LineChart({
       .style('font-family', typography.fontSans)
       .style('font-size', '11px')
       .text(meta.unit || '')
-  }, [series, overlaySeries, innerW, innerH, syncBrush, syncHoverYear])
+  }, [series, overlaySeries, innerW, innerH, syncBrush, syncHoverYear, lineColor])
 
   return (
     <div style={{ position: 'relative', width, height }}>

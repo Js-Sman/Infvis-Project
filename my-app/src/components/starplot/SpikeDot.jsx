@@ -1,6 +1,6 @@
 import { colors, layout } from '../../theme.js'
 
-export default function SpikeDot({ cx, cy, r, color, missing, onClick, onMouseEnter, onMouseLeave }) {
+export default function SpikeDot({ cx, cy, r, color, missing, onClick, onMouseEnter, onMouseLeave, onMouseMove }) {
   return (
     <circle
       cx={cx}
@@ -13,6 +13,7 @@ export default function SpikeDot({ cx, cy, r, color, missing, onClick, onMouseEn
       onClick={onClick}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      onMouseMove={onMouseMove}
     />
   )
 }

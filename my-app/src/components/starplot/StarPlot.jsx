@@ -1,11 +1,8 @@
-import { useState, useEffect } from 'react'
 import useAppStore from '../../store/appStore.js'
 import { colors, layout } from '../../theme.js'
-import { datasetMeta, descriptionMap } from '../../config/textConfig.js'
 import { getCountryValue, normalizeMetricValue } from '../../utils/dataService.js'
 import StarAxis from './StarAxis.jsx'
 import SpikeDot from './SpikeDot.jsx'
-import FloatingPanel, { PanelTitle, PanelRow, PanelWarning } from '../ui/FloatingPanel.jsx'
 
 // Axes definition: clockwise from top
 const AXES = [
@@ -26,29 +23,24 @@ function angleToPoint(angle, r) {
   return { x: Math.cos(rad) * r, y: Math.sin(rad) * r }
 }
 
-export default function StarPlot({ countryName, cx, cy, radius, onDimensionClick }) {
+// onHover(dimensionId, clientX, clientY) — called on enter + move
+// onHoverEnd() — called on leave
+export default function StarPlot({ countryName, cx, cy, radius, onDimensionClick, onHover, onHoverEnd }) {
   const currentYear = useAppStore((s) => s.currentYear)
   const datasetCache = useAppStore((s) => s.datasetCache)
 
-  const [hoveredAxis, setHoveredAxis] = useState(null)
-  const [hoverPos, setHoverPos] = useState({ x: 0, y: 0 })
-
   const R = radius ?? layout.starPlotRadius
-  // Scale dot radius and polygon stroke proportionally (sqrt keeps it from growing too fast)
   const dotR = Math.round(6 * Math.sqrt(R / 120))
   const polyStrokeWidth = Math.max(1.5, 1.5 * R / 120)
 
-  // Compute normalized values for all axes
   const axisValues = AXES.map((axis) => {
     const rawValue = getCountryValue(axis.id, countryName, currentYear, datasetCache)
     const normalized = normalizeMetricValue(axis.id, rawValue, datasetCache)
     const missing = rawValue == null || normalized == null
-    // If missing, render at 50% ring
     const displayNorm = missing ? 50 : normalized
     return { ...axis, rawValue, normalized: displayNorm, missing }
   })
 
-  // Polygon points for the star shape
   const polygonPoints = axisValues
     .map(({ angle, normalized }) => {
       const pt = angleToPoint(angle, (normalized / 100) * R)
@@ -56,95 +48,72 @@ export default function StarPlot({ countryName, cx, cy, radius, onDimensionClick
     })
     .join(' ')
 
-  // Spike dot positions
   const dotPositions = axisValues.map(({ angle, normalized }) =>
     angleToPoint(angle, (normalized / 100) * R)
   )
 
-  const hoveredMeta = hoveredAxis != null ? axisValues[hoveredAxis] : null
-
   return (
-    <>
-      <g transform={`translate(${cx},${cy})`}>
-        {/* Background disc — covers axes + label ring */}
+    <g transform={`translate(${cx},${cy})`}>
+      {/* Background disc — covers axes + label ring */}
+      <circle
+        r={R + 180}
+        fill={colors.starPlotBackground}
+        stroke="none"
+      />
+
+      {/* Reference rings */}
+      {REFERENCE_RINGS.map((frac) => (
         <circle
-          r={R + 180}
-          fill={colors.starPlotBackground}
-          stroke="none"
+          key={frac}
+          r={frac * R}
+          fill="none"
+          stroke={colors.starPlotGrid}
+          strokeWidth={1}
+          strokeDasharray="3,4"
         />
+      ))}
 
-        {/* Reference rings */}
-        {REFERENCE_RINGS.map((frac) => (
-          <circle
-            key={frac}
-            r={frac * R}
-            fill="none"
-            stroke={colors.starPlotGrid}
-            strokeWidth={1}
-            strokeDasharray="3,4"
-          />
-        ))}
-
-        {/* Axes + labels */}
-        {axisValues.map((axis, i) => (
-          <StarAxis
-            key={axis.id}
-            angle={axis.angle}
-            radius={R}
-            label={axis.label}
-            normalizedValue={axis.missing ? null : axis.normalized}
-            color={colors.starPlotAxes[axis.colorKey]}
-            missing={axis.missing}
-          />
-        ))}
-
-        {/* Polygon fill */}
-        <polygon
-          points={polygonPoints}
-          fill={colors.starPlotPolygon}
-          stroke={colors.starPlotStroke}
-          strokeWidth={polyStrokeWidth}
-          strokeLinejoin="round"
+      {/* Axes + labels */}
+      {axisValues.map((axis, i) => (
+        <StarAxis
+          key={axis.id}
+          angle={axis.angle}
+          radius={R}
+          label={axis.label}
+          normalizedValue={axis.missing ? null : axis.normalized}
+          color={colors.starPlotAxes[axis.colorKey]}
+          missing={axis.missing}
+          onClick={() => onDimensionClick?.(axis.id)}
+          onMouseEnter={(e) => onHover?.(axis.id, e.clientX, e.clientY)}
+          onMouseLeave={() => onHoverEnd?.()}
+          onMouseMove={(e) => onHover?.(axis.id, e.clientX, e.clientY)}
         />
+      ))}
 
-        {/* Spike dots */}
-        {axisValues.map((axis, i) => (
-          <SpikeDot
-            key={axis.id}
-            cx={dotPositions[i].x}
-            cy={dotPositions[i].y}
-            r={dotR}
-            color={colors.starPlotAxes[axis.colorKey]}
-            missing={axis.missing}
-            onClick={() => onDimensionClick?.(axis.id)}
-            onMouseEnter={(e) => {
-              setHoveredAxis(i)
-              setHoverPos({ x: e.clientX, y: e.clientY })
-            }}
-            onMouseLeave={() => setHoveredAxis(null)}
-          />
-        ))}
-      </g>
+      {/* Polygon fill */}
+      <polygon
+        points={polygonPoints}
+        fill={colors.starPlotPolygon}
+        stroke={colors.starPlotStroke}
+        strokeWidth={polyStrokeWidth}
+        strokeLinejoin="round"
+      />
 
-      {/* Floating panel for hovered spike */}
-      {hoveredMeta && (
-        <FloatingPanel x={hoverPos.x} y={hoverPos.y} visible>
-          <PanelTitle>{datasetMeta[hoveredMeta.id]?.displayName}</PanelTitle>
-          {hoveredMeta.missing ? (
-            <PanelWarning>No data available for {currentYear}</PanelWarning>
-          ) : (
-            <PanelRow
-              label={`${currentYear}`}
-              value={`${Math.round(hoveredMeta.normalized)}%`}
-              mono
-              highlight
-            />
-          )}
-          <div style={{ marginTop: 8, fontSize: 11, color: '#9ca3af', lineHeight: 1.5 }}>
-            {descriptionMap[hoveredMeta.id]?.slice(0, 120)}…
-          </div>
-        </FloatingPanel>
-      )}
-    </>
+      {/* Spike dots */}
+      {axisValues.map((axis, i) => (
+        <SpikeDot
+          key={axis.id}
+          cx={dotPositions[i].x}
+          cy={dotPositions[i].y}
+          r={dotR}
+          color={colors.starPlotAxes[axis.colorKey]}
+          missing={axis.missing}
+          onClick={() => onDimensionClick?.(axis.id)}
+          onMouseEnter={(e) => onHover?.(axis.id, e.clientX, e.clientY)}
+          onMouseLeave={() => onHoverEnd?.()}
+          onMouseMove={(e) => onHover?.(axis.id, e.clientX, e.clientY)}
+        />
+      ))}
+    </g>
   )
 }

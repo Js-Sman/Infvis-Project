@@ -87,7 +87,11 @@ const MapView = forwardRef(function MapView(
   const [focusedRegion, setFocusedRegion] = useState(null)
   const [focusedCountry, setFocusedCountry] = useState(null)
   const [hoveredTarget, setHoveredTarget] = useState(null) // { type, name, mouseX, mouseY }
+  const [starHover, setStarHover] = useState(null) // { id, x, y } — star plot axis hover
+  const [titleHover, setTitleHover] = useState(null) // { x, y } — L4 title hover for description panel
   const [activeDimension, setActiveDimension] = useState(null)
+  const [l4Country, setL4Country] = useState(null) // country captured at L4 entry, so title is reliable
+  const l4CountryRef = useRef(null)
   const [dims, setDims] = useState({ w: 0, h: 0 })
   const [lineBrush, setLineBrush] = useState(null)
   const [lineHoverYear, setLineHoverYear] = useState(null)
@@ -781,23 +785,6 @@ const MapView = forwardRef(function MapView(
   // but never smaller than the original 120px default.
   const starRadius = Math.max(120, Math.floor(dims.h / 4))
 
-  // ─── Compute country silhouette path (Level 4 background) ────────────────
-  const [silhouettePath, setSilhouettePath] = useState('')
-  useEffect(() => {
-    if (zoomLevel !== ZOOM_LEVEL.DATA || !focusedCountry || !pathGenRef.current || !countriesGeoRef.current) {
-      setSilhouettePath('')
-      return
-    }
-    const feat = countriesGeoRef.current.features.find((f) => resolveCountryName(f) === focusedCountry)
-    if (feat) {
-      // Use a projection centered on the country for the silhouette
-      const projection = d3.geoNaturalEarth1()
-        .fitSize([dims.w * 0.6, dims.h * 0.6], feat)
-        .translate([dims.w / 2, dims.h / 2])
-      const pg = d3.geoPath(projection)
-      setSilhouettePath(pg(feat) || '')
-    }
-  }, [zoomLevel, focusedCountry, dims])
 
   return (
     <div
@@ -831,9 +818,15 @@ const MapView = forwardRef(function MapView(
             cy={starCy}
             radius={starRadius}
             onDimensionClick={(dim) => {
+              // Capture the focused country synchronously into a ref+state before
+              // any async state batching can clear it
+              l4CountryRef.current = focusedCountry
+              setL4Country(focusedCountry)
               setActiveDimension(dim)
               updateZoomLevel(ZOOM_LEVEL.DATA)
             }}
+            onHover={(id, x, y) => setStarHover({ id, x, y })}
+            onHoverEnd={() => setStarHover(null)}
           />
         )}
       </svg>
@@ -849,36 +842,83 @@ const MapView = forwardRef(function MapView(
             background: colors.background,
           }}
         >
-          {/* Country silhouette */}
-          {silhouettePath && (
-            <svg
-              style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}
-              width={dims.w}
-              height={dims.h}
-            >
-              <path d={silhouettePath} fill={colors.lineChart.silhouette} />
-            </svg>
-          )}
-
-          {/* Dimension title */}
+          {/* Title row — back button left, centered title with inline hover zone */}
           <div
             style={{
               padding: '16px 24px 8px',
-              fontFamily: typography.fontSans,
-              fontSize: 18,
-              fontWeight: 700,
-              color: colors.ui.text,
               flexShrink: 0,
+              display: 'flex',
+              alignItems: 'flex-start',
+              position: 'relative',
             }}
           >
-            {focusedCountry} — {datasetMeta[activeDimension]?.displayName}
+            {/* Back to L3 */}
+            <button
+              onClick={() => {
+                const country = l4CountryRef.current
+                setActiveDimension(null)
+                setL4Country(null)
+                setTitleHover(null)
+                if (country && countriesGeoRef.current) {
+                  const feat = countriesGeoRef.current.features.find(
+                    (f) => resolveCountryName(f) === country
+                  )
+                  if (feat) {
+                    // zoomToCountry re-establishes L3 (sets focusedCountry,
+                    // calls renderLevel, re-applies the zoom transform)
+                    zoomToCountry(country, feat)
+                    return
+                  }
+                }
+                // Fallback: just reset to world
+                resetToWorld()
+              }}
+              style={{
+                background: 'none',
+                border: `1px solid ${colors.ui.panelBorder}`,
+                borderRadius: 6,
+                color: colors.ui.textMuted,
+                fontFamily: typography.fontSans,
+                fontSize: 12,
+                padding: '4px 10px',
+                cursor: 'pointer',
+                flexShrink: 0,
+                marginTop: 2,
+              }}
+            >
+              ← Back
+            </button>
+
+            {/* Centered title — hover area is only the text span */}
+            <div style={{ flex: 1, textAlign: 'center', pointerEvents: 'none' }}>
+              <span
+                style={{
+                  fontFamily: typography.fontSans,
+                  fontSize: 18,
+                  fontWeight: 700,
+                  color: colors.ui.text,
+                  cursor: 'default',
+                  userSelect: 'none',
+                  pointerEvents: 'auto',
+                }}
+                onMouseEnter={(e) => setTitleHover({ x: e.clientX, y: e.clientY })}
+                onMouseMove={(e) => setTitleHover({ x: e.clientX, y: e.clientY })}
+                onMouseLeave={() => setTitleHover(null)}
+              >
+                {l4Country} - {datasetMeta[activeDimension]?.displayName}
+              </span>
+            </div>
+
+            {/* Spacer to balance the back button */}
+            <div style={{ width: 74, flexShrink: 0 }} />
           </div>
 
           {/* Line chart */}
           <div style={{ flex: 1, padding: '0 16px 16px', position: 'relative' }}>
             <LineChart
-              countryName={focusedCountry}
+              countryName={l4Country}
               dimension={activeDimension}
+              lineColor={colors.starPlotAxes[activeDimension] ?? colors.lineChart.line}
               width={dims.w - 32}
               height={dims.h - 80}
               syncBrush={syncBrush}
@@ -891,30 +931,39 @@ const MapView = forwardRef(function MapView(
               }
             />
           </div>
+        </div>
+      )}
 
-          {/* Description panel (bottom-left, replaces legend at L4) */}
-          <div
-            style={{
-              position: 'absolute',
-              bottom: 16,
-              left: 16,
-              background: colors.ui.panel,
-              border: `1px solid ${colors.ui.panelBorder}`,
-              borderRadius: 8,
-              padding: '10px 14px',
-              maxWidth: 260,
-              fontSize: 12,
-              color: colors.ui.textMuted,
-              lineHeight: 1.6,
-              fontFamily: typography.fontSans,
-            }}
-          >
-            <div style={{ fontWeight: 700, color: colors.ui.text, marginBottom: 6, fontSize: 13 }}>
-              {datasetMeta[activeDimension]?.displayName}
-            </div>
+      {/* L4 title hover — description panel */}
+      {titleHover && zoomLevel === ZOOM_LEVEL.DATA && activeDimension && (
+        <FloatingPanel x={titleHover.x} y={titleHover.y} visible maxWidth={300}>
+          <PanelTitle>{datasetMeta[activeDimension]?.displayName}</PanelTitle>
+          <div style={{
+            marginTop: 8,
+            fontSize: 12,
+            color: colors.ui.textMuted,
+            lineHeight: 1.6,
+            fontFamily: typography.fontSans,
+          }}>
             {descriptionMap[activeDimension]}
           </div>
-        </div>
+        </FloatingPanel>
+      )}
+
+      {/* Star plot axis hover panel — shown at L3, outside the SVG so HTML renders correctly */}
+      {starHover && zoomLevel === ZOOM_LEVEL.COUNTRY && (
+        <FloatingPanel x={starHover.x} y={starHover.y} visible maxWidth={300}>
+          <PanelTitle>{datasetMeta[starHover.id]?.displayName}</PanelTitle>
+          <div style={{
+            marginTop: 8,
+            fontSize: 12,
+            color: colors.ui.textMuted,
+            lineHeight: 1.6,
+            fontFamily: typography.fontSans,
+          }}>
+            {descriptionMap[starHover.id]}
+          </div>
+        </FloatingPanel>
       )}
 
       {/* Hover floating panel */}

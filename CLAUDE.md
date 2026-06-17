@@ -38,8 +38,8 @@ my-app/
     store/
       appStore.js           # Zustand: currentYear, splitScreenActive, overlayActive, focusedCountry{Left,Right}, selectedDimension, datasetCache
     utils/
-      normalize.js          # computeGlobalRange, getOrComputeRange, normalizeValue (→0–100), formatValue/Population/Currency
-      dataService.js        # CSV lazy-load, parseCsv (wide/long format), loadDataset, getCountryValue (with linear interpolation), getCountrySeries
+      normalize.js          # computeGlobalRange, getOrComputeRange (with MANUAL_RANGES), normalizeValue (→0–100), formatValue/Population/Currency
+      dataService.js        # CSV lazy-load, parseCsv (wide/long format), CSV_NAME_FIX, loadDataset, getCountryValue, getCountrySeries
       continentAggregation.js   # computeRegionAverage — population-weighted, memoized
     hooks/
       useDataset.js         # React hook wrapping loadDataset
@@ -53,7 +53,7 @@ my-app/
         Header.jsx          # Single/split/overlay mode toggles, inline SVG icons
         SearchBar.jsx       # Autocomplete (167 countries + 15 regions), keyboard nav
       timeline/
-        Timeline.jsx        # 1900–2018 slider, playback, brush range
+        Timeline.jsx        # 1900–2018 slider, playback, brush range; animated thumb div
         PlaybackControls.jsx
       starplot/
         StarPlot.jsx        # 8-axis spider chart, reference rings at 25/50/75%
@@ -86,13 +86,17 @@ The zoom level transitions happen inside `MapView.jsx`'s `handleZoom()` → `ren
 
 `north-america`, `central-america`, `south-america`, `north-africa`, `west-africa`, `central-africa`, `east-africa`, `south-africa`, `west-europe`, `east-europe`, `west-asia`, `south-asia`, `east-asia`, `central-asia`, `oceania`
 
-Defined in `src/config/continentConfig.js`. The full `countryRegionMap` covers 167 countries.
+Defined in `src/config/continentConfig.js`. The full `countryRegionMap` covers 167 countries. Sub-region zones do **not** render text labels on the map — hover panels provide the region info instead.
 
 ---
 
 ## Country Name Reconciliation
 
-TopoJSON world-atlas uses different names than Gapminder CSVs. The lookup map lives at the top of `MapView.jsx` as `TOPO_TO_GAPMINDER`:
+There are **two** name-reconciliation layers:
+
+### 1. TopoJSON → Gapminder (`TOPO_TO_GAPMINDER` in `MapView.jsx`)
+
+Maps TopoJSON feature names to the canonical Gapminder names used by `countryRegionMap`:
 
 ```js
 const TOPO_TO_GAPMINDER = {
@@ -115,7 +119,22 @@ const TOPO_TO_GAPMINDER = {
 }
 ```
 
-Applied in `resolveCountryName(feat)`. If a new country doesn't match, add it here.
+Applied in `resolveCountryName(feat)`. Add new entries here if a country path doesn't appear on the choropleth.
+
+### 2. CSV name → Gapminder (`CSV_NAME_FIX` in `dataService.js`)
+
+Gapminder CSVs use slightly different names for a few countries. Applied during `parseCsv()` before the `KNOWN_COUNTRIES` check:
+
+```js
+const CSV_NAME_FIX = {
+  'Congo, Dem. Rep.': 'Congo (Dem. Rep.)',
+  'Congo, Rep.':      'Congo (Rep.)',
+  "Cote d'Ivoire":   "Côte d'Ivoire",
+  'Lao':              'Laos',
+}
+```
+
+Add new entries here if a country has data in a CSV but shows grey (no data) on the map.
 
 ---
 
@@ -123,10 +142,33 @@ Applied in `resolveCountryName(feat)`. If a new country doesn't match, add it he
 
 - All CSVs live in `src/data/` and are registered in `dataService.js` as `CSV_MODULES`
 - Loaded via Vite `?raw` dynamic imports (lazy, on first request)
-- Two formats supported: **wide** (country + year columns) and **long** (country/year/value columns) — auto-detected by `detectFormat()`
-- Long-format Gapminder CSVs have pattern `geo, time, name, <value>` — `findValueColumn()` skips known geo-code columns (`geo`, `Geo`, `code`, `iso`, etc.) and returns the last remaining column
-- `getCountryValue()` does linear interpolation between missing years
-- `computeRegionAverage()` does population-weighted averaging over all countries in a region
+- Two formats supported: **wide** (country + year columns) and **long** (`geo, time, name, <value>`) — auto-detected by `detectFormat()`
+- `findValueColumn()` skips known geo-code columns (`geo`, `Geo`, `code`, `iso`, etc.) and returns the last remaining column
+- `YEAR_RANGES` in `dataService.js` defines the valid year window per metric — rows outside are discarded at parse time
+
+### `getCountryValue()` interpolation rules
+
+- Exact year match → return that value (may be `null` if CSV had an empty cell)
+- Year **before** the country's first data point → return `null` (shown as no-data grey)
+- Year **after** the country's last data point → return last known value (forward-fill)
+- Year between two data points → linear interpolation
+
+This means countries like Vietnam correctly show grey at 1900 when their democracy data only starts in 1975.
+
+---
+
+## Normalization (`normalize.js`)
+
+`getOrComputeRange(metricName, metricData)` checks `MANUAL_RANGES` first before auto-computing min/max. Two metrics have manual caps to prevent extreme outliers from crushing the 0–100 scale:
+
+```js
+const MANUAL_RANGES = {
+  inflation:         { min: -20,  max: 50   },  // Venezuela 225k% hyperinflation excluded
+  populationDensity: { min: 0,    max: 500  },  // Monaco/Singapore city-state outliers excluded
+}
+```
+
+`normalizeValue()` clamps to [0, 100] — values above the cap render at 100%, not off-scale.
 
 ---
 
@@ -148,7 +190,7 @@ Never hardcode colors inline — use `theme.js`.
 
 ```js
 {
-  currentYear,            // number (1900–2018)
+  currentYear,            // number (1900–2018), default 2018
   splitScreenActive,      // boolean
   overlayActive,          // boolean — only valid when both viewports at L3/L4
   focusedCountryLeft,     // string | null
@@ -158,7 +200,16 @@ Never hardcode colors inline — use `theme.js`.
 }
 ```
 
-D3 handlers inside MapView must read state via refs (`datasetCacheRef`, `currentYearRef`, etc.) to avoid stale closures.
+`setCurrentYear` accepts either a plain value or an updater function `(prev) => next` — both forms work. D3 handlers inside MapView must read state via refs (`datasetCacheRef`, `currentYearRef`, etc.) to avoid stale closures.
+
+---
+
+## Timeline
+
+- Year range: 1900–2018, **default year: 2018**
+- Speed levels: `[1, 2, 4, 8, 16]` × — **default: 4×**
+- The native `<input type="range">` thumb is hidden (transparent); a separate animated `<div>` provides the visual dot with `transition: left 0.18s linear` for smooth playback animation
+- Playback uses `setInterval` + updater-function form of `setCurrentYear`
 
 ---
 
@@ -171,7 +222,7 @@ D3 handlers inside MapView must read state via refs (`datasetCacheRef`, `current
 - D3 init `useEffect` uses an `AbortController` to cancel stale fetch callbacks if the effect re-runs
 - Fetches `/world.topojson` once via `fetch()` inside `useEffect`
 - D3 zoom attached to a `<svg>` element via `d3.zoom()`
-- `buildZones()` groups TopoJSON features by sub-region, creates `<g class="zone zone-{id}">` groups with `data-region` attribute
+- `buildZones()` groups TopoJSON features by sub-region, creates `<g class="zone zone-{id}">` groups with `data-region` attribute — **no text labels rendered**
 - `buildCountries()` creates individual `<path>` elements inside `<g class="countries">`, initially `opacity: 0` via the group
 - L3 renders `<StarPlot>` as a React child in the SVG's coordinate space
 - L4 renders full-page `<LineChart>` overlaid on the container via absolute positioning
@@ -204,6 +255,24 @@ All D3 transitions in MapView use explicit names to prevent mutual interruption 
 
 This prevents a race condition where the zoom animation starts at `k≈1` and triggers a false snap back to L1 even though the level was already set to L2.
 
+### L3 Centering Animation (`isCenteringRef`)
+
+When the user scroll-zooms past the L3 threshold, `handleZoom` calls `zoomToCountry(name, feat)` directly (the same function used by click-zoom). This triggers a 750ms programmatic transition that centers the selected country on screen.
+
+To prevent cursor movement from interrupting the animation:
+
+- `isCenteringRef` is set to `true` before the transition starts
+- `zoom.filter()` reads `isCenteringRef.current` and rejects all user input while it is true
+- `transition.on('end', ...)` clears the flag
+
+**Never use unnamed transitions in `zoomToCountry`** — use the same named transition pattern.
+
+### Focused Country Lifecycle
+
+- `focusedCountry` is set when entering L3 (via click or scroll-zoom)
+- `focusedCountry` is **cleared** in `renderLevel(CONTINENT)` so the next scroll-in at L2 re-detects from cursor position rather than reusing the stale value
+- `renderLevel(CONTINENT)` is called both for L1→L2 (via `zoomToRegion`) and L3→L2 (via scroll-out), so the clear happens in both paths
+
 ### Opacity System
 
 **L1 — World view:**
@@ -228,7 +297,7 @@ This prevents a race condition where the zoom animation starts at `k≈1` and tr
 ## Known Pending Issues
 
 1. **`App.jsx` passes `rightZoomLevel={ZOOM_LEVEL.WORLD}` hardcoded** to `Header` — the right viewport's actual zoom level isn't propagated up from `SplitScreenContainer`. The Overlay button enable/disable logic in `Header` is therefore inaccurate for the right side in split-screen mode.
-2. **L3 (StarPlot) and L4 (LineChart) not yet visually tested** — L1 and L2 transitions have been confirmed working in browser. L3/L4 need testing.
+2. **L3 (StarPlot) and L4 (LineChart) not yet visually tested end-to-end** — L1 and L2 transitions have been confirmed working in browser.
 3. **Scroll-zoom from L2 back to L1** — when the user manually scrolls out past the continent threshold, `renderLevel(WORLD)` is called from `handleZoom` but `focusedRegion` is not reset (only `resetToWorld()` resets it). This means re-entering L2 by scroll may re-use the previous region. Needs testing.
 
 ---

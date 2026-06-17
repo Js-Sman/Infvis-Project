@@ -1,7 +1,7 @@
 import { colors, typography } from '../../theme.js'
 
 // Renders one axis line + outer label + normalized value label
-export default function StarAxis({ angle, radius, label, normalizedValue, color, missing }) {
+export default function StarAxis({ angle, radius, label, normalizedValue, color, missing, onMouseEnter, onMouseLeave, onMouseMove, onClick }) {
   const rad = (angle - 90) * (Math.PI / 180)
   const outerX = Math.cos(rad) * radius
   const outerY = Math.sin(rad) * radius
@@ -29,33 +29,50 @@ export default function StarAxis({ angle, radius, label, normalizedValue, color,
         stroke={colors.starPlotAxisLine}
         strokeWidth={axisStrokeWidth}
       />
-      {/* Outer label */}
-      <text
-        x={labelX}
-        y={labelY}
-        textAnchor={textAnchor}
-        dominantBaseline="middle"
-        fill={missing ? colors.starPlotMissingDot : colors.starPlotLabel}
-        fontSize={labelFontSize}
-        fontFamily={typography.fontSans}
-        style={{ fontWeight: 'bold' }}
+      {/* Label group — hoverable to trigger the dimension description panel */}
+      <g
+        style={{ cursor: 'pointer' }}
+        onClick={onClick}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        onMouseMove={onMouseMove}
       >
-        {label}
-      </text>
-      {/* Normalized % value — or "(no data)" when value is missing */}
-      <text
-        x={labelX}
-        y={labelY}
-        dy={valueDy}
-        textAnchor={textAnchor}
-        dominantBaseline="middle"
-        fill={missing ? colors.starPlotMissingDot : color}
-        fontSize={valueFontSize}
-        fontFamily={typography.fontMono}
-        style={{ userSelect: 'none' }}
-      >
-        {normalizedValue != null ? `${Math.round(normalizedValue)}%` : '(no data)'}
-      </text>
+        {/* Transparent hit-area rect behind the labels for easier hover detection */}
+        <rect
+          x={textAnchor === 'end' ? labelX - 80 : textAnchor === 'middle' ? labelX - 40 : labelX}
+          y={labelY - labelFontSize}
+          width={80}
+          height={valueDy + labelFontSize + 4}
+          fill="transparent"
+        />
+        {/* Outer label */}
+        <text
+          x={labelX}
+          y={labelY}
+          textAnchor={textAnchor}
+          dominantBaseline="middle"
+          fill={missing ? colors.starPlotMissingDot : colors.starPlotLabel}
+          fontSize={labelFontSize}
+          fontFamily={typography.fontSans}
+          style={{ fontWeight: 'bold' }}
+        >
+          {label}
+        </text>
+        {/* Normalized % value — or "(no data)" when value is missing */}
+        <text
+          x={labelX}
+          y={labelY}
+          dy={valueDy}
+          textAnchor={textAnchor}
+          dominantBaseline="middle"
+          fill={missing ? colors.starPlotMissingDot : color}
+          fontSize={valueFontSize}
+          fontFamily={typography.fontMono}
+          style={{ userSelect: 'none' }}
+        >
+          {normalizedValue != null ? `${Math.round(normalizedValue)}%` : '(no data)'}
+        </text>
+      </g>
     </g>
   )
 }

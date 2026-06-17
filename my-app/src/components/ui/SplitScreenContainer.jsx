@@ -11,6 +11,7 @@ export default function SplitScreenContainer({
   searchTargetRight,
   onSearchConsumedLeft,
   onSearchConsumedRight,
+  onLeftZoomLevelChange,
 }) {
   const splitScreenActive = useAppStore((s) => s.splitScreenActive)
   const overlayActive = useAppStore((s) => s.overlayActive)
@@ -33,7 +34,10 @@ export default function SplitScreenContainer({
   const handleRightHoverYear = useCallback((y) => setSharedHoverYear(y), [])
 
   // Notify parent of zoom level changes (for overlay button enablement)
-  const handleLeftZoomChange = useCallback((level) => setLeftZoomLevel(level), [])
+  const handleLeftZoomChange = useCallback((level) => {
+    setLeftZoomLevel(level)
+    onLeftZoomLevelChange?.(level)
+  }, [onLeftZoomLevelChange])
   const handleRightZoomChange = useCallback((level) => setRightZoomLevel(level), [])
 
   if (!splitScreenActive) {
