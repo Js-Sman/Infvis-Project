@@ -425,22 +425,23 @@ const MapView = forwardRef(function MapView(
     let targetLevel = currentLevel
 
     if (currentLevel === ZOOM_LEVEL.WORLD) {
-      // When scrolling without a prior click, focusedRegion is null — detect the
-      // zone under the cursor so scroll-zoom from L1 works from a cold start.
-      let effectiveRegion = currentRegion
-      if (!effectiveRegion) {
-        const { x, y } = lastMousePosRef.current
-        const el = document.elementFromPoint(x, y)
-        const groupEl = el?.closest?.('[data-region]')
-        if (groupEl) {
-          const detected = groupEl.getAttribute('data-region')
-          if (detected) {
-            effectiveRegion = detected
-            setFocusedRegion(detected)
-            focusedRegionRef.current = detected
-          }
-        }
+      // Always detect the zone under the cursor — never trust the cached focusedRegion.
+      // Relying on the cached value caused stale-region bugs when returning to L1 from
+      // a different region: the old value survived async React re-renders and the
+      // `if (!effectiveRegion)` guard skipped detection entirely.
+      const { x, y } = lastMousePosRef.current
+      const el = document.elementFromPoint(x, y)
+      const groupEl = el?.closest?.('[data-region]')
+      const detected = groupEl ? groupEl.getAttribute('data-region') : null
+
+      // Fall back to cached region only when cursor is over the ocean (no zone hit).
+      const effectiveRegion = detected || currentRegion
+
+      if (detected && detected !== currentRegion) {
+        setFocusedRegion(detected)
+        focusedRegionRef.current = detected
       }
+
       if (effectiveRegion) {
         const threshold = CONTINENT_THRESHOLDS[effectiveRegion] || 2
         if (k >= threshold) targetLevel = ZOOM_LEVEL.CONTINENT
@@ -506,6 +507,10 @@ const MapView = forwardRef(function MapView(
     const gCountries = d3.select(svgRef.current).select('.countries')
 
     if (level === ZOOM_LEVEL.WORLD) {
+      // Clear focused region so the next scroll-in re-detects from cursor position
+      // rather than reusing the stale value from the previous L2 session.
+      setFocusedRegion(null)
+      focusedRegionRef.current = null
       gZones.style('pointer-events', 'all')
       gZones.transition().duration(300).attr('opacity', 1)
       // Reset individual zone opacities that may have been dimmed during hover
@@ -703,16 +708,22 @@ const MapView = forwardRef(function MapView(
     focusedCountryRef.current = name
     setFocused(name)
 
+    // Centering k must land above the L3 entry threshold, otherwise large countries
+    // (USA, Canada) whose auto-computed bounds include remote territories produce a
+    // scale below the threshold and exit L3 on the very first post-animation scroll.
+    const minScale = getCountryThreshold(name) * 1.2
+
     let transform
     const customCountry = CUSTOM_COUNTRY_ZOOM[name]
     if (customCountry) {
       const projection = projectionRef.current
       const [px, py] = projection(customCountry.center)
-      const s = customCountry.scale
+      const s = Math.max(customCountry.scale, minScale)
       transform = d3.zoomIdentity.translate(w / 2 - s * px, h / 2 - s * py).scale(s)
     } else {
       const [[x0, y0], [x1, y1]] = pathGen.bounds(feat)
-      const scale = Math.min(60, 0.7 / Math.max((x1 - x0) / w, (y1 - y0) / h))
+      const rawScale = Math.min(60, 0.7 / Math.max((x1 - x0) / w, (y1 - y0) / h))
+      const scale = Math.max(rawScale, minScale)
       const tx = (w - scale * (x0 + x1)) / 2
       const ty = (h - scale * (y0 + y1)) / 2
       transform = d3.zoomIdentity.translate(tx, ty).scale(scale)

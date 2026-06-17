@@ -32,8 +32,8 @@ export const COUNTRY_THRESHOLDS = {
   Brazil: 2.8, Australia: 2.5, India: 3.0,
   Argentina: 3.0, Kazakhstan: 2.8, Algeria: 3.0,
   // Large-ish
-  Congo: 3.5, 'Congo (Dem. Rep.)': 3.5,
-  Sudan: 3.0, 'Saudi Arabia': 3.0, Mexico: 3.0,
+  'Congo (Rep.)': 3.5, 'Congo (Dem. Rep.)': 3.5,
+  Sudan: 3.0, 'Saudi Arabia': 3.0, Mexico: 4.0,
   Indonesia: 3.5, Mongolia: 3.0,
   // Medium
   Germany: 5, France: 5, Turkey: 4.5, Iran: 4,
