@@ -6,6 +6,11 @@ const globalRangeCache = {}
 const MANUAL_RANGES = {
   inflation:         { min: -20,  max: 50   },  // Venezuela 225k% hyperinflation excluded
   populationDensity: { min: 0,    max: 500  },  // Monaco/Singapore city-state outliers excluded
+  // 0–100 index metrics: the dot reflects the value on its own absolute scale,
+  // NOT a relative comparison against other countries.
+  giniIndex:         { min: 0,    max: 100  },
+  corruption:        { min: 0,    max: 100  },
+  happiness:         { min: 0,    max: 100  },
 }
 
 export function computeGlobalRange(metricData) {
@@ -41,7 +46,6 @@ export function formatValue(value, unit) {
   if (unit === 'People') return formatPopulation(value)
   if (unit === 'USD') return formatCurrency(value)
   if (typeof value === 'number') {
-    if (Math.abs(value) >= 1000) return value.toLocaleString(undefined, { maximumFractionDigits: 0 })
     return value.toLocaleString(undefined, { maximumFractionDigits: 2 })
   }
   return String(value)
@@ -49,13 +53,13 @@ export function formatValue(value, unit) {
 
 function formatPopulation(n) {
   if (n >= 1e9) return (n / 1e9).toFixed(2) + 'B'
-  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M'
-  if (n >= 1e3) return (n / 1e3).toFixed(0) + 'K'
+  if (n >= 1e6) return (n / 1e6).toFixed(2) + 'M'
+  if (n >= 1e3) return (n / 1e3).toFixed(2) + 'K'
   return String(n)
 }
 
 function formatCurrency(n) {
-  if (n >= 1e6) return '$' + (n / 1e6).toFixed(1) + 'M'
-  if (n >= 1e3) return '$' + (n / 1e3).toFixed(1) + 'K'
-  return '$' + n.toFixed(0)
+  if (n >= 1e6) return '$' + (n / 1e6).toFixed(2) + 'M'
+  if (n >= 1e3) return '$' + (n / 1e3).toFixed(2) + 'K'
+  return '$' + n.toFixed(2)
 }

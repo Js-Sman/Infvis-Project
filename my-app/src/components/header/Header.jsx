@@ -3,6 +3,10 @@ import { uiLabels } from '../../config/textConfig.js'
 import SearchBar from './SearchBar.jsx'
 import useAppStore from '../../store/appStore.js'
 
+// TEMPORARY (demo): hide the Compare / split-screen button. Set back to true
+// to restore the compare functionality after the demo presentation.
+const SHOW_COMPARE = false
+
 // Icon components (inline SVG — avoids any icon library dependency)
 function HomeIcon() {
   return (
@@ -92,85 +96,94 @@ export default function Header({
     setOverlayActive(!overlayActive)
   }
 
+  const cell = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minWidth: 0,
+    overflow: 'hidden',
+  }
+
+  // Search cells must NOT clip: the autocomplete dropdown is absolutely
+  // positioned below the input and would be hidden by `overflow: hidden`.
+  const searchCell = { ...cell, overflow: 'visible' }
+
   return (
     <header
       style={{
         height: layout.headerHeight,
         background: colors.ui.header,
         borderBottom: `1px solid ${colors.ui.headerBorder}`,
-        display: 'flex',
+        display: 'grid',
+        gridTemplateColumns: splitScreenActive ? '2fr 3fr 2fr 3fr 2fr' : '2fr 8fr 2fr',
         alignItems: 'center',
         padding: '0 16px',
-        gap: 12,
+        gap: 8,
         flexShrink: 0,
         zIndex: 200,
         userSelect: 'none',
       }}
     >
-      {/* Left: app title */}
-      <div
-        style={{
+      {/* Col 1: Title — left aligned */}
+      <div style={{ ...cell, justifyContent: 'flex-start' }}>
+        <span style={{
           fontFamily: typography.fontSans,
-          fontSize: 14,
+          fontSize: 20,
           fontWeight: 700,
           color: colors.ui.text,
           whiteSpace: 'nowrap',
-          minWidth: 130,
-        }}
-      >
-        {uiLabels.appTitle}
+        }}>
+          {uiLabels.appTitle}
+        </span>
       </div>
 
-      {/* Center: search bar(s) */}
-      <div
-        style={{
-          flex: 1,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: 12,
-        }}
-      >
-        {!splitScreenActive ? (
+      {/* Col 2: Left (or only) search bar */}
+      <div style={searchCell}>
+        <SearchBar
+          onSelectCountry={onSelectCountryLeft}
+          onSelectRegion={onSelectRegionLeft}
+          side={splitScreenActive ? 'left' : undefined}
+        />
+      </div>
+
+      {/* Col 3 (split only): Overlay toggle */}
+      {splitScreenActive && (
+        <div style={cell}>
+          <IconButton
+            onClick={handleToggleOverlay}
+            disabled={!overlayEnabled}
+            active={overlayActive}
+            tooltip={overlayActive ? uiLabels.buttons.separate.tooltip : uiLabels.buttons.overlay.tooltip}
+          >
+            <OverlayIcon />
+            {overlayActive ? uiLabels.buttons.separate.label : uiLabels.buttons.overlay.label}
+          </IconButton>
+        </div>
+      )}
+
+      {/* Col 4 (split only): Right search bar */}
+      {splitScreenActive && (
+        <div style={searchCell}>
           <SearchBar
-            onSelectCountry={onSelectCountryLeft}
-            onSelectRegion={onSelectRegionLeft}
+            onSelectCountry={onSelectCountryRight}
+            onSelectRegion={onSelectRegionRight}
+            side="right"
           />
-        ) : (
-          <>
-            <SearchBar
-              onSelectCountry={onSelectCountryLeft}
-              onSelectRegion={onSelectRegionLeft}
-              side="left"
-            />
-            <IconButton
-              onClick={handleToggleOverlay}
-              disabled={!overlayEnabled}
-              active={overlayActive}
-              tooltip={overlayActive ? uiLabels.buttons.separate.tooltip : uiLabels.buttons.overlay.tooltip}
-            >
-              <OverlayIcon />
-              {overlayActive ? uiLabels.buttons.separate.label : uiLabels.buttons.overlay.label}
-            </IconButton>
-            <SearchBar
-              onSelectCountry={onSelectCountryRight}
-              onSelectRegion={onSelectRegionRight}
-              side="right"
-            />
-          </>
-        )}
-      </div>
+        </div>
+      )}
 
-      {/* Right: Home + Compare */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
-        <IconButton
-          onClick={handleToggleSplit}
-          disabled={splitScreenActive && closeCompareDisabled}
-          tooltip={splitScreenActive ? uiLabels.buttons.closeCompare.tooltip : uiLabels.buttons.openCompare.tooltip}
-        >
-          <CompareIcon />
-          {splitScreenActive ? uiLabels.buttons.closeCompare.label : uiLabels.buttons.openCompare.label}
-        </IconButton>
+      {/* Col 3 or 5: Home + Compare — right aligned */}
+      <div style={{ ...cell, gap: 8, justifyContent: 'flex-end' }}>
+        {SHOW_COMPARE && (
+          <IconButton
+            onClick={handleToggleSplit}
+            disabled={splitScreenActive && closeCompareDisabled}
+            tooltip={splitScreenActive ? uiLabels.buttons.closeCompare.tooltip : uiLabels.buttons.openCompare.tooltip}
+          >
+            <CompareIcon />
+            {splitScreenActive ? uiLabels.buttons.closeCompare.label : uiLabels.buttons.openCompare.label}
+          </IconButton>
+        )}
         <IconButton onClick={onHome} tooltip={uiLabels.buttons.home.tooltip}>
           <HomeIcon />
           {uiLabels.buttons.home.label}

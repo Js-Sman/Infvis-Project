@@ -90,10 +90,10 @@ function DemocracyLegend() {
 
 function CountryDetailPanel({ data }) {
   const rows = [
-    { label: panelLabels.democracyScore, value: data.democracyIndex != null ? data.democracyIndex.toFixed(1) : panelLabels.noDataShort, unit: '−10 to +10', highlight: true },
+    { label: panelLabels.democracyScore, value: data.democracyIndex != null ? data.democracyIndex.toFixed(2) : panelLabels.noDataShort, unit: '−10 to +10', highlight: true },
     { label: panelLabels.gdpPerCapita, value: formatValue(data.gdpPerCapita, 'USD'), unit: '' },
     { label: panelLabels.population, value: formatValue(data.population, 'People'), unit: '' },
-    { label: panelLabels.populationDensity, value: data.populationDensity != null ? data.populationDensity.toFixed(1) + ' /km²' : panelLabels.noDataShort, unit: '' },
+    { label: panelLabels.populationDensity, value: data.populationDensity != null ? data.populationDensity.toFixed(2) + ' /km²' : panelLabels.noDataShort, unit: '' },
   ]
 
   return (

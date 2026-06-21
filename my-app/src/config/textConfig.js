@@ -29,7 +29,7 @@ export const uiLabels = {
     separate:     { label: 'Separate',      tooltip: 'Separate overlaid views' },
   },
   search: {
-    placeholder: 'Search country or region…',
+    placeholder: 'Search country, region, or year…',
   },
 }
 
@@ -40,6 +40,7 @@ export const panelLabels = {
   populationDensity: 'Pop. Density',
   noDataWarning:     'No data available for this country and year.',
   noDataShort:       'No data',
+  regionAverageNote: 'Population-weighted average across the region.',
 }
 
 export const legendLabels = {

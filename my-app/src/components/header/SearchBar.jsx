@@ -3,6 +3,11 @@ import { colors, typography } from '../../theme.js'
 import { uiLabels } from '../../config/textConfig.js'
 import { subRegions } from '../../config/continentConfig.js'
 import { countryRegionMap } from '../../config/continentConfig.js'
+import useAppStore from '../../store/appStore.js'
+
+// Timeline bounds — must match MIN_YEAR / MAX_YEAR in Timeline.jsx.
+const MIN_YEAR = 1900
+const MAX_YEAR = 2018
 
 const ALL_COUNTRIES = Object.keys(countryRegionMap).sort()
 const ALL_REGIONS = subRegions.map((r) => ({ name: r.name, id: r.id, type: 'region' }))
@@ -18,14 +23,27 @@ export default function SearchBar({ onSelectCountry, onSelectRegion, side }) {
   const [open, setOpen] = useState(false)
   const inputRef = useRef(null)
   const listRef = useRef(null)
+  const setCurrentYear = useAppStore((s) => s.setCurrentYear)
 
   useEffect(() => {
-    if (query.trim().length < 1) {
+    const trimmed = query.trim()
+    if (trimmed.length < 1) {
       setSuggestions([])
       setOpen(false)
       return
     }
-    const q = query.toLowerCase()
+    // Numeric query → offer a year jump (when it falls inside the timeline range).
+    if (/^\d{1,4}$/.test(trimmed)) {
+      const year = parseInt(trimmed, 10)
+      const results = year >= MIN_YEAR && year <= MAX_YEAR
+        ? [{ name: String(year), type: 'year', value: year }]
+        : []
+      setSuggestions(results)
+      setOpen(results.length > 0)
+      setFocusedIdx(-1)
+      return
+    }
+    const q = trimmed.toLowerCase()
     const results = ALL_SEARCHABLE.filter((item) =>
       item.name.toLowerCase().includes(q)
     ).slice(0, 10)
@@ -39,6 +57,8 @@ export default function SearchBar({ onSelectCountry, onSelectRegion, side }) {
     setOpen(false)
     if (item.type === 'country') {
       onSelectCountry?.(item.name)
+    } else if (item.type === 'year') {
+      setCurrentYear(Math.max(MIN_YEAR, Math.min(MAX_YEAR, item.value)))
     } else {
       onSelectRegion?.(item.id)
     }
@@ -52,9 +72,13 @@ export default function SearchBar({ onSelectCountry, onSelectRegion, side }) {
     } else if (e.key === 'ArrowUp') {
       e.preventDefault()
       setFocusedIdx((i) => Math.max(i - 1, 0))
-    } else if (e.key === 'Enter' && focusedIdx >= 0) {
-      e.preventDefault()
-      handleSelect(suggestions[focusedIdx])
+    } else if (e.key === 'Enter') {
+      // Use the focused suggestion, or fall back to the top one (handy for years).
+      const pick = focusedIdx >= 0 ? suggestions[focusedIdx] : suggestions[0]
+      if (pick) {
+        e.preventDefault()
+        handleSelect(pick)
+      }
     } else if (e.key === 'Escape') {
       setOpen(false)
     }
@@ -127,7 +151,7 @@ export default function SearchBar({ onSelectCountry, onSelectRegion, side }) {
                   padding: '1px 5px',
                 }}
               >
-                {item.type === 'country' ? 'country' : 'region'}
+                {item.type}
               </span>
             </div>
           ))}

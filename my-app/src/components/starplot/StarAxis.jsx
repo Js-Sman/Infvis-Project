@@ -1,7 +1,15 @@
 import { colors, typography } from '../../theme.js'
 
-// Renders one axis line + outer label + normalized value label
-export default function StarAxis({ angle, radius, label, normalizedValue, color, missing, onMouseEnter, onMouseLeave, onMouseMove, onClick }) {
+// Formats the absolute metric value for display next to an axis label.
+// No unit is shown here — only the number, rounded to 2 decimal places
+// (with thousands separators for large values).
+function formatAxisValue(v) {
+  if (v == null) return '(no data)'
+  return v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+}
+
+// Renders one axis line + outer label + absolute value label + unit label
+export default function StarAxis({ angle, radius, label, rawValue, unit, color, missing, onMouseEnter, onMouseLeave, onMouseMove, onClick }) {
   const rad = (angle - 90) * (Math.PI / 180)
   const outerX = Math.cos(rad) * radius
   const outerY = Math.sin(rad) * radius
@@ -9,13 +17,21 @@ export default function StarAxis({ angle, radius, label, normalizedValue, color,
   // Scale label distance, font sizes, and stroke proportionally with radius.
   // sqrt keeps fonts from growing too aggressively on large screens.
   const scale = Math.sqrt(radius / 120)
-  const labelDist = radius * 1.15
-  const labelX = Math.cos(rad) * labelDist
-  const labelY = Math.sin(rad) * labelDist
   const labelFontSize = Math.round(13 * scale)
   const valueFontSize = Math.round(12 * scale)
+  const unitFontSize = Math.round(10 * scale)
   const valueDy = Math.round(15 * scale)
+  const unitDy = Math.round(28 * scale)
+  const showUnit = !missing && unit
   const axisStrokeWidth = Math.max(1, radius / 120)
+
+  // The label/value/unit rows stack DOWNWARD from the label position. On the
+  // top axis (Gini, pointing straight up) that stack dips back toward the axis
+  // line, so push its box further out by the extra height the unit row adds.
+  const isTopAxis = Math.abs(Math.cos(rad)) < 0.1 && Math.sin(rad) < 0
+  const labelDist = radius * 1.15 + (isTopAxis ? unitDy : 0)
+  const labelX = Math.cos(rad) * labelDist
+  const labelY = Math.sin(rad) * labelDist
 
   const textAnchor = Math.abs(Math.cos(rad)) < 0.1 ? 'middle' : Math.cos(rad) > 0 ? 'start' : 'end'
 
@@ -42,7 +58,7 @@ export default function StarAxis({ angle, radius, label, normalizedValue, color,
           x={textAnchor === 'end' ? labelX - 80 : textAnchor === 'middle' ? labelX - 40 : labelX}
           y={labelY - labelFontSize}
           width={80}
-          height={valueDy + labelFontSize + 4}
+          height={(showUnit ? unitDy : valueDy) + labelFontSize + 4}
           fill="transparent"
         />
         {/* Outer label */}
@@ -58,7 +74,7 @@ export default function StarAxis({ angle, radius, label, normalizedValue, color,
         >
           {label}
         </text>
-        {/* Normalized % value — or "(no data)" when value is missing */}
+        {/* Absolute metric value (no unit) — or "(no data)" when missing */}
         <text
           x={labelX}
           y={labelY}
@@ -70,8 +86,24 @@ export default function StarAxis({ angle, radius, label, normalizedValue, color,
           fontFamily={typography.fontMono}
           style={{ userSelect: 'none' }}
         >
-          {normalizedValue != null ? `${Math.round(normalizedValue)}%` : '(no data)'}
+          {formatAxisValue(rawValue)}
         </text>
+        {/* Unit — third row, white italic, smaller than value and label */}
+        {showUnit && (
+          <text
+            x={labelX}
+            y={labelY}
+            dy={unitDy}
+            textAnchor={textAnchor}
+            dominantBaseline="middle"
+            fill={colors.ui.text}
+            fontSize={unitFontSize}
+            fontFamily={typography.fontSans}
+            style={{ userSelect: 'none', fontStyle: 'italic' }}
+          >
+            {unit}
+          </text>
+        )}
       </g>
     </g>
   )

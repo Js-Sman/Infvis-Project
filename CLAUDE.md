@@ -213,6 +213,49 @@ Never hardcode colors inline — use `theme.js`.
 
 ---
 
+## Zoom Thresholds (`useZoom.js`)
+
+### Continent thresholds (`CONTINENT_THRESHOLDS`)
+
+k value where scroll zoom transitions L1→L2. One per sub-region.
+
+```js
+'north-america':  1.5,   'central-america': 3.5,  'south-america':  1.8,
+'north-africa':   2.0,   'west-africa':     2.5,   'central-africa': 2.5,
+'east-africa':    2.5,   'south-africa':    3.0,   'west-europe':    2.5,
+'east-europe':    1.5,   'west-asia':       2.2,   'south-asia':     2.2,
+'east-asia':      1.8,   'central-asia':    2.0,   'oceania':        2.0,
+```
+
+### Country thresholds (`COUNTRY_THRESHOLDS`)
+
+k value where scroll zoom transitions L2→L3. Default is 4.
+
+**Invariant:** every country's L3 threshold must be **strictly greater** than its region's L2 continent threshold — otherwise L3 is unreachable via scroll. Example: `central-america` threshold is 3.5, so Mexico must be ≥ 3.6; it is set to 4.0.
+
+```js
+// Very large countries — low threshold
+Russia: 2.0,  Canada: 2.5,  USA: 2.5,  China: 2.5,
+Brazil: 2.8,  Australia: 2.5,  India: 3.0,
+Argentina: 3.0,  Kazakhstan: 2.8,  Algeria: 3.0,
+// Large-ish
+'Congo (Rep.)': 3.5,  'Congo (Dem. Rep.)': 3.5,
+Sudan: 3.0,  'Saudi Arabia': 3.0,  Mexico: 4.0,
+Indonesia: 3.5,  Mongolia: 3.0,
+// Medium
+Germany: 5,  France: 5,  Turkey: 4.5,  Iran: 4,
+Pakistan: 4,  Nigeria: 4,  Egypt: 4,  Ethiopia: 4,
+// Small
+UK: 6,  Japan: 6,  'South Korea': 7,  Vietnam: 6,
+// Very small
+Luxembourg: 12,  Cyprus: 12,  Singapore: 20,
+Bahrain: 20,  Kuwait: 10,  Lebanon: 12,
+```
+
+**Note on key names:** threshold keys must match the **resolved Gapminder name** (after `TOPO_TO_GAPMINDER`), not the raw TopoJSON name. For example, `'Congo (Rep.)'` is correct; `'Congo'` would be a dead key and silently fall through to the default.
+
+---
+
 ## MapView Architecture
 
 `MapView.jsx` is the most complex component. Key facts:
@@ -227,6 +270,22 @@ Never hardcode colors inline — use `theme.js`.
 - L3 renders `<StarPlot>` as a React child in the SVG's coordinate space
 - L4 renders full-page `<LineChart>` overlaid on the container via absolute positioning
 - `searchTarget` prop: `{ type: 'reset' }` | `{ type: 'country', value: name }` | `{ type: 'region', value: id }`
+
+### Custom Zoom Overrides
+
+Countries/regions whose `pathGen.bounds()` is unreliable (wraps the antimeridian, or includes distant territories) use manual overrides:
+
+```js
+const CUSTOM_REGION_ZOOM = {
+  'east-europe': { center: [52, 55], scale: 2.0 },  // Russia skews bounding box
+}
+
+const CUSTOM_COUNTRY_ZOOM = {
+  'Russia': { center: [92, 62], scale: 2.2 },  // spans ~160° of longitude
+}
+```
+
+`center` is `[longitude, latitude]`; `scale` is the D3 zoom k value. Add entries here for any country or region that centers incorrectly.
 
 ### SVG Stacking Order
 
@@ -267,11 +326,48 @@ To prevent cursor movement from interrupting the animation:
 
 **Never use unnamed transitions in `zoomToCountry`** — use the same named transition pattern.
 
+### `zoomToCountry` — Minimum Scale Floor
+
+The centering transform enforces a floor of `getCountryThreshold(name) * 1.2`. This ensures the animation always lands **above** the L3 entry threshold, even for large countries (USA, Canada, Russia) where `pathGen.bounds()` returns a wide bounding box that includes distant territories (Alaska, overseas islands). Without the floor, the computed scale can land below the threshold and the very first post-animation scroll exits L3.
+
+```js
+const minScale = getCountryThreshold(name) * 1.2
+// Applied to both custom and auto-computed scales
+const scale = Math.max(rawScale, minScale)
+```
+
+### Focused Region Lifecycle
+
+- `focusedRegion` is set when entering L2 (via click `zoomToRegion` or scroll-zoom detection in `handleZoom`)
+- `focusedRegion` is **cleared** in `renderLevel(WORLD)` so the next scroll-in at L1 re-detects from cursor position rather than reusing the stale value
+- This matters for the scroll-zoom path: zooming into east-asia, scrolling back to L1, then zooming into west-europe — without the clear, the stale `'east-asia'` would be used for the L2 fade
+
 ### Focused Country Lifecycle
 
 - `focusedCountry` is set when entering L3 (via click or scroll-zoom)
 - `focusedCountry` is **cleared** in `renderLevel(CONTINENT)` so the next scroll-in at L2 re-detects from cursor position rather than reusing the stale value
 - `renderLevel(CONTINENT)` is called both for L1→L2 (via `zoomToRegion`) and L3→L2 (via scroll-out), so the clear happens in both paths
+
+### Always-Detect Region in `handleZoom`
+
+At L1, the WORLD branch **always** detects the zone under the cursor via `document.elementFromPoint`. It never trusts the cached `focusedRegion` value:
+
+```js
+const { x, y } = lastMousePosRef.current
+const el = document.elementFromPoint(x, y)
+const groupEl = el?.closest?.('[data-region]')
+const detected = groupEl ? groupEl.getAttribute('data-region') : null
+
+// Fall back to cached only when cursor is over ocean (no zone hit).
+const effectiveRegion = detected || currentRegion
+
+if (detected && detected !== currentRegion) {
+  setFocusedRegion(detected)
+  focusedRegionRef.current = detected
+}
+```
+
+This is necessary because React's async state updates can overwrite `focusedRegionRef.current` (via the `focusedRegionRef.current = focusedRegion` assignment that runs on every render) after a manual ref write, causing the `if (!effectiveRegion)` guard to skip detection on subsequent scroll events.
 
 ### Opacity System
 
@@ -297,8 +393,7 @@ To prevent cursor movement from interrupting the animation:
 ## Known Pending Issues
 
 1. **`App.jsx` passes `rightZoomLevel={ZOOM_LEVEL.WORLD}` hardcoded** to `Header` — the right viewport's actual zoom level isn't propagated up from `SplitScreenContainer`. The Overlay button enable/disable logic in `Header` is therefore inaccurate for the right side in split-screen mode.
-2. **L3 (StarPlot) and L4 (LineChart) not yet visually tested end-to-end** — L1 and L2 transitions have been confirmed working in browser.
-3. **Scroll-zoom from L2 back to L1** — when the user manually scrolls out past the continent threshold, `renderLevel(WORLD)` is called from `handleZoom` but `focusedRegion` is not reset (only `resetToWorld()` resets it). This means re-entering L2 by scroll may re-use the previous region. Needs testing.
+2. **L3 (StarPlot) and L4 (LineChart) not yet fully visually tested end-to-end in split-screen / overlay modes** — single-viewport L1→L4 transitions have been confirmed working in browser.
 
 ---
 

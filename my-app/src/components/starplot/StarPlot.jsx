@@ -1,6 +1,7 @@
 import useAppStore from '../../store/appStore.js'
-import { colors, layout } from '../../theme.js'
+import { colors, layout, typography } from '../../theme.js'
 import { getCountryValue, normalizeMetricValue } from '../../utils/dataService.js'
+import { datasetMeta } from '../../config/textConfig.js'
 import StarAxis from './StarAxis.jsx'
 import SpikeDot from './SpikeDot.jsx'
 
@@ -25,13 +26,22 @@ function angleToPoint(angle, r) {
 
 // onHover(dimensionId, clientX, clientY) — called on enter + move
 // onHoverEnd() — called on leave
-export default function StarPlot({ countryName, cx, cy, radius, onDimensionClick, onHover, onHoverEnd }) {
+export default function StarPlot({ countryName, cx, cy, radius, onDimensionClick, onHover, onHoverEnd, onHelpHover, onHelpHoverEnd }) {
   const currentYear = useAppStore((s) => s.currentYear)
   const datasetCache = useAppStore((s) => s.datasetCache)
 
   const R = radius ?? layout.starPlotRadius
   const dotR = Math.round(6 * Math.sqrt(R / 120))
   const polyStrokeWidth = Math.max(1.5, 1.5 * R / 120)
+
+  // Background disc radius. The help icon is aligned to the upper-right corner
+  // of the (invisible) square that circumscribes this circle.
+  const bgRadius = R + 180
+  const scale = Math.sqrt(R / 120)
+  const helpR = Math.round(15 * scale)
+  // Inset the icon from the exact corner so it sits fully inside the bounding box.
+  const helpX = bgRadius - helpR - Math.round(8 * scale)
+  const helpY = -bgRadius + helpR + Math.round(8 * scale)
 
   const axisValues = AXES.map((axis) => {
     const rawValue = getCountryValue(axis.id, countryName, currentYear, datasetCache)
@@ -56,7 +66,7 @@ export default function StarPlot({ countryName, cx, cy, radius, onDimensionClick
     <g transform={`translate(${cx},${cy})`}>
       {/* Background disc — covers axes + label ring */}
       <circle
-        r={R + 180}
+        r={bgRadius}
         fill={colors.starPlotBackground}
         stroke="none"
       />
@@ -80,7 +90,8 @@ export default function StarPlot({ countryName, cx, cy, radius, onDimensionClick
           angle={axis.angle}
           radius={R}
           label={axis.label}
-          normalizedValue={axis.missing ? null : axis.normalized}
+          rawValue={axis.missing ? null : axis.rawValue}
+          unit={datasetMeta[axis.id]?.unit}
           color={colors.starPlotAxes[axis.colorKey]}
           missing={axis.missing}
           onClick={() => onDimensionClick?.(axis.id)}
@@ -114,6 +125,35 @@ export default function StarPlot({ countryName, cx, cy, radius, onDimensionClick
           onMouseMove={(e) => onHover?.(axis.id, e.clientX, e.clientY)}
         />
       ))}
+
+      {/* Help icon — upper-right corner of the background circle's bounding square.
+          Hover reveals the big "how positions are calculated" info panel. */}
+      <g
+        transform={`translate(${helpX},${helpY})`}
+        style={{ cursor: 'help' }}
+        onMouseEnter={(e) => onHelpHover?.(e.clientX, e.clientY)}
+        onMouseMove={(e) => onHelpHover?.(e.clientX, e.clientY)}
+        onMouseLeave={() => onHelpHoverEnd?.()}
+      >
+        <circle
+          r={helpR}
+          fill={colors.starPlotBackground}
+          stroke={colors.starPlotLabel}
+          strokeWidth={Math.max(1, 1.5 * scale)}
+        />
+        <text
+          x={0}
+          y={0}
+          textAnchor="middle"
+          dominantBaseline="central"
+          fill={colors.starPlotLabel}
+          fontSize={Math.round(18 * scale)}
+          fontFamily={typography.fontSans}
+          style={{ fontWeight: 'bold', userSelect: 'none' }}
+        >
+          ?
+        </text>
+      </g>
     </g>
   )
 }

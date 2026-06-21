@@ -11,6 +11,7 @@ import { ZOOM_LEVEL, CONTINENT_THRESHOLDS, getCountryThreshold } from '../../hoo
 import { getCountryValue, loadDataset } from '../../utils/dataService.js'
 import { computeRegionAverage } from '../../utils/continentAggregation.js'
 import { datasetMeta, panelLabels, descriptionMap } from '../../config/textConfig.js'
+import { starPlotHelp } from '../../config/starPlotHelp.js'
 import { formatValue } from '../../utils/normalize.js'
 import FloatingPanel, { PanelTitle, PanelRow, PanelWarning } from '../ui/FloatingPanel.jsx'
 import StarPlot from '../starplot/StarPlot.jsx'
@@ -88,6 +89,7 @@ const MapView = forwardRef(function MapView(
   const [focusedCountry, setFocusedCountry] = useState(null)
   const [hoveredTarget, setHoveredTarget] = useState(null) // { type, name, mouseX, mouseY }
   const [starHover, setStarHover] = useState(null) // { id, x, y } — star plot axis hover
+  const [helpHover, setHelpHover] = useState(null) // { x, y } — star plot help-icon hover
   const [titleHover, setTitleHover] = useState(null) // { x, y } — L4 title hover for description panel
   const [activeDimension, setActiveDimension] = useState(null)
   const [l4Country, setL4Country] = useState(null) // country captured at L4 entry, so title is reliable
@@ -858,6 +860,8 @@ const MapView = forwardRef(function MapView(
             }}
             onHover={(id, x, y) => setStarHover({ id, x, y })}
             onHoverEnd={() => setStarHover(null)}
+            onHelpHover={(x, y) => setHelpHover({ x, y })}
+            onHelpHoverEnd={() => setHelpHover(null)}
           />
         )}
       </svg>
@@ -1001,7 +1005,19 @@ const MapView = forwardRef(function MapView(
       {/* Star plot axis hover panel — shown at L3, outside the SVG so HTML renders correctly */}
       {starHover && zoomLevel === ZOOM_LEVEL.COUNTRY && (
         <FloatingPanel x={starHover.x} y={starHover.y} visible maxWidth={300}>
-          <PanelTitle>{datasetMeta[starHover.id]?.displayName}</PanelTitle>
+          <PanelTitle>
+            {datasetMeta[starHover.id]?.displayName}
+            {datasetMeta[starHover.id]?.unit && (
+              <span style={{
+                fontWeight: 400,
+                fontSize: 12,
+                color: colors.ui.textMuted,
+                marginLeft: 6,
+              }}>
+                ({datasetMeta[starHover.id].unit})
+              </span>
+            )}
+          </PanelTitle>
           <div style={{
             marginTop: 8,
             fontSize: 12,
@@ -1014,6 +1030,45 @@ const MapView = forwardRef(function MapView(
         </FloatingPanel>
       )}
 
+      {/* Star plot help-icon panel — big descriptive panel on how dot positions are calculated */}
+      {helpHover && zoomLevel === ZOOM_LEVEL.COUNTRY && (
+        <FloatingPanel x={helpHover.x} y={helpHover.y} visible maxWidth={420}>
+          <PanelTitle>{starPlotHelp.title}</PanelTitle>
+          {starPlotHelp.paragraphs.map((p, i) => (
+            <div key={`p-${i}`} style={{
+              marginTop: 8,
+              fontSize: 13,
+              color: colors.ui.textMuted,
+              lineHeight: 1.6,
+              fontFamily: typography.fontSans,
+            }}>
+              {p}
+            </div>
+          ))}
+          {starPlotHelp.sections?.map((s, i) => (
+            <div key={`s-${i}`} style={{ marginTop: 12 }}>
+              <div style={{
+                fontSize: 13,
+                fontWeight: 700,
+                color: colors.ui.text,
+                fontFamily: typography.fontSans,
+                marginBottom: 2,
+              }}>
+                {s.heading}
+              </div>
+              <div style={{
+                fontSize: 12,
+                color: colors.ui.textMuted,
+                lineHeight: 1.6,
+                fontFamily: typography.fontSans,
+              }}>
+                {s.body}
+              </div>
+            </div>
+          ))}
+        </FloatingPanel>
+      )}
+
       {/* Hover floating panel */}
       {hoveredTarget && zoomLevel <= ZOOM_LEVEL.CONTINENT && (
         <FloatingPanel x={hoveredTarget.mouseX} y={hoveredTarget.mouseY} visible>
@@ -1021,11 +1076,14 @@ const MapView = forwardRef(function MapView(
           <PanelRow
             label={panelLabels.democracyScore}
             value={hoveredTarget.democracyIndex != null
-              ? hoveredTarget.democracyIndex.toFixed(1)
+              ? hoveredTarget.democracyIndex.toFixed(2)
               : panelLabels.noDataShort}
             highlight
             mono
           />
+          {hoveredTarget.type === 'region' && (
+            <PanelWarning>{panelLabels.regionAverageNote}</PanelWarning>
+          )}
           <PanelRow
             label={panelLabels.gdpPerCapita}
             value={formatValue(hoveredTarget.gdpPerCapita, 'USD')}
@@ -1039,7 +1097,7 @@ const MapView = forwardRef(function MapView(
           <PanelRow
             label={panelLabels.populationDensity}
             value={hoveredTarget.populationDensity != null
-              ? hoveredTarget.populationDensity.toFixed(1) + ' /km²'
+              ? hoveredTarget.populationDensity.toFixed(2) + ' /km²'
               : panelLabels.noDataShort}
             mono
           />
